@@ -3,25 +3,741 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D040B6B24F8E81300A01263 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */; };
+		5D040B6C24F8E81300A01263 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */; };
+		5D040B6D24F8E81300A01263 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */; };
+		5D040B6F24F8E84100A01263 /* LoginManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D040B6E24F8E84100A01263 /* LoginManual.storyboard */; };
+		5D040B7024F8E84100A01263 /* LoginManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D040B6E24F8E84100A01263 /* LoginManual.storyboard */; };
+		5D040B7124F8E84100A01263 /* LoginManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D040B6E24F8E84100A01263 /* LoginManual.storyboard */; };
+		5D040B7324F8EB2800A01263 /* LoginManualRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7224F8EB2800A01263 /* LoginManualRouter.swift */; };
+		5D040B7424F8EB2800A01263 /* LoginManualRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7224F8EB2800A01263 /* LoginManualRouter.swift */; };
+		5D040B7524F8EB2800A01263 /* LoginManualRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7224F8EB2800A01263 /* LoginManualRouter.swift */; };
+		5D040B7824F8F61300A01263 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7724F8F61300A01263 /* LoginWorker.swift */; };
+		5D040B7924F8F61300A01263 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7724F8F61300A01263 /* LoginWorker.swift */; };
+		5D040B7A24F8F61300A01263 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7724F8F61300A01263 /* LoginWorker.swift */; };
+		5D040B7C24F8F63F00A01263 /* BaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7B24F8F63F00A01263 /* BaseWorker.swift */; };
+		5D040B7D24F8F63F00A01263 /* BaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7B24F8F63F00A01263 /* BaseWorker.swift */; };
+		5D040B7E24F8F63F00A01263 /* BaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B7B24F8F63F00A01263 /* BaseWorker.swift */; };
+		5D040B8124F90D3900A01263 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8024F90D3900A01263 /* Usuario.swift */; };
+		5D040B8224F90D3900A01263 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8024F90D3900A01263 /* Usuario.swift */; };
+		5D040B8324F90D3900A01263 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8024F90D3900A01263 /* Usuario.swift */; };
+		5D040B8524F9172000A01263 /* LoginManualPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8424F9172000A01263 /* LoginManualPresenter.swift */; };
+		5D040B8624F9172000A01263 /* LoginManualPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8424F9172000A01263 /* LoginManualPresenter.swift */; };
+		5D040B8724F9172000A01263 /* LoginManualPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8424F9172000A01263 /* LoginManualPresenter.swift */; };
+		5D040B8924FC2BB000A01263 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8824FC2BAF00A01263 /* Lugar.swift */; };
+		5D040B8A24FC2BB000A01263 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8824FC2BAF00A01263 /* Lugar.swift */; };
+		5D040B8B24FC2BB000A01263 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8824FC2BAF00A01263 /* Lugar.swift */; };
+		5D040B8D24FC2C0F00A01263 /* LugarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */; };
+		5D040B8E24FC2C0F00A01263 /* LugarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */; };
+		5D040B8F24FC2C0F00A01263 /* LugarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */; };
+		5D1186EC2330C21C000AD1DC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1186EB2330C21C000AD1DC /* Colors.swift */; };
+		5D11871423324C1B000AD1DC /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D11871323324C1B000AD1DC /* Avatar.storyboard */; };
+		5D11871C23327B5D000AD1DC /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D11871B23327B5D000AD1DC /* LoginRouter.swift */; };
+		5D16DA522378B4E700690CC8 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16DA512378B4E700690CC8 /* Categorias.swift */; };
+		5D16DA802379846200690CC8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16DA7F2379846200690CC8 /* Reachability.swift */; };
+		5D1C5E482369EF4B002EF6D4 /* LugaresCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C5E472369EF4B002EF6D4 /* LugaresCached.swift */; };
+		5D1E8CC923992B9400F23C8C /* Pasaporte.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1E8CC823992B9400F23C8C /* Pasaporte.storyboard */; };
+		5D1E8CCB23992BAF00F23C8C /* PasaporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCA23992BAF00F23C8C /* PasaporteViewController.swift */; };
+		5D1E8CCD23992C0700F23C8C /* PasaporteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCC23992C0700F23C8C /* PasaporteRouter.swift */; };
+		5D1E8CCF23992FBD00F23C8C /* PasaportePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCE23992FBD00F23C8C /* PasaportePresenter.swift */; };
+		5D1FD38F253200340044FCE8 /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */; };
+		5D1FD390253200340044FCE8 /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */; };
+		5D1FD391253200340044FCE8 /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */; };
+		5D1FD394253205E80044FCE8 /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */; };
+		5D1FD395253205E80044FCE8 /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */; };
+		5D1FD396253205E80044FCE8 /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */; };
+		5D1FD3992532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */; };
+		5D1FD39A2532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */; };
+		5D1FD39B2532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */; };
+		5D1FD39E253206A70044FCE8 /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */; };
+		5D1FD39F253206A70044FCE8 /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */; };
+		5D1FD3A0253206A70044FCE8 /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */; };
+		5D1FD3A32532077E0044FCE8 /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */; };
+		5D1FD3A42532077E0044FCE8 /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */; };
+		5D1FD3A52532077E0044FCE8 /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */; };
+		5D1FD3A8253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */; };
+		5D1FD3A9253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */; };
+		5D1FD3AA253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */; };
+		5D1FD3AD2532DE060044FCE8 /* confeti.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3AC2532DE060044FCE8 /* confeti.json */; };
+		5D1FD3AE2532DE060044FCE8 /* confeti.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3AC2532DE060044FCE8 /* confeti.json */; };
+		5D1FD3AF2532DE060044FCE8 /* confeti.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3AC2532DE060044FCE8 /* confeti.json */; };
+		5D1FD3B2253307A30044FCE8 /* CamerinosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */; };
+		5D1FD3B3253307A30044FCE8 /* CamerinosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */; };
+		5D1FD3B4253307A30044FCE8 /* CamerinosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */; };
+		5D1FD3BA2534C2C80044FCE8 /* LugaresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1FD3B92534C2C80044FCE8 /* LugaresInteractor.swift */; };
+		5D1FD3BB2534C2C80044FCE8 /* LugaresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1FD3B92534C2C80044FCE8 /* LugaresInteractor.swift */; };
+		5D1FD3BC2534C2C80044FCE8 /* LugaresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1FD3B92534C2C80044FCE8 /* LugaresInteractor.swift */; };
+		5D1FD3C62534EFB30044FCE8 /* fireworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3C52534EFB30044FCE8 /* fireworks.json */; };
+		5D1FD3C72534EFB30044FCE8 /* fireworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3C52534EFB30044FCE8 /* fireworks.json */; };
+		5D1FD3C82534EFB30044FCE8 /* fireworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3C52534EFB30044FCE8 /* fireworks.json */; };
+		5D25E872233A6581002560A3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E871233A6581002560A3 /* Extensions.swift */; };
+		5D25E877233B488A002560A3 /* LugarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E876233B488A002560A3 /* LugarDetailViewController.swift */; };
+		5D25E879233B48E2002560A3 /* LugarDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E878233B48E2002560A3 /* LugarDetailRouter.swift */; };
+		5D25E87C233C9E2A002560A3 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E87B233C9E2A002560A3 /* CustomScrollView.swift */; };
+		5D25E87E233C9E39002560A3 /* CustomScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E87D233C9E39002560A3 /* CustomScrollView.xib */; };
+		5D25E880233CA9B0002560A3 /* LugarDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E87F233CA9B0002560A3 /* LugarDetailPresenter.swift */; };
+		5D25E888233CC7CB002560A3 /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E887233CC7CB002560A3 /* TrophyView.swift */; };
+		5D25E88A233CC7DE002560A3 /* TrophyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E889233CC7DE002560A3 /* TrophyView.xib */; };
+		5D25E890233D0108002560A3 /* NoTrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E88F233D0108002560A3 /* NoTrophyView.swift */; };
+		5D25E892233D0136002560A3 /* NoTrophyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E891233D0136002560A3 /* NoTrophyView.xib */; };
+		5D25E894233D049E002560A3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E893233D049E002560A3 /* LocationManager.swift */; };
+		5D25E897233D05E0002560A3 /* LocationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E896233D05E0002560A3 /* LocationEngine.swift */; };
+		5D25E8A3233E2B3D002560A3 /* GeneralCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E8A2233E2B3D002560A3 /* GeneralCard.swift */; };
+		5D25E8A5233E2B5A002560A3 /* GeneralCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E8A4233E2B5A002560A3 /* GeneralCard.xib */; };
+		5D2AC6F12399A2D800AEA66C /* GrupoLogroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AC6F02399A2D800AEA66C /* GrupoLogroView.swift */; };
+		5D2AC6F32399A2F800AEA66C /* GrupoLogroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2AC6F22399A2F800AEA66C /* GrupoLogroView.xib */; };
+		5D2D147123DCD0A400AAA99B /* LugaresWorkerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D147023DCD0A400AAA99B /* LugaresWorkerDemo.swift */; };
+		5D2D147323DCD0FB00AAA99B /* LoginWorkerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D147223DCD0FB00AAA99B /* LoginWorkerDemo.swift */; };
+		5D2D147523DCD14900AAA99B /* UserProfileWorkerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D147423DCD14900AAA99B /* UserProfileWorkerDemo.swift */; };
+		5D2E2367250C7C26002EF48D /* PasaporteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2366250C7C26002EF48D /* PasaporteWorker.swift */; };
+		5D2E2368250C7C26002EF48D /* PasaporteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2366250C7C26002EF48D /* PasaporteWorker.swift */; };
+		5D2E2369250C7C26002EF48D /* PasaporteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2366250C7C26002EF48D /* PasaporteWorker.swift */; };
+		5D2E236B250C7CF6002EF48D /* Logro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E236A250C7CF6002EF48D /* Logro.swift */; };
+		5D2E236C250C7CF6002EF48D /* Logro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E236A250C7CF6002EF48D /* Logro.swift */; };
+		5D2E236D250C7CF6002EF48D /* Logro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E236A250C7CF6002EF48D /* Logro.swift */; };
+		5D2E2370250C82CC002EF48D /* CamerinosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E236F250C82CC002EF48D /* CamerinosViewController.swift */; };
+		5D2E2371250C82CC002EF48D /* CamerinosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E236F250C82CC002EF48D /* CamerinosViewController.swift */; };
+		5D2E2372250C82CC002EF48D /* CamerinosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E236F250C82CC002EF48D /* CamerinosViewController.swift */; };
+		5D2E2374250C82E9002EF48D /* Camerinos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2E2373250C82E9002EF48D /* Camerinos.storyboard */; };
+		5D2E2375250C82E9002EF48D /* Camerinos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2E2373250C82E9002EF48D /* Camerinos.storyboard */; };
+		5D2E2376250C82E9002EF48D /* Camerinos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2E2373250C82E9002EF48D /* Camerinos.storyboard */; };
+		5D2E2378250C830A002EF48D /* CamerinosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2377250C830A002EF48D /* CamerinosRouter.swift */; };
+		5D2E2379250C830A002EF48D /* CamerinosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2377250C830A002EF48D /* CamerinosRouter.swift */; };
+		5D2E237A250C830A002EF48D /* CamerinosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2377250C830A002EF48D /* CamerinosRouter.swift */; };
+		5D2E2381250E28E0002EF48D /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E237F250E28E0002EF48D /* Mapbox.framework */; };
+		5D2E2382250E28E0002EF48D /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E237F250E28E0002EF48D /* Mapbox.framework */; };
+		5D2E2385250E28F6002EF48D /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */; };
+		5D2E2386250E28F6002EF48D /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */; };
+		5D2E2387250E2ADC002EF48D /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E237F250E28E0002EF48D /* Mapbox.framework */; };
+		5D2E2388250E2ADC002EF48D /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E237F250E28E0002EF48D /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D2E238A250E2ADE002EF48D /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */; };
+		5D2E238B250E2ADE002EF48D /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D3AB9842516AFEA00D17E08 /* RankingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */; };
+		5D3AB9852516AFEA00D17E08 /* RankingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */; };
+		5D3AB9862516AFEA00D17E08 /* RankingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */; };
+		5D3AB9AE2516B49400D17E08 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9AD2516B49400D17E08 /* Ranking.swift */; };
+		5D3AB9AF2516B49400D17E08 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9AD2516B49400D17E08 /* Ranking.swift */; };
+		5D3AB9B02516B49400D17E08 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9AD2516B49400D17E08 /* Ranking.swift */; };
+		5D4FE50B239FBF8C00E529F7 /* LogrosHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D4FE50A239FBF8C00E529F7 /* LogrosHeaderView.xib */; };
+		5D4FE50D239FBFD700E529F7 /* LogrosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FE50C239FBFD700E529F7 /* LogrosHeaderView.swift */; };
+		5D59AC2F2452CB5D00B9C461 /* GrupoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59AC2E2452CB5D00B9C461 /* GrupoView.swift */; };
+		5D59AC302452CB5D00B9C461 /* GrupoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59AC2E2452CB5D00B9C461 /* GrupoView.swift */; };
+		5D59AC312452CB5D00B9C461 /* GrupoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59AC2E2452CB5D00B9C461 /* GrupoView.swift */; };
+		5D613BF325081691005732FC /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BF225081691005732FC /* Avatar.swift */; };
+		5D613BF425081691005732FC /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BF225081691005732FC /* Avatar.swift */; };
+		5D613BF525081691005732FC /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BF225081691005732FC /* Avatar.swift */; };
+		5D613BF7250818BC005732FC /* AvatarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BF6250818BC005732FC /* AvatarWorker.swift */; };
+		5D613BF8250818BC005732FC /* AvatarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BF6250818BC005732FC /* AvatarWorker.swift */; };
+		5D613BF9250818BC005732FC /* AvatarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BF6250818BC005732FC /* AvatarWorker.swift */; };
+		5D613BFB250821D7005732FC /* RegistroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BFA250821D7005732FC /* RegistroWorker.swift */; };
+		5D613BFC250821D7005732FC /* RegistroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BFA250821D7005732FC /* RegistroWorker.swift */; };
+		5D613BFD250821D7005732FC /* RegistroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D613BFA250821D7005732FC /* RegistroWorker.swift */; };
 		5D679D56231FAA0B005AB2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D55231FAA0B005AB2E5 /* AppDelegate.swift */; };
-		5D679D58231FAA0B005AB2E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D57231FAA0B005AB2E5 /* ViewController.swift */; };
 		5D679D5B231FAA0B005AB2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D59231FAA0B005AB2E5 /* Main.storyboard */; };
 		5D679D5D231FAA0D005AB2E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D5C231FAA0D005AB2E5 /* Assets.xcassets */; };
 		5D679D60231FAA0D005AB2E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D5E231FAA0D005AB2E5 /* LaunchScreen.storyboard */; };
+		5D679D69231FABFB005AB2E5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D68231FABFB005AB2E5 /* Login.storyboard */; };
+		5D679D6F231FAFD0005AB2E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D6E231FAFD0005AB2E5 /* BaseViewController.swift */; };
+		5D679D75231FB506005AB2E5 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D74231FB506005AB2E5 /* ColumnFlowLayout.swift */; };
+		5D679D7823211B81005AB2E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7723211B81005AB2E5 /* LoginViewController.swift */; };
+		5D679D7D23215A53005AB2E5 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7C23215A53005AB2E5 /* MapaViewController.swift */; };
+		5D679D7F23215BDC005AB2E5 /* MapaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7E23215BDC005AB2E5 /* MapaRouter.swift */; };
+		5D679DAB2327C80C005AB2E5 /* RightBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DAA2327C80C005AB2E5 /* RightBarMenu.swift */; };
+		5D679DAD2327C819005AB2E5 /* RightBarMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D679DAC2327C819005AB2E5 /* RightBarMenu.xib */; };
+		5D679DB22327CE7B005AB2E5 /* LugaresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DB12327CE7B005AB2E5 /* LugaresManager.swift */; };
+		5D679DB42327CE98005AB2E5 /* MapaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DB32327CE98005AB2E5 /* MapaPresenter.swift */; };
+		5D6A2BB023D4D86F00404A6B /* FiltrosCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */; };
+		5D6A2BB323D4D86F00404A6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7723211B81005AB2E5 /* LoginViewController.swift */; };
+		5D6A2BB723D4D86F00404A6B /* LogrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B148237DB0B500718BAA /* LogrosViewController.swift */; };
+		5D6A2BB823D4D86F00404A6B /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D74231FB506005AB2E5 /* ColumnFlowLayout.swift */; };
+		5D6A2BB923D4D86F00404A6B /* MisDatosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */; };
+		5D6A2BBA23D4D86F00404A6B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D6E231FAFD0005AB2E5 /* BaseViewController.swift */; };
+		5D6A2BBB23D4D86F00404A6B /* GeneralCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E8A2233E2B3D002560A3 /* GeneralCard.swift */; };
+		5D6A2BBD23D4D86F00404A6B /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE465423425F7800909A2B /* OptionsViewController.swift */; };
+		5D6A2BBE23D4D86F00404A6B /* MisDatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A08234E2C6F006422F2 /* MisDatosViewController.swift */; };
+		5D6A2BBF23D4D86F00404A6B /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7C23215A53005AB2E5 /* MapaViewController.swift */; };
+		5D6A2BC023D4D86F00404A6B /* TomarFotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F818E23C4B64C004A3633 /* TomarFotoViewController.swift */; };
+		5D6A2BC123D4D86F00404A6B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B15A237E921200718BAA /* CardView.swift */; };
+		5D6A2BC223D4D86F00404A6B /* PersonalDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C05234CDBE400C37015 /* PersonalDataRouter.swift */; };
+		5D6A2BC323D4D86F00404A6B /* NoTrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E88F233D0108002560A3 /* NoTrophyView.swift */; };
+		5D6A2BC423D4D86F00404A6B /* PasaporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCA23992BAF00F23C8C /* PasaporteViewController.swift */; };
+		5D6A2BC523D4D86F00404A6B /* LugarDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E878233B48E2002560A3 /* LugarDetailRouter.swift */; };
+		5D6A2BC623D4D86F00404A6B /* AvisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9A42368376F00CABA2D /* AvisosViewController.swift */; };
+		5D6A2BC923D4D86F00404A6B /* MisDatosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A0A234E2CD4006422F2 /* MisDatosRouter.swift */; };
+		5D6A2BCA23D4D86F00404A6B /* MapaDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AF238550B500BE5A6B /* MapaDelegates.swift */; };
+		5D6A2BD023D4D86F00404A6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E871233A6581002560A3 /* Extensions.swift */; };
+		5D6A2BD223D4D86F00404A6B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B153237E8B2A00718BAA /* BaseRouter.swift */; };
+		5D6A2BD623D4D86F00404A6B /* MisDatosFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A0D234E32B0006422F2 /* MisDatosFieldView.swift */; };
+		5D6A2BD823D4D86F00404A6B /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16DA512378B4E700690CC8 /* Categorias.swift */; };
+		5D6A2BD923D4D86F00404A6B /* LogrosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FE50C239FBFD700E529F7 /* LogrosHeaderView.swift */; };
+		5D6A2BDB23D4D86F00404A6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1186EB2330C21C000AD1DC /* Colors.swift */; };
+		5D6A2BDC23D4D86F00404A6B /* LugarDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E87F233CA9B0002560A3 /* LugarDetailPresenter.swift */; };
+		5D6A2BDF23D4D86F00404A6B /* LugarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E876233B488A002560A3 /* LugarDetailViewController.swift */; };
+		5D6A2BE123D4D86F00404A6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D55231FAA0B005AB2E5 /* AppDelegate.swift */; };
+		5D6A2BE523D4D86F00404A6B /* ResumenCartasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1A72383D05700BE5A6B /* ResumenCartasView.swift */; };
+		5D6A2BE623D4D86F00404A6B /* AvisoStandar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9AD23683C3700CABA2D /* AvisoStandar.swift */; };
+		5D6A2BE723D4D86F00404A6B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E893233D049E002560A3 /* LocationManager.swift */; };
+		5D6A2BEA23D4D86F00404A6B /* FiltroFotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA577C923CCB994002D99B8 /* FiltroFotoView.swift */; };
+		5D6A2BEC23D4D86F00404A6B /* LogrosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B14E237DB0E900718BAA /* LogrosPresenter.swift */; };
+		5D6A2BED23D4D86F00404A6B /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882B62372E9FF002197E0 /* InitViewController.swift */; };
+		5D6A2BEE23D4D86F00404A6B /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E887233CC7CB002560A3 /* TrophyView.swift */; };
+		5D6A2BF023D4D86F00404A6B /* ResumenCartasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AB2383E57000BE5A6B /* ResumenCartasCell.swift */; };
+		5D6A2BF123D4D86F00404A6B /* PasaporteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCC23992C0700F23C8C /* PasaporteRouter.swift */; };
+		5D6A2BF223D4D86F00404A6B /* LogrosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B14C237DB0D000718BAA /* LogrosRouter.swift */; };
+		5D6A2BF523D4D86F00404A6B /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C03234CD77900C37015 /* PersonalDataViewController.swift */; };
+		5D6A2BF623D4D86F00404A6B /* RightBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DAA2327C80C005AB2E5 /* RightBarMenu.swift */; };
+		5D6A2BF723D4D86F00404A6B /* GrupoLogroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AC6F02399A2D800AEA66C /* GrupoLogroView.swift */; };
+		5D6A2BF823D4D86F00404A6B /* TomarFotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F819223C4B696004A3633 /* TomarFotoRouter.swift */; };
+		5D6A2BF923D4D86F00404A6B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16DA7F2379846200690CC8 /* Reachability.swift */; };
+		5D6A2BFB23D4D86F00404A6B /* LugaresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DB12327CE7B005AB2E5 /* LugaresManager.swift */; };
+		5D6A2BFD23D4D86F00404A6B /* FiltrosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882AB2372B3EC002197E0 /* FiltrosManager.swift */; };
+		5D6A2BFE23D4D86F00404A6B /* TopBarOnlyBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4B8EB2397074B00309213 /* TopBarOnlyBack.swift */; };
+		5D6A2C0123D4D86F00404A6B /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E87B233C9E2A002560A3 /* CustomScrollView.swift */; };
+		5D6A2C0323D4D86F00404A6B /* InitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882B82372EA6C002197E0 /* InitRouter.swift */; };
+		5D6A2C0623D4D86F00404A6B /* LocationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E896233D05E0002560A3 /* LocationEngine.swift */; };
+		5D6A2C0723D4D86F00404A6B /* PasaportePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCE23992FBD00F23C8C /* PasaportePresenter.swift */; };
+		5D6A2C0923D4D86F00404A6B /* MapaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DB32327CE98005AB2E5 /* MapaPresenter.swift */; };
+		5D6A2C0A23D4D86F00404A6B /* PersonalDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C07234CDD0B00C37015 /* PersonalDataPresenter.swift */; };
+		5D6A2C0C23D4D86F00404A6B /* MostrarCartasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B156237E8FA100718BAA /* MostrarCartasView.swift */; };
+		5D6A2C0D23D4D86F00404A6B /* AvisosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9AA23683AFC00CABA2D /* AvisosPresenter.swift */; };
+		5D6A2C0F23D4D86F00404A6B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D11871B23327B5D000AD1DC /* LoginRouter.swift */; };
+		5D6A2C1023D4D86F00404A6B /* LugaresCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C5E472369EF4B002EF6D4 /* LugaresCached.swift */; };
+		5D6A2C1423D4D86F00404A6B /* ApiBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8DADE2370D82E009A14C0 /* ApiBase.swift */; };
+		5D6A2C1623D4D86F00404A6B /* MapaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7E23215BDC005AB2E5 /* MapaRouter.swift */; };
+		5D6A2C1723D4D86F00404A6B /* AvisosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9A82368381C00CABA2D /* AvisosRouter.swift */; };
+		5D6A2C1B23D4D86F00404A6B /* AvisoStandar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D99E9AF23683C5100CABA2D /* AvisoStandar.xib */; };
+		5D6A2C1C23D4D86F00404A6B /* TrophyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E889233CC7DE002560A3 /* TrophyView.xib */; };
+		5D6A2C1D23D4D86F00404A6B /* Pasaporte.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1E8CC823992B9400F23C8C /* Pasaporte.storyboard */; };
+		5D6A2C1E23D4D86F00404A6B /* ResumenCartasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD5F1A92383D06700BE5A6B /* ResumenCartasView.xib */; };
+		5D6A2C1F23D4D86F00404A6B /* GeneralCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E8A4233E2B5A002560A3 /* GeneralCard.xib */; };
+		5D6A2C2023D4D86F00404A6B /* Avisos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D99E9A62368379900CABA2D /* Avisos.storyboard */; };
+		5D6A2C2423D4D86F00404A6B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D68231FABFB005AB2E5 /* Login.storyboard */; };
+		5D6A2C2523D4D86F00404A6B /* GrupoLogroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2AC6F22399A2F800AEA66C /* GrupoLogroView.xib */; };
+		5D6A2C2623D4D86F00404A6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D5E231FAA0D005AB2E5 /* LaunchScreen.storyboard */; };
+		5D6A2C2723D4D86F00404A6B /* RightBarMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D679DAC2327C819005AB2E5 /* RightBarMenu.xib */; };
+		5D6A2C2923D4D86F00404A6B /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B15C237E923400718BAA /* CardView.xib */; };
+		5D6A2C2A23D4D86F00404A6B /* MostrarCartasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B158237E8FAD00718BAA /* MostrarCartasView.xib */; };
+		5D6A2C2F23D4D86F00404A6B /* Logros.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B14A237DB0C000718BAA /* Logros.storyboard */; };
+		5D6A2C3223D4D86F00404A6B /* MisDatosFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D778A0F234E32C1006422F2 /* MisDatosFieldView.xib */; };
+		5D6A2C3323D4D86F00404A6B /* Init.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE882B32372E9DD002197E0 /* Init.storyboard */; };
+		5D6A2C3523D4D86F00404A6B /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D11871323324C1B000AD1DC /* Avatar.storyboard */; };
+		5D6A2C3623D4D86F00404A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D5C231FAA0D005AB2E5 /* Assets.xcassets */; };
+		5D6A2C3723D4D86F00404A6B /* NoTrophyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E891233D0136002560A3 /* NoTrophyView.xib */; };
+		5D6A2C3A23D4D86F00404A6B /* LogrosHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D4FE50A239FBF8C00E529F7 /* LogrosHeaderView.xib */; };
+		5D6A2C3C23D4D86F00404A6B /* TopBarOnlyBack.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DE4B8ED2397076600309213 /* TopBarOnlyBack.xib */; };
+		5D6A2C3D23D4D86F00404A6B /* ResumenCartasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AD2383E57D00BE5A6B /* ResumenCartasCell.xib */; };
+		5D6A2C3E23D4D86F00404A6B /* CustomScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E87D233C9E39002560A3 /* CustomScrollView.xib */; };
+		5D6A2C4223D4D86F00404A6B /* Foto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8F819023C4B673004A3633 /* Foto.storyboard */; };
+		5D6A2C4323D4D86F00404A6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D59231FAA0B005AB2E5 /* Main.storyboard */; };
+		5D6DCF6823E5ED3500102FCB /* RankingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DCF6723E5ED3500102FCB /* RankingPresenter.swift */; };
+		5D6DCF6923E5ED3500102FCB /* RankingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DCF6723E5ED3500102FCB /* RankingPresenter.swift */; };
+		5D6DCF6A23E5ED3500102FCB /* RankingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DCF6723E5ED3500102FCB /* RankingPresenter.swift */; };
+		5D778A09234E2C6F006422F2 /* MisDatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A08234E2C6F006422F2 /* MisDatosViewController.swift */; };
+		5D778A0B234E2CD4006422F2 /* MisDatosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A0A234E2CD4006422F2 /* MisDatosRouter.swift */; };
+		5D778A0E234E32B0006422F2 /* MisDatosFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A0D234E32B0006422F2 /* MisDatosFieldView.swift */; };
+		5D778A10234E32C1006422F2 /* MisDatosFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D778A0F234E32C1006422F2 /* MisDatosFieldView.xib */; };
+		5D80B149237DB0B500718BAA /* LogrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B148237DB0B500718BAA /* LogrosViewController.swift */; };
+		5D80B14B237DB0C000718BAA /* Logros.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B14A237DB0C000718BAA /* Logros.storyboard */; };
+		5D80B14D237DB0D000718BAA /* LogrosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B14C237DB0D000718BAA /* LogrosRouter.swift */; };
+		5D80B14F237DB0E900718BAA /* LogrosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B14E237DB0E900718BAA /* LogrosPresenter.swift */; };
+		5D80B154237E8B2A00718BAA /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B153237E8B2A00718BAA /* BaseRouter.swift */; };
+		5D80B157237E8FA100718BAA /* MostrarCartasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B156237E8FA100718BAA /* MostrarCartasView.swift */; };
+		5D80B159237E8FAD00718BAA /* MostrarCartasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B158237E8FAD00718BAA /* MostrarCartasView.xib */; };
+		5D80B15B237E921200718BAA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B15A237E921200718BAA /* CardView.swift */; };
+		5D80B15D237E923400718BAA /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B15C237E923400718BAA /* CardView.xib */; };
+		5D857D9123DF1D0500A34048 /* LogroWorkerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857D9023DF1D0500A34048 /* LogroWorkerDemo.swift */; };
+		5D857D9323DF1DE100A34048 /* GetAllLogrosWorkerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857D9223DF1DE100A34048 /* GetAllLogrosWorkerDemo.swift */; };
+		5D857D9623E08D0E00A34048 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857D9523E08D0E00A34048 /* RankingViewController.swift */; };
+		5D857D9723E08D0E00A34048 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857D9523E08D0E00A34048 /* RankingViewController.swift */; };
+		5D857D9823E08D0E00A34048 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857D9523E08D0E00A34048 /* RankingViewController.swift */; };
+		5D857D9A23E08D3900A34048 /* RankingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857D9923E08D3900A34048 /* RankingRouter.swift */; };
+		5D857D9B23E08D3900A34048 /* RankingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857D9923E08D3900A34048 /* RankingRouter.swift */; };
+		5D857D9C23E08D3900A34048 /* RankingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857D9923E08D3900A34048 /* RankingRouter.swift */; };
+		5D857D9E23E08D6200A34048 /* Ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D857D9D23E08D6200A34048 /* Ranking.storyboard */; };
+		5D857D9F23E08D6200A34048 /* Ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D857D9D23E08D6200A34048 /* Ranking.storyboard */; };
+		5D857DA023E08D6200A34048 /* Ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D857D9D23E08D6200A34048 /* Ranking.storyboard */; };
+		5D857DA323E0911400A34048 /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857DA223E0911400A34048 /* RankingCell.swift */; };
+		5D857DA423E0911400A34048 /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857DA223E0911400A34048 /* RankingCell.swift */; };
+		5D857DA523E0911400A34048 /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D857DA223E0911400A34048 /* RankingCell.swift */; };
+		5D891308246080E200D040BF /* InteresesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D891307246080E200D040BF /* InteresesCell.swift */; };
+		5D891309246080E200D040BF /* InteresesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D891307246080E200D040BF /* InteresesCell.swift */; };
+		5D89130A246080E200D040BF /* InteresesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D891307246080E200D040BF /* InteresesCell.swift */; };
+		5D89130C24629E2700D040BF /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */; };
+		5D89130D24629E2700D040BF /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */; };
+		5D89130E24629E2700D040BF /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */; };
+		5D8F818F23C4B64C004A3633 /* TomarFotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F818E23C4B64C004A3633 /* TomarFotoViewController.swift */; };
+		5D8F819123C4B673004A3633 /* Foto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8F819023C4B673004A3633 /* Foto.storyboard */; };
+		5D8F819323C4B696004A3633 /* TomarFotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F819223C4B696004A3633 /* TomarFotoRouter.swift */; };
+		5D99E9A52368376F00CABA2D /* AvisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9A42368376F00CABA2D /* AvisosViewController.swift */; };
+		5D99E9A72368379900CABA2D /* Avisos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D99E9A62368379900CABA2D /* Avisos.storyboard */; };
+		5D99E9A92368381C00CABA2D /* AvisosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9A82368381C00CABA2D /* AvisosRouter.swift */; };
+		5D99E9AB23683AFC00CABA2D /* AvisosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9AA23683AFC00CABA2D /* AvisosPresenter.swift */; };
+		5D99E9AE23683C3700CABA2D /* AvisoStandar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9AD23683C3700CABA2D /* AvisoStandar.swift */; };
+		5D99E9B023683C5100CABA2D /* AvisoStandar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D99E9AF23683C5100CABA2D /* AvisoStandar.xib */; };
+		5DA18A9A2513CE1900DE90AE /* LogroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18A992513CE1900DE90AE /* LogroWorker.swift */; };
+		5DA18A9B2513CE1900DE90AE /* LogroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18A992513CE1900DE90AE /* LogroWorker.swift */; };
+		5DA18A9C2513CE1900DE90AE /* LogroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18A992513CE1900DE90AE /* LogroWorker.swift */; };
+		5DA1AF4D240C382200407276 /* Pods_ViajeroDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA1AF4C240C382200407276 /* Pods_ViajeroDev.framework */; };
+		5DA1AF4E240C382200407276 /* Pods_ViajeroDev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA1AF4C240C382200407276 /* Pods_ViajeroDev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DA577CA23CCB994002D99B8 /* FiltroFotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA577C923CCB994002D99B8 /* FiltroFotoView.swift */; };
+		5DB6DD4E24570D6F009764F1 /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */; };
+		5DB6DD4F24570D6F009764F1 /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */; };
+		5DB6DD5024570D6F009764F1 /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */; };
+		5DB6DD5124570D6F009764F1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4D24570D6F009764F1 /* textures */; };
+		5DB6DD5224570D6F009764F1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4D24570D6F009764F1 /* textures */; };
+		5DB6DD5324570D6F009764F1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4D24570D6F009764F1 /* textures */; };
+		5DB6DD5D24572CEA009764F1 /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */; };
+		5DB6DD5E24572CEA009764F1 /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */; };
+		5DB6DD5F24572CEA009764F1 /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */; };
+		5DB6DD62245741FC009764F1 /* ProfesorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD61245741FC009764F1 /* ProfesorView.xib */; };
+		5DB6DD63245741FC009764F1 /* ProfesorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD61245741FC009764F1 /* ProfesorView.xib */; };
+		5DB6DD64245741FC009764F1 /* ProfesorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD61245741FC009764F1 /* ProfesorView.xib */; };
+		5DB6DD6624574208009764F1 /* ProfesorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DD6524574208009764F1 /* ProfesorView.swift */; };
+		5DB6DD6724574208009764F1 /* ProfesorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DD6524574208009764F1 /* ProfesorView.swift */; };
+		5DB6DD6824574208009764F1 /* ProfesorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DD6524574208009764F1 /* ProfesorView.swift */; };
+		5DBF558C23DC75E7002A6520 /* PersonalDataCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF558B23DC75E7002A6520 /* PersonalDataCollectionCell.swift */; };
+		5DBF558D23DC75E7002A6520 /* PersonalDataCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF558B23DC75E7002A6520 /* PersonalDataCollectionCell.swift */; };
+		5DBF559123DCCCCA002A6520 /* FiltrosCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */; };
+		5DBF559423DCCCCA002A6520 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7723211B81005AB2E5 /* LoginViewController.swift */; };
+		5DBF559523DCCCCA002A6520 /* PersonalDataCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF558B23DC75E7002A6520 /* PersonalDataCollectionCell.swift */; };
+		5DBF559923DCCCCA002A6520 /* LogrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B148237DB0B500718BAA /* LogrosViewController.swift */; };
+		5DBF559A23DCCCCA002A6520 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D74231FB506005AB2E5 /* ColumnFlowLayout.swift */; };
+		5DBF559B23DCCCCA002A6520 /* MisDatosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */; };
+		5DBF559C23DCCCCA002A6520 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D6E231FAFD0005AB2E5 /* BaseViewController.swift */; };
+		5DBF559D23DCCCCA002A6520 /* GeneralCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E8A2233E2B3D002560A3 /* GeneralCard.swift */; };
+		5DBF559F23DCCCCA002A6520 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE465423425F7800909A2B /* OptionsViewController.swift */; };
+		5DBF55A023DCCCCA002A6520 /* MisDatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A08234E2C6F006422F2 /* MisDatosViewController.swift */; };
+		5DBF55A123DCCCCA002A6520 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7C23215A53005AB2E5 /* MapaViewController.swift */; };
+		5DBF55A223DCCCCA002A6520 /* TomarFotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F818E23C4B64C004A3633 /* TomarFotoViewController.swift */; };
+		5DBF55A323DCCCCA002A6520 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B15A237E921200718BAA /* CardView.swift */; };
+		5DBF55A423DCCCCA002A6520 /* PersonalDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C05234CDBE400C37015 /* PersonalDataRouter.swift */; };
+		5DBF55A523DCCCCA002A6520 /* NoTrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E88F233D0108002560A3 /* NoTrophyView.swift */; };
+		5DBF55A623DCCCCA002A6520 /* PasaporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCA23992BAF00F23C8C /* PasaporteViewController.swift */; };
+		5DBF55A723DCCCCA002A6520 /* LugarDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E878233B48E2002560A3 /* LugarDetailRouter.swift */; };
+		5DBF55A823DCCCCA002A6520 /* AvisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9A42368376F00CABA2D /* AvisosViewController.swift */; };
+		5DBF55AB23DCCCCA002A6520 /* MisDatosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A0A234E2CD4006422F2 /* MisDatosRouter.swift */; };
+		5DBF55AC23DCCCCA002A6520 /* MapaDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AF238550B500BE5A6B /* MapaDelegates.swift */; };
+		5DBF55B223DCCCCA002A6520 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E871233A6581002560A3 /* Extensions.swift */; };
+		5DBF55B323DCCCCA002A6520 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B153237E8B2A00718BAA /* BaseRouter.swift */; };
+		5DBF55B723DCCCCA002A6520 /* MisDatosFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A0D234E32B0006422F2 /* MisDatosFieldView.swift */; };
+		5DBF55B923DCCCCA002A6520 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16DA512378B4E700690CC8 /* Categorias.swift */; };
+		5DBF55BA23DCCCCA002A6520 /* LogrosHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FE50C239FBFD700E529F7 /* LogrosHeaderView.swift */; };
+		5DBF55BC23DCCCCA002A6520 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1186EB2330C21C000AD1DC /* Colors.swift */; };
+		5DBF55BD23DCCCCA002A6520 /* LugarDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E87F233CA9B0002560A3 /* LugarDetailPresenter.swift */; };
+		5DBF55C023DCCCCA002A6520 /* LugarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E876233B488A002560A3 /* LugarDetailViewController.swift */; };
+		5DBF55C223DCCCCA002A6520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D55231FAA0B005AB2E5 /* AppDelegate.swift */; };
+		5DBF55C623DCCCCA002A6520 /* ResumenCartasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1A72383D05700BE5A6B /* ResumenCartasView.swift */; };
+		5DBF55C723DCCCCA002A6520 /* AvisoStandar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9AD23683C3700CABA2D /* AvisoStandar.swift */; };
+		5DBF55C823DCCCCA002A6520 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E893233D049E002560A3 /* LocationManager.swift */; };
+		5DBF55CB23DCCCCA002A6520 /* FiltroFotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA577C923CCB994002D99B8 /* FiltroFotoView.swift */; };
+		5DBF55CD23DCCCCA002A6520 /* LogrosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B14E237DB0E900718BAA /* LogrosPresenter.swift */; };
+		5DBF55CE23DCCCCA002A6520 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882B62372E9FF002197E0 /* InitViewController.swift */; };
+		5DBF55CF23DCCCCA002A6520 /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E887233CC7CB002560A3 /* TrophyView.swift */; };
+		5DBF55D123DCCCCA002A6520 /* ResumenCartasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AB2383E57000BE5A6B /* ResumenCartasCell.swift */; };
+		5DBF55D223DCCCCA002A6520 /* PasaporteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCC23992C0700F23C8C /* PasaporteRouter.swift */; };
+		5DBF55D323DCCCCA002A6520 /* LogrosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B14C237DB0D000718BAA /* LogrosRouter.swift */; };
+		5DBF55D623DCCCCA002A6520 /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C03234CD77900C37015 /* PersonalDataViewController.swift */; };
+		5DBF55D723DCCCCA002A6520 /* RightBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DAA2327C80C005AB2E5 /* RightBarMenu.swift */; };
+		5DBF55D823DCCCCA002A6520 /* GrupoLogroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AC6F02399A2D800AEA66C /* GrupoLogroView.swift */; };
+		5DBF55D923DCCCCA002A6520 /* TomarFotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F819223C4B696004A3633 /* TomarFotoRouter.swift */; };
+		5DBF55DA23DCCCCA002A6520 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16DA7F2379846200690CC8 /* Reachability.swift */; };
+		5DBF55DC23DCCCCA002A6520 /* LugaresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DB12327CE7B005AB2E5 /* LugaresManager.swift */; };
+		5DBF55DE23DCCCCA002A6520 /* FiltrosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882AB2372B3EC002197E0 /* FiltrosManager.swift */; };
+		5DBF55DF23DCCCCA002A6520 /* TopBarOnlyBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4B8EB2397074B00309213 /* TopBarOnlyBack.swift */; };
+		5DBF55E223DCCCCA002A6520 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E87B233C9E2A002560A3 /* CustomScrollView.swift */; };
+		5DBF55E423DCCCCA002A6520 /* InitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882B82372EA6C002197E0 /* InitRouter.swift */; };
+		5DBF55E723DCCCCA002A6520 /* LocationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25E896233D05E0002560A3 /* LocationEngine.swift */; };
+		5DBF55E823DCCCCA002A6520 /* PasaportePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCE23992FBD00F23C8C /* PasaportePresenter.swift */; };
+		5DBF55EA23DCCCCA002A6520 /* MapaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DB32327CE98005AB2E5 /* MapaPresenter.swift */; };
+		5DBF55EB23DCCCCA002A6520 /* PersonalDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C07234CDD0B00C37015 /* PersonalDataPresenter.swift */; };
+		5DBF55ED23DCCCCA002A6520 /* MostrarCartasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B156237E8FA100718BAA /* MostrarCartasView.swift */; };
+		5DBF55EE23DCCCCA002A6520 /* AvisosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9AA23683AFC00CABA2D /* AvisosPresenter.swift */; };
+		5DBF55F023DCCCCA002A6520 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D11871B23327B5D000AD1DC /* LoginRouter.swift */; };
+		5DBF55F123DCCCCA002A6520 /* LugaresCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C5E472369EF4B002EF6D4 /* LugaresCached.swift */; };
+		5DBF55F523DCCCCA002A6520 /* ApiBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8DADE2370D82E009A14C0 /* ApiBase.swift */; };
+		5DBF55F723DCCCCA002A6520 /* MapaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7E23215BDC005AB2E5 /* MapaRouter.swift */; };
+		5DBF55F823DCCCCA002A6520 /* AvisosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D99E9A82368381C00CABA2D /* AvisosRouter.swift */; };
+		5DBF55FC23DCCCCA002A6520 /* AvisoStandar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D99E9AF23683C5100CABA2D /* AvisoStandar.xib */; };
+		5DBF55FD23DCCCCA002A6520 /* TrophyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E889233CC7DE002560A3 /* TrophyView.xib */; };
+		5DBF55FE23DCCCCA002A6520 /* Pasaporte.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1E8CC823992B9400F23C8C /* Pasaporte.storyboard */; };
+		5DBF55FF23DCCCCA002A6520 /* ResumenCartasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD5F1A92383D06700BE5A6B /* ResumenCartasView.xib */; };
+		5DBF560023DCCCCA002A6520 /* GeneralCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E8A4233E2B5A002560A3 /* GeneralCard.xib */; };
+		5DBF560123DCCCCA002A6520 /* Avisos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D99E9A62368379900CABA2D /* Avisos.storyboard */; };
+		5DBF560423DCCCCA002A6520 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D68231FABFB005AB2E5 /* Login.storyboard */; };
+		5DBF560523DCCCCA002A6520 /* GrupoLogroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2AC6F22399A2F800AEA66C /* GrupoLogroView.xib */; };
+		5DBF560623DCCCCA002A6520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D5E231FAA0D005AB2E5 /* LaunchScreen.storyboard */; };
+		5DBF560723DCCCCA002A6520 /* RightBarMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D679DAC2327C819005AB2E5 /* RightBarMenu.xib */; };
+		5DBF560923DCCCCA002A6520 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B15C237E923400718BAA /* CardView.xib */; };
+		5DBF560A23DCCCCA002A6520 /* MostrarCartasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B158237E8FAD00718BAA /* MostrarCartasView.xib */; };
+		5DBF560F23DCCCCA002A6520 /* Logros.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B14A237DB0C000718BAA /* Logros.storyboard */; };
+		5DBF561223DCCCCA002A6520 /* MisDatosFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D778A0F234E32C1006422F2 /* MisDatosFieldView.xib */; };
+		5DBF561323DCCCCA002A6520 /* Init.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE882B32372E9DD002197E0 /* Init.storyboard */; };
+		5DBF561523DCCCCA002A6520 /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D11871323324C1B000AD1DC /* Avatar.storyboard */; };
+		5DBF561623DCCCCA002A6520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D5C231FAA0D005AB2E5 /* Assets.xcassets */; };
+		5DBF561723DCCCCA002A6520 /* NoTrophyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E891233D0136002560A3 /* NoTrophyView.xib */; };
+		5DBF561A23DCCCCA002A6520 /* LogrosHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D4FE50A239FBF8C00E529F7 /* LogrosHeaderView.xib */; };
+		5DBF561C23DCCCCA002A6520 /* TopBarOnlyBack.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DE4B8ED2397076600309213 /* TopBarOnlyBack.xib */; };
+		5DBF561D23DCCCCA002A6520 /* ResumenCartasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AD2383E57D00BE5A6B /* ResumenCartasCell.xib */; };
+		5DBF561E23DCCCCA002A6520 /* CustomScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25E87D233C9E39002560A3 /* CustomScrollView.xib */; };
+		5DBF562223DCCCCA002A6520 /* Foto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8F819023C4B673004A3633 /* Foto.storyboard */; };
+		5DBF562323DCCCCA002A6520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D679D59231FAA0B005AB2E5 /* Main.storyboard */; };
+		5DCAD53A24713175009600C7 /* FiltroTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAD53924713175009600C7 /* FiltroTutorialView.swift */; };
+		5DCAD53B24713175009600C7 /* FiltroTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAD53924713175009600C7 /* FiltroTutorialView.swift */; };
+		5DCAD53C24713175009600C7 /* FiltroTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAD53924713175009600C7 /* FiltroTutorialView.swift */; };
+		5DCAD53E2471318A009600C7 /* FiltroTutorialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCAD53D2471318A009600C7 /* FiltroTutorialView.xib */; };
+		5DCAD53F2471318A009600C7 /* FiltroTutorialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCAD53D2471318A009600C7 /* FiltroTutorialView.xib */; };
+		5DCAD5402471318A009600C7 /* FiltroTutorialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCAD53D2471318A009600C7 /* FiltroTutorialView.xib */; };
+		5DD5F1A82383D05700BE5A6B /* ResumenCartasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1A72383D05700BE5A6B /* ResumenCartasView.swift */; };
+		5DD5F1AA2383D06700BE5A6B /* ResumenCartasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD5F1A92383D06700BE5A6B /* ResumenCartasView.xib */; };
+		5DD5F1AC2383E57000BE5A6B /* ResumenCartasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AB2383E57000BE5A6B /* ResumenCartasCell.swift */; };
+		5DD5F1AE2383E57D00BE5A6B /* ResumenCartasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AD2383E57D00BE5A6B /* ResumenCartasCell.xib */; };
+		5DD5F1B0238550B500BE5A6B /* MapaDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AF238550B500BE5A6B /* MapaDelegates.swift */; };
+		5DD6794B24594B170080FBDD /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6794A24594B170080FBDD /* Welcome.storyboard */; };
+		5DD6794C24594B170080FBDD /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6794A24594B170080FBDD /* Welcome.storyboard */; };
+		5DD6794D24594B170080FBDD /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6794A24594B170080FBDD /* Welcome.storyboard */; };
+		5DD6794F24594B210080FBDD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6794E24594B210080FBDD /* WelcomeViewController.swift */; };
+		5DD6795024594B210080FBDD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6794E24594B210080FBDD /* WelcomeViewController.swift */; };
+		5DD6795124594B210080FBDD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6794E24594B210080FBDD /* WelcomeViewController.swift */; };
+		5DD6795324594B930080FBDD /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795224594B930080FBDD /* WelcomeRouter.swift */; };
+		5DD6795424594B930080FBDD /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795224594B930080FBDD /* WelcomeRouter.swift */; };
+		5DD6795524594B930080FBDD /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795224594B930080FBDD /* WelcomeRouter.swift */; };
+		5DD6795824596C200080FBDD /* GreetingWelcomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795724596C200080FBDD /* GreetingWelcomView.swift */; };
+		5DD6795924596C200080FBDD /* GreetingWelcomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795724596C200080FBDD /* GreetingWelcomView.swift */; };
+		5DD6795A24596C200080FBDD /* GreetingWelcomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795724596C200080FBDD /* GreetingWelcomView.swift */; };
+		5DD6795C24596C320080FBDD /* GreetingWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6795B24596C320080FBDD /* GreetingWelcomeView.xib */; };
+		5DD6795D24596C320080FBDD /* GreetingWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6795B24596C320080FBDD /* GreetingWelcomeView.xib */; };
+		5DD6795E24596C320080FBDD /* GreetingWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6795B24596C320080FBDD /* GreetingWelcomeView.xib */; };
+		5DD6796024596E920080FBDD /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795F24596E920080FBDD /* WelcomePresenter.swift */; };
+		5DD6796124596E920080FBDD /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795F24596E920080FBDD /* WelcomePresenter.swift */; };
+		5DD6796224596E920080FBDD /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795F24596E920080FBDD /* WelcomePresenter.swift */; };
+		5DD67964245AF0A20080FBDD /* UserNameWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD67963245AF0A20080FBDD /* UserNameWelcomeView.swift */; };
+		5DD67965245AF0A20080FBDD /* UserNameWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD67963245AF0A20080FBDD /* UserNameWelcomeView.swift */; };
+		5DD67966245AF0A20080FBDD /* UserNameWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD67963245AF0A20080FBDD /* UserNameWelcomeView.swift */; };
+		5DD67968245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD67967245AF0AF0080FBDD /* UserNameWelcomeView.xib */; };
+		5DD67969245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD67967245AF0AF0080FBDD /* UserNameWelcomeView.xib */; };
+		5DD6796A245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD67967245AF0AF0080FBDD /* UserNameWelcomeView.xib */; };
+		5DD6796C245B34050080FBDD /* PasswordWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6796B245B34050080FBDD /* PasswordWelcomeView.swift */; };
+		5DD6796D245B34050080FBDD /* PasswordWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6796B245B34050080FBDD /* PasswordWelcomeView.swift */; };
+		5DD6796E245B34050080FBDD /* PasswordWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6796B245B34050080FBDD /* PasswordWelcomeView.swift */; };
+		5DD67970245B34110080FBDD /* PasswordWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6796F245B34110080FBDD /* PasswordWelcomeView.xib */; };
+		5DD67971245B34110080FBDD /* PasswordWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6796F245B34110080FBDD /* PasswordWelcomeView.xib */; };
+		5DD67972245B34110080FBDD /* PasswordWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6796F245B34110080FBDD /* PasswordWelcomeView.xib */; };
+		5DD67974245B39FE0080FBDD /* ResumeWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD67973245B39FE0080FBDD /* ResumeWelcomeView.swift */; };
+		5DD67975245B39FE0080FBDD /* ResumeWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD67973245B39FE0080FBDD /* ResumeWelcomeView.swift */; };
+		5DD67976245B39FE0080FBDD /* ResumeWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD67973245B39FE0080FBDD /* ResumeWelcomeView.swift */; };
+		5DD67978245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD67977245B3A0F0080FBDD /* ResumeWelcomeView.xib */; };
+		5DD67979245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD67977245B3A0F0080FBDD /* ResumeWelcomeView.xib */; };
+		5DD6797A245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD67977245B3A0F0080FBDD /* ResumeWelcomeView.xib */; };
+		5DDE465523425F7800909A2B /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE465423425F7800909A2B /* OptionsViewController.swift */; };
+		5DE0CC64247065F400277FD2 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC63247065F400277FD2 /* CircularProgressView.swift */; };
+		5DE0CC65247065F400277FD2 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC63247065F400277FD2 /* CircularProgressView.swift */; };
+		5DE0CC66247065F400277FD2 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC63247065F400277FD2 /* CircularProgressView.swift */; };
+		5DE0CC682471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC672471284B00277FD2 /* FiltrosTutorialViewController.swift */; };
+		5DE0CC692471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC672471284B00277FD2 /* FiltrosTutorialViewController.swift */; };
+		5DE0CC6A2471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC672471284B00277FD2 /* FiltrosTutorialViewController.swift */; };
+		5DE0CC6C2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CC6B2471287500277FD2 /* FiltrosTutorial.storyboard */; };
+		5DE0CC6D2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CC6B2471287500277FD2 /* FiltrosTutorial.storyboard */; };
+		5DE0CC6E2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CC6B2471287500277FD2 /* FiltrosTutorial.storyboard */; };
+		5DE0CC7124712A4900277FD2 /* FiltrosTutorialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC7024712A4900277FD2 /* FiltrosTutorialRouter.swift */; };
+		5DE0CC7224712A4900277FD2 /* FiltrosTutorialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC7024712A4900277FD2 /* FiltrosTutorialRouter.swift */; };
+		5DE0CC7324712A4900277FD2 /* FiltrosTutorialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC7024712A4900277FD2 /* FiltrosTutorialRouter.swift */; };
+		5DE21C04234CD77900C37015 /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C03234CD77900C37015 /* PersonalDataViewController.swift */; };
+		5DE21C06234CDBE400C37015 /* PersonalDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C05234CDBE400C37015 /* PersonalDataRouter.swift */; };
+		5DE21C08234CDD0B00C37015 /* PersonalDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE21C07234CDD0B00C37015 /* PersonalDataPresenter.swift */; };
+		5DE4B8EC2397074B00309213 /* TopBarOnlyBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE4B8EB2397074B00309213 /* TopBarOnlyBack.swift */; };
+		5DE4B8EE2397076600309213 /* TopBarOnlyBack.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DE4B8ED2397076600309213 /* TopBarOnlyBack.xib */; };
+		5DE882AC2372B3EC002197E0 /* FiltrosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882AB2372B3EC002197E0 /* FiltrosManager.swift */; };
+		5DE882B42372E9DD002197E0 /* Init.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE882B32372E9DD002197E0 /* Init.storyboard */; };
+		5DE882B72372E9FF002197E0 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882B62372E9FF002197E0 /* InitViewController.swift */; };
+		5DE882B92372EA6C002197E0 /* InitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE882B82372EA6C002197E0 /* InitRouter.swift */; };
+		5DEAB347245C8B88008E7D95 /* ChooseAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB346245C8B88008E7D95 /* ChooseAvatarViewController.swift */; };
+		5DEAB348245C8B88008E7D95 /* ChooseAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB346245C8B88008E7D95 /* ChooseAvatarViewController.swift */; };
+		5DEAB349245C8B88008E7D95 /* ChooseAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB346245C8B88008E7D95 /* ChooseAvatarViewController.swift */; };
+		5DEAB34B245C8B94008E7D95 /* ChooseAvatarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB34A245C8B94008E7D95 /* ChooseAvatarRouter.swift */; };
+		5DEAB34C245C8B94008E7D95 /* ChooseAvatarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB34A245C8B94008E7D95 /* ChooseAvatarRouter.swift */; };
+		5DEAB34D245C8B94008E7D95 /* ChooseAvatarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB34A245C8B94008E7D95 /* ChooseAvatarRouter.swift */; };
+		5DEAB34F245C8BA1008E7D95 /* ChooseAvatarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB34E245C8BA1008E7D95 /* ChooseAvatarPresenter.swift */; };
+		5DEAB350245C8BA1008E7D95 /* ChooseAvatarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB34E245C8BA1008E7D95 /* ChooseAvatarPresenter.swift */; };
+		5DEAB351245C8BA1008E7D95 /* ChooseAvatarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB34E245C8BA1008E7D95 /* ChooseAvatarPresenter.swift */; };
+		5DEAB353245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */; };
+		5DEAB354245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */; };
+		5DEAB355245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */; };
+		5DEAB35B245D2890008E7D95 /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */; };
+		5DEAB35C245D2890008E7D95 /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */; };
+		5DEAB35D245D2890008E7D95 /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */; };
+		5DEAB35F245D28FF008E7D95 /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */; };
+		5DEAB360245D28FF008E7D95 /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */; };
+		5DEAB361245D28FF008E7D95 /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */; };
+		5DEAB363245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */; };
+		5DEAB364245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */; };
+		5DEAB365245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */; };
+		5DEAB367245D2B04008E7D95 /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */; };
+		5DEAB368245D2B04008E7D95 /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */; };
+		5DEAB369245D2B04008E7D95 /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */; };
+		5DEAB36B245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */; };
+		5DEAB36C245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */; };
+		5DEAB36D245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */; };
+		5DEAB36F245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */; };
+		5DEAB370245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */; };
+		5DEAB371245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */; };
+		5DEAB373245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */; };
+		5DEAB374245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */; };
+		5DEAB375245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */; };
+		5DEAB377245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */; };
+		5DEAB378245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */; };
+		5DEAB379245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */; };
+		5DF6D5102369874B007C3774 /* FiltrosCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */; };
+		5DF8DADF2370D82E009A14C0 /* ApiBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8DADE2370D82E009A14C0 /* ApiBase.swift */; };
+		5DFDE1F92363194500320C8F /* MisDatosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */; };
+		8EB745FE4C35DBDC65BC0A7D /* Pods_Viajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */; };
+		9F757E078EA6042FDFFC1F2D /* Pods_Viajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */; };
+		A022B5EBED3F5133DDB59F65 /* Pods_Viajero_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2095B3CA4A9A7B1D1B55BBAA /* Pods_Viajero_Demo.framework */; };
+		DE6768D892E5C8436E6E9211 /* Pods_Viajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5D2E2389250E2ADD002EF48D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D2E238B250E2ADE002EF48D /* MapboxMobileEvents.framework in Embed Frameworks */,
+				5D2E2388250E2ADC002EF48D /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D6A2BA923D4D78A00404A6B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D6A2C4523D4D86F00404A6B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA1AF4F240C382200407276 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DA1AF4E240C382200407276 /* Pods_ViajeroDev.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DBF562523DCCCCA002A6520 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5D679D52231FAA0B005AB2E5 /* Viajero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1FB964DA82D1A951B338DE /* Pods_ViajeroDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViajeroDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2095B3CA4A9A7B1D1B55BBAA /* Pods_Viajero_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viajero_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D6B1DFBB5D028A8F0302AA /* Pods-Viajero Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero Demo.release.xcconfig"; path = "Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo.release.xcconfig"; sourceTree = "<group>"; };
+		5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginManualViewController.swift; path = ../../../../../../LoginManualViewController.swift; sourceTree = "<group>"; };
+		5D040B6E24F8E84100A01263 /* LoginManual.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginManual.storyboard; sourceTree = "<group>"; };
+		5D040B7224F8EB2800A01263 /* LoginManualRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManualRouter.swift; sourceTree = "<group>"; };
+		5D040B7724F8F61300A01263 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		5D040B7B24F8F63F00A01263 /* BaseWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWorker.swift; sourceTree = "<group>"; };
+		5D040B8024F90D3900A01263 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = Viajero/Helpers/Base/Usuario.swift; sourceTree = SOURCE_ROOT; };
+		5D040B8424F9172000A01263 /* LoginManualPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManualPresenter.swift; sourceTree = "<group>"; };
+		5D040B8824FC2BAF00A01263 /* Lugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
+		5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarWorker.swift; sourceTree = "<group>"; };
+		5D1186EB2330C21C000AD1DC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5D11871323324C1B000AD1DC /* Avatar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Avatar.storyboard; sourceTree = "<group>"; };
+		5D11871B23327B5D000AD1DC /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		5D16DA512378B4E700690CC8 /* Categorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorias.swift; sourceTree = "<group>"; };
+		5D16DA7F2379846200690CC8 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		5D1C5E472369EF4B002EF6D4 /* LugaresCached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugaresCached.swift; sourceTree = "<group>"; };
+		5D1E8CC823992B9400F23C8C /* Pasaporte.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pasaporte.storyboard; sourceTree = "<group>"; };
+		5D1E8CCA23992BAF00F23C8C /* PasaporteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasaporteViewController.swift; sourceTree = "<group>"; };
+		5D1E8CCC23992C0700F23C8C /* PasaporteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasaporteRouter.swift; sourceTree = "<group>"; };
+		5D1E8CCE23992FBD00F23C8C /* PasaportePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasaportePresenter.swift; sourceTree = "<group>"; };
+		5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Walking.dae; sourceTree = "<group>"; };
+		5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Standing.dae; sourceTree = "<group>"; };
+		5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Dancing.dae; sourceTree = "<group>"; };
+		5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Walking.dae; sourceTree = "<group>"; };
+		5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Standing.dae; sourceTree = "<group>"; };
+		5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Dancing.dae; sourceTree = "<group>"; };
+		5D1FD3AC2532DE060044FCE8 /* confeti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confeti.json; sourceTree = "<group>"; };
+		5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerinosWorker.swift; sourceTree = "<group>"; };
+		5D1FD3B92534C2C80044FCE8 /* LugaresInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugaresInteractor.swift; sourceTree = "<group>"; };
+		5D1FD3C52534EFB30044FCE8 /* fireworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fireworks.json; sourceTree = "<group>"; };
+		5D25E871233A6581002560A3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5D25E876233B488A002560A3 /* LugarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarDetailViewController.swift; sourceTree = "<group>"; };
+		5D25E878233B48E2002560A3 /* LugarDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarDetailRouter.swift; sourceTree = "<group>"; };
+		5D25E87B233C9E2A002560A3 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		5D25E87D233C9E39002560A3 /* CustomScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomScrollView.xib; sourceTree = "<group>"; };
+		5D25E87F233CA9B0002560A3 /* LugarDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarDetailPresenter.swift; sourceTree = "<group>"; };
+		5D25E887233CC7CB002560A3 /* TrophyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyView.swift; sourceTree = "<group>"; };
+		5D25E889233CC7DE002560A3 /* TrophyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrophyView.xib; sourceTree = "<group>"; };
+		5D25E88F233D0108002560A3 /* NoTrophyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTrophyView.swift; sourceTree = "<group>"; };
+		5D25E891233D0136002560A3 /* NoTrophyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoTrophyView.xib; sourceTree = "<group>"; };
+		5D25E893233D049E002560A3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5D25E896233D05E0002560A3 /* LocationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEngine.swift; sourceTree = "<group>"; };
+		5D25E8A2233E2B3D002560A3 /* GeneralCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCard.swift; sourceTree = "<group>"; };
+		5D25E8A4233E2B5A002560A3 /* GeneralCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralCard.xib; sourceTree = "<group>"; };
+		5D2AC6F02399A2D800AEA66C /* GrupoLogroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrupoLogroView.swift; sourceTree = "<group>"; };
+		5D2AC6F22399A2F800AEA66C /* GrupoLogroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrupoLogroView.xib; sourceTree = "<group>"; };
+		5D2D147023DCD0A400AAA99B /* LugaresWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugaresWorkerDemo.swift; sourceTree = "<group>"; };
+		5D2D147223DCD0FB00AAA99B /* LoginWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerDemo.swift; sourceTree = "<group>"; };
+		5D2D147423DCD14900AAA99B /* UserProfileWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileWorkerDemo.swift; sourceTree = "<group>"; };
+		5D2E2366250C7C26002EF48D /* PasaporteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasaporteWorker.swift; sourceTree = "<group>"; };
+		5D2E236A250C7CF6002EF48D /* Logro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logro.swift; sourceTree = "<group>"; };
+		5D2E236F250C82CC002EF48D /* CamerinosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CamerinosViewController.swift; path = Viajero/NewAPI/NewData/CamerinosViewController.swift; sourceTree = SOURCE_ROOT; };
+		5D2E2373250C82E9002EF48D /* Camerinos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camerinos.storyboard; sourceTree = "<group>"; };
+		5D2E2377250C830A002EF48D /* CamerinosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerinosRouter.swift; sourceTree = "<group>"; };
+		5D2E237F250E28E0002EF48D /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingWorker.swift; sourceTree = "<group>"; };
+		5D3AB9AD2516B49400D17E08 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
+		5D4FE50A239FBF8C00E529F7 /* LogrosHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogrosHeaderView.xib; sourceTree = "<group>"; };
+		5D4FE50C239FBFD700E529F7 /* LogrosHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosHeaderView.swift; sourceTree = "<group>"; };
+		5D59AC2E2452CB5D00B9C461 /* GrupoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrupoView.swift; sourceTree = "<group>"; };
+		5D613BF225081691005732FC /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		5D613BF6250818BC005732FC /* AvatarWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarWorker.swift; sourceTree = "<group>"; };
+		5D613BFA250821D7005732FC /* RegistroWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroWorker.swift; sourceTree = "<group>"; };
+		5D679D52231FAA0B005AB2E5 /* WanderPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D679D55231FAA0B005AB2E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D679D57231FAA0B005AB2E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D679D5A231FAA0B005AB2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D679D5C231FAA0D005AB2E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D679D5F231FAA0D005AB2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5D679D61231FAA0D005AB2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D679D68231FABFB005AB2E5 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		5D679D6E231FAFD0005AB2E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5D679D74231FB506005AB2E5 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		5D679D7723211B81005AB2E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5D679D7C23215A53005AB2E5 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		5D679D7E23215BDC005AB2E5 /* MapaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaRouter.swift; sourceTree = "<group>"; };
+		5D679DAA2327C80C005AB2E5 /* RightBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarMenu.swift; sourceTree = "<group>"; };
+		5D679DAC2327C819005AB2E5 /* RightBarMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightBarMenu.xib; sourceTree = "<group>"; };
+		5D679DB12327CE7B005AB2E5 /* LugaresManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugaresManager.swift; sourceTree = "<group>"; };
+		5D679DB32327CE98005AB2E5 /* MapaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaPresenter.swift; sourceTree = "<group>"; };
+		5D6A2C4923D4D86F00404A6B /* ViajeroDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViajeroDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6A2C4A23D4D86F00404A6B /* Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Dev.plist"; path = "/Users/mikellopez/Documents/DESARROLLOS/VIAJERO/Viajero/Info-Dev.plist"; sourceTree = "<absolute>"; };
+		5D6DCF6723E5ED3500102FCB /* RankingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingPresenter.swift; sourceTree = "<group>"; };
+		5D778A08234E2C6F006422F2 /* MisDatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosViewController.swift; sourceTree = "<group>"; };
+		5D778A0A234E2CD4006422F2 /* MisDatosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosRouter.swift; sourceTree = "<group>"; };
+		5D778A0D234E32B0006422F2 /* MisDatosFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosFieldView.swift; sourceTree = "<group>"; };
+		5D778A0F234E32C1006422F2 /* MisDatosFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MisDatosFieldView.xib; sourceTree = "<group>"; };
+		5D80B148237DB0B500718BAA /* LogrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosViewController.swift; sourceTree = "<group>"; };
+		5D80B14A237DB0C000718BAA /* Logros.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logros.storyboard; sourceTree = "<group>"; };
+		5D80B14C237DB0D000718BAA /* LogrosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosRouter.swift; sourceTree = "<group>"; };
+		5D80B14E237DB0E900718BAA /* LogrosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosPresenter.swift; sourceTree = "<group>"; };
+		5D80B153237E8B2A00718BAA /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		5D80B156237E8FA100718BAA /* MostrarCartasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostrarCartasView.swift; sourceTree = "<group>"; };
+		5D80B158237E8FAD00718BAA /* MostrarCartasView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostrarCartasView.xib; sourceTree = "<group>"; };
+		5D80B15A237E921200718BAA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5D80B15C237E923400718BAA /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		5D857D9023DF1D0500A34048 /* LogroWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogroWorkerDemo.swift; sourceTree = "<group>"; };
+		5D857D9223DF1DE100A34048 /* GetAllLogrosWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllLogrosWorkerDemo.swift; sourceTree = "<group>"; };
+		5D857D9523E08D0E00A34048 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		5D857D9923E08D3900A34048 /* RankingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRouter.swift; sourceTree = "<group>"; };
+		5D857D9D23E08D6200A34048 /* Ranking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ranking.storyboard; sourceTree = "<group>"; };
+		5D857DA223E0911400A34048 /* RankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
+		5D891307246080E200D040BF /* InteresesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteresesCell.swift; sourceTree = "<group>"; };
+		5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Walking.dae; sourceTree = "<group>"; };
+		5D8F818E23C4B64C004A3633 /* TomarFotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomarFotoViewController.swift; sourceTree = "<group>"; };
+		5D8F819023C4B673004A3633 /* Foto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Foto.storyboard; sourceTree = "<group>"; };
+		5D8F819223C4B696004A3633 /* TomarFotoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomarFotoRouter.swift; sourceTree = "<group>"; };
+		5D99E9A42368376F00CABA2D /* AvisosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisosViewController.swift; sourceTree = "<group>"; };
+		5D99E9A62368379900CABA2D /* Avisos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Avisos.storyboard; sourceTree = "<group>"; };
+		5D99E9A82368381C00CABA2D /* AvisosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisosRouter.swift; sourceTree = "<group>"; };
+		5D99E9AA23683AFC00CABA2D /* AvisosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisosPresenter.swift; sourceTree = "<group>"; };
+		5D99E9AD23683C3700CABA2D /* AvisoStandar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisoStandar.swift; sourceTree = "<group>"; };
+		5D99E9AF23683C5100CABA2D /* AvisoStandar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvisoStandar.xib; sourceTree = "<group>"; };
+		5DA18A992513CE1900DE90AE /* LogroWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogroWorker.swift; sourceTree = "<group>"; };
+		5DA1AF3E240C2E5B00407276 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA1AF45240C379900407276 /* Pods_ViajeroDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ViajeroDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA1AF4C240C382200407276 /* Pods_ViajeroDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ViajeroDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA22F5E3FBD899BAE5984DA /* Pods-Viajero Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero Demo.debug.xcconfig"; path = "Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		5DA25B9C244CB4BA00BE6107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA577C923CCB994002D99B8 /* FiltroFotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltroFotoView.swift; sourceTree = "<group>"; };
+		5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Profesor_Saluda.dae; sourceTree = "<group>"; };
+		5DB6DD4D24570D6F009764F1 /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Profesor_Habla.dae; sourceTree = "<group>"; };
+		5DB6DD61245741FC009764F1 /* ProfesorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfesorView.xib; sourceTree = "<group>"; };
+		5DB6DD6524574208009764F1 /* ProfesorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfesorView.swift; sourceTree = "<group>"; };
+		5DBF558B23DC75E7002A6520 /* PersonalDataCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCollectionCell.swift; sourceTree = "<group>"; };
+		5DBF562923DCCCCA002A6520 /* Viajero Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viajero Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBF562A23DCCCCB002A6520 /* ViajeroDev copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ViajeroDev copy-Info.plist"; path = "/Users/mikellopez/Documents/DESARROLLOS/VIAJERO/Viajero/ViajeroDev copy-Info.plist"; sourceTree = "<absolute>"; };
+		5DCAD53924713175009600C7 /* FiltroTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltroTutorialView.swift; sourceTree = "<group>"; };
+		5DCAD53D2471318A009600C7 /* FiltroTutorialView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiltroTutorialView.xib; sourceTree = "<group>"; };
+		5DD5F1A72383D05700BE5A6B /* ResumenCartasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenCartasView.swift; sourceTree = "<group>"; };
+		5DD5F1A92383D06700BE5A6B /* ResumenCartasView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumenCartasView.xib; sourceTree = "<group>"; };
+		5DD5F1AB2383E57000BE5A6B /* ResumenCartasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenCartasCell.swift; sourceTree = "<group>"; };
+		5DD5F1AD2383E57D00BE5A6B /* ResumenCartasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumenCartasCell.xib; sourceTree = "<group>"; };
+		5DD5F1AF238550B500BE5A6B /* MapaDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaDelegates.swift; sourceTree = "<group>"; };
+		5DD6794A24594B170080FBDD /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		5DD6794E24594B210080FBDD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5DD6795224594B930080FBDD /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		5DD6795724596C200080FBDD /* GreetingWelcomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingWelcomView.swift; sourceTree = "<group>"; };
+		5DD6795B24596C320080FBDD /* GreetingWelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingWelcomeView.xib; sourceTree = "<group>"; };
+		5DD6795F24596E920080FBDD /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		5DD67963245AF0A20080FBDD /* UserNameWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameWelcomeView.swift; sourceTree = "<group>"; };
+		5DD67967245AF0AF0080FBDD /* UserNameWelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNameWelcomeView.xib; sourceTree = "<group>"; };
+		5DD6796B245B34050080FBDD /* PasswordWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordWelcomeView.swift; sourceTree = "<group>"; };
+		5DD6796F245B34110080FBDD /* PasswordWelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordWelcomeView.xib; sourceTree = "<group>"; };
+		5DD67973245B39FE0080FBDD /* ResumeWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeWelcomeView.swift; sourceTree = "<group>"; };
+		5DD67977245B3A0F0080FBDD /* ResumeWelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumeWelcomeView.xib; sourceTree = "<group>"; };
+		5DDE465423425F7800909A2B /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		5DE0CC63247065F400277FD2 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		5DE0CC672471284B00277FD2 /* FiltrosTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiltrosTutorialViewController.swift; path = "../New Group/FiltrosTutorialViewController.swift"; sourceTree = "<group>"; };
+		5DE0CC6B2471287500277FD2 /* FiltrosTutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FiltrosTutorial.storyboard; sourceTree = "<group>"; };
+		5DE0CC7024712A4900277FD2 /* FiltrosTutorialRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltrosTutorialRouter.swift; sourceTree = "<group>"; };
+		5DE21C03234CD77900C37015 /* PersonalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
+		5DE21C05234CDBE400C37015 /* PersonalDataRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataRouter.swift; sourceTree = "<group>"; };
+		5DE21C07234CDD0B00C37015 /* PersonalDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataPresenter.swift; sourceTree = "<group>"; };
+		5DE4B8EB2397074B00309213 /* TopBarOnlyBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarOnlyBack.swift; sourceTree = "<group>"; };
+		5DE4B8ED2397076600309213 /* TopBarOnlyBack.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBarOnlyBack.xib; sourceTree = "<group>"; };
+		5DE882AB2372B3EC002197E0 /* FiltrosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltrosManager.swift; sourceTree = "<group>"; };
+		5DE882B32372E9DD002197E0 /* Init.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Init.storyboard; sourceTree = "<group>"; };
+		5DE882B62372E9FF002197E0 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		5DE882B82372EA6C002197E0 /* InitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitRouter.swift; sourceTree = "<group>"; };
+		5DEAB346245C8B88008E7D95 /* ChooseAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAvatarViewController.swift; sourceTree = "<group>"; };
+		5DEAB34A245C8B94008E7D95 /* ChooseAvatarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAvatarRouter.swift; sourceTree = "<group>"; };
+		5DEAB34E245C8BA1008E7D95 /* ChooseAvatarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAvatarPresenter.swift; sourceTree = "<group>"; };
+		5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseAvatar.storyboard; sourceTree = "<group>"; };
+		5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Playero_Standing.dae; sourceTree = "<group>"; };
+		5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Playero_Walking.dae; sourceTree = "<group>"; };
+		5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Dancing.dae; sourceTree = "<group>"; };
+		5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Standing.dae; sourceTree = "<group>"; };
+		5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Walking.dae; sourceTree = "<group>"; };
+		5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Dancing.dae; sourceTree = "<group>"; };
+		5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Standing.dae; sourceTree = "<group>"; };
+		5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarChooseCell.swift; sourceTree = "<group>"; };
+		5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltrosCollectionCell.swift; sourceTree = "<group>"; };
+		5DF8DADE2370D82E009A14C0 /* ApiBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBase.swift; sourceTree = "<group>"; };
+		5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosPresenter.swift; sourceTree = "<group>"; };
+		6ECC041EC03E6B3E569B051D /* Pods-Viajero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero.release.xcconfig"; path = "Target Support Files/Pods-Viajero/Pods-Viajero.release.xcconfig"; sourceTree = "<group>"; };
+		8534A236D37AF7A42E4F07CA /* Pods-ViajeroDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajeroDev.release.xcconfig"; path = "Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev.release.xcconfig"; sourceTree = "<group>"; };
+		8616E6355DD2828B52EBFDAB /* Pods-ViajeroDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajeroDev.debug.xcconfig"; path = "Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev.debug.xcconfig"; sourceTree = "<group>"; };
+		928B14B6D74C4C5FA0972F8C /* Pods-Viajero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero.debug.xcconfig"; path = "Target Support Files/Pods-Viajero/Pods-Viajero.debug.xcconfig"; sourceTree = "<group>"; };
+		E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viajero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,24 +745,229 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F757E078EA6042FDFFC1F2D /* Pods_Viajero.framework in Frameworks */,
+				5D2E238A250E2ADE002EF48D /* MapboxMobileEvents.framework in Frameworks */,
+				8EB745FE4C35DBDC65BC0A7D /* Pods_Viajero.framework in Frameworks */,
+				DE6768D892E5C8436E6E9211 /* Pods_Viajero.framework in Frameworks */,
+				5D2E2387250E2ADC002EF48D /* Mapbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D6A2C1823D4D86F00404A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2E2385250E28F6002EF48D /* MapboxMobileEvents.framework in Frameworks */,
+				5DA1AF4D240C382200407276 /* Pods_ViajeroDev.framework in Frameworks */,
+				5D2E2381250E28E0002EF48D /* Mapbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DBF55F923DCCCCA002A6520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2E2386250E28F6002EF48D /* MapboxMobileEvents.framework in Frameworks */,
+				A022B5EBED3F5133DDB59F65 /* Pods_Viajero_Demo.framework in Frameworks */,
+				5D2E2382250E28E0002EF48D /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		407009F6382DEEEB60EED429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				928B14B6D74C4C5FA0972F8C /* Pods-Viajero.debug.xcconfig */,
+				6ECC041EC03E6B3E569B051D /* Pods-Viajero.release.xcconfig */,
+				5DA22F5E3FBD899BAE5984DA /* Pods-Viajero Demo.debug.xcconfig */,
+				22D6B1DFBB5D028A8F0302AA /* Pods-Viajero Demo.release.xcconfig */,
+				8616E6355DD2828B52EBFDAB /* Pods-ViajeroDev.debug.xcconfig */,
+				8534A236D37AF7A42E4F07CA /* Pods-ViajeroDev.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5D040B6924F8E7FF00A01263 /* LoginManual */ = {
+			isa = PBXGroup;
+			children = (
+				5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */,
+				5D040B6E24F8E84100A01263 /* LoginManual.storyboard */,
+				5D040B7224F8EB2800A01263 /* LoginManualRouter.swift */,
+				5D040B8424F9172000A01263 /* LoginManualPresenter.swift */,
+			);
+			path = LoginManual;
+			sourceTree = "<group>";
+		};
+		5D040B7624F8F5F700A01263 /* NewAPI */ = {
+			isa = PBXGroup;
+			children = (
+				5D040B7F24F90D2700A01263 /* NewData */,
+				5D040B7724F8F61300A01263 /* LoginWorker.swift */,
+				5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */,
+				5D613BF6250818BC005732FC /* AvatarWorker.swift */,
+				5D613BFA250821D7005732FC /* RegistroWorker.swift */,
+				5D2E2366250C7C26002EF48D /* PasaporteWorker.swift */,
+				5DA18A992513CE1900DE90AE /* LogroWorker.swift */,
+				5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */,
+				5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */,
+			);
+			path = NewAPI;
+			sourceTree = "<group>";
+		};
+		5D040B7F24F90D2700A01263 /* NewData */ = {
+			isa = PBXGroup;
+			children = (
+				5D040B8024F90D3900A01263 /* Usuario.swift */,
+				5D040B8824FC2BAF00A01263 /* Lugar.swift */,
+				5D613BF225081691005732FC /* Avatar.swift */,
+				5D2E236A250C7CF6002EF48D /* Logro.swift */,
+				5D3AB9AD2516B49400D17E08 /* Ranking.swift */,
+				5D16DA512378B4E700690CC8 /* Categorias.swift */,
+			);
+			path = NewData;
+			sourceTree = "<group>";
+		};
+		5D1E8CC723992B7600F23C8C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5D1E8CC823992B9400F23C8C /* Pasaporte.storyboard */,
+				5D1E8CCA23992BAF00F23C8C /* PasaporteViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5D25E875233B486F002560A3 /* LugarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5D25E87A233C9E0F002560A3 /* ScrollImage */,
+				5D25E876233B488A002560A3 /* LugarDetailViewController.swift */,
+				5D25E878233B48E2002560A3 /* LugarDetailRouter.swift */,
+				5D25E87F233CA9B0002560A3 /* LugarDetailPresenter.swift */,
+			);
+			path = LugarDetail;
+			sourceTree = "<group>";
+		};
+		5D25E87A233C9E0F002560A3 /* ScrollImage */ = {
+			isa = PBXGroup;
+			children = (
+				5D25E87B233C9E2A002560A3 /* CustomScrollView.swift */,
+				5D25E87D233C9E39002560A3 /* CustomScrollView.xib */,
+			);
+			path = ScrollImage;
+			sourceTree = "<group>";
+		};
+		5D25E881233CC5B1002560A3 /* Pasaporte */ = {
+			isa = PBXGroup;
+			children = (
+				5D25E886233CC7BF002560A3 /* components */,
+				5D1E8CC723992B7600F23C8C /* view */,
+				5D1E8CCE23992FBD00F23C8C /* PasaportePresenter.swift */,
+				5D1E8CCC23992C0700F23C8C /* PasaporteRouter.swift */,
+			);
+			path = Pasaporte;
+			sourceTree = "<group>";
+		};
+		5D25E886233CC7BF002560A3 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5D25E887233CC7CB002560A3 /* TrophyView.swift */,
+				5D25E889233CC7DE002560A3 /* TrophyView.xib */,
+				5D679D74231FB506005AB2E5 /* ColumnFlowLayout.swift */,
+				5D25E88F233D0108002560A3 /* NoTrophyView.swift */,
+				5D25E891233D0136002560A3 /* NoTrophyView.xib */,
+				5D2AC6F02399A2D800AEA66C /* GrupoLogroView.swift */,
+				5D2AC6F22399A2F800AEA66C /* GrupoLogroView.xib */,
+				5D4FE50C239FBFD700E529F7 /* LogrosHeaderView.swift */,
+				5D4FE50A239FBF8C00E529F7 /* LogrosHeaderView.xib */,
+				5D59AC2E2452CB5D00B9C461 /* GrupoView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		5D25E895233D05D3002560A3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				5D25E893233D049E002560A3 /* LocationManager.swift */,
+				5D25E896233D05E0002560A3 /* LocationEngine.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		5D25E8A1233E2B2C002560A3 /* Cartas */ = {
+			isa = PBXGroup;
+			children = (
+				5D25E8A2233E2B3D002560A3 /* GeneralCard.swift */,
+				5D25E8A4233E2B5A002560A3 /* GeneralCard.xib */,
+			);
+			path = Cartas;
+			sourceTree = "<group>";
+		};
+		5D2D146F23DCD08800AAA99B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5D2D147023DCD0A400AAA99B /* LugaresWorkerDemo.swift */,
+				5D2D147223DCD0FB00AAA99B /* LoginWorkerDemo.swift */,
+				5D2D147423DCD14900AAA99B /* UserProfileWorkerDemo.swift */,
+				5D857D9023DF1D0500A34048 /* LogroWorkerDemo.swift */,
+				5D857D9223DF1DE100A34048 /* GetAllLogrosWorkerDemo.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5D2E236E250C82BC002EF48D /* Camerinos */ = {
+			isa = PBXGroup;
+			children = (
+				5D2E236F250C82CC002EF48D /* CamerinosViewController.swift */,
+				5D2E2373250C82E9002EF48D /* Camerinos.storyboard */,
+				5D2E2377250C830A002EF48D /* CamerinosRouter.swift */,
+			);
+			path = Camerinos;
+			sourceTree = "<group>";
+		};
+		5D59AC322454327700B9C461 /* DAE */ = {
+			isa = PBXGroup;
+			children = (
+				5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */,
+				5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */,
+				5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */,
+				5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */,
+				5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */,
+				5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */,
+				5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */,
+				5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */,
+				5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */,
+				5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */,
+				5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */,
+				5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */,
+				5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */,
+				5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */,
+				5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */,
+				5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */,
+				5DB6DD4D24570D6F009764F1 /* textures */,
+			);
+			path = DAE;
+			sourceTree = "<group>";
+		};
 		5D679D49231FAA0B005AB2E5 = {
 			isa = PBXGroup;
 			children = (
 				5D679D54231FAA0B005AB2E5 /* Viajero */,
 				5D679D53231FAA0B005AB2E5 /* Products */,
+				5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */,
+				5D2E237F250E28E0002EF48D /* Mapbox.framework */,
+				407009F6382DEEEB60EED429 /* Pods */,
+				B55D17DDF7404ACF2C9B6FB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		5D679D53231FAA0B005AB2E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D679D52231FAA0B005AB2E5 /* Viajero.app */,
+				5D679D52231FAA0B005AB2E5 /* WanderPlay.app */,
+				5D6A2C4923D4D86F00404A6B /* ViajeroDev.app */,
+				5DBF562923DCCCCA002A6520 /* Viajero Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +975,369 @@
 		5D679D54231FAA0B005AB2E5 /* Viajero */ = {
 			isa = PBXGroup;
 			children = (
+				5D040B7624F8F5F700A01263 /* NewAPI */,
+				5D876A2B2456D84C00ABE45F /* Inicio */,
+				5D59AC322454327700B9C461 /* DAE */,
+				5DA1AF50240ED9C500407276 /* PLIST */,
+				5D679D7B23215A46005AB2E5 /* Mapa */,
+				5DF6D50623689968007C3774 /* API */,
+				5DE21C02234CD73600C37015 /* PersonalData */,
+				5D679D6D231FAFC3005AB2E5 /* Helpers */,
+				5D679D67231FABD7005AB2E5 /* StoryBoards */,
 				5D679D55231FAA0B005AB2E5 /* AppDelegate.swift */,
-				5D679D57231FAA0B005AB2E5 /* ViewController.swift */,
-				5D679D59231FAA0B005AB2E5 /* Main.storyboard */,
 				5D679D5C231FAA0D005AB2E5 /* Assets.xcassets */,
 				5D679D5E231FAA0D005AB2E5 /* LaunchScreen.storyboard */,
-				5D679D61231FAA0D005AB2E5 /* Info.plist */,
 			);
 			path = Viajero;
+			sourceTree = "<group>";
+		};
+		5D679D67231FABD7005AB2E5 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				5D679D59231FAA0B005AB2E5 /* Main.storyboard */,
+				5D11871323324C1B000AD1DC /* Avatar.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		5D679D6D231FAFC3005AB2E5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE4B8EF239712A700309213 /* Animations */,
+				5DE4B8EA2397072700309213 /* TopBar */,
+				5D80B152237E8B1400718BAA /* Base */,
+				5D99E9A32368281100CABA2D /* Avisos */,
+				5D25E8A1233E2B2C002560A3 /* Cartas */,
+				5D25E895233D05D3002560A3 /* Location */,
+				5D1186EB2330C21C000AD1DC /* Colors.swift */,
+				5D25E871233A6581002560A3 /* Extensions.swift */,
+				5D16DA7F2379846200690CC8 /* Reachability.swift */,
+				5DE0CC63247065F400277FD2 /* CircularProgressView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5D679D7B23215A46005AB2E5 /* Mapa */ = {
+			isa = PBXGroup;
+			children = (
+				5D80B147237DB09D00718BAA /* Logros */,
+				5D25E875233B486F002560A3 /* LugarDetail */,
+				5D679DA52327C32C005AB2E5 /* Menus */,
+				5D679D7C23215A53005AB2E5 /* MapaViewController.swift */,
+				5D679D7E23215BDC005AB2E5 /* MapaRouter.swift */,
+				5D679DB32327CE98005AB2E5 /* MapaPresenter.swift */,
+				5DDE465423425F7800909A2B /* OptionsViewController.swift */,
+				5DD5F1AF238550B500BE5A6B /* MapaDelegates.swift */,
+			);
+			path = Mapa;
+			sourceTree = "<group>";
+		};
+		5D679DA52327C32C005AB2E5 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				5DF6D5092369853C007C3774 /* Filtros */,
+				5D679DAA2327C80C005AB2E5 /* RightBarMenu.swift */,
+				5D679DAC2327C819005AB2E5 /* RightBarMenu.xib */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
+		5D778A07234E2C21006422F2 /* MisDatos */ = {
+			isa = PBXGroup;
+			children = (
+				5D778A0C234E3290006422F2 /* components */,
+				5D778A08234E2C6F006422F2 /* MisDatosViewController.swift */,
+				5D778A0A234E2CD4006422F2 /* MisDatosRouter.swift */,
+				5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */,
+			);
+			path = MisDatos;
+			sourceTree = "<group>";
+		};
+		5D778A0C234E3290006422F2 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5D778A0D234E32B0006422F2 /* MisDatosFieldView.swift */,
+				5D778A0F234E32C1006422F2 /* MisDatosFieldView.xib */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		5D80B147237DB09D00718BAA /* Logros */ = {
+			isa = PBXGroup;
+			children = (
+				5D80B155237E8F7700718BAA /* componentes */,
+				5D80B148237DB0B500718BAA /* LogrosViewController.swift */,
+				5D80B14A237DB0C000718BAA /* Logros.storyboard */,
+				5D80B14C237DB0D000718BAA /* LogrosRouter.swift */,
+				5D80B14E237DB0E900718BAA /* LogrosPresenter.swift */,
+			);
+			path = Logros;
+			sourceTree = "<group>";
+		};
+		5D80B152237E8B1400718BAA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5D679D6E231FAFD0005AB2E5 /* BaseViewController.swift */,
+				5D80B153237E8B2A00718BAA /* BaseRouter.swift */,
+				5D040B7B24F8F63F00A01263 /* BaseWorker.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5D80B155237E8F7700718BAA /* componentes */ = {
+			isa = PBXGroup;
+			children = (
+				5D80B156237E8FA100718BAA /* MostrarCartasView.swift */,
+				5D80B158237E8FAD00718BAA /* MostrarCartasView.xib */,
+				5D80B15A237E921200718BAA /* CardView.swift */,
+				5D80B15C237E923400718BAA /* CardView.xib */,
+				5DD5F1A72383D05700BE5A6B /* ResumenCartasView.swift */,
+				5DD5F1A92383D06700BE5A6B /* ResumenCartasView.xib */,
+				5DD5F1AB2383E57000BE5A6B /* ResumenCartasCell.swift */,
+				5DD5F1AD2383E57D00BE5A6B /* ResumenCartasCell.xib */,
+			);
+			path = componentes;
+			sourceTree = "<group>";
+		};
+		5D857D9423E08CFE00A34048 /* Rankings */ = {
+			isa = PBXGroup;
+			children = (
+				5D857DA123E0910600A34048 /* components */,
+				5D857D9523E08D0E00A34048 /* RankingViewController.swift */,
+				5D857D9923E08D3900A34048 /* RankingRouter.swift */,
+				5D857D9D23E08D6200A34048 /* Ranking.storyboard */,
+				5D6DCF6723E5ED3500102FCB /* RankingPresenter.swift */,
+			);
+			path = Rankings;
+			sourceTree = "<group>";
+		};
+		5D857DA123E0910600A34048 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5D857DA223E0911400A34048 /* RankingCell.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		5D876A2B2456D84C00ABE45F /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				5DE882B52372E9F3002197E0 /* Init */,
+				5D040B6924F8E7FF00A01263 /* LoginManual */,
+				5DD6794924594B040080FBDD /* Welcome */,
+				5DE882B32372E9DD002197E0 /* Init.storyboard */,
+				5D679D68231FABFB005AB2E5 /* Login.storyboard */,
+				5D679D7723211B81005AB2E5 /* LoginViewController.swift */,
+				5D11871B23327B5D000AD1DC /* LoginRouter.swift */,
+			);
+			path = Inicio;
+			sourceTree = "<group>";
+		};
+		5D87D70723701C20009DB3E9 /* Lugares */ = {
+			isa = PBXGroup;
+			children = (
+				5D1C5E472369EF4B002EF6D4 /* LugaresCached.swift */,
+				5D679DB12327CE7B005AB2E5 /* LugaresManager.swift */,
+				5D1FD3B92534C2C80044FCE8 /* LugaresInteractor.swift */,
+			);
+			path = Lugares;
+			sourceTree = "<group>";
+		};
+		5D8F818D23C4B5CD004A3633 /* Fotos */ = {
+			isa = PBXGroup;
+			children = (
+				5DA577C823CCB986002D99B8 /* complements */,
+				5D8F818E23C4B64C004A3633 /* TomarFotoViewController.swift */,
+				5D8F819023C4B673004A3633 /* Foto.storyboard */,
+				5D8F819223C4B696004A3633 /* TomarFotoRouter.swift */,
+			);
+			path = Fotos;
+			sourceTree = "<group>";
+		};
+		5D99E9A32368281100CABA2D /* Avisos */ = {
+			isa = PBXGroup;
+			children = (
+				5D99E9AC23683B7200CABA2D /* Components */,
+				5D99E9A42368376F00CABA2D /* AvisosViewController.swift */,
+				5D99E9A62368379900CABA2D /* Avisos.storyboard */,
+				5D99E9A82368381C00CABA2D /* AvisosRouter.swift */,
+				5D99E9AA23683AFC00CABA2D /* AvisosPresenter.swift */,
+			);
+			path = Avisos;
+			sourceTree = "<group>";
+		};
+		5D99E9AC23683B7200CABA2D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5D99E9AD23683C3700CABA2D /* AvisoStandar.swift */,
+				5D99E9AF23683C5100CABA2D /* AvisoStandar.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5DA1AF50240ED9C500407276 /* PLIST */ = {
+			isa = PBXGroup;
+			children = (
+				5D6A2C4A23D4D86F00404A6B /* Info-Dev.plist */,
+				5DBF562A23DCCCCB002A6520 /* ViajeroDev copy-Info.plist */,
+				5DA25B9C244CB4BA00BE6107 /* Info.plist */,
+			);
+			path = PLIST;
+			sourceTree = "<group>";
+		};
+		5DA577C823CCB986002D99B8 /* complements */ = {
+			isa = PBXGroup;
+			children = (
+				5DA577C923CCB994002D99B8 /* FiltroFotoView.swift */,
+			);
+			path = complements;
+			sourceTree = "<group>";
+		};
+		5DB6DD60245741E6009764F1 /* Profesor */ = {
+			isa = PBXGroup;
+			children = (
+				5DD6795624596C050080FBDD /* components */,
+				5DB6DD61245741FC009764F1 /* ProfesorView.xib */,
+				5DB6DD6524574208009764F1 /* ProfesorView.swift */,
+			);
+			path = Profesor;
+			sourceTree = "<group>";
+		};
+		5DD6794924594B040080FBDD /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				5DB6DD60245741E6009764F1 /* Profesor */,
+				5DEAB345245C8B2E008E7D95 /* Avatar */,
+				5DD6794A24594B170080FBDD /* Welcome.storyboard */,
+				5DD6794E24594B210080FBDD /* WelcomeViewController.swift */,
+				5DD6795224594B930080FBDD /* WelcomeRouter.swift */,
+				5DD6795F24596E920080FBDD /* WelcomePresenter.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		5DD6795624596C050080FBDD /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5DD6795724596C200080FBDD /* GreetingWelcomView.swift */,
+				5DD6795B24596C320080FBDD /* GreetingWelcomeView.xib */,
+				5DD67963245AF0A20080FBDD /* UserNameWelcomeView.swift */,
+				5DD67967245AF0AF0080FBDD /* UserNameWelcomeView.xib */,
+				5DD6796B245B34050080FBDD /* PasswordWelcomeView.swift */,
+				5DD6796F245B34110080FBDD /* PasswordWelcomeView.xib */,
+				5DD67973245B39FE0080FBDD /* ResumeWelcomeView.swift */,
+				5DD67977245B3A0F0080FBDD /* ResumeWelcomeView.xib */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		5DE0CC6F24712A2500277FD2 /* FiltrosTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				5DE0CC672471284B00277FD2 /* FiltrosTutorialViewController.swift */,
+				5DE0CC6B2471287500277FD2 /* FiltrosTutorial.storyboard */,
+				5DE0CC7024712A4900277FD2 /* FiltrosTutorialRouter.swift */,
+				5DCAD53924713175009600C7 /* FiltroTutorialView.swift */,
+				5DCAD53D2471318A009600C7 /* FiltroTutorialView.xib */,
+			);
+			path = FiltrosTutorial;
+			sourceTree = "<group>";
+		};
+		5DE21C02234CD73600C37015 /* PersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				5D2E236E250C82BC002EF48D /* Camerinos */,
+				5D8F818D23C4B5CD004A3633 /* Fotos */,
+				5D857D9423E08CFE00A34048 /* Rankings */,
+				5D25E881233CC5B1002560A3 /* Pasaporte */,
+				5D778A07234E2C21006422F2 /* MisDatos */,
+				5DE21C09234CDEDA00C37015 /* components */,
+				5DE21C03234CD77900C37015 /* PersonalDataViewController.swift */,
+				5DE21C05234CDBE400C37015 /* PersonalDataRouter.swift */,
+				5DE21C07234CDD0B00C37015 /* PersonalDataPresenter.swift */,
+			);
+			path = PersonalData;
+			sourceTree = "<group>";
+		};
+		5DE21C09234CDEDA00C37015 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5DBF558B23DC75E7002A6520 /* PersonalDataCollectionCell.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		5DE4B8EA2397072700309213 /* TopBar */ = {
+			isa = PBXGroup;
+			children = (
+				5DE4B8EB2397074B00309213 /* TopBarOnlyBack.swift */,
+				5DE4B8ED2397076600309213 /* TopBarOnlyBack.xib */,
+			);
+			path = TopBar;
+			sourceTree = "<group>";
+		};
+		5DE4B8EF239712A700309213 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				5D1FD3C52534EFB30044FCE8 /* fireworks.json */,
+				5D1FD3AC2532DE060044FCE8 /* confeti.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		5DE882B52372E9F3002197E0 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				5DE882B62372E9FF002197E0 /* InitViewController.swift */,
+				5DE882B82372EA6C002197E0 /* InitRouter.swift */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		5DEAB345245C8B2E008E7D95 /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				5DEAB346245C8B88008E7D95 /* ChooseAvatarViewController.swift */,
+				5DEAB34A245C8B94008E7D95 /* ChooseAvatarRouter.swift */,
+				5DEAB34E245C8BA1008E7D95 /* ChooseAvatarPresenter.swift */,
+				5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */,
+				5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */,
+				5D891307246080E200D040BF /* InteresesCell.swift */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		5DF6D50623689968007C3774 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D2D146F23DCD08800AAA99B /* Demo */,
+				5D87D70723701C20009DB3E9 /* Lugares */,
+				5DF8DADE2370D82E009A14C0 /* ApiBase.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5DF6D5092369853C007C3774 /* Filtros */ = {
+			isa = PBXGroup;
+			children = (
+				5DE0CC6F24712A2500277FD2 /* FiltrosTutorial */,
+				5DE882AB2372B3EC002197E0 /* FiltrosManager.swift */,
+				5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */,
+			);
+			path = Filtros;
+			sourceTree = "<group>";
+		};
+		B55D17DDF7404ACF2C9B6FB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DA1AF4C240C382200407276 /* Pods_ViajeroDev.framework */,
+				5DA1AF45240C379900407276 /* Pods_ViajeroDev.framework */,
+				5DA1AF3E240C2E5B00407276 /* Lottie.framework */,
+				E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */,
+				2095B3CA4A9A7B1D1B55BBAA /* Pods_Viajero_Demo.framework */,
+				1D1FB964DA82D1A951B338DE /* Pods_ViajeroDev.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +1347,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D679D64231FAA0D005AB2E5 /* Build configuration list for PBXNativeTarget "Viajero" */;
 			buildPhases = (
+				47F5DE223D8AD46355D717B1 /* [CP] Check Pods Manifest.lock */,
 				5D679D4E231FAA0B005AB2E5 /* Sources */,
 				5D679D4F231FAA0B005AB2E5 /* Frameworks */,
 				5D679D50231FAA0B005AB2E5 /* Resources */,
+				9C1AC0047ACB046722004AEA /* [CP] Embed Pods Frameworks */,
+				5D6A2BA923D4D78A00404A6B /* Embed App Extensions */,
+				5D2E2389250E2ADD002EF48D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -81,7 +1361,48 @@
 			);
 			name = Viajero;
 			productName = Viajero;
-			productReference = 5D679D52231FAA0B005AB2E5 /* Viajero.app */;
+			productReference = 5D679D52231FAA0B005AB2E5 /* WanderPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D6A2BAD23D4D86F00404A6B /* ViajeroDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D6A2C4623D4D86F00404A6B /* Build configuration list for PBXNativeTarget "ViajeroDev" */;
+			buildPhases = (
+				104A48243CADE99E59B13C39 /* [CP] Check Pods Manifest.lock */,
+				5D6A2BAF23D4D86F00404A6B /* Sources */,
+				5D6A2C1823D4D86F00404A6B /* Frameworks */,
+				5D6A2C1A23D4D86F00404A6B /* Resources */,
+				5D6A2C4523D4D86F00404A6B /* Embed App Extensions */,
+				E5AB34BAA4E5F5880BBD2A85 /* [CP] Embed Pods Frameworks */,
+				5DA1AF4F240C382200407276 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViajeroDev;
+			productName = Viajero;
+			productReference = 5D6A2C4923D4D86F00404A6B /* ViajeroDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DBF558E23DCCCCA002A6520 /* Viajero Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DBF562623DCCCCA002A6520 /* Build configuration list for PBXNativeTarget "Viajero Demo" */;
+			buildPhases = (
+				53AFC7A537F74CF773E01724 /* [CP] Check Pods Manifest.lock */,
+				5DBF559023DCCCCA002A6520 /* Sources */,
+				5DBF55F923DCCCCA002A6520 /* Frameworks */,
+				5DBF55FB23DCCCCA002A6520 /* Resources */,
+				5DBF562523DCCCCA002A6520 /* Embed App Extensions */,
+				733F6695D030FA144694F70C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viajero Demo";
+			productName = Viajero;
+			productReference = 5DBF562923DCCCCA002A6520 /* Viajero Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -90,7 +1411,7 @@
 		5D679D4A231FAA0B005AB2E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Mikel Lopez";
 				TargetAttributes = {
@@ -113,6 +1434,8 @@
 			projectRoot = "";
 			targets = (
 				5D679D51231FAA0B005AB2E5 /* Viajero */,
+				5D6A2BAD23D4D86F00404A6B /* ViajeroDev */,
+				5DBF558E23DCCCCA002A6520 /* Viajero Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -122,21 +1445,640 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB6DD5124570D6F009764F1 /* textures in Resources */,
+				5D99E9B023683C5100CABA2D /* AvisoStandar.xib in Resources */,
+				5D25E88A233CC7DE002560A3 /* TrophyView.xib in Resources */,
+				5D1E8CC923992B9400F23C8C /* Pasaporte.storyboard in Resources */,
+				5DEAB373245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */,
+				5DD5F1AA2383D06700BE5A6B /* ResumenCartasView.xib in Resources */,
+				5D1FD3992532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */,
+				5DD6794B24594B170080FBDD /* Welcome.storyboard in Resources */,
+				5D25E8A5233E2B5A002560A3 /* GeneralCard.xib in Resources */,
+				5DE0CC6C2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
+				5D99E9A72368379900CABA2D /* Avisos.storyboard in Resources */,
+				5D1FD3A32532077E0044FCE8 /* Futbolista_Standing.dae in Resources */,
+				5D1FD3A8253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */,
+				5D1FD39E253206A70044FCE8 /* Futbolista_Walking.dae in Resources */,
+				5D679D69231FABFB005AB2E5 /* Login.storyboard in Resources */,
+				5DB6DD4E24570D6F009764F1 /* Profesor_Saluda.dae in Resources */,
+				5D89130C24629E2700D040BF /* LaMilitar_Walking.dae in Resources */,
+				5D2AC6F32399A2F800AEA66C /* GrupoLogroView.xib in Resources */,
+				5DEAB353245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
+				5DEAB363245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */,
+				5D1FD3AD2532DE060044FCE8 /* confeti.json in Resources */,
+				5DD6795C24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
+				5DD67968245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
 				5D679D60231FAA0D005AB2E5 /* LaunchScreen.storyboard in Resources */,
+				5D679DAD2327C819005AB2E5 /* RightBarMenu.xib in Resources */,
+				5D80B15D237E923400718BAA /* CardView.xib in Resources */,
+				5DEAB36B245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */,
+				5D80B159237E8FAD00718BAA /* MostrarCartasView.xib in Resources */,
+				5DB6DD62245741FC009764F1 /* ProfesorView.xib in Resources */,
+				5DEAB35B245D2890008E7D95 /* Playero_Standing.dae in Resources */,
+				5D857D9E23E08D6200A34048 /* Ranking.storyboard in Resources */,
+				5D80B14B237DB0C000718BAA /* Logros.storyboard in Resources */,
+				5DEAB367245D2B04008E7D95 /* Inspector_Standing.dae in Resources */,
+				5DEAB36F245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */,
+				5D778A10234E32C1006422F2 /* MisDatosFieldView.xib in Resources */,
+				5DE882B42372E9DD002197E0 /* Init.storyboard in Resources */,
+				5D040B6F24F8E84100A01263 /* LoginManual.storyboard in Resources */,
+				5DEAB35F245D28FF008E7D95 /* Playero_Walking.dae in Resources */,
+				5D1FD394253205E80044FCE8 /* Enfermero_Standing.dae in Resources */,
+				5DCAD53E2471318A009600C7 /* FiltroTutorialView.xib in Resources */,
+				5D11871423324C1B000AD1DC /* Avatar.storyboard in Resources */,
 				5D679D5D231FAA0D005AB2E5 /* Assets.xcassets in Resources */,
+				5D25E892233D0136002560A3 /* NoTrophyView.xib in Resources */,
+				5D4FE50B239FBF8C00E529F7 /* LogrosHeaderView.xib in Resources */,
+				5DD67978245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
+				5DE4B8EE2397076600309213 /* TopBarOnlyBack.xib in Resources */,
+				5DD5F1AE2383E57D00BE5A6B /* ResumenCartasCell.xib in Resources */,
+				5D25E87E233C9E39002560A3 /* CustomScrollView.xib in Resources */,
+				5DD67970245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				5D2E2374250C82E9002EF48D /* Camerinos.storyboard in Resources */,
+				5D8F819123C4B673004A3633 /* Foto.storyboard in Resources */,
+				5D1FD3C62534EFB30044FCE8 /* fireworks.json in Resources */,
+				5D1FD38F253200340044FCE8 /* Enfermero_Walking.dae in Resources */,
 				5D679D5B231FAA0B005AB2E5 /* Main.storyboard in Resources */,
+				5DB6DD5D24572CEA009764F1 /* Profesor_Habla.dae in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D6A2C1A23D4D86F00404A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB6DD5224570D6F009764F1 /* textures in Resources */,
+				5D6A2C1B23D4D86F00404A6B /* AvisoStandar.xib in Resources */,
+				5D6A2C1C23D4D86F00404A6B /* TrophyView.xib in Resources */,
+				5D6A2C1D23D4D86F00404A6B /* Pasaporte.storyboard in Resources */,
+				5DEAB374245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */,
+				5D6A2C1E23D4D86F00404A6B /* ResumenCartasView.xib in Resources */,
+				5D1FD39A2532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */,
+				5DD6794C24594B170080FBDD /* Welcome.storyboard in Resources */,
+				5D6A2C1F23D4D86F00404A6B /* GeneralCard.xib in Resources */,
+				5DE0CC6D2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
+				5D6A2C2023D4D86F00404A6B /* Avisos.storyboard in Resources */,
+				5D1FD3A42532077E0044FCE8 /* Futbolista_Standing.dae in Resources */,
+				5D1FD3A9253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */,
+				5D1FD39F253206A70044FCE8 /* Futbolista_Walking.dae in Resources */,
+				5D6A2C2423D4D86F00404A6B /* Login.storyboard in Resources */,
+				5DB6DD4F24570D6F009764F1 /* Profesor_Saluda.dae in Resources */,
+				5D89130D24629E2700D040BF /* LaMilitar_Walking.dae in Resources */,
+				5D6A2C2523D4D86F00404A6B /* GrupoLogroView.xib in Resources */,
+				5DEAB354245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
+				5DEAB364245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */,
+				5D1FD3AE2532DE060044FCE8 /* confeti.json in Resources */,
+				5DD6795D24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
+				5DD67969245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
+				5D6A2C2623D4D86F00404A6B /* LaunchScreen.storyboard in Resources */,
+				5D6A2C2723D4D86F00404A6B /* RightBarMenu.xib in Resources */,
+				5D6A2C2923D4D86F00404A6B /* CardView.xib in Resources */,
+				5DEAB36C245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */,
+				5D6A2C2A23D4D86F00404A6B /* MostrarCartasView.xib in Resources */,
+				5DB6DD63245741FC009764F1 /* ProfesorView.xib in Resources */,
+				5DEAB35C245D2890008E7D95 /* Playero_Standing.dae in Resources */,
+				5D857D9F23E08D6200A34048 /* Ranking.storyboard in Resources */,
+				5D6A2C2F23D4D86F00404A6B /* Logros.storyboard in Resources */,
+				5DEAB368245D2B04008E7D95 /* Inspector_Standing.dae in Resources */,
+				5DEAB370245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */,
+				5D6A2C3223D4D86F00404A6B /* MisDatosFieldView.xib in Resources */,
+				5D6A2C3323D4D86F00404A6B /* Init.storyboard in Resources */,
+				5D040B7024F8E84100A01263 /* LoginManual.storyboard in Resources */,
+				5DEAB360245D28FF008E7D95 /* Playero_Walking.dae in Resources */,
+				5D1FD395253205E80044FCE8 /* Enfermero_Standing.dae in Resources */,
+				5DCAD53F2471318A009600C7 /* FiltroTutorialView.xib in Resources */,
+				5D6A2C3523D4D86F00404A6B /* Avatar.storyboard in Resources */,
+				5D6A2C3623D4D86F00404A6B /* Assets.xcassets in Resources */,
+				5D6A2C3723D4D86F00404A6B /* NoTrophyView.xib in Resources */,
+				5D6A2C3A23D4D86F00404A6B /* LogrosHeaderView.xib in Resources */,
+				5DD67979245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
+				5D6A2C3C23D4D86F00404A6B /* TopBarOnlyBack.xib in Resources */,
+				5D6A2C3D23D4D86F00404A6B /* ResumenCartasCell.xib in Resources */,
+				5D6A2C3E23D4D86F00404A6B /* CustomScrollView.xib in Resources */,
+				5DD67971245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				5D2E2375250C82E9002EF48D /* Camerinos.storyboard in Resources */,
+				5D6A2C4223D4D86F00404A6B /* Foto.storyboard in Resources */,
+				5D1FD3C72534EFB30044FCE8 /* fireworks.json in Resources */,
+				5D1FD390253200340044FCE8 /* Enfermero_Walking.dae in Resources */,
+				5D6A2C4323D4D86F00404A6B /* Main.storyboard in Resources */,
+				5DB6DD5E24572CEA009764F1 /* Profesor_Habla.dae in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DBF55FB23DCCCCA002A6520 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB6DD5324570D6F009764F1 /* textures in Resources */,
+				5DBF55FC23DCCCCA002A6520 /* AvisoStandar.xib in Resources */,
+				5DBF55FD23DCCCCA002A6520 /* TrophyView.xib in Resources */,
+				5DBF55FE23DCCCCA002A6520 /* Pasaporte.storyboard in Resources */,
+				5DEAB375245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */,
+				5DBF55FF23DCCCCA002A6520 /* ResumenCartasView.xib in Resources */,
+				5D1FD39B2532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */,
+				5DD6794D24594B170080FBDD /* Welcome.storyboard in Resources */,
+				5DBF560023DCCCCA002A6520 /* GeneralCard.xib in Resources */,
+				5DE0CC6E2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
+				5DBF560123DCCCCA002A6520 /* Avisos.storyboard in Resources */,
+				5D1FD3A52532077E0044FCE8 /* Futbolista_Standing.dae in Resources */,
+				5D1FD3AA253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */,
+				5D1FD3A0253206A70044FCE8 /* Futbolista_Walking.dae in Resources */,
+				5DBF560423DCCCCA002A6520 /* Login.storyboard in Resources */,
+				5DB6DD5024570D6F009764F1 /* Profesor_Saluda.dae in Resources */,
+				5D89130E24629E2700D040BF /* LaMilitar_Walking.dae in Resources */,
+				5DBF560523DCCCCA002A6520 /* GrupoLogroView.xib in Resources */,
+				5DEAB355245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
+				5DEAB365245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */,
+				5D1FD3AF2532DE060044FCE8 /* confeti.json in Resources */,
+				5DD6795E24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
+				5DD6796A245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
+				5DBF560623DCCCCA002A6520 /* LaunchScreen.storyboard in Resources */,
+				5DBF560723DCCCCA002A6520 /* RightBarMenu.xib in Resources */,
+				5DBF560923DCCCCA002A6520 /* CardView.xib in Resources */,
+				5DEAB36D245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */,
+				5DBF560A23DCCCCA002A6520 /* MostrarCartasView.xib in Resources */,
+				5DB6DD64245741FC009764F1 /* ProfesorView.xib in Resources */,
+				5DEAB35D245D2890008E7D95 /* Playero_Standing.dae in Resources */,
+				5D857DA023E08D6200A34048 /* Ranking.storyboard in Resources */,
+				5DBF560F23DCCCCA002A6520 /* Logros.storyboard in Resources */,
+				5DEAB369245D2B04008E7D95 /* Inspector_Standing.dae in Resources */,
+				5DEAB371245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */,
+				5DBF561223DCCCCA002A6520 /* MisDatosFieldView.xib in Resources */,
+				5DBF561323DCCCCA002A6520 /* Init.storyboard in Resources */,
+				5D040B7124F8E84100A01263 /* LoginManual.storyboard in Resources */,
+				5DEAB361245D28FF008E7D95 /* Playero_Walking.dae in Resources */,
+				5D1FD396253205E80044FCE8 /* Enfermero_Standing.dae in Resources */,
+				5DCAD5402471318A009600C7 /* FiltroTutorialView.xib in Resources */,
+				5DBF561523DCCCCA002A6520 /* Avatar.storyboard in Resources */,
+				5DBF561623DCCCCA002A6520 /* Assets.xcassets in Resources */,
+				5DBF561723DCCCCA002A6520 /* NoTrophyView.xib in Resources */,
+				5DBF561A23DCCCCA002A6520 /* LogrosHeaderView.xib in Resources */,
+				5DD6797A245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
+				5DBF561C23DCCCCA002A6520 /* TopBarOnlyBack.xib in Resources */,
+				5DBF561D23DCCCCA002A6520 /* ResumenCartasCell.xib in Resources */,
+				5DBF561E23DCCCCA002A6520 /* CustomScrollView.xib in Resources */,
+				5DD67972245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				5D2E2376250C82E9002EF48D /* Camerinos.storyboard in Resources */,
+				5DBF562223DCCCCA002A6520 /* Foto.storyboard in Resources */,
+				5D1FD3C82534EFB30044FCE8 /* fireworks.json in Resources */,
+				5D1FD391253200340044FCE8 /* Enfermero_Walking.dae in Resources */,
+				5DBF562323DCCCCA002A6520 /* Main.storyboard in Resources */,
+				5DB6DD5F24572CEA009764F1 /* Profesor_Habla.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		104A48243CADE99E59B13C39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViajeroDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47F5DE223D8AD46355D717B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viajero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53AFC7A537F74CF773E01724 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viajero Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		733F6695D030FA144694F70C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C1AC0047ACB046722004AEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viajero/Pods-Viajero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viajero/Pods-Viajero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viajero/Pods-Viajero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5AB34BAA4E5F5880BBD2A85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D679D4E231FAA0B005AB2E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D679D58231FAA0B005AB2E5 /* ViewController.swift in Sources */,
+				5D891308246080E200D040BF /* InteresesCell.swift in Sources */,
+				5D040B8924FC2BB000A01263 /* Lugar.swift in Sources */,
+				5DF6D5102369874B007C3774 /* FiltrosCollectionCell.swift in Sources */,
+				5D3AB9AE2516B49400D17E08 /* Ranking.swift in Sources */,
+				5D679D7823211B81005AB2E5 /* LoginViewController.swift in Sources */,
+				5DBF558C23DC75E7002A6520 /* PersonalDataCollectionCell.swift in Sources */,
+				5D80B149237DB0B500718BAA /* LogrosViewController.swift in Sources */,
+				5D679D75231FB506005AB2E5 /* ColumnFlowLayout.swift in Sources */,
+				5DEAB34F245C8BA1008E7D95 /* ChooseAvatarPresenter.swift in Sources */,
+				5DFDE1F92363194500320C8F /* MisDatosPresenter.swift in Sources */,
+				5D679D6F231FAFD0005AB2E5 /* BaseViewController.swift in Sources */,
+				5D1FD3B2253307A30044FCE8 /* CamerinosWorker.swift in Sources */,
+				5DCAD53A24713175009600C7 /* FiltroTutorialView.swift in Sources */,
+				5DB6DD6624574208009764F1 /* ProfesorView.swift in Sources */,
+				5D25E8A3233E2B3D002560A3 /* GeneralCard.swift in Sources */,
+				5D040B7324F8EB2800A01263 /* LoginManualRouter.swift in Sources */,
+				5D040B7824F8F61300A01263 /* LoginWorker.swift in Sources */,
+				5DDE465523425F7800909A2B /* OptionsViewController.swift in Sources */,
+				5D613BF325081691005732FC /* Avatar.swift in Sources */,
+				5D778A09234E2C6F006422F2 /* MisDatosViewController.swift in Sources */,
+				5D679D7D23215A53005AB2E5 /* MapaViewController.swift in Sources */,
+				5D3AB9842516AFEA00D17E08 /* RankingWorker.swift in Sources */,
+				5D8F818F23C4B64C004A3633 /* TomarFotoViewController.swift in Sources */,
+				5D80B15B237E921200718BAA /* CardView.swift in Sources */,
+				5DE21C06234CDBE400C37015 /* PersonalDataRouter.swift in Sources */,
+				5D25E890233D0108002560A3 /* NoTrophyView.swift in Sources */,
+				5DD6795824596C200080FBDD /* GreetingWelcomView.swift in Sources */,
+				5DE0CC682471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */,
+				5D1E8CCB23992BAF00F23C8C /* PasaporteViewController.swift in Sources */,
+				5D25E879233B48E2002560A3 /* LugarDetailRouter.swift in Sources */,
+				5D2E2378250C830A002EF48D /* CamerinosRouter.swift in Sources */,
+				5D99E9A52368376F00CABA2D /* AvisosViewController.swift in Sources */,
+				5DE0CC64247065F400277FD2 /* CircularProgressView.swift in Sources */,
+				5D778A0B234E2CD4006422F2 /* MisDatosRouter.swift in Sources */,
+				5DD5F1B0238550B500BE5A6B /* MapaDelegates.swift in Sources */,
+				5D25E872233A6581002560A3 /* Extensions.swift in Sources */,
+				5D80B154237E8B2A00718BAA /* BaseRouter.swift in Sources */,
+				5D040B8524F9172000A01263 /* LoginManualPresenter.swift in Sources */,
+				5DD67974245B39FE0080FBDD /* ResumeWelcomeView.swift in Sources */,
+				5D778A0E234E32B0006422F2 /* MisDatosFieldView.swift in Sources */,
+				5D16DA522378B4E700690CC8 /* Categorias.swift in Sources */,
+				5D4FE50D239FBFD700E529F7 /* LogrosHeaderView.swift in Sources */,
+				5D1186EC2330C21C000AD1DC /* Colors.swift in Sources */,
+				5D25E880233CA9B0002560A3 /* LugarDetailPresenter.swift in Sources */,
+				5DD6796C245B34050080FBDD /* PasswordWelcomeView.swift in Sources */,
+				5D25E877233B488A002560A3 /* LugarDetailViewController.swift in Sources */,
 				5D679D56231FAA0B005AB2E5 /* AppDelegate.swift in Sources */,
+				5DE0CC7124712A4900277FD2 /* FiltrosTutorialRouter.swift in Sources */,
+				5DD5F1A82383D05700BE5A6B /* ResumenCartasView.swift in Sources */,
+				5D99E9AE23683C3700CABA2D /* AvisoStandar.swift in Sources */,
+				5D1FD3BA2534C2C80044FCE8 /* LugaresInteractor.swift in Sources */,
+				5D040B8D24FC2C0F00A01263 /* LugarWorker.swift in Sources */,
+				5D59AC2F2452CB5D00B9C461 /* GrupoView.swift in Sources */,
+				5D25E894233D049E002560A3 /* LocationManager.swift in Sources */,
+				5DA577CA23CCB994002D99B8 /* FiltroFotoView.swift in Sources */,
+				5D613BFB250821D7005732FC /* RegistroWorker.swift in Sources */,
+				5D6DCF6823E5ED3500102FCB /* RankingPresenter.swift in Sources */,
+				5D80B14F237DB0E900718BAA /* LogrosPresenter.swift in Sources */,
+				5DE882B72372E9FF002197E0 /* InitViewController.swift in Sources */,
+				5D25E888233CC7CB002560A3 /* TrophyView.swift in Sources */,
+				5DD6795324594B930080FBDD /* WelcomeRouter.swift in Sources */,
+				5DD5F1AC2383E57000BE5A6B /* ResumenCartasCell.swift in Sources */,
+				5D1E8CCD23992C0700F23C8C /* PasaporteRouter.swift in Sources */,
+				5D613BF7250818BC005732FC /* AvatarWorker.swift in Sources */,
+				5D80B14D237DB0D000718BAA /* LogrosRouter.swift in Sources */,
+				5DE21C04234CD77900C37015 /* PersonalDataViewController.swift in Sources */,
+				5DD67964245AF0A20080FBDD /* UserNameWelcomeView.swift in Sources */,
+				5DEAB347245C8B88008E7D95 /* ChooseAvatarViewController.swift in Sources */,
+				5D040B7C24F8F63F00A01263 /* BaseWorker.swift in Sources */,
+				5D679DAB2327C80C005AB2E5 /* RightBarMenu.swift in Sources */,
+				5D2E236B250C7CF6002EF48D /* Logro.swift in Sources */,
+				5D2E2370250C82CC002EF48D /* CamerinosViewController.swift in Sources */,
+				5D2E2367250C7C26002EF48D /* PasaporteWorker.swift in Sources */,
+				5D040B8124F90D3900A01263 /* Usuario.swift in Sources */,
+				5D2AC6F12399A2D800AEA66C /* GrupoLogroView.swift in Sources */,
+				5D8F819323C4B696004A3633 /* TomarFotoRouter.swift in Sources */,
+				5D16DA802379846200690CC8 /* Reachability.swift in Sources */,
+				5D857D9A23E08D3900A34048 /* RankingRouter.swift in Sources */,
+				5D679DB22327CE7B005AB2E5 /* LugaresManager.swift in Sources */,
+				5DD6796024596E920080FBDD /* WelcomePresenter.swift in Sources */,
+				5DE882AC2372B3EC002197E0 /* FiltrosManager.swift in Sources */,
+				5DE4B8EC2397074B00309213 /* TopBarOnlyBack.swift in Sources */,
+				5D857D9623E08D0E00A34048 /* RankingViewController.swift in Sources */,
+				5D25E87C233C9E2A002560A3 /* CustomScrollView.swift in Sources */,
+				5DE882B92372EA6C002197E0 /* InitRouter.swift in Sources */,
+				5DEAB34B245C8B94008E7D95 /* ChooseAvatarRouter.swift in Sources */,
+				5D25E897233D05E0002560A3 /* LocationEngine.swift in Sources */,
+				5D857DA323E0911400A34048 /* RankingCell.swift in Sources */,
+				5D1E8CCF23992FBD00F23C8C /* PasaportePresenter.swift in Sources */,
+				5D040B6B24F8E81300A01263 /* LoginManualViewController.swift in Sources */,
+				5D679DB42327CE98005AB2E5 /* MapaPresenter.swift in Sources */,
+				5DEAB377245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
+				5DE21C08234CDD0B00C37015 /* PersonalDataPresenter.swift in Sources */,
+				5D80B157237E8FA100718BAA /* MostrarCartasView.swift in Sources */,
+				5D99E9AB23683AFC00CABA2D /* AvisosPresenter.swift in Sources */,
+				5D11871C23327B5D000AD1DC /* LoginRouter.swift in Sources */,
+				5D1C5E482369EF4B002EF6D4 /* LugaresCached.swift in Sources */,
+				5DF8DADF2370D82E009A14C0 /* ApiBase.swift in Sources */,
+				5DD6794F24594B210080FBDD /* WelcomeViewController.swift in Sources */,
+				5D679D7F23215BDC005AB2E5 /* MapaRouter.swift in Sources */,
+				5DA18A9A2513CE1900DE90AE /* LogroWorker.swift in Sources */,
+				5D99E9A92368381C00CABA2D /* AvisosRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D6A2BAF23D4D86F00404A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D891309246080E200D040BF /* InteresesCell.swift in Sources */,
+				5D040B8A24FC2BB000A01263 /* Lugar.swift in Sources */,
+				5D6A2BB023D4D86F00404A6B /* FiltrosCollectionCell.swift in Sources */,
+				5D3AB9AF2516B49400D17E08 /* Ranking.swift in Sources */,
+				5D6A2BB323D4D86F00404A6B /* LoginViewController.swift in Sources */,
+				5DBF558D23DC75E7002A6520 /* PersonalDataCollectionCell.swift in Sources */,
+				5D6A2BB723D4D86F00404A6B /* LogrosViewController.swift in Sources */,
+				5D6A2BB823D4D86F00404A6B /* ColumnFlowLayout.swift in Sources */,
+				5DEAB350245C8BA1008E7D95 /* ChooseAvatarPresenter.swift in Sources */,
+				5D6A2BB923D4D86F00404A6B /* MisDatosPresenter.swift in Sources */,
+				5D6A2BBA23D4D86F00404A6B /* BaseViewController.swift in Sources */,
+				5D1FD3B3253307A30044FCE8 /* CamerinosWorker.swift in Sources */,
+				5DCAD53B24713175009600C7 /* FiltroTutorialView.swift in Sources */,
+				5DB6DD6724574208009764F1 /* ProfesorView.swift in Sources */,
+				5D6A2BBB23D4D86F00404A6B /* GeneralCard.swift in Sources */,
+				5D040B7424F8EB2800A01263 /* LoginManualRouter.swift in Sources */,
+				5D040B7924F8F61300A01263 /* LoginWorker.swift in Sources */,
+				5D6A2BBD23D4D86F00404A6B /* OptionsViewController.swift in Sources */,
+				5D613BF425081691005732FC /* Avatar.swift in Sources */,
+				5D6A2BBE23D4D86F00404A6B /* MisDatosViewController.swift in Sources */,
+				5D6A2BBF23D4D86F00404A6B /* MapaViewController.swift in Sources */,
+				5D3AB9852516AFEA00D17E08 /* RankingWorker.swift in Sources */,
+				5D6A2BC023D4D86F00404A6B /* TomarFotoViewController.swift in Sources */,
+				5D6A2BC123D4D86F00404A6B /* CardView.swift in Sources */,
+				5D6A2BC223D4D86F00404A6B /* PersonalDataRouter.swift in Sources */,
+				5D6A2BC323D4D86F00404A6B /* NoTrophyView.swift in Sources */,
+				5DD6795924596C200080FBDD /* GreetingWelcomView.swift in Sources */,
+				5DE0CC692471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */,
+				5D6A2BC423D4D86F00404A6B /* PasaporteViewController.swift in Sources */,
+				5D6A2BC523D4D86F00404A6B /* LugarDetailRouter.swift in Sources */,
+				5D2E2379250C830A002EF48D /* CamerinosRouter.swift in Sources */,
+				5D6A2BC623D4D86F00404A6B /* AvisosViewController.swift in Sources */,
+				5DE0CC65247065F400277FD2 /* CircularProgressView.swift in Sources */,
+				5D6A2BC923D4D86F00404A6B /* MisDatosRouter.swift in Sources */,
+				5D6A2BCA23D4D86F00404A6B /* MapaDelegates.swift in Sources */,
+				5D6A2BD023D4D86F00404A6B /* Extensions.swift in Sources */,
+				5D6A2BD223D4D86F00404A6B /* BaseRouter.swift in Sources */,
+				5D040B8624F9172000A01263 /* LoginManualPresenter.swift in Sources */,
+				5DD67975245B39FE0080FBDD /* ResumeWelcomeView.swift in Sources */,
+				5D6A2BD623D4D86F00404A6B /* MisDatosFieldView.swift in Sources */,
+				5D6A2BD823D4D86F00404A6B /* Categorias.swift in Sources */,
+				5D6A2BD923D4D86F00404A6B /* LogrosHeaderView.swift in Sources */,
+				5D6A2BDB23D4D86F00404A6B /* Colors.swift in Sources */,
+				5D6A2BDC23D4D86F00404A6B /* LugarDetailPresenter.swift in Sources */,
+				5DD6796D245B34050080FBDD /* PasswordWelcomeView.swift in Sources */,
+				5D6A2BDF23D4D86F00404A6B /* LugarDetailViewController.swift in Sources */,
+				5D6A2BE123D4D86F00404A6B /* AppDelegate.swift in Sources */,
+				5DE0CC7224712A4900277FD2 /* FiltrosTutorialRouter.swift in Sources */,
+				5D6A2BE523D4D86F00404A6B /* ResumenCartasView.swift in Sources */,
+				5D6A2BE623D4D86F00404A6B /* AvisoStandar.swift in Sources */,
+				5D1FD3BB2534C2C80044FCE8 /* LugaresInteractor.swift in Sources */,
+				5D040B8E24FC2C0F00A01263 /* LugarWorker.swift in Sources */,
+				5D59AC302452CB5D00B9C461 /* GrupoView.swift in Sources */,
+				5D6A2BE723D4D86F00404A6B /* LocationManager.swift in Sources */,
+				5D6A2BEA23D4D86F00404A6B /* FiltroFotoView.swift in Sources */,
+				5D613BFC250821D7005732FC /* RegistroWorker.swift in Sources */,
+				5D6DCF6923E5ED3500102FCB /* RankingPresenter.swift in Sources */,
+				5D6A2BEC23D4D86F00404A6B /* LogrosPresenter.swift in Sources */,
+				5D6A2BED23D4D86F00404A6B /* InitViewController.swift in Sources */,
+				5D6A2BEE23D4D86F00404A6B /* TrophyView.swift in Sources */,
+				5DD6795424594B930080FBDD /* WelcomeRouter.swift in Sources */,
+				5D6A2BF023D4D86F00404A6B /* ResumenCartasCell.swift in Sources */,
+				5D6A2BF123D4D86F00404A6B /* PasaporteRouter.swift in Sources */,
+				5D613BF8250818BC005732FC /* AvatarWorker.swift in Sources */,
+				5D6A2BF223D4D86F00404A6B /* LogrosRouter.swift in Sources */,
+				5D6A2BF523D4D86F00404A6B /* PersonalDataViewController.swift in Sources */,
+				5DD67965245AF0A20080FBDD /* UserNameWelcomeView.swift in Sources */,
+				5DEAB348245C8B88008E7D95 /* ChooseAvatarViewController.swift in Sources */,
+				5D040B7D24F8F63F00A01263 /* BaseWorker.swift in Sources */,
+				5D6A2BF623D4D86F00404A6B /* RightBarMenu.swift in Sources */,
+				5D2E236C250C7CF6002EF48D /* Logro.swift in Sources */,
+				5D2E2371250C82CC002EF48D /* CamerinosViewController.swift in Sources */,
+				5D2E2368250C7C26002EF48D /* PasaporteWorker.swift in Sources */,
+				5D040B8224F90D3900A01263 /* Usuario.swift in Sources */,
+				5D6A2BF723D4D86F00404A6B /* GrupoLogroView.swift in Sources */,
+				5D6A2BF823D4D86F00404A6B /* TomarFotoRouter.swift in Sources */,
+				5D6A2BF923D4D86F00404A6B /* Reachability.swift in Sources */,
+				5D857D9B23E08D3900A34048 /* RankingRouter.swift in Sources */,
+				5D6A2BFB23D4D86F00404A6B /* LugaresManager.swift in Sources */,
+				5DD6796124596E920080FBDD /* WelcomePresenter.swift in Sources */,
+				5D6A2BFD23D4D86F00404A6B /* FiltrosManager.swift in Sources */,
+				5D6A2BFE23D4D86F00404A6B /* TopBarOnlyBack.swift in Sources */,
+				5D857D9723E08D0E00A34048 /* RankingViewController.swift in Sources */,
+				5D6A2C0123D4D86F00404A6B /* CustomScrollView.swift in Sources */,
+				5D6A2C0323D4D86F00404A6B /* InitRouter.swift in Sources */,
+				5DEAB34C245C8B94008E7D95 /* ChooseAvatarRouter.swift in Sources */,
+				5D6A2C0623D4D86F00404A6B /* LocationEngine.swift in Sources */,
+				5D857DA423E0911400A34048 /* RankingCell.swift in Sources */,
+				5D6A2C0723D4D86F00404A6B /* PasaportePresenter.swift in Sources */,
+				5D040B6C24F8E81300A01263 /* LoginManualViewController.swift in Sources */,
+				5D6A2C0923D4D86F00404A6B /* MapaPresenter.swift in Sources */,
+				5DEAB378245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
+				5D6A2C0A23D4D86F00404A6B /* PersonalDataPresenter.swift in Sources */,
+				5D6A2C0C23D4D86F00404A6B /* MostrarCartasView.swift in Sources */,
+				5D6A2C0D23D4D86F00404A6B /* AvisosPresenter.swift in Sources */,
+				5D6A2C0F23D4D86F00404A6B /* LoginRouter.swift in Sources */,
+				5D6A2C1023D4D86F00404A6B /* LugaresCached.swift in Sources */,
+				5D6A2C1423D4D86F00404A6B /* ApiBase.swift in Sources */,
+				5DD6795024594B210080FBDD /* WelcomeViewController.swift in Sources */,
+				5D6A2C1623D4D86F00404A6B /* MapaRouter.swift in Sources */,
+				5DA18A9B2513CE1900DE90AE /* LogroWorker.swift in Sources */,
+				5D6A2C1723D4D86F00404A6B /* AvisosRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DBF559023DCCCCA002A6520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D89130A246080E200D040BF /* InteresesCell.swift in Sources */,
+				5DBF559123DCCCCA002A6520 /* FiltrosCollectionCell.swift in Sources */,
+				5DBF559423DCCCCA002A6520 /* LoginViewController.swift in Sources */,
+				5DBF559523DCCCCA002A6520 /* PersonalDataCollectionCell.swift in Sources */,
+				5D857D9323DF1DE100A34048 /* GetAllLogrosWorkerDemo.swift in Sources */,
+				5DBF559923DCCCCA002A6520 /* LogrosViewController.swift in Sources */,
+				5DEAB351245C8BA1008E7D95 /* ChooseAvatarPresenter.swift in Sources */,
+				5D2E2372250C82CC002EF48D /* CamerinosViewController.swift in Sources */,
+				5DBF559A23DCCCCA002A6520 /* ColumnFlowLayout.swift in Sources */,
+				5DBF559B23DCCCCA002A6520 /* MisDatosPresenter.swift in Sources */,
+				5DCAD53C24713175009600C7 /* FiltroTutorialView.swift in Sources */,
+				5DB6DD6824574208009764F1 /* ProfesorView.swift in Sources */,
+				5DBF559C23DCCCCA002A6520 /* BaseViewController.swift in Sources */,
+				5D040B7524F8EB2800A01263 /* LoginManualRouter.swift in Sources */,
+				5D040B7A24F8F61300A01263 /* LoginWorker.swift in Sources */,
+				5DBF559D23DCCCCA002A6520 /* GeneralCard.swift in Sources */,
+				5DBF559F23DCCCCA002A6520 /* OptionsViewController.swift in Sources */,
+				5DBF55A023DCCCCA002A6520 /* MisDatosViewController.swift in Sources */,
+				5DBF55A123DCCCCA002A6520 /* MapaViewController.swift in Sources */,
+				5DBF55A223DCCCCA002A6520 /* TomarFotoViewController.swift in Sources */,
+				5DBF55A323DCCCCA002A6520 /* CardView.swift in Sources */,
+				5DBF55A423DCCCCA002A6520 /* PersonalDataRouter.swift in Sources */,
+				5DD6795A24596C200080FBDD /* GreetingWelcomView.swift in Sources */,
+				5DE0CC6A2471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */,
+				5DBF55A523DCCCCA002A6520 /* NoTrophyView.swift in Sources */,
+				5DBF55A623DCCCCA002A6520 /* PasaporteViewController.swift in Sources */,
+				5DBF55A723DCCCCA002A6520 /* LugarDetailRouter.swift in Sources */,
+				5DE0CC66247065F400277FD2 /* CircularProgressView.swift in Sources */,
+				5DBF55A823DCCCCA002A6520 /* AvisosViewController.swift in Sources */,
+				5DBF55AB23DCCCCA002A6520 /* MisDatosRouter.swift in Sources */,
+				5D040B8724F9172000A01263 /* LoginManualPresenter.swift in Sources */,
+				5DBF55AC23DCCCCA002A6520 /* MapaDelegates.swift in Sources */,
+				5DBF55B223DCCCCA002A6520 /* Extensions.swift in Sources */,
+				5DBF55B323DCCCCA002A6520 /* BaseRouter.swift in Sources */,
+				5D613BF9250818BC005732FC /* AvatarWorker.swift in Sources */,
+				5DD67976245B39FE0080FBDD /* ResumeWelcomeView.swift in Sources */,
+				5DBF55B723DCCCCA002A6520 /* MisDatosFieldView.swift in Sources */,
+				5D040B8B24FC2BB000A01263 /* Lugar.swift in Sources */,
+				5D857D9123DF1D0500A34048 /* LogroWorkerDemo.swift in Sources */,
+				5DBF55B923DCCCCA002A6520 /* Categorias.swift in Sources */,
+				5DBF55BA23DCCCCA002A6520 /* LogrosHeaderView.swift in Sources */,
+				5DBF55BC23DCCCCA002A6520 /* Colors.swift in Sources */,
+				5D2D147123DCD0A400AAA99B /* LugaresWorkerDemo.swift in Sources */,
+				5DD6796E245B34050080FBDD /* PasswordWelcomeView.swift in Sources */,
+				5DBF55BD23DCCCCA002A6520 /* LugarDetailPresenter.swift in Sources */,
+				5DBF55C023DCCCCA002A6520 /* LugarDetailViewController.swift in Sources */,
+				5DE0CC7324712A4900277FD2 /* FiltrosTutorialRouter.swift in Sources */,
+				5DBF55C223DCCCCA002A6520 /* AppDelegate.swift in Sources */,
+				5D613BF525081691005732FC /* Avatar.swift in Sources */,
+				5D040B8F24FC2C0F00A01263 /* LugarWorker.swift in Sources */,
+				5DBF55C623DCCCCA002A6520 /* ResumenCartasView.swift in Sources */,
+				5D59AC312452CB5D00B9C461 /* GrupoView.swift in Sources */,
+				5DBF55C723DCCCCA002A6520 /* AvisoStandar.swift in Sources */,
+				5DBF55C823DCCCCA002A6520 /* LocationManager.swift in Sources */,
+				5DBF55CB23DCCCCA002A6520 /* FiltroFotoView.swift in Sources */,
+				5D6DCF6A23E5ED3500102FCB /* RankingPresenter.swift in Sources */,
+				5DBF55CD23DCCCCA002A6520 /* LogrosPresenter.swift in Sources */,
+				5DBF55CE23DCCCCA002A6520 /* InitViewController.swift in Sources */,
+				5DBF55CF23DCCCCA002A6520 /* TrophyView.swift in Sources */,
+				5D613BFD250821D7005732FC /* RegistroWorker.swift in Sources */,
+				5DD6795524594B930080FBDD /* WelcomeRouter.swift in Sources */,
+				5D2E236D250C7CF6002EF48D /* Logro.swift in Sources */,
+				5DBF55D123DCCCCA002A6520 /* ResumenCartasCell.swift in Sources */,
+				5DBF55D223DCCCCA002A6520 /* PasaporteRouter.swift in Sources */,
+				5D3AB9B02516B49400D17E08 /* Ranking.swift in Sources */,
+				5DBF55D323DCCCCA002A6520 /* LogrosRouter.swift in Sources */,
+				5D2E237A250C830A002EF48D /* CamerinosRouter.swift in Sources */,
+				5DBF55D623DCCCCA002A6520 /* PersonalDataViewController.swift in Sources */,
+				5DD67966245AF0A20080FBDD /* UserNameWelcomeView.swift in Sources */,
+				5DEAB349245C8B88008E7D95 /* ChooseAvatarViewController.swift in Sources */,
+				5D040B7E24F8F63F00A01263 /* BaseWorker.swift in Sources */,
+				5DBF55D723DCCCCA002A6520 /* RightBarMenu.swift in Sources */,
+				5DBF55D823DCCCCA002A6520 /* GrupoLogroView.swift in Sources */,
+				5DBF55D923DCCCCA002A6520 /* TomarFotoRouter.swift in Sources */,
+				5DBF55DA23DCCCCA002A6520 /* Reachability.swift in Sources */,
+				5D3AB9862516AFEA00D17E08 /* RankingWorker.swift in Sources */,
+				5DBF55DC23DCCCCA002A6520 /* LugaresManager.swift in Sources */,
+				5D857D9C23E08D3900A34048 /* RankingRouter.swift in Sources */,
+				5DBF55DE23DCCCCA002A6520 /* FiltrosManager.swift in Sources */,
+				5DD6796224596E920080FBDD /* WelcomePresenter.swift in Sources */,
+				5DA18A9C2513CE1900DE90AE /* LogroWorker.swift in Sources */,
+				5DBF55DF23DCCCCA002A6520 /* TopBarOnlyBack.swift in Sources */,
+				5DBF55E223DCCCCA002A6520 /* CustomScrollView.swift in Sources */,
+				5D857D9823E08D0E00A34048 /* RankingViewController.swift in Sources */,
+				5DBF55E423DCCCCA002A6520 /* InitRouter.swift in Sources */,
+				5D040B8324F90D3900A01263 /* Usuario.swift in Sources */,
+				5DBF55E723DCCCCA002A6520 /* LocationEngine.swift in Sources */,
+				5D1FD3BC2534C2C80044FCE8 /* LugaresInteractor.swift in Sources */,
+				5DEAB34D245C8B94008E7D95 /* ChooseAvatarRouter.swift in Sources */,
+				5D2D147523DCD14900AAA99B /* UserProfileWorkerDemo.swift in Sources */,
+				5DBF55E823DCCCCA002A6520 /* PasaportePresenter.swift in Sources */,
+				5D857DA523E0911400A34048 /* RankingCell.swift in Sources */,
+				5DBF55EA23DCCCCA002A6520 /* MapaPresenter.swift in Sources */,
+				5D040B6D24F8E81300A01263 /* LoginManualViewController.swift in Sources */,
+				5DBF55EB23DCCCCA002A6520 /* PersonalDataPresenter.swift in Sources */,
+				5DEAB379245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
+				5DBF55ED23DCCCCA002A6520 /* MostrarCartasView.swift in Sources */,
+				5DBF55EE23DCCCCA002A6520 /* AvisosPresenter.swift in Sources */,
+				5DBF55F023DCCCCA002A6520 /* LoginRouter.swift in Sources */,
+				5D1FD3B4253307A30044FCE8 /* CamerinosWorker.swift in Sources */,
+				5DBF55F123DCCCCA002A6520 /* LugaresCached.swift in Sources */,
+				5D2D147323DCD0FB00AAA99B /* LoginWorkerDemo.swift in Sources */,
+				5DBF55F523DCCCCA002A6520 /* ApiBase.swift in Sources */,
+				5DD6795124594B210080FBDD /* WelcomeViewController.swift in Sources */,
+				5DBF55F723DCCCCA002A6520 /* MapaRouter.swift in Sources */,
+				5DBF55F823DCCCCA002A6520 /* AvisosRouter.swift in Sources */,
+				5D2E2369250C7C26002EF48D /* PasaporteWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +2155,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +2210,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,35 +2222,169 @@
 		};
 		5D679D65231FAA0D005AB2E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928B14B6D74C4C5FA0972F8C /* Pods-Viajero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Viajero/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5PK29TDFS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero.Viajero;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero;
+				PRODUCT_NAME = WanderPlay;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5D679D66231FAA0D005AB2E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ECC041EC03E6B3E569B051D /* Pods-Viajero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Viajero/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5PK29TDFS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero.Viajero;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero;
+				PRODUCT_NAME = WanderPlay;
+				PROVISIONING_PROFILE_SPECIFIER = viajeroDistribution;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5D6A2C4723D4D86F00404A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8616E6355DD2828B52EBFDAB /* Pods-ViajeroDev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5PK29TDFS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Info-Dev.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5D6A2C4823D4D86F00404A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8534A236D37AF7A42E4F07CA /* Pods-ViajeroDev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5PK29TDFS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Info-Dev.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = viajeroDistribution;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5DBF562723DCCCCA002A6520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA22F5E3FBD899BAE5984DA /* Pods-Viajero Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5PK29TDFS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "ViajeroDev copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5DBF562823DCCCCA002A6520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D6B1DFBB5D028A8F0302AA /* Pods-Viajero Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5PK29TDFS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "ViajeroDev copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = viajeroDistribution;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -329,6 +2405,24 @@
 			buildConfigurations = (
 				5D679D65231FAA0D005AB2E5 /* Debug */,
 				5D679D66231FAA0D005AB2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D6A2C4623D4D86F00404A6B /* Build configuration list for PBXNativeTarget "ViajeroDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D6A2C4723D4D86F00404A6B /* Debug */,
+				5D6A2C4823D4D86F00404A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DBF562623DCCCCA002A6520 /* Build configuration list for PBXNativeTarget "Viajero Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DBF562723DCCCCA002A6520 /* Debug */,
+				5DBF562823DCCCCA002A6520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

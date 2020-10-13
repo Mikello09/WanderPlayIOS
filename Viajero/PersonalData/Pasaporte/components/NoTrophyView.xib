@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoTrophyView" customModule="ViajeroDev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="474"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YyT-lR-wFq">
+                    <rect key="frame" x="0.0" y="0.0" width="351" height="474"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FOa-dl-bJC">
+                            <rect key="frame" x="8" y="3" width="335" height="221"/>
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="k4E-dv-lwq">
+                            <rect key="frame" x="8" y="227" width="335" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="3G0-Td-K6G"/>
+                            </constraints>
+                            <color key="progressTintColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.0078431372550000003" alpha="0.64872717700000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </progressView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbc-dR-cA2">
+                            <rect key="frame" x="8" y="250" width="335" height="221"/>
+                            <subviews>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4V-85-GXI" userLabel="MonedasView">
+                                    <rect key="frame" x="0.0" y="0.0" width="167.5" height="221"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monedas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XnC-7j-g3V">
+                                            <rect key="frame" x="16" y="105" width="143.5" height="11.5"/>
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="8"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="xKC-RH-B2T">
+                                            <rect key="frame" x="3" y="105.5" width="10" height="10"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="Fcg-se-NzZ"/>
+                                                <constraint firstAttribute="width" constant="10" id="iTv-qG-QkZ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="XnC-7j-g3V" firstAttribute="leading" secondItem="xKC-RH-B2T" secondAttribute="trailing" constant="3" id="KZf-uN-DD2"/>
+                                        <constraint firstItem="xKC-RH-B2T" firstAttribute="leading" secondItem="D4V-85-GXI" secondAttribute="leading" constant="3" id="aqJ-ZO-Z8W"/>
+                                        <constraint firstAttribute="trailing" secondItem="XnC-7j-g3V" secondAttribute="trailing" constant="8" id="jCW-Gl-NDm"/>
+                                        <constraint firstItem="XnC-7j-g3V" firstAttribute="centerY" secondItem="xKC-RH-B2T" secondAttribute="centerY" id="nem-kU-PDq"/>
+                                        <constraint firstItem="xKC-RH-B2T" firstAttribute="centerY" secondItem="D4V-85-GXI" secondAttribute="centerY" id="xTU-5z-Yvv"/>
+                                    </constraints>
+                                </view>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oo-gK-mio" userLabel="DiamantesView">
+                                    <rect key="frame" x="167.5" y="0.0" width="167.5" height="221"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="NpI-ou-d8t">
+                                            <rect key="frame" x="154.5" y="105.5" width="10" height="10"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="10" id="N1d-xY-TUB"/>
+                                                <constraint firstAttribute="height" constant="10" id="UCe-Mw-xjk"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diamantes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ujc-sq-YOH">
+                                            <rect key="frame" x="8" y="105" width="143.5" height="11.5"/>
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="8"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="NpI-ou-d8t" secondAttribute="trailing" constant="3" id="8pH-Wc-2SJ"/>
+                                        <constraint firstItem="NpI-ou-d8t" firstAttribute="leading" secondItem="ujc-sq-YOH" secondAttribute="trailing" constant="3" id="ZVv-iL-8yP"/>
+                                        <constraint firstItem="ujc-sq-YOH" firstAttribute="leading" secondItem="5oo-gK-mio" secondAttribute="leading" constant="8" id="bSf-ec-WPF"/>
+                                        <constraint firstItem="ujc-sq-YOH" firstAttribute="centerY" secondItem="NpI-ou-d8t" secondAttribute="centerY" id="g1W-Nj-khF"/>
+                                        <constraint firstItem="NpI-ou-d8t" firstAttribute="centerY" secondItem="5oo-gK-mio" secondAttribute="centerY" id="llF-9C-TZR"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="5oo-gK-mio" secondAttribute="bottom" id="A2u-8c-46e"/>
+                                <constraint firstItem="5oo-gK-mio" firstAttribute="width" secondItem="D4V-85-GXI" secondAttribute="width" id="AkU-va-VxC"/>
+                                <constraint firstItem="5oo-gK-mio" firstAttribute="top" secondItem="cbc-dR-cA2" secondAttribute="top" id="NNX-Sn-gvl"/>
+                                <constraint firstItem="D4V-85-GXI" firstAttribute="top" secondItem="cbc-dR-cA2" secondAttribute="top" id="NmN-Lb-jjj"/>
+                                <constraint firstItem="D4V-85-GXI" firstAttribute="leading" secondItem="cbc-dR-cA2" secondAttribute="leading" id="Zwf-4x-ph8"/>
+                                <constraint firstAttribute="bottom" secondItem="D4V-85-GXI" secondAttribute="bottom" id="bHk-dR-LrI"/>
+                                <constraint firstAttribute="trailing" secondItem="5oo-gK-mio" secondAttribute="trailing" id="lID-80-hMB"/>
+                                <constraint firstItem="5oo-gK-mio" firstAttribute="leading" secondItem="D4V-85-GXI" secondAttribute="trailing" id="oJc-gJ-mxH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="FOa-dl-bJC" firstAttribute="centerX" secondItem="YyT-lR-wFq" secondAttribute="centerX" id="1WV-7q-Utr"/>
+                        <constraint firstItem="k4E-dv-lwq" firstAttribute="top" secondItem="FOa-dl-bJC" secondAttribute="bottom" constant="3" id="6Oa-4M-iqV"/>
+                        <constraint firstItem="cbc-dR-cA2" firstAttribute="top" secondItem="k4E-dv-lwq" secondAttribute="bottom" constant="3" id="Hnx-UQ-JR4"/>
+                        <constraint firstAttribute="trailing" secondItem="k4E-dv-lwq" secondAttribute="trailing" constant="8" id="Jlp-CB-Ssy"/>
+                        <constraint firstItem="FOa-dl-bJC" firstAttribute="top" secondItem="YyT-lR-wFq" secondAttribute="top" constant="3" id="N4f-A9-3x0"/>
+                        <constraint firstItem="k4E-dv-lwq" firstAttribute="centerX" secondItem="YyT-lR-wFq" secondAttribute="centerX" id="Na5-SM-m1s"/>
+                        <constraint firstItem="FOa-dl-bJC" firstAttribute="leading" secondItem="YyT-lR-wFq" secondAttribute="leading" constant="8" id="QTc-sk-C1L"/>
+                        <constraint firstItem="cbc-dR-cA2" firstAttribute="leading" secondItem="YyT-lR-wFq" secondAttribute="leading" constant="8" id="VR2-fR-Guk"/>
+                        <constraint firstAttribute="bottom" secondItem="cbc-dR-cA2" secondAttribute="bottom" constant="3" id="VTK-KI-CTp"/>
+                        <constraint firstAttribute="trailing" secondItem="cbc-dR-cA2" secondAttribute="trailing" constant="8" id="aW3-SO-KBc"/>
+                        <constraint firstItem="k4E-dv-lwq" firstAttribute="centerY" secondItem="YyT-lR-wFq" secondAttribute="centerY" id="efD-RE-5pM"/>
+                        <constraint firstAttribute="trailing" secondItem="FOa-dl-bJC" secondAttribute="trailing" constant="8" id="gkx-7Z-wj9"/>
+                        <constraint firstItem="k4E-dv-lwq" firstAttribute="leading" secondItem="YyT-lR-wFq" secondAttribute="leading" constant="8" id="y6B-rE-nnd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YyT-lR-wFq" secondAttribute="bottom" id="Myb-aU-wtq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YyT-lR-wFq" secondAttribute="trailing" id="T1m-RX-Gq2"/>
+                <constraint firstItem="YyT-lR-wFq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bfa-iN-41R"/>
+                <constraint firstItem="YyT-lR-wFq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jNo-IR-pN6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="container" destination="YyT-lR-wFq" id="HEV-vn-iMs"/>
+                <outlet property="diamantesLabel" destination="ujc-sq-YOH" id="E2f-Jd-BQa"/>
+                <outlet property="diamantesView" destination="5oo-gK-mio" id="5s9-P6-iP4"/>
+                <outlet property="monedasLabel" destination="XnC-7j-g3V" id="q27-7H-Asq"/>
+                <outlet property="monedasView" destination="D4V-85-GXI" id="HJx-x0-Xyh"/>
+                <outlet property="progreso" destination="k4E-dv-lwq" id="YLh-WG-mD6"/>
+                <outlet property="titulo" destination="FOa-dl-bJC" id="3aF-Lb-m4k"/>
+            </connections>
+            <point key="canvasLocation" x="-150" y="126.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="coins" width="100" height="100"/>
+        <image name="diamond" width="96" height="96"/>
+    </resources>
+</document>

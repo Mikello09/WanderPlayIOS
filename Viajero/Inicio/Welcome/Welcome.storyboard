@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="1qe-IM-KBB">
+            <objects>
+                <viewController storyboardIdentifier="welcomeStoryboard" id="pRQ-qF-Y2V" customClass="WelcomeViewController" customModule="ViajeroDev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sb5-ZY-IrC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_street" translatesAutoresizingMaskIntoConstraints="NO" id="oc0-CH-R5O">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdH-su-wfx">
+                                <rect key="frame" x="352" y="810" width="50" height="40"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Io4-cz-pWB"/>
+                                    <constraint firstAttribute="width" constant="50" id="sGx-3S-Tu8"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.62745098040000002" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="arrowshape.turn.up.right.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="goNext:" destination="pRQ-qF-Y2V" eventType="touchUpInside" id="lMU-QE-9Qt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn4-l2-4Va">
+                                <rect key="frame" x="12" y="810" width="50" height="40"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Ady-yF-5eh"/>
+                                    <constraint firstAttribute="height" constant="40" id="gnq-h1-Kb0"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.62745098040000002" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="goBack:" destination="pRQ-qF-Y2V" eventType="touchUpInside" id="d82-RZ-L9n"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjN-Pt-US2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fn4-l2-4Va" firstAttribute="leading" secondItem="fTG-G9-dNv" secondAttribute="leading" constant="12" id="2Sz-yF-hXe"/>
+                            <constraint firstItem="gjN-Pt-US2" firstAttribute="top" secondItem="fTG-G9-dNv" secondAttribute="top" id="3Bz-DY-09D"/>
+                            <constraint firstItem="oc0-CH-R5O" firstAttribute="top" secondItem="sb5-ZY-IrC" secondAttribute="top" id="6AJ-Ou-XQE"/>
+                            <constraint firstItem="gjN-Pt-US2" firstAttribute="leading" secondItem="fTG-G9-dNv" secondAttribute="leading" id="7yu-yX-zkG"/>
+                            <constraint firstItem="oc0-CH-R5O" firstAttribute="leading" secondItem="fTG-G9-dNv" secondAttribute="leading" id="JRh-0s-9Rj"/>
+                            <constraint firstItem="fn4-l2-4Va" firstAttribute="bottom" secondItem="fTG-G9-dNv" secondAttribute="bottom" constant="-12" id="MOZ-ij-eWt"/>
+                            <constraint firstItem="fn4-l2-4Va" firstAttribute="top" secondItem="gjN-Pt-US2" secondAttribute="bottom" constant="8" id="T7a-yl-IT1"/>
+                            <constraint firstItem="fTG-G9-dNv" firstAttribute="trailing" secondItem="gjN-Pt-US2" secondAttribute="trailing" id="XTO-xX-IGL"/>
+                            <constraint firstItem="fTG-G9-dNv" firstAttribute="trailing" secondItem="oc0-CH-R5O" secondAttribute="trailing" id="hEV-6p-gTZ"/>
+                            <constraint firstItem="fTG-G9-dNv" firstAttribute="trailing" secondItem="EdH-su-wfx" secondAttribute="trailing" constant="12" id="hZY-Fg-bAD"/>
+                            <constraint firstItem="EdH-su-wfx" firstAttribute="bottom" secondItem="fTG-G9-dNv" secondAttribute="bottom" constant="-12" id="sxZ-sb-FUu"/>
+                            <constraint firstAttribute="bottom" secondItem="oc0-CH-R5O" secondAttribute="bottom" id="zeE-zV-jZr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fTG-G9-dNv"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="fn4-l2-4Va" id="990-ys-xX2"/>
+                        <outlet property="nextButton" destination="EdH-su-wfx" id="qNs-ZI-nAO"/>
+                        <outlet property="profesorContainer" destination="gjN-Pt-US2" id="2xS-2j-BkQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnu-rZ-cIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="64" height="52"/>
+        <image name="fondo_street" width="1920" height="1080"/>
+    </resources>
+</document>

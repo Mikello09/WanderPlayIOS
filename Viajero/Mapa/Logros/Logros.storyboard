@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Logros View Controller-->
+        <scene sceneID="Pc2-0W-abc">
+            <objects>
+                <viewController storyboardIdentifier="logrosViewController" id="Rap-8n-CgY" customClass="LogrosViewController" customModule="ViajeroDev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Gh-Ro-kGT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logro_background" translatesAutoresizingMaskIntoConstraints="NO" id="2eL-Iy-ZvQ" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="etd-bq-jff" userLabel="LugarImage">
+                                <rect key="frame" x="57" y="108" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1ca-ou-y5A"/>
+                                    <constraint firstAttribute="width" constant="300" id="pPO-1z-Bb7"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4A-ng-zV9" userLabel="CintaView">
+                                <rect key="frame" x="12" y="268" width="390" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuH-aO-vgy" userLabel="Titulo">
+                                        <rect key="frame" x="12" y="16" width="366" height="28"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="SuH-aO-vgy" firstAttribute="centerX" secondItem="U4A-ng-zV9" secondAttribute="centerX" id="AUW-Ks-jXt"/>
+                                    <constraint firstItem="SuH-aO-vgy" firstAttribute="centerY" secondItem="U4A-ng-zV9" secondAttribute="centerY" id="DPB-zT-kVs"/>
+                                    <constraint firstItem="SuH-aO-vgy" firstAttribute="leading" secondItem="U4A-ng-zV9" secondAttribute="leading" constant="12" id="ORw-x1-4wx"/>
+                                    <constraint firstAttribute="height" constant="60" id="TXZ-Ph-TCc"/>
+                                    <constraint firstAttribute="trailing" secondItem="SuH-aO-vgy" secondAttribute="trailing" constant="12" id="zvg-Sg-S1G"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIE-PE-1CR" userLabel="ShowView">
+                                <rect key="frame" x="12" y="352" width="390" height="498"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-Se-c4c" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aBu-94-b5P"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="aBu-94-b5P" firstAttribute="bottom" secondItem="TIE-PE-1CR" secondAttribute="bottom" constant="12" id="1dr-go-MbM"/>
+                            <constraint firstItem="aBu-94-b5P" firstAttribute="trailing" secondItem="z1v-Se-c4c" secondAttribute="trailing" id="20P-80-8ch"/>
+                            <constraint firstItem="U4A-ng-zV9" firstAttribute="leading" secondItem="aBu-94-b5P" secondAttribute="leading" constant="12" id="2Pv-is-l5w"/>
+                            <constraint firstItem="2eL-Iy-ZvQ" firstAttribute="leading" secondItem="aBu-94-b5P" secondAttribute="leading" id="ADE-Ld-q5m"/>
+                            <constraint firstItem="U4A-ng-zV9" firstAttribute="top" secondItem="etd-bq-jff" secondAttribute="bottom" constant="-40" id="CqJ-E8-r9h"/>
+                            <constraint firstItem="etd-bq-jff" firstAttribute="centerX" secondItem="2Gh-Ro-kGT" secondAttribute="centerX" id="Ne6-GG-v5z"/>
+                            <constraint firstItem="aBu-94-b5P" firstAttribute="trailing" secondItem="U4A-ng-zV9" secondAttribute="trailing" constant="12" id="P60-cY-c3w"/>
+                            <constraint firstItem="aBu-94-b5P" firstAttribute="trailing" secondItem="TIE-PE-1CR" secondAttribute="trailing" constant="12" id="Q2f-Tr-YPD"/>
+                            <constraint firstItem="aBu-94-b5P" firstAttribute="trailing" secondItem="2eL-Iy-ZvQ" secondAttribute="trailing" id="Ymp-h0-0eH"/>
+                            <constraint firstItem="2eL-Iy-ZvQ" firstAttribute="top" secondItem="2Gh-Ro-kGT" secondAttribute="top" id="a2z-4f-Yb0"/>
+                            <constraint firstItem="TIE-PE-1CR" firstAttribute="top" secondItem="U4A-ng-zV9" secondAttribute="bottom" constant="24" id="aYr-eK-QoY"/>
+                            <constraint firstItem="z1v-Se-c4c" firstAttribute="top" secondItem="aBu-94-b5P" secondAttribute="top" id="cYJ-VF-ZaZ"/>
+                            <constraint firstItem="z1v-Se-c4c" firstAttribute="leading" secondItem="aBu-94-b5P" secondAttribute="leading" id="deX-fH-JnW"/>
+                            <constraint firstItem="etd-bq-jff" firstAttribute="top" secondItem="aBu-94-b5P" secondAttribute="top" constant="64" id="f6C-ns-dAm"/>
+                            <constraint firstAttribute="bottom" secondItem="z1v-Se-c4c" secondAttribute="bottom" id="go6-WF-JQA"/>
+                            <constraint firstItem="TIE-PE-1CR" firstAttribute="leading" secondItem="aBu-94-b5P" secondAttribute="leading" constant="12" id="qUV-24-1UU"/>
+                            <constraint firstAttribute="bottom" secondItem="2eL-Iy-ZvQ" secondAttribute="bottom" id="zk7-9V-AFz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cintaView" destination="U4A-ng-zV9" id="h1w-iu-1xy"/>
+                        <outlet property="fireworksView" destination="z1v-Se-c4c" id="2pK-N5-JLe"/>
+                        <outlet property="lugarImage" destination="etd-bq-jff" id="Ajz-mK-vZ6"/>
+                        <outlet property="showView" destination="TIE-PE-1CR" id="8L1-CE-Du7"/>
+                        <outlet property="tituloLabel" destination="SuH-aO-vgy" id="wgk-Pp-8ag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TA7-DU-GlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="130.58035714285714"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="z1v-Se-c4c"/>
+    </designables>
+    <resources>
+        <image name="logro_background" width="626" height="626"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

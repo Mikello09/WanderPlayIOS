@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire-iOS13.0/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher-iOS13.0/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper-iOS13.0/ObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios-iOS13.0/Lottie.framework

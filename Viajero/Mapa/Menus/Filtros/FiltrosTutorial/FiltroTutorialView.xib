@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiltroTutorialView" customModule="ViajeroDev" customModuleProvider="target">
+            <connections>
+                <outlet property="container" destination="iN0-l3-epB" id="IJt-H9-28y"/>
+                <outlet property="pinesResumenView" destination="QR5-uY-IdC" id="v4E-mK-WJH"/>
+                <outlet property="texto" destination="SOn-yG-uMe" id="uzi-jY-9xf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOn-yG-uMe">
+                    <rect key="frame" x="12" y="12" width="396" height="25.5"/>
+                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QR5-uY-IdC">
+                    <rect key="frame" x="12" y="8" width="396" height="140"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5m-fQ-umM">
+                            <rect key="frame" x="0.0" y="0.0" width="396" height="28"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlK-6C-dTf">
+                                    <rect key="frame" x="4" y="4" width="32" height="20"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_verde_image" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-eK-Ga3">
+                                            <rect key="frame" x="3" y="3" width="26" height="14"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ygc-eK-Ga3" firstAttribute="leading" secondItem="zlK-6C-dTf" secondAttribute="leading" constant="3" id="0p6-B4-Y9a"/>
+                                        <constraint firstAttribute="trailing" secondItem="ygc-eK-Ga3" secondAttribute="trailing" constant="3" id="2D5-S6-IIb"/>
+                                        <constraint firstAttribute="bottom" secondItem="ygc-eK-Ga3" secondAttribute="bottom" constant="3" id="PjD-OF-ZJf"/>
+                                        <constraint firstAttribute="width" constant="32" id="RtO-jF-Rcd"/>
+                                        <constraint firstItem="ygc-eK-Ga3" firstAttribute="top" secondItem="zlK-6C-dTf" secondAttribute="top" constant="3" id="Yxe-F3-gk1"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugar minucioso. Dificil de encontrar." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="LW3-ip-QcM">
+                                    <rect key="frame" x="39" y="5.5" width="354" height="17"/>
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="LW3-ip-QcM" firstAttribute="centerY" secondItem="zlK-6C-dTf" secondAttribute="centerY" id="V5b-ob-4kP"/>
+                                <constraint firstItem="zlK-6C-dTf" firstAttribute="top" secondItem="N5m-fQ-umM" secondAttribute="top" constant="4" id="VPE-sG-fFO"/>
+                                <constraint firstItem="LW3-ip-QcM" firstAttribute="leading" secondItem="zlK-6C-dTf" secondAttribute="trailing" constant="3" id="ft3-9T-XCW"/>
+                                <constraint firstItem="zlK-6C-dTf" firstAttribute="leading" secondItem="N5m-fQ-umM" secondAttribute="leading" constant="4" id="fuC-lH-x9w"/>
+                                <constraint firstAttribute="trailing" secondItem="LW3-ip-QcM" secondAttribute="trailing" constant="3" id="wEB-tH-9Zk"/>
+                                <constraint firstAttribute="bottom" secondItem="zlK-6C-dTf" secondAttribute="bottom" constant="4" id="wFN-4m-BJq"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5C3-2w-qBy">
+                            <rect key="frame" x="0.0" y="28" width="396" height="28"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYT-I7-yfr">
+                                    <rect key="frame" x="4" y="4" width="32" height="20"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_azul_image" translatesAutoresizingMaskIntoConstraints="NO" id="xvf-5f-6dq">
+                                            <rect key="frame" x="3" y="3" width="26" height="14"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="xvf-5f-6dq" secondAttribute="bottom" constant="3" id="28f-uh-WPy"/>
+                                        <constraint firstAttribute="width" constant="32" id="Ihn-ec-aMg"/>
+                                        <constraint firstItem="xvf-5f-6dq" firstAttribute="leading" secondItem="VYT-I7-yfr" secondAttribute="leading" constant="3" id="Pyq-rm-by9"/>
+                                        <constraint firstItem="xvf-5f-6dq" firstAttribute="top" secondItem="VYT-I7-yfr" secondAttribute="top" constant="3" id="buM-HR-jNe"/>
+                                        <constraint firstAttribute="trailing" secondItem="xvf-5f-6dq" secondAttribute="trailing" constant="3" id="kJQ-Tv-3Ss"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugar curioso. Conocido por los habitantes de la zona." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="HOG-d1-mYM">
+                                    <rect key="frame" x="39" y="5.5" width="354" height="17"/>
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="VYT-I7-yfr" firstAttribute="leading" secondItem="5C3-2w-qBy" secondAttribute="leading" constant="4" id="Fl9-C5-Zop"/>
+                                <constraint firstItem="VYT-I7-yfr" firstAttribute="top" secondItem="5C3-2w-qBy" secondAttribute="top" constant="4" id="ILW-Qx-WgW"/>
+                                <constraint firstItem="HOG-d1-mYM" firstAttribute="centerY" secondItem="VYT-I7-yfr" secondAttribute="centerY" id="Pw5-FT-Qr7"/>
+                                <constraint firstItem="HOG-d1-mYM" firstAttribute="leading" secondItem="VYT-I7-yfr" secondAttribute="trailing" constant="3" id="iHc-kG-N78"/>
+                                <constraint firstAttribute="trailing" secondItem="HOG-d1-mYM" secondAttribute="trailing" constant="3" id="oim-ff-Uuc"/>
+                                <constraint firstAttribute="bottom" secondItem="VYT-I7-yfr" secondAttribute="bottom" constant="4" id="s8z-Hg-mBL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrc-TE-VIe">
+                            <rect key="frame" x="0.0" y="56" width="396" height="28"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEc-r4-72c">
+                                    <rect key="frame" x="4" y="4" width="32" height="20"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_amarillo_image" translatesAutoresizingMaskIntoConstraints="NO" id="hxO-F1-NCM">
+                                            <rect key="frame" x="3" y="3" width="26" height="14"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="hxO-F1-NCM" secondAttribute="bottom" constant="3" id="0Mt-36-qZc"/>
+                                        <constraint firstAttribute="width" constant="32" id="Ek5-Qt-X4z"/>
+                                        <constraint firstAttribute="trailing" secondItem="hxO-F1-NCM" secondAttribute="trailing" constant="3" id="NvB-Nz-OWk"/>
+                                        <constraint firstItem="hxO-F1-NCM" firstAttribute="top" secondItem="MEc-r4-72c" secondAttribute="top" constant="3" id="XVk-cO-U4W"/>
+                                        <constraint firstItem="hxO-F1-NCM" firstAttribute="leading" secondItem="MEc-r4-72c" secondAttribute="leading" constant="3" id="cHI-OJ-YmI"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugar importante con historia para contar." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="V3o-Cf-Wyk">
+                                    <rect key="frame" x="39" y="5.5" width="354" height="17"/>
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="MEc-r4-72c" firstAttribute="leading" secondItem="xrc-TE-VIe" secondAttribute="leading" constant="4" id="3Up-Oi-ZNY"/>
+                                <constraint firstItem="MEc-r4-72c" firstAttribute="top" secondItem="xrc-TE-VIe" secondAttribute="top" constant="4" id="YOB-of-GOH"/>
+                                <constraint firstAttribute="trailing" secondItem="V3o-Cf-Wyk" secondAttribute="trailing" constant="3" id="cem-Fa-oGh"/>
+                                <constraint firstItem="V3o-Cf-Wyk" firstAttribute="leading" secondItem="MEc-r4-72c" secondAttribute="trailing" constant="3" id="rBd-AU-5E1"/>
+                                <constraint firstItem="V3o-Cf-Wyk" firstAttribute="centerY" secondItem="MEc-r4-72c" secondAttribute="centerY" id="tdJ-9m-dCh"/>
+                                <constraint firstAttribute="bottom" secondItem="MEc-r4-72c" secondAttribute="bottom" constant="4" id="xas-Ot-cMF"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjO-Ki-XzM">
+                            <rect key="frame" x="0.0" y="84" width="396" height="28"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcK-En-zAJ">
+                                    <rect key="frame" x="4" y="4" width="32" height="20"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_naranja_image" translatesAutoresizingMaskIntoConstraints="NO" id="w1t-MY-YBb">
+                                            <rect key="frame" x="3" y="3" width="26" height="14"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="w1t-MY-YBb" firstAttribute="top" secondItem="XcK-En-zAJ" secondAttribute="top" constant="3" id="6Pu-RP-oVI"/>
+                                        <constraint firstAttribute="width" constant="32" id="LJG-Mq-pAQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="w1t-MY-YBb" secondAttribute="bottom" constant="3" id="Tf7-VZ-bbn"/>
+                                        <constraint firstAttribute="trailing" secondItem="w1t-MY-YBb" secondAttribute="trailing" constant="3" id="aS3-Zk-cwM"/>
+                                        <constraint firstItem="w1t-MY-YBb" firstAttribute="leading" secondItem="XcK-En-zAJ" secondAttribute="leading" constant="3" id="u2q-tK-hgT"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugar importante. Aparece en cualquier guía turística." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="8Do-l2-yHz">
+                                    <rect key="frame" x="39" y="5.5" width="354" height="17"/>
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="XcK-En-zAJ" firstAttribute="leading" secondItem="IjO-Ki-XzM" secondAttribute="leading" constant="4" id="BFC-g0-r7R"/>
+                                <constraint firstItem="8Do-l2-yHz" firstAttribute="centerY" secondItem="XcK-En-zAJ" secondAttribute="centerY" id="DIj-s6-wqa"/>
+                                <constraint firstItem="8Do-l2-yHz" firstAttribute="leading" secondItem="XcK-En-zAJ" secondAttribute="trailing" constant="3" id="S2N-Gu-Ioe"/>
+                                <constraint firstAttribute="bottom" secondItem="XcK-En-zAJ" secondAttribute="bottom" constant="4" id="ZJf-Zn-dPa"/>
+                                <constraint firstAttribute="trailing" secondItem="8Do-l2-yHz" secondAttribute="trailing" constant="3" id="ca9-VU-pMh"/>
+                                <constraint firstItem="XcK-En-zAJ" firstAttribute="top" secondItem="IjO-Ki-XzM" secondAttribute="top" constant="4" id="hlO-gb-CFD"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3og-4s-TWU">
+                            <rect key="frame" x="0.0" y="112" width="396" height="28"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjr-c3-SLD">
+                                    <rect key="frame" x="4" y="4" width="32" height="20"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin_rojo_image" translatesAutoresizingMaskIntoConstraints="NO" id="ay2-Ca-61K">
+                                            <rect key="frame" x="3" y="3" width="26" height="14"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="32" id="2hB-Dq-aAB"/>
+                                        <constraint firstItem="ay2-Ca-61K" firstAttribute="top" secondItem="qjr-c3-SLD" secondAttribute="top" constant="3" id="4Wq-Ca-5x3"/>
+                                        <constraint firstAttribute="trailing" secondItem="ay2-Ca-61K" secondAttribute="trailing" constant="3" id="T0h-dN-Omo"/>
+                                        <constraint firstItem="ay2-Ca-61K" firstAttribute="leading" secondItem="qjr-c3-SLD" secondAttribute="leading" constant="3" id="sCo-iR-MQ1"/>
+                                        <constraint firstAttribute="bottom" secondItem="ay2-Ca-61K" secondAttribute="bottom" constant="3" id="spw-jk-n8V"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugar imprescindible. No puedes dejar de visitarlo." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="WGW-l1-IKX">
+                                    <rect key="frame" x="39" y="5.5" width="354" height="17"/>
+                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="qjr-c3-SLD" secondAttribute="bottom" constant="4" id="Gh5-2Q-8uh"/>
+                                <constraint firstItem="qjr-c3-SLD" firstAttribute="leading" secondItem="3og-4s-TWU" secondAttribute="leading" constant="4" id="GhW-QP-TIm"/>
+                                <constraint firstAttribute="trailing" secondItem="WGW-l1-IKX" secondAttribute="trailing" constant="3" id="aZF-26-NEd"/>
+                                <constraint firstItem="qjr-c3-SLD" firstAttribute="top" secondItem="3og-4s-TWU" secondAttribute="top" constant="4" id="jkc-jh-gBz"/>
+                                <constraint firstItem="WGW-l1-IKX" firstAttribute="leading" secondItem="qjr-c3-SLD" secondAttribute="trailing" constant="3" id="lUA-iM-nBA"/>
+                                <constraint firstItem="WGW-l1-IKX" firstAttribute="centerY" secondItem="qjr-c3-SLD" secondAttribute="centerY" id="yf1-PS-4mS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3og-4s-TWU" firstAttribute="leading" secondItem="QR5-uY-IdC" secondAttribute="leading" id="0jX-LT-zcq"/>
+                        <constraint firstItem="N5m-fQ-umM" firstAttribute="height" secondItem="5C3-2w-qBy" secondAttribute="height" id="ABp-x9-VpX"/>
+                        <constraint firstItem="5C3-2w-qBy" firstAttribute="top" secondItem="N5m-fQ-umM" secondAttribute="bottom" id="AJw-Xb-yeU"/>
+                        <constraint firstItem="xrc-TE-VIe" firstAttribute="top" secondItem="5C3-2w-qBy" secondAttribute="bottom" id="Afx-UV-Oeg"/>
+                        <constraint firstItem="3og-4s-TWU" firstAttribute="top" secondItem="IjO-Ki-XzM" secondAttribute="bottom" id="EGJ-lp-L9x"/>
+                        <constraint firstItem="IjO-Ki-XzM" firstAttribute="height" secondItem="3og-4s-TWU" secondAttribute="height" id="IE8-gx-Lh5"/>
+                        <constraint firstItem="N5m-fQ-umM" firstAttribute="top" secondItem="QR5-uY-IdC" secondAttribute="top" id="JXH-U4-GGR"/>
+                        <constraint firstItem="5C3-2w-qBy" firstAttribute="leading" secondItem="QR5-uY-IdC" secondAttribute="leading" id="Mhe-1G-82T"/>
+                        <constraint firstAttribute="trailing" secondItem="xrc-TE-VIe" secondAttribute="trailing" id="RHF-lT-d52"/>
+                        <constraint firstAttribute="trailing" secondItem="5C3-2w-qBy" secondAttribute="trailing" id="Tx6-qY-GJW"/>
+                        <constraint firstAttribute="height" constant="140" id="Z9o-Ux-oUx"/>
+                        <constraint firstAttribute="trailing" secondItem="IjO-Ki-XzM" secondAttribute="trailing" id="Zd6-pe-Edj"/>
+                        <constraint firstItem="IjO-Ki-XzM" firstAttribute="leading" secondItem="QR5-uY-IdC" secondAttribute="leading" id="bk0-mV-c6h"/>
+                        <constraint firstItem="IjO-Ki-XzM" firstAttribute="top" secondItem="xrc-TE-VIe" secondAttribute="bottom" id="dTX-Gw-OdC"/>
+                        <constraint firstAttribute="trailing" secondItem="3og-4s-TWU" secondAttribute="trailing" id="guE-oW-BpX"/>
+                        <constraint firstItem="5C3-2w-qBy" firstAttribute="height" secondItem="xrc-TE-VIe" secondAttribute="height" id="haB-42-uG5"/>
+                        <constraint firstAttribute="trailing" secondItem="N5m-fQ-umM" secondAttribute="trailing" id="mgd-i9-2Pl"/>
+                        <constraint firstItem="xrc-TE-VIe" firstAttribute="leading" secondItem="QR5-uY-IdC" secondAttribute="leading" id="ojB-xu-9we"/>
+                        <constraint firstItem="xrc-TE-VIe" firstAttribute="height" secondItem="IjO-Ki-XzM" secondAttribute="height" id="thY-rG-zij"/>
+                        <constraint firstAttribute="bottom" secondItem="3og-4s-TWU" secondAttribute="bottom" id="ua1-2c-hBs"/>
+                        <constraint firstItem="N5m-fQ-umM" firstAttribute="leading" secondItem="QR5-uY-IdC" secondAttribute="leading" id="y9Y-cJ-ghp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QR5-uY-IdC" secondAttribute="trailing" constant="24" id="6JB-4y-EGJ"/>
+                <constraint firstItem="SOn-yG-uMe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="7VW-rW-2Fl"/>
+                <constraint firstItem="QR5-uY-IdC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="JYc-TP-J9C"/>
+                <constraint firstItem="QR5-uY-IdC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="N2S-CC-hVT"/>
+                <constraint firstAttribute="trailing" secondItem="SOn-yG-uMe" secondAttribute="trailing" constant="24" id="fKi-uo-Orf"/>
+                <constraint firstItem="SOn-yG-uMe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="x6d-X9-XZ5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="21.739130434782609" y="-61.607142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pin_amarillo_image" width="96" height="96"/>
+        <image name="pin_azul_image" width="96" height="96"/>
+        <image name="pin_naranja_image" width="96" height="96"/>
+        <image name="pin_rojo_image" width="96" height="96"/>
+        <image name="pin_verde_image" width="96" height="96"/>
+    </resources>
+</document>

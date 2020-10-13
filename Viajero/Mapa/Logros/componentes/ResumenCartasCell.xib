@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ur1-MY-Hq9" customClass="ResumenCartasCell" customModule="WanderPlay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="372"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gu-9y-ccH" customClass="CardView" customModule="WanderPlay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="271" height="372"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5gu-9y-ccH" firstAttribute="leading" secondItem="2Ph-91-HJP" secondAttribute="leading" id="EZA-rd-6dJ"/>
+                <constraint firstItem="2Ph-91-HJP" firstAttribute="trailing" secondItem="5gu-9y-ccH" secondAttribute="trailing" id="RuJ-Zk-1gp"/>
+                <constraint firstItem="2Ph-91-HJP" firstAttribute="bottom" secondItem="5gu-9y-ccH" secondAttribute="bottom" id="ayc-iF-qua"/>
+                <constraint firstItem="5gu-9y-ccH" firstAttribute="top" secondItem="ur1-MY-Hq9" secondAttribute="top" id="jVV-FH-wFG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="2Ph-91-HJP"/>
+            <connections>
+                <outlet property="cardView" destination="5gu-9y-ccH" id="CTr-UI-RyA"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="-100"/>
+        </view>
+    </objects>
+</document>
