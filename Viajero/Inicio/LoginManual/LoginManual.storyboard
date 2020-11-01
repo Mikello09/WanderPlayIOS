@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,10 +27,10 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4e-Nv-QQS">
-                                <rect key="frame" x="24" y="126" width="366" height="80"/>
+                                <rect key="frame" x="24" y="126" width="366" height="65"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDR-XY-oBd">
-                                        <rect key="frame" x="161" y="27.5" width="44" height="25.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDR-XY-oBd">
+                                        <rect key="frame" x="8" y="20" width="350" height="25.5"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -38,18 +38,20 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.50337009803921573" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vDR-XY-oBd" secondAttribute="trailing" constant="8" id="Nig-gc-jzH"/>
+                                    <constraint firstItem="vDR-XY-oBd" firstAttribute="leading" secondItem="d4e-Nv-QQS" secondAttribute="leading" constant="8" id="Zez-7n-iZc"/>
                                     <constraint firstItem="vDR-XY-oBd" firstAttribute="centerY" secondItem="d4e-Nv-QQS" secondAttribute="centerY" id="bgb-sF-2t1"/>
                                     <constraint firstItem="vDR-XY-oBd" firstAttribute="centerX" secondItem="d4e-Nv-QQS" secondAttribute="centerX" id="pHD-6k-b1y"/>
-                                    <constraint firstAttribute="height" constant="80" id="reS-vK-ojB"/>
+                                    <constraint firstAttribute="height" constant="65" id="reS-vK-ojB"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="3"/>
+                                        <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNh-8L-QVq">
-                                <rect key="frame" x="24" y="230" width="366" height="50"/>
+                                <rect key="frame" x="24" y="215" width="366" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KPa-Ii-7B8"/>
@@ -58,16 +60,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52H-ID-mHT">
-                                <rect key="frame" x="24" y="296" width="366" height="50"/>
+                                <rect key="frame" x="24" y="281" width="366" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="vcs-Ix-2Rg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6HX-Jb-a5O">
-                                <rect key="frame" x="107" y="378" width="200" height="60"/>
+                                <rect key="frame" x="107" y="363" width="200" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="AtA-dy-Lxl"/>
@@ -89,7 +91,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="entrarClicked:" destination="8lF-in-a32" eventType="touchUpInside" id="7p8-C3-cTh"/>
+                                    <action selector="entrarClicked:" destination="8lF-in-a32" eventType="touchUpInside" id="mEJ-5i-tYx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,12 +119,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="contrasenaField" destination="52H-ID-mHT" id="vfU-is-Odt"/>
-                        <outlet property="entrarBoton" destination="6HX-Jb-a5O" id="rwb-Ci-51C"/>
-                        <outlet property="errorLabel" destination="vDR-XY-oBd" id="vja-LY-ygF"/>
-                        <outlet property="errorView" destination="d4e-Nv-QQS" id="Jbk-SX-i2H"/>
-                        <outlet property="nombreUsuarioField" destination="eNh-8L-QVq" id="BYi-2S-Mv1"/>
-                        <outlet property="topBar" destination="xPP-9w-KZc" id="6Uw-Ne-xZ7"/>
+                        <outlet property="contrasenaField" destination="52H-ID-mHT" id="oy7-ni-oiT"/>
+                        <outlet property="entrarBoton" destination="6HX-Jb-a5O" id="LFS-Tc-cEz"/>
+                        <outlet property="errorMessage" destination="vDR-XY-oBd" id="IIx-c5-Ni6"/>
+                        <outlet property="errorView" destination="d4e-Nv-QQS" id="3Rp-rz-Bkq"/>
+                        <outlet property="nombreField" destination="eNh-8L-QVq" id="IHB-kC-jvk"/>
+                        <outlet property="topBar" destination="xPP-9w-KZc" id="PAB-Sz-zdh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2R-ll-b71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -27,7 +27,13 @@ class ChooseAvatarPresenter{
 
 extension ChooseAvatarPresenter: GetAllAvataresProtocol{
     func success(avatares: [Avatar]) {
-        delegate?.getAvatares(avatares: avatares)
+        var avataresAElegir: [Avatar] = []
+        for avatar in avatares{
+            if avatar.nombre != "Futbolista" && avatar.nombre != "Enfermero"{
+                avataresAElegir.append(avatar)
+            }
+        }
+        delegate?.getAvatares(avatares: avataresAElegir)
     }
     
     func fail() {

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D040B6B24F8E81300A01263 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */; };
-		5D040B6C24F8E81300A01263 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */; };
-		5D040B6D24F8E81300A01263 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */; };
 		5D040B6F24F8E84100A01263 /* LoginManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D040B6E24F8E84100A01263 /* LoginManual.storyboard */; };
 		5D040B7024F8E84100A01263 /* LoginManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D040B6E24F8E84100A01263 /* LoginManual.storyboard */; };
 		5D040B7124F8E84100A01263 /* LoginManual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D040B6E24F8E84100A01263 /* LoginManual.storyboard */; };
@@ -493,6 +490,9 @@
 		5DF6D5102369874B007C3774 /* FiltrosCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */; };
 		5DF8DADF2370D82E009A14C0 /* ApiBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8DADE2370D82E009A14C0 /* ApiBase.swift */; };
 		5DFDE1F92363194500320C8F /* MisDatosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */; };
+		84762237254E7835001B7373 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84762236254E7835001B7373 /* LoginManualViewController.swift */; };
+		84762238254E7835001B7373 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84762236254E7835001B7373 /* LoginManualViewController.swift */; };
+		84762239254E7835001B7373 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84762236254E7835001B7373 /* LoginManualViewController.swift */; };
 		8EB745FE4C35DBDC65BC0A7D /* Pods_Viajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */; };
 		9F757E078EA6042FDFFC1F2D /* Pods_Viajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */; };
 		A022B5EBED3F5133DDB59F65 /* Pods_Viajero_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2095B3CA4A9A7B1D1B55BBAA /* Pods_Viajero_Demo.framework */; };
@@ -559,7 +559,6 @@
 		1D1FB964DA82D1A951B338DE /* Pods_ViajeroDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViajeroDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2095B3CA4A9A7B1D1B55BBAA /* Pods_Viajero_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viajero_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D6B1DFBB5D028A8F0302AA /* Pods-Viajero Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero Demo.release.xcconfig"; path = "Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo.release.xcconfig"; sourceTree = "<group>"; };
-		5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginManualViewController.swift; path = ../../../../../../LoginManualViewController.swift; sourceTree = "<group>"; };
 		5D040B6E24F8E84100A01263 /* LoginManual.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginManual.storyboard; sourceTree = "<group>"; };
 		5D040B7224F8EB2800A01263 /* LoginManualRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManualRouter.swift; sourceTree = "<group>"; };
 		5D040B7724F8F61300A01263 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
@@ -734,6 +733,7 @@
 		5DF8DADE2370D82E009A14C0 /* ApiBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBase.swift; sourceTree = "<group>"; };
 		5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosPresenter.swift; sourceTree = "<group>"; };
 		6ECC041EC03E6B3E569B051D /* Pods-Viajero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero.release.xcconfig"; path = "Target Support Files/Pods-Viajero/Pods-Viajero.release.xcconfig"; sourceTree = "<group>"; };
+		84762236254E7835001B7373 /* LoginManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManualViewController.swift; sourceTree = "<group>"; };
 		8534A236D37AF7A42E4F07CA /* Pods-ViajeroDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajeroDev.release.xcconfig"; path = "Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev.release.xcconfig"; sourceTree = "<group>"; };
 		8616E6355DD2828B52EBFDAB /* Pods-ViajeroDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajeroDev.debug.xcconfig"; path = "Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev.debug.xcconfig"; sourceTree = "<group>"; };
 		928B14B6D74C4C5FA0972F8C /* Pods-Viajero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero.debug.xcconfig"; path = "Target Support Files/Pods-Viajero/Pods-Viajero.debug.xcconfig"; sourceTree = "<group>"; };
@@ -792,7 +792,7 @@
 		5D040B6924F8E7FF00A01263 /* LoginManual */ = {
 			isa = PBXGroup;
 			children = (
-				5D040B6A24F8E81300A01263 /* LoginManualViewController.swift */,
+				84762236254E7835001B7373 /* LoginManualViewController.swift */,
 				5D040B6E24F8E84100A01263 /* LoginManual.storyboard */,
 				5D040B7224F8EB2800A01263 /* LoginManualRouter.swift */,
 				5D040B8424F9172000A01263 /* LoginManualPresenter.swift */,
@@ -1828,6 +1828,7 @@
 				5D2E2370250C82CC002EF48D /* CamerinosViewController.swift in Sources */,
 				5D2E2367250C7C26002EF48D /* PasaporteWorker.swift in Sources */,
 				5D040B8124F90D3900A01263 /* Usuario.swift in Sources */,
+				84762237254E7835001B7373 /* LoginManualViewController.swift in Sources */,
 				5D2AC6F12399A2D800AEA66C /* GrupoLogroView.swift in Sources */,
 				5D8F819323C4B696004A3633 /* TomarFotoRouter.swift in Sources */,
 				5D16DA802379846200690CC8 /* Reachability.swift in Sources */,
@@ -1843,7 +1844,6 @@
 				5D25E897233D05E0002560A3 /* LocationEngine.swift in Sources */,
 				5D857DA323E0911400A34048 /* RankingCell.swift in Sources */,
 				5D1E8CCF23992FBD00F23C8C /* PasaportePresenter.swift in Sources */,
-				5D040B6B24F8E81300A01263 /* LoginManualViewController.swift in Sources */,
 				5D679DB42327CE98005AB2E5 /* MapaPresenter.swift in Sources */,
 				5DEAB377245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
 				5DE21C08234CDD0B00C37015 /* PersonalDataPresenter.swift in Sources */,
@@ -1937,6 +1937,7 @@
 				5D2E2371250C82CC002EF48D /* CamerinosViewController.swift in Sources */,
 				5D2E2368250C7C26002EF48D /* PasaporteWorker.swift in Sources */,
 				5D040B8224F90D3900A01263 /* Usuario.swift in Sources */,
+				84762238254E7835001B7373 /* LoginManualViewController.swift in Sources */,
 				5D6A2BF723D4D86F00404A6B /* GrupoLogroView.swift in Sources */,
 				5D6A2BF823D4D86F00404A6B /* TomarFotoRouter.swift in Sources */,
 				5D6A2BF923D4D86F00404A6B /* Reachability.swift in Sources */,
@@ -1952,7 +1953,6 @@
 				5D6A2C0623D4D86F00404A6B /* LocationEngine.swift in Sources */,
 				5D857DA423E0911400A34048 /* RankingCell.swift in Sources */,
 				5D6A2C0723D4D86F00404A6B /* PasaportePresenter.swift in Sources */,
-				5D040B6C24F8E81300A01263 /* LoginManualViewController.swift in Sources */,
 				5D6A2C0923D4D86F00404A6B /* MapaPresenter.swift in Sources */,
 				5DEAB378245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
 				5D6A2C0A23D4D86F00404A6B /* PersonalDataPresenter.swift in Sources */,
@@ -2035,6 +2035,7 @@
 				5DD6795524594B930080FBDD /* WelcomeRouter.swift in Sources */,
 				5D2E236D250C7CF6002EF48D /* Logro.swift in Sources */,
 				5DBF55D123DCCCCA002A6520 /* ResumenCartasCell.swift in Sources */,
+				84762239254E7835001B7373 /* LoginManualViewController.swift in Sources */,
 				5DBF55D223DCCCCA002A6520 /* PasaporteRouter.swift in Sources */,
 				5D3AB9B02516B49400D17E08 /* Ranking.swift in Sources */,
 				5DBF55D323DCCCCA002A6520 /* LogrosRouter.swift in Sources */,
@@ -2065,7 +2066,6 @@
 				5DBF55E823DCCCCA002A6520 /* PasaportePresenter.swift in Sources */,
 				5D857DA523E0911400A34048 /* RankingCell.swift in Sources */,
 				5DBF55EA23DCCCCA002A6520 /* MapaPresenter.swift in Sources */,
-				5D040B6D24F8E81300A01263 /* LoginManualViewController.swift in Sources */,
 				5DBF55EB23DCCCCA002A6520 /* PersonalDataPresenter.swift in Sources */,
 				5DEAB379245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
 				5DBF55ED23DCCCCA002A6520 /* MostrarCartasView.swift in Sources */,

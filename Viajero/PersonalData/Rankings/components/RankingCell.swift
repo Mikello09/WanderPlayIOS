@@ -33,7 +33,7 @@ class RankingCell: UITableViewCell{
         case "Playero":
             self.imagen.image = UIImage(named: "playero")
         case "Inspector":
-            self.imagen.image = UIImage(named: "inspector")
+            self.imagen.image = UIImage(named: "Inspector")
         case "Militar":
             self.imagen.image = UIImage(named: "militar")
         default:

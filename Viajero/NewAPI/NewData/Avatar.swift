@@ -109,7 +109,7 @@ struct Avatar: Codable {
         case "Militar":
             return "militar"
         case "Inspector":
-            return "inspector"
+            return "Inspector"
         default:
             return "playero"
         }

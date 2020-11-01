@@ -13,12 +13,11 @@ DEPENDENCIES:
   - ObjectMapper (= 3.5.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Alamofire
-    - ObjectMapper
   trunk:
+    - Alamofire
     - Kingfisher
     - lottie-ios
+    - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321

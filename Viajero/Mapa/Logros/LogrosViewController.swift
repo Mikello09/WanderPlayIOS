@@ -33,6 +33,15 @@ class LogrosViewController: BaseViewController{
         
         setUpView()
         
+        //UPDATE USUARIO
+        presenter?.updateUsuario()
+        for logro in logros{
+            Usuario.shared.monedas += logro.monedas ?? 0
+            Usuario.shared.diamantes += logro.diamantes ?? 0
+            Usuario.shared.puntos += logro.puntos ?? 0
+        }
+        ///
+        
         let seconds = 6.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             self.finished()
@@ -124,6 +133,8 @@ extension LogrosViewController: MostrarCartasViewProtocol, ResumenCartasProtocol
         fireworksView.stop()
         fireworksView.isHidden = true
         showView.addSubview(resumenCartasView)
+        
+        
         
     }
 }

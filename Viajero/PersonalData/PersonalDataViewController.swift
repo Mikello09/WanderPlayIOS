@@ -126,6 +126,22 @@ extension PersonalDataViewController: PersonalDataProtocol{
                 monedasValueLabel.textColor = .white
                 diamantesValueLabel.textColor = .white
                 lugaresValueLabel.textColor = .white
+            case "Enfermero":
+                backgroundImage.image = UIImage(named: "fondo_surgery")
+                nombreLabel.textColor = .white
+                nivelLabel.textColor = .white
+                avatarValueLabel.textColor = .white
+                monedasValueLabel.textColor = .white
+                diamantesValueLabel.textColor = .white
+                lugaresValueLabel.textColor = .white
+            case "Futoblista":
+                backgroundImage.image = UIImage(named: "football_fondo")
+                nombreLabel.textColor = .white
+                nivelLabel.textColor = .white
+                avatarValueLabel.textColor = .white
+                monedasValueLabel.textColor = .white
+                diamantesValueLabel.textColor = .white
+                lugaresValueLabel.textColor = .white
             default:
                 return
         }

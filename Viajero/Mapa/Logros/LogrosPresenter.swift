@@ -24,6 +24,12 @@ class LogrosPresenter{
         LugaresManager.shared.getLugares(delegate: self)
     }
     
+    func updateUsuario(){
+        if lugarId != "-1"{
+            Usuario.shared.lugares.append(lugarId)
+        }
+    }
+    
 }
 
 extension LogrosPresenter: LugaresManagerProtocol{
