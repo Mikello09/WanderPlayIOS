@@ -1354,6 +1354,7 @@
 				9C1AC0047ACB046722004AEA /* [CP] Embed Pods Frameworks */,
 				5D6A2BA923D4D78A00404A6B /* Embed App Extensions */,
 				5D2E2389250E2ADD002EF48D /* Embed Frameworks */,
+				848266FF254EA26A00ACF27A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1712,6 +1713,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		848266FF254EA26A00ACF27A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"\n";
 		};
 		9C1AC0047ACB046722004AEA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2224,6 +2242,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 928B14B6D74C4C5FA0972F8C /* Pods-Viajero.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -2239,8 +2258,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.wanderplay;
 				PRODUCT_NAME = WanderPlay;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -2252,6 +2271,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6ECC041EC03E6B3E569B051D /* Pods-Viajero.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -2267,10 +2287,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.viajero;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codebounds.wanderplay;
 				PRODUCT_NAME = WanderPlay;
-				PROVISIONING_PROFILE_SPECIFIER = viajeroDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = wanderplay_distribution;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

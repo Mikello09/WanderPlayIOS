@@ -5,9 +5,9 @@
 use_frameworks!
 
 def available_pods
-  pod 'Alamofire', '~> 4.5'
-  pod 'ObjectMapper' , '3.5.0'
-  pod 'Kingfisher', '~> 5.0'
+  pod 'Alamofire'
+  pod 'ObjectMapper'
+  pod 'Kingfisher'
   pod 'lottie-ios'
 end
 

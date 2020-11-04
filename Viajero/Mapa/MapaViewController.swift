@@ -76,20 +76,6 @@ class MapaViewController: BaseViewController, MGLMapViewDelegate{
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(avatar_clicked))
         avatar_view.isUserInteractionEnabled = true
         avatar_view.addGestureRecognizer(tap)
-        
-        let bigAvatar: SCNScene = SCNScene(named: Usuario.shared.getAvatarActivoStanding())!
-        avatar.present(bigAvatar, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
-        avatar.loops = false
-        avatar.isPlaying = false
-        
-        let omniLightNode = SCNNode()
-        omniLightNode.light = SCNLight()
-        omniLightNode.light!.type = .omni
-        omniLightNode.light!.color = UIColor(white: 0.75, alpha: 1.0)
-        omniLightNode.position = SCNVector3Make(0, 300, 200)
-        bigAvatar.rootNode.addChildNode(omniLightNode)
-        
-        nivelView.addShadowInContainerView(withRadius: 25)
     }
     
     func initMap(location: CLLocationCoordinate2D){
@@ -137,6 +123,25 @@ class MapaViewController: BaseViewController, MGLMapViewDelegate{
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         locationManager.startTrackingLocation(delegado: self)
         self.updatePuntos()
+        
+        let bigAvatar: SCNScene = SCNScene(named: Usuario.shared.getAvatarActivoStanding())!
+        avatar.present(bigAvatar, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
+        avatar.loops = false
+        avatar.isPlaying = false
+        
+        let omniLightNode = SCNNode()
+        omniLightNode.light = SCNLight()
+        omniLightNode.light!.type = .omni
+        omniLightNode.light!.color = UIColor(white: 0.75, alpha: 1.0)
+        omniLightNode.position = SCNVector3Make(0, 300, 200)
+        bigAvatar.rootNode.addChildNode(omniLightNode)
+        
+        nivelView.addShadowInContainerView(withRadius: 25)
+        
+        if !firstTime{//para refrescar el pin-avatar en caso de averlo cambiado en camerinos
+            mapBox.showsUserLocation = false
+            mapBox.showsUserLocation = true
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
