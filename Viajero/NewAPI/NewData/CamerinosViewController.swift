@@ -222,7 +222,6 @@ class CamerinosViewController: BaseViewController{
     
     func activadoEntendido(){
         Usuario.shared.avatarActivo = avatares[posicion].nombre ?? ""
-        Usuario.shared.monedas = Usuario.shared.monedas - (avatares[posicion].precio ?? 0)
         changeAvatarInfo()
     }
     
