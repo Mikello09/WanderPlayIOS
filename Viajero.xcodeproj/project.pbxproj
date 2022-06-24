@@ -451,60 +451,60 @@
 		9708559B2865E92E001AFD4E /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708559A2865E92E001AFD4E /* MapRouter.swift */; };
 		9708559C2865E92E001AFD4E /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708559A2865E92E001AFD4E /* MapRouter.swift */; };
 		9708559D2865E92E001AFD4E /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708559A2865E92E001AFD4E /* MapRouter.swift */; };
-		970855B82865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */; };
-		970855B92865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */; };
-		970855BA2865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */; };
 		970855BB2865F2EF001AFD4E /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 970855A72865F2E8001AFD4E /* textures */; };
 		970855BC2865F2EF001AFD4E /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 970855A72865F2E8001AFD4E /* textures */; };
 		970855BD2865F2EF001AFD4E /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 970855A72865F2E8001AFD4E /* textures */; };
-		970855BE2865F2EF001AFD4E /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A82865F2E9001AFD4E /* Inspector_Walking.dae */; };
-		970855BF2865F2EF001AFD4E /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A82865F2E9001AFD4E /* Inspector_Walking.dae */; };
-		970855C02865F2EF001AFD4E /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A82865F2E9001AFD4E /* Inspector_Walking.dae */; };
-		970855C12865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */; };
-		970855C22865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */; };
-		970855C32865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */; };
-		970855C42865F2EF001AFD4E /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AA2865F2EA001AFD4E /* Playero_Walking.dae */; };
-		970855C52865F2EF001AFD4E /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AA2865F2EA001AFD4E /* Playero_Walking.dae */; };
-		970855C62865F2EF001AFD4E /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AA2865F2EA001AFD4E /* Playero_Walking.dae */; };
-		970855C72865F2EF001AFD4E /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */; };
-		970855C82865F2EF001AFD4E /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */; };
-		970855C92865F2EF001AFD4E /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */; };
-		970855CA2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */; };
-		970855CB2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */; };
-		970855CC2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */; };
-		970855CD2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */; };
-		970855CE2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */; };
-		970855CF2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */; };
-		970855D02865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */; };
-		970855D12865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */; };
-		970855D22865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */; };
 		970855D32865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
 		970855D42865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
 		970855D52865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
-		970855D62865F2EF001AFD4E /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B02865F2EC001AFD4E /* Playero_Standing.dae */; };
-		970855D72865F2EF001AFD4E /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B02865F2EC001AFD4E /* Playero_Standing.dae */; };
-		970855D82865F2EF001AFD4E /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B02865F2EC001AFD4E /* Playero_Standing.dae */; };
-		970855D92865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */; };
-		970855DA2865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */; };
-		970855DB2865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */; };
-		970855DC2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */; };
-		970855DD2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */; };
-		970855DE2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */; };
-		970855DF2865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */; };
-		970855E02865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */; };
-		970855E12865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */; };
-		970855E22865F2EF001AFD4E /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B42865F2EE001AFD4E /* Profesor_Habla.dae */; };
-		970855E32865F2EF001AFD4E /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B42865F2EE001AFD4E /* Profesor_Habla.dae */; };
-		970855E42865F2EF001AFD4E /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B42865F2EE001AFD4E /* Profesor_Habla.dae */; };
-		970855E52865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */; };
-		970855E62865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */; };
-		970855E72865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */; };
-		970855E82865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */; };
-		970855E92865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */; };
-		970855EA2865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */; };
-		970855EB2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */; };
-		970855EC2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */; };
-		970855ED2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */; };
+		97B3675B2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3675A2865FF990067FC21 /* Enfermero_Dancing.scn */; };
+		97B3675C2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3675A2865FF990067FC21 /* Enfermero_Dancing.scn */; };
+		97B3675D2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3675A2865FF990067FC21 /* Enfermero_Dancing.scn */; };
+		97B3675F2865FFAC0067FC21 /* Profesor_Saluda.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3675E2865FFAC0067FC21 /* Profesor_Saluda.scn */; };
+		97B367602865FFAC0067FC21 /* Profesor_Saluda.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3675E2865FFAC0067FC21 /* Profesor_Saluda.scn */; };
+		97B367612865FFAC0067FC21 /* Profesor_Saluda.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3675E2865FFAC0067FC21 /* Profesor_Saluda.scn */; };
+		97B36763286602590067FC21 /* Enfermero_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36762286602590067FC21 /* Enfermero_Standing.scn */; };
+		97B36764286602590067FC21 /* Enfermero_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36762286602590067FC21 /* Enfermero_Standing.scn */; };
+		97B36765286602590067FC21 /* Enfermero_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36762286602590067FC21 /* Enfermero_Standing.scn */; };
+		97B36767286602600067FC21 /* Enfermero_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36766286602600067FC21 /* Enfermero_Walking.scn */; };
+		97B36768286602600067FC21 /* Enfermero_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36766286602600067FC21 /* Enfermero_Walking.scn */; };
+		97B36769286602600067FC21 /* Enfermero_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36766286602600067FC21 /* Enfermero_Walking.scn */; };
+		97B3676B286602650067FC21 /* Futbolista_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3676A286602650067FC21 /* Futbolista_Dancing.scn */; };
+		97B3676C286602650067FC21 /* Futbolista_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3676A286602650067FC21 /* Futbolista_Dancing.scn */; };
+		97B3676D286602650067FC21 /* Futbolista_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3676A286602650067FC21 /* Futbolista_Dancing.scn */; };
+		97B3676F2866026B0067FC21 /* Futbolista_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3676E2866026B0067FC21 /* Futbolista_Standing.scn */; };
+		97B367702866026B0067FC21 /* Futbolista_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3676E2866026B0067FC21 /* Futbolista_Standing.scn */; };
+		97B367712866026B0067FC21 /* Futbolista_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3676E2866026B0067FC21 /* Futbolista_Standing.scn */; };
+		97B36773286602700067FC21 /* Futbolista_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36772286602700067FC21 /* Futbolista_Walking.scn */; };
+		97B36774286602700067FC21 /* Futbolista_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36772286602700067FC21 /* Futbolista_Walking.scn */; };
+		97B36775286602700067FC21 /* Futbolista_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36772286602700067FC21 /* Futbolista_Walking.scn */; };
+		97B36777286602760067FC21 /* Inspector_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36776286602760067FC21 /* Inspector_Dancing.scn */; };
+		97B36778286602760067FC21 /* Inspector_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36776286602760067FC21 /* Inspector_Dancing.scn */; };
+		97B36779286602760067FC21 /* Inspector_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36776286602760067FC21 /* Inspector_Dancing.scn */; };
+		97B3677B2866027A0067FC21 /* Inspector_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3677A2866027A0067FC21 /* Inspector_Standing.scn */; };
+		97B3677C2866027A0067FC21 /* Inspector_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3677A2866027A0067FC21 /* Inspector_Standing.scn */; };
+		97B3677D2866027A0067FC21 /* Inspector_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3677A2866027A0067FC21 /* Inspector_Standing.scn */; };
+		97B3677F2866027F0067FC21 /* Inspector_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3677E2866027F0067FC21 /* Inspector_Walking.scn */; };
+		97B367802866027F0067FC21 /* Inspector_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3677E2866027F0067FC21 /* Inspector_Walking.scn */; };
+		97B367812866027F0067FC21 /* Inspector_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3677E2866027F0067FC21 /* Inspector_Walking.scn */; };
+		97B36783286602860067FC21 /* LaMilitar_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36782286602860067FC21 /* LaMilitar_Dancing.scn */; };
+		97B36784286602860067FC21 /* LaMilitar_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36782286602860067FC21 /* LaMilitar_Dancing.scn */; };
+		97B36785286602860067FC21 /* LaMilitar_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36782286602860067FC21 /* LaMilitar_Dancing.scn */; };
+		97B367872866028B0067FC21 /* LaMilitar_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B367862866028B0067FC21 /* LaMilitar_Standing.scn */; };
+		97B367882866028B0067FC21 /* LaMilitar_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B367862866028B0067FC21 /* LaMilitar_Standing.scn */; };
+		97B367892866028B0067FC21 /* LaMilitar_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B367862866028B0067FC21 /* LaMilitar_Standing.scn */; };
+		97B3678B286602900067FC21 /* LaMilitar_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3678A286602900067FC21 /* LaMilitar_Walking.scn */; };
+		97B3678C286602900067FC21 /* LaMilitar_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3678A286602900067FC21 /* LaMilitar_Walking.scn */; };
+		97B3678D286602900067FC21 /* LaMilitar_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3678A286602900067FC21 /* LaMilitar_Walking.scn */; };
+		97B3678F286602950067FC21 /* Playero_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3678E286602950067FC21 /* Playero_Standing.scn */; };
+		97B36790286602950067FC21 /* Playero_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3678E286602950067FC21 /* Playero_Standing.scn */; };
+		97B36791286602950067FC21 /* Playero_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3678E286602950067FC21 /* Playero_Standing.scn */; };
+		97B367932866029A0067FC21 /* Playero_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B367922866029A0067FC21 /* Playero_Walking.scn */; };
+		97B367942866029A0067FC21 /* Playero_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B367922866029A0067FC21 /* Playero_Walking.scn */; };
+		97B367952866029A0067FC21 /* Playero_Walking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B367922866029A0067FC21 /* Playero_Walking.scn */; };
+		97B36797286602A00067FC21 /* Profesor_Habla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36796286602A00067FC21 /* Profesor_Habla.scn */; };
+		97B36798286602A00067FC21 /* Profesor_Habla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36796286602A00067FC21 /* Profesor_Habla.scn */; };
+		97B36799286602A00067FC21 /* Profesor_Habla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36796286602A00067FC21 /* Profesor_Habla.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -716,24 +716,24 @@
 		970855922865E8E4001AFD4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		970855962865E91A001AFD4E /* MapStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
 		9708559A2865E92E001AFD4E /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
-		970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Standing.dae; sourceTree = "<group>"; };
 		970855A72865F2E8001AFD4E /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
-		970855A82865F2E9001AFD4E /* Inspector_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Walking.dae; sourceTree = "<group>"; };
-		970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Walking.dae; sourceTree = "<group>"; };
-		970855AA2865F2EA001AFD4E /* Playero_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Playero_Walking.dae; sourceTree = "<group>"; };
-		970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Standing.dae; sourceTree = "<group>"; };
-		970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Profesor_Saluda.dae; sourceTree = "<group>"; };
-		970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Standing.dae; sourceTree = "<group>"; };
-		970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Standing.dae; sourceTree = "<group>"; };
 		970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Tshirt_obj.scn; sourceTree = "<group>"; };
-		970855B02865F2EC001AFD4E /* Playero_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Playero_Standing.dae; sourceTree = "<group>"; };
-		970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Dancing.dae; sourceTree = "<group>"; };
-		970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Walking.dae; sourceTree = "<group>"; };
-		970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Walking.dae; sourceTree = "<group>"; };
-		970855B42865F2EE001AFD4E /* Profesor_Habla.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Profesor_Habla.dae; sourceTree = "<group>"; };
-		970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Dancing.dae; sourceTree = "<group>"; };
-		970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Dancing.dae; sourceTree = "<group>"; };
-		970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Dancing.dae; sourceTree = "<group>"; };
+		97B3675A2865FF990067FC21 /* Enfermero_Dancing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Enfermero_Dancing.scn; sourceTree = "<group>"; };
+		97B3675E2865FFAC0067FC21 /* Profesor_Saluda.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Profesor_Saluda.scn; sourceTree = "<group>"; };
+		97B36762286602590067FC21 /* Enfermero_Standing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Enfermero_Standing.scn; sourceTree = "<group>"; };
+		97B36766286602600067FC21 /* Enfermero_Walking.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Enfermero_Walking.scn; sourceTree = "<group>"; };
+		97B3676A286602650067FC21 /* Futbolista_Dancing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Futbolista_Dancing.scn; sourceTree = "<group>"; };
+		97B3676E2866026B0067FC21 /* Futbolista_Standing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Futbolista_Standing.scn; sourceTree = "<group>"; };
+		97B36772286602700067FC21 /* Futbolista_Walking.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Futbolista_Walking.scn; sourceTree = "<group>"; };
+		97B36776286602760067FC21 /* Inspector_Dancing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Inspector_Dancing.scn; sourceTree = "<group>"; };
+		97B3677A2866027A0067FC21 /* Inspector_Standing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Inspector_Standing.scn; sourceTree = "<group>"; };
+		97B3677E2866027F0067FC21 /* Inspector_Walking.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Inspector_Walking.scn; sourceTree = "<group>"; };
+		97B36782286602860067FC21 /* LaMilitar_Dancing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = LaMilitar_Dancing.scn; sourceTree = "<group>"; };
+		97B367862866028B0067FC21 /* LaMilitar_Standing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = LaMilitar_Standing.scn; sourceTree = "<group>"; };
+		97B3678A286602900067FC21 /* LaMilitar_Walking.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = LaMilitar_Walking.scn; sourceTree = "<group>"; };
+		97B3678E286602950067FC21 /* Playero_Standing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Playero_Standing.scn; sourceTree = "<group>"; };
+		97B367922866029A0067FC21 /* Playero_Walking.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Playero_Walking.scn; sourceTree = "<group>"; };
+		97B36796286602A00067FC21 /* Profesor_Habla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Profesor_Habla.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1302,22 +1302,22 @@
 		970855A12865F26A001AFD4E /* DAE */ = {
 			isa = PBXGroup;
 			children = (
-				970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */,
-				970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */,
-				970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */,
-				970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */,
-				970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */,
-				970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */,
-				970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */,
-				970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */,
-				970855A82865F2E9001AFD4E /* Inspector_Walking.dae */,
-				970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */,
-				970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */,
-				970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */,
-				970855B02865F2EC001AFD4E /* Playero_Standing.dae */,
-				970855AA2865F2EA001AFD4E /* Playero_Walking.dae */,
-				970855B42865F2EE001AFD4E /* Profesor_Habla.dae */,
-				970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */,
+				97B3675A2865FF990067FC21 /* Enfermero_Dancing.scn */,
+				97B36762286602590067FC21 /* Enfermero_Standing.scn */,
+				97B36766286602600067FC21 /* Enfermero_Walking.scn */,
+				97B3676A286602650067FC21 /* Futbolista_Dancing.scn */,
+				97B3676E2866026B0067FC21 /* Futbolista_Standing.scn */,
+				97B36772286602700067FC21 /* Futbolista_Walking.scn */,
+				97B36776286602760067FC21 /* Inspector_Dancing.scn */,
+				97B3677A2866027A0067FC21 /* Inspector_Standing.scn */,
+				97B3677E2866027F0067FC21 /* Inspector_Walking.scn */,
+				97B36782286602860067FC21 /* LaMilitar_Dancing.scn */,
+				97B367862866028B0067FC21 /* LaMilitar_Standing.scn */,
+				97B3678A286602900067FC21 /* LaMilitar_Walking.scn */,
+				97B3678E286602950067FC21 /* Playero_Standing.scn */,
+				97B367922866029A0067FC21 /* Playero_Walking.scn */,
+				97B36796286602A00067FC21 /* Profesor_Habla.scn */,
+				97B3675E2865FFAC0067FC21 /* Profesor_Saluda.scn */,
 				970855A72865F2E8001AFD4E /* textures */,
 				970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */,
 			);
@@ -1446,55 +1446,55 @@
 				5D99E9B023683C5100CABA2D /* AvisoStandar.xib in Resources */,
 				5D25E88A233CC7DE002560A3 /* TrophyView.xib in Resources */,
 				5D1E8CC923992B9400F23C8C /* Pasaporte.storyboard in Resources */,
-				970855DF2865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */,
+				97B3678B286602900067FC21 /* LaMilitar_Walking.scn in Resources */,
+				97B367932866029A0067FC21 /* Playero_Walking.scn in Resources */,
 				5DD5F1AA2383D06700BE5A6B /* ResumenCartasView.xib in Resources */,
 				5DD6794B24594B170080FBDD /* Welcome.storyboard in Resources */,
 				5D25E8A5233E2B5A002560A3 /* GeneralCard.xib in Resources */,
-				970855E82865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */,
-				970855BE2865F2EF001AFD4E /* Inspector_Walking.dae in Resources */,
+				97B3677B2866027A0067FC21 /* Inspector_Standing.scn in Resources */,
 				5DE0CC6C2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
 				5D99E9A72368379900CABA2D /* Avisos.storyboard in Resources */,
 				5D679D69231FABFB005AB2E5 /* Login.storyboard in Resources */,
 				5D2AC6F32399A2F800AEA66C /* GrupoLogroView.xib in Resources */,
-				970855DC2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */,
+				97B3676B286602650067FC21 /* Futbolista_Dancing.scn in Resources */,
+				97B3675B2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */,
 				5DEAB353245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
+				97B36777286602760067FC21 /* Inspector_Dancing.scn in Resources */,
 				5D1FD3AD2532DE060044FCE8 /* confeti.json in Resources */,
 				5DD6795C24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
 				5DD67968245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
 				5D679D60231FAA0D005AB2E5 /* LaunchScreen.storyboard in Resources */,
 				5D679DAD2327C819005AB2E5 /* RightBarMenu.xib in Resources */,
-				970855E22865F2EF001AFD4E /* Profesor_Habla.dae in Resources */,
 				5D80B15D237E923400718BAA /* CardView.xib in Resources */,
-				970855CA2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */,
 				5D80B159237E8FAD00718BAA /* MostrarCartasView.xib in Resources */,
-				970855D02865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */,
 				5DB6DD62245741FC009764F1 /* ProfesorView.xib in Resources */,
 				5D857D9E23E08D6200A34048 /* Ranking.storyboard in Resources */,
 				5D80B14B237DB0C000718BAA /* Logros.storyboard in Resources */,
 				5D778A10234E32C1006422F2 /* MisDatosFieldView.xib in Resources */,
 				5DE882B42372E9DD002197E0 /* Init.storyboard in Resources */,
+				97B36783286602860067FC21 /* LaMilitar_Dancing.scn in Resources */,
+				97B3675F2865FFAC0067FC21 /* Profesor_Saluda.scn in Resources */,
 				5D040B6F24F8E84100A01263 /* LoginManual.storyboard in Resources */,
-				970855B82865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */,
 				970855D32865F2EF001AFD4E /* Tshirt_obj.scn in Resources */,
-				970855EB2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */,
 				970855972865E91A001AFD4E /* MapStoryboard.storyboard in Resources */,
+				97B36773286602700067FC21 /* Futbolista_Walking.scn in Resources */,
 				5DCAD53E2471318A009600C7 /* FiltroTutorialView.xib in Resources */,
-				970855D62865F2EF001AFD4E /* Playero_Standing.dae in Resources */,
 				5D11871423324C1B000AD1DC /* Avatar.storyboard in Resources */,
-				970855D92865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */,
 				5D679D5D231FAA0D005AB2E5 /* Assets.xcassets in Resources */,
 				5D25E892233D0136002560A3 /* NoTrophyView.xib in Resources */,
+				97B36767286602600067FC21 /* Enfermero_Walking.scn in Resources */,
 				5D4FE50B239FBF8C00E529F7 /* LogrosHeaderView.xib in Resources */,
-				970855C12865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */,
+				97B36797286602A00067FC21 /* Profesor_Habla.scn in Resources */,
+				97B3677F2866027F0067FC21 /* Inspector_Walking.scn in Resources */,
+				97B3676F2866026B0067FC21 /* Futbolista_Standing.scn in Resources */,
 				5DD67978245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
-				970855E52865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */,
-				970855C72865F2EF001AFD4E /* Inspector_Standing.dae in Resources */,
-				970855CD2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */,
+				97B3678F286602950067FC21 /* Playero_Standing.scn in Resources */,
 				5DE4B8EE2397076600309213 /* TopBarOnlyBack.xib in Resources */,
-				970855C42865F2EF001AFD4E /* Playero_Walking.dae in Resources */,
 				5DD5F1AE2383E57D00BE5A6B /* ResumenCartasCell.xib in Resources */,
 				5D25E87E233C9E39002560A3 /* CustomScrollView.xib in Resources */,
 				5DD67970245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				97B36763286602590067FC21 /* Enfermero_Standing.scn in Resources */,
+				97B367872866028B0067FC21 /* LaMilitar_Standing.scn in Resources */,
 				970855BB2865F2EF001AFD4E /* textures in Resources */,
 				5D2E2374250C82E9002EF48D /* Camerinos.storyboard in Resources */,
 				5D8F819123C4B673004A3633 /* Foto.storyboard in Resources */,
@@ -1510,55 +1510,55 @@
 				5D6A2C1B23D4D86F00404A6B /* AvisoStandar.xib in Resources */,
 				5D6A2C1C23D4D86F00404A6B /* TrophyView.xib in Resources */,
 				5D6A2C1D23D4D86F00404A6B /* Pasaporte.storyboard in Resources */,
-				970855E02865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */,
+				97B3678C286602900067FC21 /* LaMilitar_Walking.scn in Resources */,
+				97B367942866029A0067FC21 /* Playero_Walking.scn in Resources */,
 				5D6A2C1E23D4D86F00404A6B /* ResumenCartasView.xib in Resources */,
 				5DD6794C24594B170080FBDD /* Welcome.storyboard in Resources */,
 				5D6A2C1F23D4D86F00404A6B /* GeneralCard.xib in Resources */,
-				970855E92865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */,
-				970855BF2865F2EF001AFD4E /* Inspector_Walking.dae in Resources */,
+				97B3677C2866027A0067FC21 /* Inspector_Standing.scn in Resources */,
 				5DE0CC6D2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
 				5D6A2C2023D4D86F00404A6B /* Avisos.storyboard in Resources */,
 				5D6A2C2423D4D86F00404A6B /* Login.storyboard in Resources */,
 				5D6A2C2523D4D86F00404A6B /* GrupoLogroView.xib in Resources */,
-				970855DD2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */,
+				97B3676C286602650067FC21 /* Futbolista_Dancing.scn in Resources */,
+				97B3675C2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */,
 				5DEAB354245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
+				97B36778286602760067FC21 /* Inspector_Dancing.scn in Resources */,
 				5D1FD3AE2532DE060044FCE8 /* confeti.json in Resources */,
 				5DD6795D24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
 				5DD67969245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
 				5D6A2C2623D4D86F00404A6B /* LaunchScreen.storyboard in Resources */,
 				5D6A2C2723D4D86F00404A6B /* RightBarMenu.xib in Resources */,
-				970855E32865F2EF001AFD4E /* Profesor_Habla.dae in Resources */,
 				5D6A2C2923D4D86F00404A6B /* CardView.xib in Resources */,
-				970855CB2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */,
 				5D6A2C2A23D4D86F00404A6B /* MostrarCartasView.xib in Resources */,
-				970855D12865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */,
 				5DB6DD63245741FC009764F1 /* ProfesorView.xib in Resources */,
 				5D857D9F23E08D6200A34048 /* Ranking.storyboard in Resources */,
 				5D6A2C2F23D4D86F00404A6B /* Logros.storyboard in Resources */,
 				5D6A2C3223D4D86F00404A6B /* MisDatosFieldView.xib in Resources */,
 				5D6A2C3323D4D86F00404A6B /* Init.storyboard in Resources */,
+				97B36784286602860067FC21 /* LaMilitar_Dancing.scn in Resources */,
+				97B367602865FFAC0067FC21 /* Profesor_Saluda.scn in Resources */,
 				5D040B7024F8E84100A01263 /* LoginManual.storyboard in Resources */,
-				970855B92865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */,
 				970855D42865F2EF001AFD4E /* Tshirt_obj.scn in Resources */,
-				970855EC2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */,
 				970855982865E91A001AFD4E /* MapStoryboard.storyboard in Resources */,
+				97B36774286602700067FC21 /* Futbolista_Walking.scn in Resources */,
 				5DCAD53F2471318A009600C7 /* FiltroTutorialView.xib in Resources */,
-				970855D72865F2EF001AFD4E /* Playero_Standing.dae in Resources */,
 				5D6A2C3523D4D86F00404A6B /* Avatar.storyboard in Resources */,
-				970855DA2865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */,
 				5D6A2C3623D4D86F00404A6B /* Assets.xcassets in Resources */,
 				5D6A2C3723D4D86F00404A6B /* NoTrophyView.xib in Resources */,
+				97B36768286602600067FC21 /* Enfermero_Walking.scn in Resources */,
 				5D6A2C3A23D4D86F00404A6B /* LogrosHeaderView.xib in Resources */,
-				970855C22865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */,
+				97B36798286602A00067FC21 /* Profesor_Habla.scn in Resources */,
+				97B367802866027F0067FC21 /* Inspector_Walking.scn in Resources */,
+				97B367702866026B0067FC21 /* Futbolista_Standing.scn in Resources */,
 				5DD67979245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
-				970855E62865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */,
-				970855C82865F2EF001AFD4E /* Inspector_Standing.dae in Resources */,
-				970855CE2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */,
+				97B36790286602950067FC21 /* Playero_Standing.scn in Resources */,
 				5D6A2C3C23D4D86F00404A6B /* TopBarOnlyBack.xib in Resources */,
-				970855C52865F2EF001AFD4E /* Playero_Walking.dae in Resources */,
 				5D6A2C3D23D4D86F00404A6B /* ResumenCartasCell.xib in Resources */,
 				5D6A2C3E23D4D86F00404A6B /* CustomScrollView.xib in Resources */,
 				5DD67971245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				97B36764286602590067FC21 /* Enfermero_Standing.scn in Resources */,
+				97B367882866028B0067FC21 /* LaMilitar_Standing.scn in Resources */,
 				970855BC2865F2EF001AFD4E /* textures in Resources */,
 				5D2E2375250C82E9002EF48D /* Camerinos.storyboard in Resources */,
 				5D6A2C4223D4D86F00404A6B /* Foto.storyboard in Resources */,
@@ -1574,55 +1574,55 @@
 				5DBF55FC23DCCCCA002A6520 /* AvisoStandar.xib in Resources */,
 				5DBF55FD23DCCCCA002A6520 /* TrophyView.xib in Resources */,
 				5DBF55FE23DCCCCA002A6520 /* Pasaporte.storyboard in Resources */,
-				970855E12865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */,
+				97B3678D286602900067FC21 /* LaMilitar_Walking.scn in Resources */,
+				97B367952866029A0067FC21 /* Playero_Walking.scn in Resources */,
 				5DBF55FF23DCCCCA002A6520 /* ResumenCartasView.xib in Resources */,
 				5DD6794D24594B170080FBDD /* Welcome.storyboard in Resources */,
 				5DBF560023DCCCCA002A6520 /* GeneralCard.xib in Resources */,
-				970855EA2865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */,
-				970855C02865F2EF001AFD4E /* Inspector_Walking.dae in Resources */,
+				97B3677D2866027A0067FC21 /* Inspector_Standing.scn in Resources */,
 				5DE0CC6E2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
 				5DBF560123DCCCCA002A6520 /* Avisos.storyboard in Resources */,
 				5DBF560423DCCCCA002A6520 /* Login.storyboard in Resources */,
 				5DBF560523DCCCCA002A6520 /* GrupoLogroView.xib in Resources */,
-				970855DE2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */,
+				97B3676D286602650067FC21 /* Futbolista_Dancing.scn in Resources */,
+				97B3675D2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */,
 				5DEAB355245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
+				97B36779286602760067FC21 /* Inspector_Dancing.scn in Resources */,
 				5D1FD3AF2532DE060044FCE8 /* confeti.json in Resources */,
 				5DD6795E24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
 				5DD6796A245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
 				5DBF560623DCCCCA002A6520 /* LaunchScreen.storyboard in Resources */,
 				5DBF560723DCCCCA002A6520 /* RightBarMenu.xib in Resources */,
-				970855E42865F2EF001AFD4E /* Profesor_Habla.dae in Resources */,
 				5DBF560923DCCCCA002A6520 /* CardView.xib in Resources */,
-				970855CC2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */,
 				5DBF560A23DCCCCA002A6520 /* MostrarCartasView.xib in Resources */,
-				970855D22865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */,
 				5DB6DD64245741FC009764F1 /* ProfesorView.xib in Resources */,
 				5D857DA023E08D6200A34048 /* Ranking.storyboard in Resources */,
 				5DBF560F23DCCCCA002A6520 /* Logros.storyboard in Resources */,
 				5DBF561223DCCCCA002A6520 /* MisDatosFieldView.xib in Resources */,
 				5DBF561323DCCCCA002A6520 /* Init.storyboard in Resources */,
+				97B36785286602860067FC21 /* LaMilitar_Dancing.scn in Resources */,
+				97B367612865FFAC0067FC21 /* Profesor_Saluda.scn in Resources */,
 				5D040B7124F8E84100A01263 /* LoginManual.storyboard in Resources */,
-				970855BA2865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */,
 				970855D52865F2EF001AFD4E /* Tshirt_obj.scn in Resources */,
-				970855ED2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */,
 				970855992865E91A001AFD4E /* MapStoryboard.storyboard in Resources */,
+				97B36775286602700067FC21 /* Futbolista_Walking.scn in Resources */,
 				5DCAD5402471318A009600C7 /* FiltroTutorialView.xib in Resources */,
-				970855D82865F2EF001AFD4E /* Playero_Standing.dae in Resources */,
 				5DBF561523DCCCCA002A6520 /* Avatar.storyboard in Resources */,
-				970855DB2865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */,
 				5DBF561623DCCCCA002A6520 /* Assets.xcassets in Resources */,
 				5DBF561723DCCCCA002A6520 /* NoTrophyView.xib in Resources */,
+				97B36769286602600067FC21 /* Enfermero_Walking.scn in Resources */,
 				5DBF561A23DCCCCA002A6520 /* LogrosHeaderView.xib in Resources */,
-				970855C32865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */,
+				97B36799286602A00067FC21 /* Profesor_Habla.scn in Resources */,
+				97B367812866027F0067FC21 /* Inspector_Walking.scn in Resources */,
+				97B367712866026B0067FC21 /* Futbolista_Standing.scn in Resources */,
 				5DD6797A245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
-				970855E72865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */,
-				970855C92865F2EF001AFD4E /* Inspector_Standing.dae in Resources */,
-				970855CF2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */,
+				97B36791286602950067FC21 /* Playero_Standing.scn in Resources */,
 				5DBF561C23DCCCCA002A6520 /* TopBarOnlyBack.xib in Resources */,
-				970855C62865F2EF001AFD4E /* Playero_Walking.dae in Resources */,
 				5DBF561D23DCCCCA002A6520 /* ResumenCartasCell.xib in Resources */,
 				5DBF561E23DCCCCA002A6520 /* CustomScrollView.xib in Resources */,
 				5DD67972245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				97B36765286602590067FC21 /* Enfermero_Standing.scn in Resources */,
+				97B367892866028B0067FC21 /* LaMilitar_Standing.scn in Resources */,
 				970855BD2865F2EF001AFD4E /* textures in Resources */,
 				5D2E2376250C82E9002EF48D /* Camerinos.storyboard in Resources */,
 				5DBF562223DCCCCA002A6520 /* Foto.storyboard in Resources */,

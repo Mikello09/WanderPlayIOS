@@ -24,51 +24,51 @@ struct Avatar: Codable {
     func getWalking() -> String{
         switch self.nombre {
         case "Playero":
-            return "Playero_Walking"
+            return "Playero_Walking.scn"
         case "Militar":
-            return "LaMilitar_Walking"
+            return "LaMilitar_Walking.scn"
         case "Inspector":
-            return "Inspector_Walking"
+            return "Inspector_Walking.scn"
         case "Futbolista":
-            return "Futbolista_Walking"
+            return "Futbolista_Walking.scn"
         case "Enfermero":
-            return "Enfermero_Walking"
+            return "Enfermero_Walking.scn"
         default:
-            return "Playero_Walking"
+            return "Playero_Walking.scn"
         }
     }
     
     func getStanding() -> String{
         switch self.nombre {
         case "Playero":
-            return "Playero_Standing"
+            return "Playero_Standing.scn"
         case "Militar":
-            return "LaMilitar_Standing"
+            return "LaMilitar_Standing.scn"
         case "Inspector":
-            return "Inspector_Standing"
+            return "Inspector_Standing.scn"
         case "Futbolista":
-            return "Futbolista_Standing"
+            return "Futbolista_Standing.scn"
         case "Enfermero":
-            return "Enfermero_Standing"
+            return "Enfermero_Standing.scn"
         default:
-            return "Playero_Standing"
+            return "Playero_Standing.scn"
         }
     }
     
     func getDancing() -> String{
         switch self.nombre {
         case "Playero":
-            return "Playero_Standing"
+            return "Playero_Standing.scn"
         case "Militar":
-            return "LaMilitar_Dancing"
+            return "LaMilitar_Dancing.scn"
         case "Inspector":
-            return "Inspector_Dancing"
+            return "Inspector_Dancing.scn"
         case "Futbolista":
-            return "Futbolista_Dancing"
+            return "Futbolista_Dancing.scn"
         case "Enfermero":
-            return "Enfermero_Dancing"
+            return "Enfermero_Dancing.scn"
         default:
-            return "Playero_Standing"
+            return "Playero_Standing.scn"
         }
     }
     

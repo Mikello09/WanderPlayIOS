@@ -37,8 +37,8 @@ class ProfesorView: UIView{
     
     var delegate: ProfesorViewProtocol?
     
-    let profesorSaluda: SCNScene = SCNScene(named: "Profesor_Saluda")!
-    let profesorHabla: SCNScene = SCNScene(named: "Profesor_Habla")!
+    var profesorSaluda: SCNScene?
+    var profesorHabla: SCNScene?
     
     var filtroTutorialView: FiltroTutorialView?
     
@@ -62,6 +62,10 @@ class ProfesorView: UIView{
     func configure(delegate: ProfesorViewProtocol? = nil){
         
         self.delegate = delegate
+        // load SCN
+        profesorSaluda = SCNScene(named: "Profesor_Saluda.scn")
+        profesorHabla = SCNScene(named: "Profesor_Habla.scn")
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         container.isUserInteractionEnabled = true
         container.addGestureRecognizer(tap)
@@ -89,7 +93,7 @@ class ProfesorView: UIView{
     func setScene(profesor: TipoProfesor){
         switch profesor {
         case .habla:
-            sceneView.present(profesorHabla, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
+            sceneView.present(profesorHabla!, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
             sceneView.loops = true
             sceneView.isPlaying = true
             
@@ -98,9 +102,9 @@ class ProfesorView: UIView{
             omniLightNode.light!.type = .omni
             omniLightNode.light!.color = UIColor(white: 0.75, alpha: 1.0)
             omniLightNode.position = SCNVector3Make(0, 300, 200)
-            profesorHabla.rootNode.addChildNode(omniLightNode)
+            profesorHabla?.rootNode.addChildNode(omniLightNode)
         case .saluda:
-            sceneView.present(profesorSaluda, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
+            sceneView.present(profesorSaluda!, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
             sceneView.loops = true
             sceneView.isPlaying = true
             
@@ -109,7 +113,7 @@ class ProfesorView: UIView{
             omniLightNode.light!.type = .omni
             omniLightNode.light!.color = UIColor(white: 0.75, alpha: 1.0)
             omniLightNode.position = SCNVector3Make(0, 300, 200)
-            profesorSaluda.rootNode.addChildNode(omniLightNode)
+            profesorSaluda?.rootNode.addChildNode(omniLightNode)
         }
         //Falta rotar la camara
     }
