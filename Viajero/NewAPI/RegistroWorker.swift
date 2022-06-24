@@ -8,8 +8,6 @@
 
 import Foundation
 import UIKit
-import Alamofire
-
 
 protocol RegistroWorkerProtocol{
     func success()
@@ -24,14 +22,20 @@ class RegistroWorker: BaseWorker{
     
     func registrarse(nombre: String, pass: String, avatar: String, delegate: RegistroWorkerProtocol){
         self.delegate = delegate
-        manager.request(
-        getUrl(url: .registro),
-        method: .post,
-        parameters: ["nombre":nombre,"pass":pass, "avatar": avatar],
-        headers: headers).responseJSON { response in
-            if let data = response.data{
+        
+        guard let registroURL = URL(string: getUrl(url: .registro)) else {
+            delegate.fail(error: "Bad url formation")
+            return
+        }
+        
+        let session = getUrlSession()
+        let request = generateRequest(url: registroURL, method: .post)
+        let dataTask: URLSessionDataTask?
+        
+        dataTask = session.dataTask(with: request){ data, response, error in
+            if let data = data, let response = response as? HTTPURLResponse {
                 do {
-                    switch response.response?.statusCode ?? -1 {
+                    switch response.statusCode ?? -1 {
                     case 200:
                         let response = try self.newJSONDecoder().decode(UsuarioModelo.self, from: data)
                         Usuario.shared.guardarCredenciales(nombre: response.usuario?.nombre ?? "", pass: response.usuario?.contrasena ?? "")
@@ -49,6 +53,33 @@ class RegistroWorker: BaseWorker{
                 self.delegate?.fail(error: self.errorGeneral)
             }
         }
+        dataTask?.resume()
+        
+//        manager.request(
+//        getUrl(url: .registro),
+//        method: .post,
+//        parameters: ["nombre":nombre,"pass":pass, "avatar": avatar],
+//        headers: headers).responseJSON { response in
+//            if let data = response.data{
+//                do {
+//                    switch response.response?.statusCode ?? -1 {
+//                    case 200:
+//                        let response = try self.newJSONDecoder().decode(UsuarioModelo.self, from: data)
+//                        Usuario.shared.guardarCredenciales(nombre: response.usuario?.nombre ?? "", pass: response.usuario?.contrasena ?? "")
+//                        self.delegate?.success()
+//                    case 400,401,500:
+//                        let response = try self.newJSONDecoder().decode(Error.self, from: data)
+//                        self.delegate?.fail(error: response.reason)
+//                    default:
+//                        self.delegate?.fail(error: self.errorGeneral)
+//                    }
+//                }catch{
+//                    self.delegate?.fail(error: self.errorGeneral)
+//                }
+//            } else {
+//                self.delegate?.fail(error: self.errorGeneral)
+//            }
+//        }
     }
     
 }

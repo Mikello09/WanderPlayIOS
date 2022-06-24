@@ -1,6 +1,0 @@
-framework module Pods_Viajero {
-  umbrella header "Pods-Viajero-umbrella.h"
-
-  export *
-  module * { export * }
-}

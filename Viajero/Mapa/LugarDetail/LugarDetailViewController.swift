@@ -21,8 +21,6 @@ class LugarDetailViewController: BaseViewController{
     @IBOutlet weak var descripcion: UITextView!
     @IBOutlet var topBar: TopBarOnlyBack!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

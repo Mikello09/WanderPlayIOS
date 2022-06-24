@@ -8,15 +8,16 @@
 
 import Foundation
 import UIKit
-import Alamofire
 
+enum HttpMethod: String {
+    case get = "GET"
+    case post = "POST"
+}
 
 class BaseWorker{
     
-    
     var baseUrl = "https://wanderplay.herokuapp.com/"
     var headers = ["authToken":"AAAAA"]
-    let manager = Alamofire.SessionManager.default
     let errorGeneral = "Ha ocurrido un error. Vuelva a intentarlo."
     
     
@@ -42,6 +43,34 @@ class BaseWorker{
     
     func getUrl(url: Urls) -> String{
         return "\(self.baseUrl)\(url.rawValue)"
+    }
+    
+    func getUrlSession() -> URLSession {
+        let sessionConfig = URLSessionConfiguration.default
+        sessionConfig.timeoutIntervalForRequest = 600
+        sessionConfig.timeoutIntervalForResource = 600
+        return URLSession(configuration: sessionConfig)
+    }
+    
+    func generateRequest(url: URL, method: HttpMethod, params: [String: Any] = [:]) -> URLRequest {
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = method.rawValue
+        
+        for header in headers {
+            urlRequest.addValue(header.value, forHTTPHeaderField: header.key)
+        }
+        
+        if method == .post {
+            do {
+                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+            } catch {
+                print("Error generating body")
+            }
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
+        }
+        
+        return urlRequest
     }
 }
 

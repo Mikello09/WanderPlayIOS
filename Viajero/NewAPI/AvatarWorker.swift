@@ -8,8 +8,6 @@
 
 import Foundation
 import UIKit
-import Alamofire
-
 
 protocol GetAllAvataresProtocol{
     func success(avatares: [Avatar])
@@ -25,14 +23,19 @@ class AvatarWorker: BaseWorker{
     func getAllAvatares(delegate: GetAllAvataresProtocol){
         self.delegate = delegate
         
-        manager.request(
-        getUrl(url: .getAllAvatares),
-        method: .post,
-        headers: headers).responseJSON { response in
-            
-            if let data = response.data{
+        guard let getAllAvataresURL = URL(string: getUrl(url: .getAllAvatares)) else {
+            delegate.fail()
+            return
+        }
+        
+        let session = getUrlSession()
+        let request = generateRequest(url: getAllAvataresURL, method: .post)
+        let dataTask: URLSessionDataTask?
+        
+        dataTask = session.dataTask(with: request){ data, response, error in
+            if let data = data, let response = response as? HTTPURLResponse {
                 do {
-                    switch response.response?.statusCode ?? -1 {
+                    switch response.statusCode ?? -1 {
                     case 200:
                         let response = try self.newJSONDecoder().decode(AvatarModelo.self, from: data)
                         self.delegate?.success(avatares: response.avatares ?? [])
@@ -49,6 +52,32 @@ class AvatarWorker: BaseWorker{
                 self.delegate?.fail()
             }
         }
+        dataTask?.resume()
+        
+//        manager.request(
+//        getUrl(url: .getAllAvatares),
+//        method: .post,
+//        headers: headers).responseJSON { response in
+//
+//            if let data = response.data{
+//                do {
+//                    switch response.response?.statusCode ?? -1 {
+//                    case 200:
+//                        let response = try self.newJSONDecoder().decode(AvatarModelo.self, from: data)
+//                        self.delegate?.success(avatares: response.avatares ?? [])
+//                    case 400,401,500:
+//                        let response = try self.newJSONDecoder().decode(Error.self, from: data)
+//                        self.delegate?.fail()
+//                    default:
+//                        self.delegate?.fail()
+//                    }
+//                }catch{
+//                    self.delegate?.fail()
+//                }
+//            } else {
+//                self.delegate?.fail()
+//            }
+//        }
     }
     
 }

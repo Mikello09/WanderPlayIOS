@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,24 +41,6 @@
 		5D1E8CCB23992BAF00F23C8C /* PasaporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCA23992BAF00F23C8C /* PasaporteViewController.swift */; };
 		5D1E8CCD23992C0700F23C8C /* PasaporteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCC23992C0700F23C8C /* PasaporteRouter.swift */; };
 		5D1E8CCF23992FBD00F23C8C /* PasaportePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1E8CCE23992FBD00F23C8C /* PasaportePresenter.swift */; };
-		5D1FD38F253200340044FCE8 /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */; };
-		5D1FD390253200340044FCE8 /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */; };
-		5D1FD391253200340044FCE8 /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */; };
-		5D1FD394253205E80044FCE8 /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */; };
-		5D1FD395253205E80044FCE8 /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */; };
-		5D1FD396253205E80044FCE8 /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */; };
-		5D1FD3992532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */; };
-		5D1FD39A2532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */; };
-		5D1FD39B2532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */; };
-		5D1FD39E253206A70044FCE8 /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */; };
-		5D1FD39F253206A70044FCE8 /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */; };
-		5D1FD3A0253206A70044FCE8 /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */; };
-		5D1FD3A32532077E0044FCE8 /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */; };
-		5D1FD3A42532077E0044FCE8 /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */; };
-		5D1FD3A52532077E0044FCE8 /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */; };
-		5D1FD3A8253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */; };
-		5D1FD3A9253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */; };
-		5D1FD3AA253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */; };
 		5D1FD3AD2532DE060044FCE8 /* confeti.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3AC2532DE060044FCE8 /* confeti.json */; };
 		5D1FD3AE2532DE060044FCE8 /* confeti.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3AC2532DE060044FCE8 /* confeti.json */; };
 		5D1FD3AF2532DE060044FCE8 /* confeti.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D1FD3AC2532DE060044FCE8 /* confeti.json */; };
@@ -105,14 +87,6 @@
 		5D2E2378250C830A002EF48D /* CamerinosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2377250C830A002EF48D /* CamerinosRouter.swift */; };
 		5D2E2379250C830A002EF48D /* CamerinosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2377250C830A002EF48D /* CamerinosRouter.swift */; };
 		5D2E237A250C830A002EF48D /* CamerinosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2E2377250C830A002EF48D /* CamerinosRouter.swift */; };
-		5D2E2381250E28E0002EF48D /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E237F250E28E0002EF48D /* Mapbox.framework */; };
-		5D2E2382250E28E0002EF48D /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E237F250E28E0002EF48D /* Mapbox.framework */; };
-		5D2E2385250E28F6002EF48D /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */; };
-		5D2E2386250E28F6002EF48D /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */; };
-		5D2E2387250E2ADC002EF48D /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E237F250E28E0002EF48D /* Mapbox.framework */; };
-		5D2E2388250E2ADC002EF48D /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E237F250E28E0002EF48D /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D2E238A250E2ADE002EF48D /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */; };
-		5D2E238B250E2ADE002EF48D /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D3AB9842516AFEA00D17E08 /* RankingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */; };
 		5D3AB9852516AFEA00D17E08 /* RankingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */; };
 		5D3AB9862516AFEA00D17E08 /* RankingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */; };
@@ -263,9 +237,6 @@
 		5D891308246080E200D040BF /* InteresesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D891307246080E200D040BF /* InteresesCell.swift */; };
 		5D891309246080E200D040BF /* InteresesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D891307246080E200D040BF /* InteresesCell.swift */; };
 		5D89130A246080E200D040BF /* InteresesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D891307246080E200D040BF /* InteresesCell.swift */; };
-		5D89130C24629E2700D040BF /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */; };
-		5D89130D24629E2700D040BF /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */; };
-		5D89130E24629E2700D040BF /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */; };
 		5D8F818F23C4B64C004A3633 /* TomarFotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F818E23C4B64C004A3633 /* TomarFotoViewController.swift */; };
 		5D8F819123C4B673004A3633 /* Foto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8F819023C4B673004A3633 /* Foto.storyboard */; };
 		5D8F819323C4B696004A3633 /* TomarFotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8F819223C4B696004A3633 /* TomarFotoRouter.swift */; };
@@ -278,18 +249,8 @@
 		5DA18A9A2513CE1900DE90AE /* LogroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18A992513CE1900DE90AE /* LogroWorker.swift */; };
 		5DA18A9B2513CE1900DE90AE /* LogroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18A992513CE1900DE90AE /* LogroWorker.swift */; };
 		5DA18A9C2513CE1900DE90AE /* LogroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18A992513CE1900DE90AE /* LogroWorker.swift */; };
-		5DA1AF4D240C382200407276 /* Pods_ViajeroDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA1AF4C240C382200407276 /* Pods_ViajeroDev.framework */; };
-		5DA1AF4E240C382200407276 /* Pods_ViajeroDev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA1AF4C240C382200407276 /* Pods_ViajeroDev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DA1AF4E240C382200407276 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5DA577CA23CCB994002D99B8 /* FiltroFotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA577C923CCB994002D99B8 /* FiltroFotoView.swift */; };
-		5DB6DD4E24570D6F009764F1 /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */; };
-		5DB6DD4F24570D6F009764F1 /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */; };
-		5DB6DD5024570D6F009764F1 /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */; };
-		5DB6DD5124570D6F009764F1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4D24570D6F009764F1 /* textures */; };
-		5DB6DD5224570D6F009764F1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4D24570D6F009764F1 /* textures */; };
-		5DB6DD5324570D6F009764F1 /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD4D24570D6F009764F1 /* textures */; };
-		5DB6DD5D24572CEA009764F1 /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */; };
-		5DB6DD5E24572CEA009764F1 /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */; };
-		5DB6DD5F24572CEA009764F1 /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */; };
 		5DB6DD62245741FC009764F1 /* ProfesorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD61245741FC009764F1 /* ProfesorView.xib */; };
 		5DB6DD63245741FC009764F1 /* ProfesorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD61245741FC009764F1 /* ProfesorView.xib */; };
 		5DB6DD64245741FC009764F1 /* ProfesorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB6DD61245741FC009764F1 /* ProfesorView.xib */; };
@@ -463,27 +424,6 @@
 		5DEAB353245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */; };
 		5DEAB354245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */; };
 		5DEAB355245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */; };
-		5DEAB35B245D2890008E7D95 /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */; };
-		5DEAB35C245D2890008E7D95 /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */; };
-		5DEAB35D245D2890008E7D95 /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */; };
-		5DEAB35F245D28FF008E7D95 /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */; };
-		5DEAB360245D28FF008E7D95 /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */; };
-		5DEAB361245D28FF008E7D95 /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */; };
-		5DEAB363245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */; };
-		5DEAB364245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */; };
-		5DEAB365245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */; };
-		5DEAB367245D2B04008E7D95 /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */; };
-		5DEAB368245D2B04008E7D95 /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */; };
-		5DEAB369245D2B04008E7D95 /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */; };
-		5DEAB36B245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */; };
-		5DEAB36C245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */; };
-		5DEAB36D245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */; };
-		5DEAB36F245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */; };
-		5DEAB370245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */; };
-		5DEAB371245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */; };
-		5DEAB373245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */; };
-		5DEAB374245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */; };
-		5DEAB375245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */; };
 		5DEAB377245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */; };
 		5DEAB378245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */; };
 		5DEAB379245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */; };
@@ -493,10 +433,78 @@
 		84762237254E7835001B7373 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84762236254E7835001B7373 /* LoginManualViewController.swift */; };
 		84762238254E7835001B7373 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84762236254E7835001B7373 /* LoginManualViewController.swift */; };
 		84762239254E7835001B7373 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84762236254E7835001B7373 /* LoginManualViewController.swift */; };
-		8EB745FE4C35DBDC65BC0A7D /* Pods_Viajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */; };
-		9F757E078EA6042FDFFC1F2D /* Pods_Viajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */; };
-		A022B5EBED3F5133DDB59F65 /* Pods_Viajero_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2095B3CA4A9A7B1D1B55BBAA /* Pods_Viajero_Demo.framework */; };
-		DE6768D892E5C8436E6E9211 /* Pods_Viajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */; };
+		9708557928611546001AFD4E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9708557828611546001AFD4E /* Lottie */; };
+		9708557C28611873001AFD4E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 9708557B28611873001AFD4E /* MapboxMaps */; };
+		9708557F286118B5001AFD4E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9708557E286118B5001AFD4E /* Lottie */; };
+		97085581286118B9001AFD4E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 97085580286118B9001AFD4E /* MapboxMaps */; };
+		97085583286118CE001AFD4E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 97085582286118CE001AFD4E /* Lottie */; };
+		97085585286118D2001AFD4E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 97085584286118D2001AFD4E /* MapboxMaps */; };
+		9708558828631C3D001AFD4E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9708558728631C3D001AFD4E /* Kingfisher */; };
+		9708558A28631C4A001AFD4E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9708558928631C4A001AFD4E /* Kingfisher */; };
+		9708558C28631C50001AFD4E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9708558B28631C50001AFD4E /* Kingfisher */; };
+		970855932865E8E4001AFD4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970855922865E8E4001AFD4E /* MapViewController.swift */; };
+		970855942865E8E4001AFD4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970855922865E8E4001AFD4E /* MapViewController.swift */; };
+		970855952865E8E4001AFD4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970855922865E8E4001AFD4E /* MapViewController.swift */; };
+		970855972865E91A001AFD4E /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970855962865E91A001AFD4E /* MapStoryboard.storyboard */; };
+		970855982865E91A001AFD4E /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970855962865E91A001AFD4E /* MapStoryboard.storyboard */; };
+		970855992865E91A001AFD4E /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970855962865E91A001AFD4E /* MapStoryboard.storyboard */; };
+		9708559B2865E92E001AFD4E /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708559A2865E92E001AFD4E /* MapRouter.swift */; };
+		9708559C2865E92E001AFD4E /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708559A2865E92E001AFD4E /* MapRouter.swift */; };
+		9708559D2865E92E001AFD4E /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708559A2865E92E001AFD4E /* MapRouter.swift */; };
+		970855B82865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */; };
+		970855B92865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */; };
+		970855BA2865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */; };
+		970855BB2865F2EF001AFD4E /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 970855A72865F2E8001AFD4E /* textures */; };
+		970855BC2865F2EF001AFD4E /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 970855A72865F2E8001AFD4E /* textures */; };
+		970855BD2865F2EF001AFD4E /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 970855A72865F2E8001AFD4E /* textures */; };
+		970855BE2865F2EF001AFD4E /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A82865F2E9001AFD4E /* Inspector_Walking.dae */; };
+		970855BF2865F2EF001AFD4E /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A82865F2E9001AFD4E /* Inspector_Walking.dae */; };
+		970855C02865F2EF001AFD4E /* Inspector_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A82865F2E9001AFD4E /* Inspector_Walking.dae */; };
+		970855C12865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */; };
+		970855C22865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */; };
+		970855C32865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */; };
+		970855C42865F2EF001AFD4E /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AA2865F2EA001AFD4E /* Playero_Walking.dae */; };
+		970855C52865F2EF001AFD4E /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AA2865F2EA001AFD4E /* Playero_Walking.dae */; };
+		970855C62865F2EF001AFD4E /* Playero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AA2865F2EA001AFD4E /* Playero_Walking.dae */; };
+		970855C72865F2EF001AFD4E /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */; };
+		970855C82865F2EF001AFD4E /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */; };
+		970855C92865F2EF001AFD4E /* Inspector_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */; };
+		970855CA2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */; };
+		970855CB2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */; };
+		970855CC2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */; };
+		970855CD2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */; };
+		970855CE2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */; };
+		970855CF2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */; };
+		970855D02865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */; };
+		970855D12865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */; };
+		970855D22865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */; };
+		970855D32865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
+		970855D42865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
+		970855D52865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
+		970855D62865F2EF001AFD4E /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B02865F2EC001AFD4E /* Playero_Standing.dae */; };
+		970855D72865F2EF001AFD4E /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B02865F2EC001AFD4E /* Playero_Standing.dae */; };
+		970855D82865F2EF001AFD4E /* Playero_Standing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B02865F2EC001AFD4E /* Playero_Standing.dae */; };
+		970855D92865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */; };
+		970855DA2865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */; };
+		970855DB2865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */; };
+		970855DC2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */; };
+		970855DD2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */; };
+		970855DE2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */; };
+		970855DF2865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */; };
+		970855E02865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */; };
+		970855E12865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */; };
+		970855E22865F2EF001AFD4E /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B42865F2EE001AFD4E /* Profesor_Habla.dae */; };
+		970855E32865F2EF001AFD4E /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B42865F2EE001AFD4E /* Profesor_Habla.dae */; };
+		970855E42865F2EF001AFD4E /* Profesor_Habla.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B42865F2EE001AFD4E /* Profesor_Habla.dae */; };
+		970855E52865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */; };
+		970855E62865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */; };
+		970855E72865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */; };
+		970855E82865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */; };
+		970855E92865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */; };
+		970855EA2865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */; };
+		970855EB2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */; };
+		970855EC2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */; };
+		970855ED2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */ = {isa = PBXBuildFile; fileRef = 970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -506,8 +514,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5D2E238B250E2ADE002EF48D /* MapboxMobileEvents.framework in Embed Frameworks */,
-				5D2E2388250E2ADC002EF48D /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,7 +544,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5DA1AF4E240C382200407276 /* Pods_ViajeroDev.framework in Embed Frameworks */,
+				5DA1AF4E240C382200407276 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,9 +562,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D1FB964DA82D1A951B338DE /* Pods_ViajeroDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViajeroDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2095B3CA4A9A7B1D1B55BBAA /* Pods_Viajero_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viajero_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22D6B1DFBB5D028A8F0302AA /* Pods-Viajero Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero Demo.release.xcconfig"; path = "Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo.release.xcconfig"; sourceTree = "<group>"; };
 		5D040B6E24F8E84100A01263 /* LoginManual.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginManual.storyboard; sourceTree = "<group>"; };
 		5D040B7224F8EB2800A01263 /* LoginManualRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManualRouter.swift; sourceTree = "<group>"; };
 		5D040B7724F8F61300A01263 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
@@ -577,12 +580,6 @@
 		5D1E8CCA23992BAF00F23C8C /* PasaporteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasaporteViewController.swift; sourceTree = "<group>"; };
 		5D1E8CCC23992C0700F23C8C /* PasaporteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasaporteRouter.swift; sourceTree = "<group>"; };
 		5D1E8CCE23992FBD00F23C8C /* PasaportePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasaportePresenter.swift; sourceTree = "<group>"; };
-		5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Walking.dae; sourceTree = "<group>"; };
-		5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Standing.dae; sourceTree = "<group>"; };
-		5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Dancing.dae; sourceTree = "<group>"; };
-		5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Walking.dae; sourceTree = "<group>"; };
-		5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Standing.dae; sourceTree = "<group>"; };
-		5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Dancing.dae; sourceTree = "<group>"; };
 		5D1FD3AC2532DE060044FCE8 /* confeti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confeti.json; sourceTree = "<group>"; };
 		5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerinosWorker.swift; sourceTree = "<group>"; };
 		5D1FD3B92534C2C80044FCE8 /* LugaresInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugaresInteractor.swift; sourceTree = "<group>"; };
@@ -611,8 +608,6 @@
 		5D2E236F250C82CC002EF48D /* CamerinosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CamerinosViewController.swift; path = Viajero/NewAPI/NewData/CamerinosViewController.swift; sourceTree = SOURCE_ROOT; };
 		5D2E2373250C82E9002EF48D /* Camerinos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camerinos.storyboard; sourceTree = "<group>"; };
 		5D2E2377250C830A002EF48D /* CamerinosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerinosRouter.swift; sourceTree = "<group>"; };
-		5D2E237F250E28E0002EF48D /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
-		5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
 		5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingWorker.swift; sourceTree = "<group>"; };
 		5D3AB9AD2516B49400D17E08 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		5D4FE50A239FBF8C00E529F7 /* LogrosHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogrosHeaderView.xib; sourceTree = "<group>"; };
@@ -659,7 +654,6 @@
 		5D857D9D23E08D6200A34048 /* Ranking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ranking.storyboard; sourceTree = "<group>"; };
 		5D857DA223E0911400A34048 /* RankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
 		5D891307246080E200D040BF /* InteresesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteresesCell.swift; sourceTree = "<group>"; };
-		5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Walking.dae; sourceTree = "<group>"; };
 		5D8F818E23C4B64C004A3633 /* TomarFotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomarFotoViewController.swift; sourceTree = "<group>"; };
 		5D8F819023C4B673004A3633 /* Foto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Foto.storyboard; sourceTree = "<group>"; };
 		5D8F819223C4B696004A3633 /* TomarFotoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomarFotoRouter.swift; sourceTree = "<group>"; };
@@ -670,15 +664,8 @@
 		5D99E9AD23683C3700CABA2D /* AvisoStandar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisoStandar.swift; sourceTree = "<group>"; };
 		5D99E9AF23683C5100CABA2D /* AvisoStandar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvisoStandar.xib; sourceTree = "<group>"; };
 		5DA18A992513CE1900DE90AE /* LogroWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogroWorker.swift; sourceTree = "<group>"; };
-		5DA1AF3E240C2E5B00407276 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DA1AF45240C379900407276 /* Pods_ViajeroDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ViajeroDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DA1AF4C240C382200407276 /* Pods_ViajeroDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ViajeroDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DA22F5E3FBD899BAE5984DA /* Pods-Viajero Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero Demo.debug.xcconfig"; path = "Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		5DA25B9C244CB4BA00BE6107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DA577C923CCB994002D99B8 /* FiltroFotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltroFotoView.swift; sourceTree = "<group>"; };
-		5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Profesor_Saluda.dae; sourceTree = "<group>"; };
-		5DB6DD4D24570D6F009764F1 /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
-		5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Profesor_Habla.dae; sourceTree = "<group>"; };
 		5DB6DD61245741FC009764F1 /* ProfesorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfesorView.xib; sourceTree = "<group>"; };
 		5DB6DD6524574208009764F1 /* ProfesorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfesorView.swift; sourceTree = "<group>"; };
 		5DBF558B23DC75E7002A6520 /* PersonalDataCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCollectionCell.swift; sourceTree = "<group>"; };
@@ -721,23 +708,32 @@
 		5DEAB34A245C8B94008E7D95 /* ChooseAvatarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAvatarRouter.swift; sourceTree = "<group>"; };
 		5DEAB34E245C8BA1008E7D95 /* ChooseAvatarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAvatarPresenter.swift; sourceTree = "<group>"; };
 		5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseAvatar.storyboard; sourceTree = "<group>"; };
-		5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Playero_Standing.dae; sourceTree = "<group>"; };
-		5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Playero_Walking.dae; sourceTree = "<group>"; };
-		5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Dancing.dae; sourceTree = "<group>"; };
-		5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Standing.dae; sourceTree = "<group>"; };
-		5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Walking.dae; sourceTree = "<group>"; };
-		5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Dancing.dae; sourceTree = "<group>"; };
-		5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Standing.dae; sourceTree = "<group>"; };
 		5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarChooseCell.swift; sourceTree = "<group>"; };
 		5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltrosCollectionCell.swift; sourceTree = "<group>"; };
 		5DF8DADE2370D82E009A14C0 /* ApiBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBase.swift; sourceTree = "<group>"; };
 		5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosPresenter.swift; sourceTree = "<group>"; };
-		6ECC041EC03E6B3E569B051D /* Pods-Viajero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero.release.xcconfig"; path = "Target Support Files/Pods-Viajero/Pods-Viajero.release.xcconfig"; sourceTree = "<group>"; };
 		84762236254E7835001B7373 /* LoginManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManualViewController.swift; sourceTree = "<group>"; };
-		8534A236D37AF7A42E4F07CA /* Pods-ViajeroDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajeroDev.release.xcconfig"; path = "Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev.release.xcconfig"; sourceTree = "<group>"; };
-		8616E6355DD2828B52EBFDAB /* Pods-ViajeroDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViajeroDev.debug.xcconfig"; path = "Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev.debug.xcconfig"; sourceTree = "<group>"; };
-		928B14B6D74C4C5FA0972F8C /* Pods-Viajero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajero.debug.xcconfig"; path = "Target Support Files/Pods-Viajero/Pods-Viajero.debug.xcconfig"; sourceTree = "<group>"; };
-		E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viajero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		970855922865E8E4001AFD4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		970855962865E91A001AFD4E /* MapStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
+		9708559A2865E92E001AFD4E /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Standing.dae; sourceTree = "<group>"; };
+		970855A72865F2E8001AFD4E /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
+		970855A82865F2E9001AFD4E /* Inspector_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Walking.dae; sourceTree = "<group>"; };
+		970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Walking.dae; sourceTree = "<group>"; };
+		970855AA2865F2EA001AFD4E /* Playero_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Playero_Walking.dae; sourceTree = "<group>"; };
+		970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Standing.dae; sourceTree = "<group>"; };
+		970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Profesor_Saluda.dae; sourceTree = "<group>"; };
+		970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Standing.dae; sourceTree = "<group>"; };
+		970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Standing.dae; sourceTree = "<group>"; };
+		970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Tshirt_obj.scn; sourceTree = "<group>"; };
+		970855B02865F2EC001AFD4E /* Playero_Standing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Playero_Standing.dae; sourceTree = "<group>"; };
+		970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Dancing.dae; sourceTree = "<group>"; };
+		970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Futbolista_Walking.dae; sourceTree = "<group>"; };
+		970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Walking.dae; sourceTree = "<group>"; };
+		970855B42865F2EE001AFD4E /* Profesor_Habla.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Profesor_Habla.dae; sourceTree = "<group>"; };
+		970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = LaMilitar_Dancing.dae; sourceTree = "<group>"; };
+		970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Inspector_Dancing.dae; sourceTree = "<group>"; };
+		970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Enfermero_Dancing.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -745,11 +741,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F757E078EA6042FDFFC1F2D /* Pods_Viajero.framework in Frameworks */,
-				5D2E238A250E2ADE002EF48D /* MapboxMobileEvents.framework in Frameworks */,
-				8EB745FE4C35DBDC65BC0A7D /* Pods_Viajero.framework in Frameworks */,
-				DE6768D892E5C8436E6E9211 /* Pods_Viajero.framework in Frameworks */,
-				5D2E2387250E2ADC002EF48D /* Mapbox.framework in Frameworks */,
+				9708558828631C3D001AFD4E /* Kingfisher in Frameworks */,
+				9708557C28611873001AFD4E /* MapboxMaps in Frameworks */,
+				9708557928611546001AFD4E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,9 +751,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D2E2385250E28F6002EF48D /* MapboxMobileEvents.framework in Frameworks */,
-				5DA1AF4D240C382200407276 /* Pods_ViajeroDev.framework in Frameworks */,
-				5D2E2381250E28E0002EF48D /* Mapbox.framework in Frameworks */,
+				9708558A28631C4A001AFD4E /* Kingfisher in Frameworks */,
+				97085581286118B9001AFD4E /* MapboxMaps in Frameworks */,
+				9708557F286118B5001AFD4E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,28 +761,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D2E2386250E28F6002EF48D /* MapboxMobileEvents.framework in Frameworks */,
-				A022B5EBED3F5133DDB59F65 /* Pods_Viajero_Demo.framework in Frameworks */,
-				5D2E2382250E28E0002EF48D /* Mapbox.framework in Frameworks */,
+				9708558C28631C50001AFD4E /* Kingfisher in Frameworks */,
+				97085585286118D2001AFD4E /* MapboxMaps in Frameworks */,
+				97085583286118CE001AFD4E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		407009F6382DEEEB60EED429 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				928B14B6D74C4C5FA0972F8C /* Pods-Viajero.debug.xcconfig */,
-				6ECC041EC03E6B3E569B051D /* Pods-Viajero.release.xcconfig */,
-				5DA22F5E3FBD899BAE5984DA /* Pods-Viajero Demo.debug.xcconfig */,
-				22D6B1DFBB5D028A8F0302AA /* Pods-Viajero Demo.release.xcconfig */,
-				8616E6355DD2828B52EBFDAB /* Pods-ViajeroDev.debug.xcconfig */,
-				8534A236D37AF7A42E4F07CA /* Pods-ViajeroDev.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		5D040B6924F8E7FF00A01263 /* LoginManual */ = {
 			isa = PBXGroup;
 			children = (
@@ -926,39 +907,12 @@
 			path = Camerinos;
 			sourceTree = "<group>";
 		};
-		5D59AC322454327700B9C461 /* DAE */ = {
-			isa = PBXGroup;
-			children = (
-				5D1FD39D253206A70044FCE8 /* Futbolista_Walking.dae */,
-				5D1FD3A22532077E0044FCE8 /* Futbolista_Standing.dae */,
-				5D1FD3A7253207C60044FCE8 /* Futbolista_Dancing.dae */,
-				5D1FD38E253200340044FCE8 /* Enfermero_Walking.dae */,
-				5D1FD393253205E80044FCE8 /* Enfermero_Standing.dae */,
-				5D1FD3982532064E0044FCE8 /* Enfermero_Dancing.dae */,
-				5DB6DD4C24570D6E009764F1 /* Profesor_Saluda.dae */,
-				5DB6DD5C24572CEA009764F1 /* Profesor_Habla.dae */,
-				5DEAB35A245D2890008E7D95 /* Playero_Standing.dae */,
-				5DEAB35E245D28FF008E7D95 /* Playero_Walking.dae */,
-				5DEAB362245D2A67008E7D95 /* Inspector_Dancing.dae */,
-				5DEAB366245D2B04008E7D95 /* Inspector_Standing.dae */,
-				5DEAB36A245D2B3C008E7D95 /* Inspector_Walking.dae */,
-				5DEAB36E245D2C42008E7D95 /* LaMilitar_Dancing.dae */,
-				5DEAB372245D2CFD008E7D95 /* LaMilitar_Standing.dae */,
-				5D89130B24629E2700D040BF /* LaMilitar_Walking.dae */,
-				5DB6DD4D24570D6F009764F1 /* textures */,
-			);
-			path = DAE;
-			sourceTree = "<group>";
-		};
 		5D679D49231FAA0B005AB2E5 = {
 			isa = PBXGroup;
 			children = (
 				5D679D54231FAA0B005AB2E5 /* Viajero */,
 				5D679D53231FAA0B005AB2E5 /* Products */,
-				5D2E2383250E28F6002EF48D /* MapboxMobileEvents.framework */,
-				5D2E237F250E28E0002EF48D /* Mapbox.framework */,
-				407009F6382DEEEB60EED429 /* Pods */,
-				B55D17DDF7404ACF2C9B6FB5 /* Frameworks */,
+				9708557D286118B5001AFD4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -975,9 +929,9 @@
 		5D679D54231FAA0B005AB2E5 /* Viajero */ = {
 			isa = PBXGroup;
 			children = (
+				970855A12865F26A001AFD4E /* DAE */,
 				5D040B7624F8F5F700A01263 /* NewAPI */,
 				5D876A2B2456D84C00ABE45F /* Inicio */,
-				5D59AC322454327700B9C461 /* DAE */,
 				5DA1AF50240ED9C500407276 /* PLIST */,
 				5D679D7B23215A46005AB2E5 /* Mapa */,
 				5DF6D50623689968007C3774 /* API */,
@@ -1020,6 +974,7 @@
 		5D679D7B23215A46005AB2E5 /* Mapa */ = {
 			isa = PBXGroup;
 			children = (
+				9708558D2865E85E001AFD4E /* Map */,
 				5D80B147237DB09D00718BAA /* Logros */,
 				5D25E875233B486F002560A3 /* LugarDetail */,
 				5D679DA52327C32C005AB2E5 /* Menus */,
@@ -1327,17 +1282,46 @@
 			path = Filtros;
 			sourceTree = "<group>";
 		};
-		B55D17DDF7404ACF2C9B6FB5 /* Frameworks */ = {
+		9708557D286118B5001AFD4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5DA1AF4C240C382200407276 /* Pods_ViajeroDev.framework */,
-				5DA1AF45240C379900407276 /* Pods_ViajeroDev.framework */,
-				5DA1AF3E240C2E5B00407276 /* Lottie.framework */,
-				E6A7D9C1F9057ABAF7A313F2 /* Pods_Viajero.framework */,
-				2095B3CA4A9A7B1D1B55BBAA /* Pods_Viajero_Demo.framework */,
-				1D1FB964DA82D1A951B338DE /* Pods_ViajeroDev.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9708558D2865E85E001AFD4E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				970855922865E8E4001AFD4E /* MapViewController.swift */,
+				970855962865E91A001AFD4E /* MapStoryboard.storyboard */,
+				9708559A2865E92E001AFD4E /* MapRouter.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		970855A12865F26A001AFD4E /* DAE */ = {
+			isa = PBXGroup;
+			children = (
+				970855B72865F2EF001AFD4E /* Enfermero_Dancing.dae */,
+				970855A62865F2E5001AFD4E /* Enfermero_Standing.dae */,
+				970855B32865F2EE001AFD4E /* Enfermero_Walking.dae */,
+				970855B12865F2ED001AFD4E /* Futbolista_Dancing.dae */,
+				970855AD2865F2EB001AFD4E /* Futbolista_Standing.dae */,
+				970855B22865F2ED001AFD4E /* Futbolista_Walking.dae */,
+				970855B62865F2EF001AFD4E /* Inspector_Dancing.dae */,
+				970855AB2865F2EA001AFD4E /* Inspector_Standing.dae */,
+				970855A82865F2E9001AFD4E /* Inspector_Walking.dae */,
+				970855B52865F2EE001AFD4E /* LaMilitar_Dancing.dae */,
+				970855AE2865F2EB001AFD4E /* LaMilitar_Standing.dae */,
+				970855A92865F2E9001AFD4E /* LaMilitar_Walking.dae */,
+				970855B02865F2EC001AFD4E /* Playero_Standing.dae */,
+				970855AA2865F2EA001AFD4E /* Playero_Walking.dae */,
+				970855B42865F2EE001AFD4E /* Profesor_Habla.dae */,
+				970855AC2865F2EA001AFD4E /* Profesor_Saluda.dae */,
+				970855A72865F2E8001AFD4E /* textures */,
+				970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */,
+			);
+			path = DAE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1347,20 +1331,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D679D64231FAA0D005AB2E5 /* Build configuration list for PBXNativeTarget "Viajero" */;
 			buildPhases = (
-				47F5DE223D8AD46355D717B1 /* [CP] Check Pods Manifest.lock */,
 				5D679D4E231FAA0B005AB2E5 /* Sources */,
 				5D679D4F231FAA0B005AB2E5 /* Frameworks */,
 				5D679D50231FAA0B005AB2E5 /* Resources */,
-				9C1AC0047ACB046722004AEA /* [CP] Embed Pods Frameworks */,
 				5D6A2BA923D4D78A00404A6B /* Embed App Extensions */,
 				5D2E2389250E2ADD002EF48D /* Embed Frameworks */,
-				848266FF254EA26A00ACF27A /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Viajero;
+			packageProductDependencies = (
+				9708557828611546001AFD4E /* Lottie */,
+				9708557B28611873001AFD4E /* MapboxMaps */,
+				9708558728631C3D001AFD4E /* Kingfisher */,
+			);
 			productName = Viajero;
 			productReference = 5D679D52231FAA0B005AB2E5 /* WanderPlay.app */;
 			productType = "com.apple.product-type.application";
@@ -1369,12 +1355,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D6A2C4623D4D86F00404A6B /* Build configuration list for PBXNativeTarget "ViajeroDev" */;
 			buildPhases = (
-				104A48243CADE99E59B13C39 /* [CP] Check Pods Manifest.lock */,
 				5D6A2BAF23D4D86F00404A6B /* Sources */,
 				5D6A2C1823D4D86F00404A6B /* Frameworks */,
 				5D6A2C1A23D4D86F00404A6B /* Resources */,
 				5D6A2C4523D4D86F00404A6B /* Embed App Extensions */,
-				E5AB34BAA4E5F5880BBD2A85 /* [CP] Embed Pods Frameworks */,
 				5DA1AF4F240C382200407276 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -1382,6 +1366,11 @@
 			dependencies = (
 			);
 			name = ViajeroDev;
+			packageProductDependencies = (
+				9708557E286118B5001AFD4E /* Lottie */,
+				97085580286118B9001AFD4E /* MapboxMaps */,
+				9708558928631C4A001AFD4E /* Kingfisher */,
+			);
 			productName = Viajero;
 			productReference = 5D6A2C4923D4D86F00404A6B /* ViajeroDev.app */;
 			productType = "com.apple.product-type.application";
@@ -1390,18 +1379,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DBF562623DCCCCA002A6520 /* Build configuration list for PBXNativeTarget "Viajero Demo" */;
 			buildPhases = (
-				53AFC7A537F74CF773E01724 /* [CP] Check Pods Manifest.lock */,
 				5DBF559023DCCCCA002A6520 /* Sources */,
 				5DBF55F923DCCCCA002A6520 /* Frameworks */,
 				5DBF55FB23DCCCCA002A6520 /* Resources */,
 				5DBF562523DCCCCA002A6520 /* Embed App Extensions */,
-				733F6695D030FA144694F70C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Viajero Demo";
+			packageProductDependencies = (
+				97085582286118CE001AFD4E /* Lottie */,
+				97085584286118D2001AFD4E /* MapboxMaps */,
+				9708558B28631C50001AFD4E /* Kingfisher */,
+			);
 			productName = Viajero;
 			productReference = 5DBF562923DCCCCA002A6520 /* Viajero Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -1430,6 +1422,11 @@
 				Base,
 			);
 			mainGroup = 5D679D49231FAA0B005AB2E5;
+			packageReferences = (
+				9708557728611546001AFD4E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				9708557A28611873001AFD4E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				9708558628631C3D001AFD4E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5D679D53231FAA0B005AB2E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1446,61 +1443,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DB6DD5124570D6F009764F1 /* textures in Resources */,
 				5D99E9B023683C5100CABA2D /* AvisoStandar.xib in Resources */,
 				5D25E88A233CC7DE002560A3 /* TrophyView.xib in Resources */,
 				5D1E8CC923992B9400F23C8C /* Pasaporte.storyboard in Resources */,
-				5DEAB373245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */,
+				970855DF2865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */,
 				5DD5F1AA2383D06700BE5A6B /* ResumenCartasView.xib in Resources */,
-				5D1FD3992532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */,
 				5DD6794B24594B170080FBDD /* Welcome.storyboard in Resources */,
 				5D25E8A5233E2B5A002560A3 /* GeneralCard.xib in Resources */,
+				970855E82865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */,
+				970855BE2865F2EF001AFD4E /* Inspector_Walking.dae in Resources */,
 				5DE0CC6C2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
 				5D99E9A72368379900CABA2D /* Avisos.storyboard in Resources */,
-				5D1FD3A32532077E0044FCE8 /* Futbolista_Standing.dae in Resources */,
-				5D1FD3A8253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */,
-				5D1FD39E253206A70044FCE8 /* Futbolista_Walking.dae in Resources */,
 				5D679D69231FABFB005AB2E5 /* Login.storyboard in Resources */,
-				5DB6DD4E24570D6F009764F1 /* Profesor_Saluda.dae in Resources */,
-				5D89130C24629E2700D040BF /* LaMilitar_Walking.dae in Resources */,
 				5D2AC6F32399A2F800AEA66C /* GrupoLogroView.xib in Resources */,
+				970855DC2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */,
 				5DEAB353245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
-				5DEAB363245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */,
 				5D1FD3AD2532DE060044FCE8 /* confeti.json in Resources */,
 				5DD6795C24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
 				5DD67968245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
 				5D679D60231FAA0D005AB2E5 /* LaunchScreen.storyboard in Resources */,
 				5D679DAD2327C819005AB2E5 /* RightBarMenu.xib in Resources */,
+				970855E22865F2EF001AFD4E /* Profesor_Habla.dae in Resources */,
 				5D80B15D237E923400718BAA /* CardView.xib in Resources */,
-				5DEAB36B245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */,
+				970855CA2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */,
 				5D80B159237E8FAD00718BAA /* MostrarCartasView.xib in Resources */,
+				970855D02865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */,
 				5DB6DD62245741FC009764F1 /* ProfesorView.xib in Resources */,
-				5DEAB35B245D2890008E7D95 /* Playero_Standing.dae in Resources */,
 				5D857D9E23E08D6200A34048 /* Ranking.storyboard in Resources */,
 				5D80B14B237DB0C000718BAA /* Logros.storyboard in Resources */,
-				5DEAB367245D2B04008E7D95 /* Inspector_Standing.dae in Resources */,
-				5DEAB36F245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */,
 				5D778A10234E32C1006422F2 /* MisDatosFieldView.xib in Resources */,
 				5DE882B42372E9DD002197E0 /* Init.storyboard in Resources */,
 				5D040B6F24F8E84100A01263 /* LoginManual.storyboard in Resources */,
-				5DEAB35F245D28FF008E7D95 /* Playero_Walking.dae in Resources */,
-				5D1FD394253205E80044FCE8 /* Enfermero_Standing.dae in Resources */,
+				970855B82865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */,
+				970855D32865F2EF001AFD4E /* Tshirt_obj.scn in Resources */,
+				970855EB2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */,
+				970855972865E91A001AFD4E /* MapStoryboard.storyboard in Resources */,
 				5DCAD53E2471318A009600C7 /* FiltroTutorialView.xib in Resources */,
+				970855D62865F2EF001AFD4E /* Playero_Standing.dae in Resources */,
 				5D11871423324C1B000AD1DC /* Avatar.storyboard in Resources */,
+				970855D92865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */,
 				5D679D5D231FAA0D005AB2E5 /* Assets.xcassets in Resources */,
 				5D25E892233D0136002560A3 /* NoTrophyView.xib in Resources */,
 				5D4FE50B239FBF8C00E529F7 /* LogrosHeaderView.xib in Resources */,
+				970855C12865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */,
 				5DD67978245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
+				970855E52865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */,
+				970855C72865F2EF001AFD4E /* Inspector_Standing.dae in Resources */,
+				970855CD2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */,
 				5DE4B8EE2397076600309213 /* TopBarOnlyBack.xib in Resources */,
+				970855C42865F2EF001AFD4E /* Playero_Walking.dae in Resources */,
 				5DD5F1AE2383E57D00BE5A6B /* ResumenCartasCell.xib in Resources */,
 				5D25E87E233C9E39002560A3 /* CustomScrollView.xib in Resources */,
 				5DD67970245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				970855BB2865F2EF001AFD4E /* textures in Resources */,
 				5D2E2374250C82E9002EF48D /* Camerinos.storyboard in Resources */,
 				5D8F819123C4B673004A3633 /* Foto.storyboard in Resources */,
 				5D1FD3C62534EFB30044FCE8 /* fireworks.json in Resources */,
-				5D1FD38F253200340044FCE8 /* Enfermero_Walking.dae in Resources */,
 				5D679D5B231FAA0B005AB2E5 /* Main.storyboard in Resources */,
-				5DB6DD5D24572CEA009764F1 /* Profesor_Habla.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1508,61 +1507,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DB6DD5224570D6F009764F1 /* textures in Resources */,
 				5D6A2C1B23D4D86F00404A6B /* AvisoStandar.xib in Resources */,
 				5D6A2C1C23D4D86F00404A6B /* TrophyView.xib in Resources */,
 				5D6A2C1D23D4D86F00404A6B /* Pasaporte.storyboard in Resources */,
-				5DEAB374245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */,
+				970855E02865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */,
 				5D6A2C1E23D4D86F00404A6B /* ResumenCartasView.xib in Resources */,
-				5D1FD39A2532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */,
 				5DD6794C24594B170080FBDD /* Welcome.storyboard in Resources */,
 				5D6A2C1F23D4D86F00404A6B /* GeneralCard.xib in Resources */,
+				970855E92865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */,
+				970855BF2865F2EF001AFD4E /* Inspector_Walking.dae in Resources */,
 				5DE0CC6D2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
 				5D6A2C2023D4D86F00404A6B /* Avisos.storyboard in Resources */,
-				5D1FD3A42532077E0044FCE8 /* Futbolista_Standing.dae in Resources */,
-				5D1FD3A9253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */,
-				5D1FD39F253206A70044FCE8 /* Futbolista_Walking.dae in Resources */,
 				5D6A2C2423D4D86F00404A6B /* Login.storyboard in Resources */,
-				5DB6DD4F24570D6F009764F1 /* Profesor_Saluda.dae in Resources */,
-				5D89130D24629E2700D040BF /* LaMilitar_Walking.dae in Resources */,
 				5D6A2C2523D4D86F00404A6B /* GrupoLogroView.xib in Resources */,
+				970855DD2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */,
 				5DEAB354245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
-				5DEAB364245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */,
 				5D1FD3AE2532DE060044FCE8 /* confeti.json in Resources */,
 				5DD6795D24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
 				5DD67969245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
 				5D6A2C2623D4D86F00404A6B /* LaunchScreen.storyboard in Resources */,
 				5D6A2C2723D4D86F00404A6B /* RightBarMenu.xib in Resources */,
+				970855E32865F2EF001AFD4E /* Profesor_Habla.dae in Resources */,
 				5D6A2C2923D4D86F00404A6B /* CardView.xib in Resources */,
-				5DEAB36C245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */,
+				970855CB2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */,
 				5D6A2C2A23D4D86F00404A6B /* MostrarCartasView.xib in Resources */,
+				970855D12865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */,
 				5DB6DD63245741FC009764F1 /* ProfesorView.xib in Resources */,
-				5DEAB35C245D2890008E7D95 /* Playero_Standing.dae in Resources */,
 				5D857D9F23E08D6200A34048 /* Ranking.storyboard in Resources */,
 				5D6A2C2F23D4D86F00404A6B /* Logros.storyboard in Resources */,
-				5DEAB368245D2B04008E7D95 /* Inspector_Standing.dae in Resources */,
-				5DEAB370245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */,
 				5D6A2C3223D4D86F00404A6B /* MisDatosFieldView.xib in Resources */,
 				5D6A2C3323D4D86F00404A6B /* Init.storyboard in Resources */,
 				5D040B7024F8E84100A01263 /* LoginManual.storyboard in Resources */,
-				5DEAB360245D28FF008E7D95 /* Playero_Walking.dae in Resources */,
-				5D1FD395253205E80044FCE8 /* Enfermero_Standing.dae in Resources */,
+				970855B92865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */,
+				970855D42865F2EF001AFD4E /* Tshirt_obj.scn in Resources */,
+				970855EC2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */,
+				970855982865E91A001AFD4E /* MapStoryboard.storyboard in Resources */,
 				5DCAD53F2471318A009600C7 /* FiltroTutorialView.xib in Resources */,
+				970855D72865F2EF001AFD4E /* Playero_Standing.dae in Resources */,
 				5D6A2C3523D4D86F00404A6B /* Avatar.storyboard in Resources */,
+				970855DA2865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */,
 				5D6A2C3623D4D86F00404A6B /* Assets.xcassets in Resources */,
 				5D6A2C3723D4D86F00404A6B /* NoTrophyView.xib in Resources */,
 				5D6A2C3A23D4D86F00404A6B /* LogrosHeaderView.xib in Resources */,
+				970855C22865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */,
 				5DD67979245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
+				970855E62865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */,
+				970855C82865F2EF001AFD4E /* Inspector_Standing.dae in Resources */,
+				970855CE2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */,
 				5D6A2C3C23D4D86F00404A6B /* TopBarOnlyBack.xib in Resources */,
+				970855C52865F2EF001AFD4E /* Playero_Walking.dae in Resources */,
 				5D6A2C3D23D4D86F00404A6B /* ResumenCartasCell.xib in Resources */,
 				5D6A2C3E23D4D86F00404A6B /* CustomScrollView.xib in Resources */,
 				5DD67971245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				970855BC2865F2EF001AFD4E /* textures in Resources */,
 				5D2E2375250C82E9002EF48D /* Camerinos.storyboard in Resources */,
 				5D6A2C4223D4D86F00404A6B /* Foto.storyboard in Resources */,
 				5D1FD3C72534EFB30044FCE8 /* fireworks.json in Resources */,
-				5D1FD390253200340044FCE8 /* Enfermero_Walking.dae in Resources */,
 				5D6A2C4323D4D86F00404A6B /* Main.storyboard in Resources */,
-				5DB6DD5E24572CEA009764F1 /* Profesor_Habla.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1570,202 +1571,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DB6DD5324570D6F009764F1 /* textures in Resources */,
 				5DBF55FC23DCCCCA002A6520 /* AvisoStandar.xib in Resources */,
 				5DBF55FD23DCCCCA002A6520 /* TrophyView.xib in Resources */,
 				5DBF55FE23DCCCCA002A6520 /* Pasaporte.storyboard in Resources */,
-				5DEAB375245D2CFD008E7D95 /* LaMilitar_Standing.dae in Resources */,
+				970855E12865F2EF001AFD4E /* Enfermero_Walking.dae in Resources */,
 				5DBF55FF23DCCCCA002A6520 /* ResumenCartasView.xib in Resources */,
-				5D1FD39B2532064E0044FCE8 /* Enfermero_Dancing.dae in Resources */,
 				5DD6794D24594B170080FBDD /* Welcome.storyboard in Resources */,
 				5DBF560023DCCCCA002A6520 /* GeneralCard.xib in Resources */,
+				970855EA2865F2EF001AFD4E /* Inspector_Dancing.dae in Resources */,
+				970855C02865F2EF001AFD4E /* Inspector_Walking.dae in Resources */,
 				5DE0CC6E2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */,
 				5DBF560123DCCCCA002A6520 /* Avisos.storyboard in Resources */,
-				5D1FD3A52532077E0044FCE8 /* Futbolista_Standing.dae in Resources */,
-				5D1FD3AA253207C60044FCE8 /* Futbolista_Dancing.dae in Resources */,
-				5D1FD3A0253206A70044FCE8 /* Futbolista_Walking.dae in Resources */,
 				5DBF560423DCCCCA002A6520 /* Login.storyboard in Resources */,
-				5DB6DD5024570D6F009764F1 /* Profesor_Saluda.dae in Resources */,
-				5D89130E24629E2700D040BF /* LaMilitar_Walking.dae in Resources */,
 				5DBF560523DCCCCA002A6520 /* GrupoLogroView.xib in Resources */,
+				970855DE2865F2EF001AFD4E /* Futbolista_Walking.dae in Resources */,
 				5DEAB355245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
-				5DEAB365245D2A67008E7D95 /* Inspector_Dancing.dae in Resources */,
 				5D1FD3AF2532DE060044FCE8 /* confeti.json in Resources */,
 				5DD6795E24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
 				5DD6796A245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
 				5DBF560623DCCCCA002A6520 /* LaunchScreen.storyboard in Resources */,
 				5DBF560723DCCCCA002A6520 /* RightBarMenu.xib in Resources */,
+				970855E42865F2EF001AFD4E /* Profesor_Habla.dae in Resources */,
 				5DBF560923DCCCCA002A6520 /* CardView.xib in Resources */,
-				5DEAB36D245D2B3D008E7D95 /* Inspector_Walking.dae in Resources */,
+				970855CC2865F2EF001AFD4E /* Profesor_Saluda.dae in Resources */,
 				5DBF560A23DCCCCA002A6520 /* MostrarCartasView.xib in Resources */,
+				970855D22865F2EF001AFD4E /* LaMilitar_Standing.dae in Resources */,
 				5DB6DD64245741FC009764F1 /* ProfesorView.xib in Resources */,
-				5DEAB35D245D2890008E7D95 /* Playero_Standing.dae in Resources */,
 				5D857DA023E08D6200A34048 /* Ranking.storyboard in Resources */,
 				5DBF560F23DCCCCA002A6520 /* Logros.storyboard in Resources */,
-				5DEAB369245D2B04008E7D95 /* Inspector_Standing.dae in Resources */,
-				5DEAB371245D2C43008E7D95 /* LaMilitar_Dancing.dae in Resources */,
 				5DBF561223DCCCCA002A6520 /* MisDatosFieldView.xib in Resources */,
 				5DBF561323DCCCCA002A6520 /* Init.storyboard in Resources */,
 				5D040B7124F8E84100A01263 /* LoginManual.storyboard in Resources */,
-				5DEAB361245D28FF008E7D95 /* Playero_Walking.dae in Resources */,
-				5D1FD396253205E80044FCE8 /* Enfermero_Standing.dae in Resources */,
+				970855BA2865F2EF001AFD4E /* Enfermero_Standing.dae in Resources */,
+				970855D52865F2EF001AFD4E /* Tshirt_obj.scn in Resources */,
+				970855ED2865F2EF001AFD4E /* Enfermero_Dancing.dae in Resources */,
+				970855992865E91A001AFD4E /* MapStoryboard.storyboard in Resources */,
 				5DCAD5402471318A009600C7 /* FiltroTutorialView.xib in Resources */,
+				970855D82865F2EF001AFD4E /* Playero_Standing.dae in Resources */,
 				5DBF561523DCCCCA002A6520 /* Avatar.storyboard in Resources */,
+				970855DB2865F2EF001AFD4E /* Futbolista_Dancing.dae in Resources */,
 				5DBF561623DCCCCA002A6520 /* Assets.xcassets in Resources */,
 				5DBF561723DCCCCA002A6520 /* NoTrophyView.xib in Resources */,
 				5DBF561A23DCCCCA002A6520 /* LogrosHeaderView.xib in Resources */,
+				970855C32865F2EF001AFD4E /* LaMilitar_Walking.dae in Resources */,
 				5DD6797A245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
+				970855E72865F2EF001AFD4E /* LaMilitar_Dancing.dae in Resources */,
+				970855C92865F2EF001AFD4E /* Inspector_Standing.dae in Resources */,
+				970855CF2865F2EF001AFD4E /* Futbolista_Standing.dae in Resources */,
 				5DBF561C23DCCCCA002A6520 /* TopBarOnlyBack.xib in Resources */,
+				970855C62865F2EF001AFD4E /* Playero_Walking.dae in Resources */,
 				5DBF561D23DCCCCA002A6520 /* ResumenCartasCell.xib in Resources */,
 				5DBF561E23DCCCCA002A6520 /* CustomScrollView.xib in Resources */,
 				5DD67972245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
+				970855BD2865F2EF001AFD4E /* textures in Resources */,
 				5D2E2376250C82E9002EF48D /* Camerinos.storyboard in Resources */,
 				5DBF562223DCCCCA002A6520 /* Foto.storyboard in Resources */,
 				5D1FD3C82534EFB30044FCE8 /* fireworks.json in Resources */,
-				5D1FD391253200340044FCE8 /* Enfermero_Walking.dae in Resources */,
 				5DBF562323DCCCCA002A6520 /* Main.storyboard in Resources */,
-				5DB6DD5F24572CEA009764F1 /* Profesor_Habla.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		104A48243CADE99E59B13C39 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ViajeroDev-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		47F5DE223D8AD46355D717B1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Viajero-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53AFC7A537F74CF773E01724 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Viajero Demo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		733F6695D030FA144694F70C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viajero Demo/Pods-Viajero Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		848266FF254EA26A00ACF27A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"\n";
-		};
-		9C1AC0047ACB046722004AEA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Viajero/Pods-Viajero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Viajero/Pods-Viajero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viajero/Pods-Viajero-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5AB34BAA4E5F5880BBD2A85 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViajeroDev/Pods-ViajeroDev-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D679D4E231FAA0B005AB2E5 /* Sources */ = {
@@ -1834,8 +1700,10 @@
 				5D25E888233CC7CB002560A3 /* TrophyView.swift in Sources */,
 				5DD6795324594B930080FBDD /* WelcomeRouter.swift in Sources */,
 				5DD5F1AC2383E57000BE5A6B /* ResumenCartasCell.swift in Sources */,
+				970855932865E8E4001AFD4E /* MapViewController.swift in Sources */,
 				5D1E8CCD23992C0700F23C8C /* PasaporteRouter.swift in Sources */,
 				5D613BF7250818BC005732FC /* AvatarWorker.swift in Sources */,
+				9708559B2865E92E001AFD4E /* MapRouter.swift in Sources */,
 				5D80B14D237DB0D000718BAA /* LogrosRouter.swift in Sources */,
 				5DE21C04234CD77900C37015 /* PersonalDataViewController.swift in Sources */,
 				5DD67964245AF0A20080FBDD /* UserNameWelcomeView.swift in Sources */,
@@ -1943,8 +1811,10 @@
 				5D6A2BEE23D4D86F00404A6B /* TrophyView.swift in Sources */,
 				5DD6795424594B930080FBDD /* WelcomeRouter.swift in Sources */,
 				5D6A2BF023D4D86F00404A6B /* ResumenCartasCell.swift in Sources */,
+				970855942865E8E4001AFD4E /* MapViewController.swift in Sources */,
 				5D6A2BF123D4D86F00404A6B /* PasaporteRouter.swift in Sources */,
 				5D613BF8250818BC005732FC /* AvatarWorker.swift in Sources */,
+				9708559C2865E92E001AFD4E /* MapRouter.swift in Sources */,
 				5D6A2BF223D4D86F00404A6B /* LogrosRouter.swift in Sources */,
 				5D6A2BF523D4D86F00404A6B /* PersonalDataViewController.swift in Sources */,
 				5DD67965245AF0A20080FBDD /* UserNameWelcomeView.swift in Sources */,
@@ -2031,6 +1901,7 @@
 				5D857D9123DF1D0500A34048 /* LogroWorkerDemo.swift in Sources */,
 				5DBF55B923DCCCCA002A6520 /* Categorias.swift in Sources */,
 				5DBF55BA23DCCCCA002A6520 /* LogrosHeaderView.swift in Sources */,
+				9708559D2865E92E001AFD4E /* MapRouter.swift in Sources */,
 				5DBF55BC23DCCCCA002A6520 /* Colors.swift in Sources */,
 				5D2D147123DCD0A400AAA99B /* LugaresWorkerDemo.swift in Sources */,
 				5DD6796E245B34050080FBDD /* PasswordWelcomeView.swift in Sources */,
@@ -2093,6 +1964,7 @@
 				5DBF55F123DCCCCA002A6520 /* LugaresCached.swift in Sources */,
 				5D2D147323DCD0FB00AAA99B /* LoginWorkerDemo.swift in Sources */,
 				5DBF55F523DCCCCA002A6520 /* ApiBase.swift in Sources */,
+				970855952865E8E4001AFD4E /* MapViewController.swift in Sources */,
 				5DD6795124594B210080FBDD /* WelcomeViewController.swift in Sources */,
 				5DBF55F723DCCCCA002A6520 /* MapaRouter.swift in Sources */,
 				5DBF55F823DCCCCA002A6520 /* AvisosRouter.swift in Sources */,
@@ -2240,7 +2112,6 @@
 		};
 		5D679D65231FAA0D005AB2E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 928B14B6D74C4C5FA0972F8C /* Pods-Viajero.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2269,7 +2140,6 @@
 		};
 		5D679D66231FAA0D005AB2E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ECC041EC03E6B3E569B051D /* Pods-Viajero.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2298,7 +2168,6 @@
 		};
 		5D6A2C4723D4D86F00404A6B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8616E6355DD2828B52EBFDAB /* Pods-ViajeroDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -2326,7 +2195,6 @@
 		};
 		5D6A2C4823D4D86F00404A6B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8534A236D37AF7A42E4F07CA /* Pods-ViajeroDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -2354,7 +2222,6 @@
 		};
 		5DBF562723DCCCCA002A6520 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA22F5E3FBD899BAE5984DA /* Pods-Viajero Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -2366,7 +2233,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "ViajeroDev copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2382,7 +2249,6 @@
 		};
 		5DBF562823DCCCCA002A6520 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22D6B1DFBB5D028A8F0302AA /* Pods-Viajero Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -2394,7 +2260,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "ViajeroDev copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2448,6 +2314,81 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9708557728611546001AFD4E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9708557A28611873001AFD4E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.6.0;
+			};
+		};
+		9708558628631C3D001AFD4E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9708557828611546001AFD4E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708557728611546001AFD4E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		9708557B28611873001AFD4E /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708557A28611873001AFD4E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		9708557E286118B5001AFD4E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708557728611546001AFD4E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		97085580286118B9001AFD4E /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708557A28611873001AFD4E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		97085582286118CE001AFD4E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708557728611546001AFD4E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		97085584286118D2001AFD4E /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708557A28611873001AFD4E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		9708558728631C3D001AFD4E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708558628631C3D001AFD4E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		9708558928631C4A001AFD4E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708558628631C3D001AFD4E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		9708558B28631C50001AFD4E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9708558628631C3D001AFD4E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D679D4A231FAA0B005AB2E5 /* Project object */;
 }

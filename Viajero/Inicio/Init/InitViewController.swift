@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Alamofire
 
 class InitViewController: BaseViewController{
     
@@ -23,7 +22,7 @@ class InitViewController: BaseViewController{
     @IBOutlet weak var errorMessage: UILabel!
     @IBOutlet weak var errorButton: UIButton!
     
-    let reachabilityManager = NetworkReachabilityManager()
+    //let reachabilityManager = NetworkReachabilityManager()
     
     
     override func viewDidLoad() {
@@ -104,7 +103,8 @@ extension InitViewController: LoginWorkerProtocol{
 
 extension InitViewController: LugarWorkerProtocol{
     func successLugares() {
-        MapaRouter().goToMapa(navigationController: self.navigationController, inModoSinConexion: false)
+//        MapaRouter().goToMapa(navigationController: self.navigationController, inModoSinConexion: false)
+        MapRouter().goToMap(navigationController: self.navigationController)
     }
     
     func failLugares(error: String) {

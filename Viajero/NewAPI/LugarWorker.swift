@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Alamofire
 
 
 protocol LugarWorkerProtocol{
@@ -22,14 +21,20 @@ class LugarWorker: BaseWorker{
     
     func execute(delegate: LugarWorkerProtocol){
         self.delegate = delegate
-        manager.request(
-            getUrl(url: .lugares),
-            method: .post,
-            headers: headers).responseJSON { response in
-            
-            if let data = response.data{
+        
+        guard let lugaresURL = URL(string: getUrl(url: .lugares)) else {
+            delegate.failLugares(error: "Bad url formation")
+            return
+        }
+        
+        let session = getUrlSession()
+        let request = generateRequest(url: lugaresURL, method: .post)
+        let dataTask: URLSessionDataTask?
+        
+        dataTask = session.dataTask(with: request){ data, response, error in
+            if let data = data, let response = response as? HTTPURLResponse{
                 do {
-                    switch response.response?.statusCode ?? -1 {
+                    switch response.statusCode ?? -1 {
                     case 200:
                         let response = try self.newJSONDecoder().decode(LugarModelo.self, from: data)
                         Lugares.shared.guardarLugares(lugares: response.lugares ?? [])
@@ -47,6 +52,34 @@ class LugarWorker: BaseWorker{
                 self.delegate?.failLugares(error: self.errorGeneral)
             }
         }
+        dataTask?.resume()
+        
+        
+//        manager.request(
+//            getUrl(url: .lugares),
+//            method: .post,
+//            headers: headers).responseJSON { response in
+//
+//            if let data = response.data{
+//                do {
+//                    switch response.response?.statusCode ?? -1 {
+//                    case 200:
+//                        let response = try self.newJSONDecoder().decode(LugarModelo.self, from: data)
+//                        Lugares.shared.guardarLugares(lugares: response.lugares ?? [])
+//                        self.delegate?.successLugares()
+//                    case 400,401,500:
+//                        let response = try self.newJSONDecoder().decode(Error.self, from: data)
+//                        self.delegate?.failLugares(error: response.reason)
+//                    default:
+//                        self.delegate?.failLugares(error: self.errorGeneral)
+//                    }
+//                }catch{
+//                    self.delegate?.failLugares(error: self.errorGeneral)
+//                }
+//            } else {
+//                self.delegate?.failLugares(error: self.errorGeneral)
+//            }
+//        }
         
     }
     

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -33,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HP2-6E-jD2" customClass="MGLMapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HP2-6E-jD2" customClass="MapView" customModule="MapboxMaps">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -236,7 +237,7 @@
                         <outlet property="filtrosCollection" destination="Bnq-gf-LEl" id="aWW-vl-vBc"/>
                         <outlet property="filtrosView" destination="nyg-aC-TYF" id="k3X-ja-qOX"/>
                         <outlet property="locationButton" destination="NE4-21-DRl" id="Sky-G2-1in"/>
-                        <outlet property="mapBox" destination="HP2-6E-jD2" id="AzL-0z-IxI"/>
+                        <outlet property="mapBox" destination="HP2-6E-jD2" id="T06-vG-wM6"/>
                         <outlet property="nivelLabel" destination="OKR-xy-2lc" id="Ego-Ff-SmX"/>
                         <outlet property="nivelView" destination="bvt-hK-feK" id="AH7-YJ-fNO"/>
                         <outlet property="rightMenu" destination="YRF-ZT-IHx" id="9qI-Zk-BA0"/>
@@ -392,7 +393,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="150"/>
                                             </scrollView>
                                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="h66-gn-CBE">
-                                                <rect key="frame" x="130" y="119.5" width="122.5" height="27.5"/>
+                                                <rect key="frame" x="133.5" y="121" width="115.5" height="26"/>
                                                 <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="currentPageIndicatorTintColor" red="0.99607843137254903" green="0.73333333333333328" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </pageControl>
