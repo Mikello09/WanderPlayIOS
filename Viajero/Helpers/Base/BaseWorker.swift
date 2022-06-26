@@ -16,7 +16,7 @@ enum HttpMethod: String {
 
 class BaseWorker{
     
-    var baseUrl = "https://wanderplay.herokuapp.com/"
+    var baseUrl = "http://localhost:3000/"//"https://wanderplay.herokuapp.com/"
     var headers = ["authToken":"AAAAA"]
     let errorGeneral = "Ha ocurrido un error. Vuelva a intentarlo."
     
@@ -61,13 +61,12 @@ class BaseWorker{
         }
         
         if method == .post {
-            do {
-                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
-            } catch {
-                print("Error generating body")
+            var paramsString = ""
+            for (param,value) in params{
+                paramsString.append("\(param)=\(value)&")
             }
-            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
+            urlRequest.httpBody = paramsString.data(using: String.Encoding.utf8)
+            urlRequest.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         }
         
         return urlRequest

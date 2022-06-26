@@ -12,6 +12,7 @@ import UIKit
 
 protocol ChooseAvatarPresenterProtocol{
     func getAvatares(avatares: [Avatar])
+    func failGettingAvatars()
 }
 
 class ChooseAvatarPresenter{
@@ -37,7 +38,7 @@ extension ChooseAvatarPresenter: GetAllAvataresProtocol{
     }
     
     func fail() {
-        delegate?.getAvatares(avatares: [])
+        delegate?.failGettingAvatars()
     }
     
     

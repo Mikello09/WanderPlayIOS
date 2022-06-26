@@ -52,13 +52,17 @@ class LoginManualViewController: BaseViewController{
 
 extension LoginManualViewController: LoginManualPresenterProtocol{
     func loginOK() {
-        hideLoader()
-        InitRouter().goToInit(navigationController: self.navigationController)
+        DispatchQueue.main.async {
+            self.hideLoader()
+            InitRouter().goToInit(navigationController: self.navigationController)
+        }
     }
     
     func loginFail(reason: String) {
-        hideLoader()
-        showError(message: reason)
+        DispatchQueue.main.async {
+            self.hideLoader()
+            self.showError(message: reason)
+        }
     }
 }
 

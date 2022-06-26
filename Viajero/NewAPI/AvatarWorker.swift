@@ -16,7 +16,7 @@ protocol GetAllAvataresProtocol{
 
 class AvatarWorker: BaseWorker{
     
-    
+        
     var delegate: GetAllAvataresProtocol?
     
     

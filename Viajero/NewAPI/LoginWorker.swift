@@ -26,13 +26,15 @@ class LoginWorker: BaseWorker {
         }
         
         let session = getUrlSession()
-        let request = generateRequest(url: loginURL, method: .post, params: ["nombre":nombre,"pass":pass])
+        let request = generateRequest(url: loginURL,
+                                      method: .post,
+                                      params: ["nombre":nombre,
+                                               "contrasena":pass])
         let dataTask: URLSessionDataTask?
-        
         dataTask = session.dataTask(with: request){ data, response, error in
             if let data = data, let response = response as? HTTPURLResponse {
                 do {
-                    switch response.statusCode ?? -1 {
+                    switch response.statusCode {
                     case 200:
                         let response = try self.newJSONDecoder().decode(UsuarioModelo.self, from: data)
                         Usuario.shared.guardarUsuario(usuario: response.usuario)

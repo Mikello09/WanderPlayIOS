@@ -1252,12 +1252,11 @@
 		5DEAB345245C8B2E008E7D95 /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
+				97B3679A2868A50F0067FC21 /* Cells */,
 				5DEAB346245C8B88008E7D95 /* ChooseAvatarViewController.swift */,
 				5DEAB34A245C8B94008E7D95 /* ChooseAvatarRouter.swift */,
 				5DEAB34E245C8BA1008E7D95 /* ChooseAvatarPresenter.swift */,
 				5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */,
-				5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */,
-				5D891307246080E200D040BF /* InteresesCell.swift */,
 			);
 			path = Avatar;
 			sourceTree = "<group>";
@@ -1322,6 +1321,15 @@
 				970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */,
 			);
 			path = DAE;
+			sourceTree = "<group>";
+		};
+		97B3679A2868A50F0067FC21 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */,
+				5D891307246080E200D040BF /* InteresesCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

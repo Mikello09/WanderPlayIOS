@@ -88,10 +88,16 @@ class ChooseAvatarViewController: BaseViewController{
 
 extension ChooseAvatarViewController: ChooseAvatarPresenterProtocol{
     func getAvatares(avatares: [Avatar]) {
-        self.hideLoader()
-        self.avatares = avatares
-        collectionView.reloadData()
-        setSelectedAvatar(avatar: avatares[0])
+        DispatchQueue.main.async {
+            self.hideLoader()
+            self.avatares = avatares
+            self.collectionView.reloadData()
+            self.setSelectedAvatar(avatar: avatares[0])
+        }
+    }
+    
+    func failGettingAvatars() {
+        print("ERROR GETTING AVATARS")
     }
 }
 
@@ -138,13 +144,16 @@ extension ChooseAvatarViewController: AvatarChooseCellProtocol{
 
 extension ChooseAvatarViewController: RegistroWorkerProtocol{
     func success() {
-        self.hideLoader()
-        InitRouter().goToInit(navigationController: self.navigationController)
+        DispatchQueue.main.async {
+            self.hideLoader()
+            InitRouter().goToInit(navigationController: self.navigationController)
+        }
     }
     
     func fail(error: String) {
-        self.hideLoader()
-        return
+        DispatchQueue.main.async {
+            self.hideLoader()
+        }
     }
     
     

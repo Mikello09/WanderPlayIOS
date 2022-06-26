@@ -104,10 +104,14 @@ extension InitViewController: LoginWorkerProtocol{
 extension InitViewController: LugarWorkerProtocol{
     func successLugares() {
 //        MapaRouter().goToMapa(navigationController: self.navigationController, inModoSinConexion: false)
-        MapRouter().goToMap(navigationController: self.navigationController)
+        DispatchQueue.main.async {
+            MapRouter().goToMap(navigationController: self.navigationController)
+        }
     }
     
     func failLugares(error: String) {
-        self.configureError(image: "no_gps", message: error, intentar: true)
+        DispatchQueue.main.async {
+            self.configureError(image: "no_gps", message: error, intentar: true)
+        }
     }
 }
