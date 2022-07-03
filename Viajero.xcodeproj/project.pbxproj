@@ -505,6 +505,9 @@
 		97B36797286602A00067FC21 /* Profesor_Habla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36796286602A00067FC21 /* Profesor_Habla.scn */; };
 		97B36798286602A00067FC21 /* Profesor_Habla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36796286602A00067FC21 /* Profesor_Habla.scn */; };
 		97B36799286602A00067FC21 /* Profesor_Habla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36796286602A00067FC21 /* Profesor_Habla.scn */; };
+		97B3679C2871E67D0067FC21 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3679B2871E67D0067FC21 /* MapPresenter.swift */; };
+		97B3679D2871E67D0067FC21 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3679B2871E67D0067FC21 /* MapPresenter.swift */; };
+		97B3679E2871E67D0067FC21 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3679B2871E67D0067FC21 /* MapPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -734,6 +737,7 @@
 		97B3678E286602950067FC21 /* Playero_Standing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Playero_Standing.scn; sourceTree = "<group>"; };
 		97B367922866029A0067FC21 /* Playero_Walking.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Playero_Walking.scn; sourceTree = "<group>"; };
 		97B36796286602A00067FC21 /* Profesor_Habla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Profesor_Habla.scn; sourceTree = "<group>"; };
+		97B3679B2871E67D0067FC21 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1294,6 +1298,7 @@
 				970855922865E8E4001AFD4E /* MapViewController.swift */,
 				970855962865E91A001AFD4E /* MapStoryboard.storyboard */,
 				9708559A2865E92E001AFD4E /* MapRouter.swift */,
+				97B3679B2871E67D0067FC21 /* MapPresenter.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -1738,6 +1743,7 @@
 				5D25E897233D05E0002560A3 /* LocationEngine.swift in Sources */,
 				5D857DA323E0911400A34048 /* RankingCell.swift in Sources */,
 				5D1E8CCF23992FBD00F23C8C /* PasaportePresenter.swift in Sources */,
+				97B3679C2871E67D0067FC21 /* MapPresenter.swift in Sources */,
 				5D679DB42327CE98005AB2E5 /* MapaPresenter.swift in Sources */,
 				5DEAB377245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
 				5DE21C08234CDD0B00C37015 /* PersonalDataPresenter.swift in Sources */,
@@ -1849,6 +1855,7 @@
 				5D6A2C0623D4D86F00404A6B /* LocationEngine.swift in Sources */,
 				5D857DA423E0911400A34048 /* RankingCell.swift in Sources */,
 				5D6A2C0723D4D86F00404A6B /* PasaportePresenter.swift in Sources */,
+				97B3679D2871E67D0067FC21 /* MapPresenter.swift in Sources */,
 				5D6A2C0923D4D86F00404A6B /* MapaPresenter.swift in Sources */,
 				5DEAB378245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
 				5D6A2C0A23D4D86F00404A6B /* PersonalDataPresenter.swift in Sources */,
@@ -1915,6 +1922,7 @@
 				5DD6796E245B34050080FBDD /* PasswordWelcomeView.swift in Sources */,
 				5DBF55BD23DCCCCA002A6520 /* LugarDetailPresenter.swift in Sources */,
 				5DBF55C023DCCCCA002A6520 /* LugarDetailViewController.swift in Sources */,
+				97B3679E2871E67D0067FC21 /* MapPresenter.swift in Sources */,
 				5DE0CC7324712A4900277FD2 /* FiltrosTutorialRouter.swift in Sources */,
 				5DBF55C223DCCCCA002A6520 /* AppDelegate.swift in Sources */,
 				5D613BF525081691005732FC /* Avatar.swift in Sources */,

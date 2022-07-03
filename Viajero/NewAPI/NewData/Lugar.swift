@@ -103,8 +103,6 @@ class Lugares{
         return self.lugares
     }
     
-    
-    
     func createGeoJSONFile(lugares: [Lugar]){
         
         

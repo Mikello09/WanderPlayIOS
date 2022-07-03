@@ -76,7 +76,6 @@ extension LocationManager: LocationEngineProtocol{
 
 extension LocationManager: LugaresManagerProtocol{
     
-    
     func lugaresUpdated(lugares: [Lugar]?) {
         if let location = self.actualLocation{
             if let lugares = lugares{

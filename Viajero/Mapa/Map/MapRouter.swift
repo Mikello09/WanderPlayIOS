@@ -15,6 +15,9 @@ class MapRouter {
         if let navigationController = navigationController {
             let storyboard = UIStoryboard(name: "MapStoryboard", bundle: nil)
             guard let vc = storyboard.instantiateViewController(withIdentifier: "mapStoryboard") as? MapViewController else { return }
+            let presenter = MapPresenter()
+            presenter.delegate = vc
+            vc.presenter = presenter
             navigationController.pushViewController(vc, animated: true)
         }
     }
