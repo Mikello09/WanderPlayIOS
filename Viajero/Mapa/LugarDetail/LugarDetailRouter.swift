@@ -14,7 +14,7 @@ class LugarDetailRouter{
     func goToLugarDetail(navigationController: UINavigationController?, idLugar: String){
         
         if let navigation = navigationController{
-            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let storyboard = UIStoryboard.init(name: "LugarDetalleStoryboard", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "lugarDetailStoryBoard") as! LugarDetailViewController
             
             let presenter = LugarDetailPresenter()
@@ -25,8 +25,6 @@ class LugarDetailRouter{
             
             vc.modalPresentationStyle = .overFullScreen
             navigation.present(vc, animated: false, completion: nil)
-            
-            //navigation.pushViewController(vc, animated: false)
         }
         
     }

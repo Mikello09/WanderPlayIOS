@@ -508,6 +508,9 @@
 		97B3679C2871E67D0067FC21 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3679B2871E67D0067FC21 /* MapPresenter.swift */; };
 		97B3679D2871E67D0067FC21 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3679B2871E67D0067FC21 /* MapPresenter.swift */; };
 		97B3679E2871E67D0067FC21 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B3679B2871E67D0067FC21 /* MapPresenter.swift */; };
+		97B367A1287CBDDF0067FC21 /* LugarDetalleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B367A0287CBDDF0067FC21 /* LugarDetalleStoryboard.storyboard */; };
+		97B367A4287CBE870067FC21 /* LugarInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B367A3287CBE870067FC21 /* LugarInfoView.swift */; };
+		97B367A6287CBE9A0067FC21 /* LugarInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B367A5287CBE9A0067FC21 /* LugarInfoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -738,6 +741,9 @@
 		97B367922866029A0067FC21 /* Playero_Walking.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Playero_Walking.scn; sourceTree = "<group>"; };
 		97B36796286602A00067FC21 /* Profesor_Habla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Profesor_Habla.scn; sourceTree = "<group>"; };
 		97B3679B2871E67D0067FC21 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		97B367A0287CBDDF0067FC21 /* LugarDetalleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LugarDetalleStoryboard.storyboard; sourceTree = "<group>"; };
+		97B367A3287CBE870067FC21 /* LugarInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarInfoView.swift; sourceTree = "<group>"; };
+		97B367A5287CBE9A0067FC21 /* LugarInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LugarInfoView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -830,6 +836,7 @@
 				5D25E876233B488A002560A3 /* LugarDetailViewController.swift */,
 				5D25E878233B48E2002560A3 /* LugarDetailRouter.swift */,
 				5D25E87F233CA9B0002560A3 /* LugarDetailPresenter.swift */,
+				97B367A0287CBDDF0067FC21 /* LugarDetalleStoryboard.storyboard */,
 			);
 			path = LugarDetail;
 			sourceTree = "<group>";
@@ -1295,6 +1302,7 @@
 		9708558D2865E85E001AFD4E /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				97B3679F287CBD7D0067FC21 /* Views */,
 				970855922865E8E4001AFD4E /* MapViewController.swift */,
 				970855962865E91A001AFD4E /* MapStoryboard.storyboard */,
 				9708559A2865E92E001AFD4E /* MapRouter.swift */,
@@ -1335,6 +1343,23 @@
 				5D891307246080E200D040BF /* InteresesCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		97B3679F287CBD7D0067FC21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97B367A2287CBE750067FC21 /* LugarInfo */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97B367A2287CBE750067FC21 /* LugarInfo */ = {
+			isa = PBXGroup;
+			children = (
+				97B367A3287CBE870067FC21 /* LugarInfoView.swift */,
+				97B367A5287CBE9A0067FC21 /* LugarInfoView.xib */,
+			);
+			path = LugarInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1477,6 +1502,7 @@
 				5DD6795C24596C320080FBDD /* GreetingWelcomeView.xib in Resources */,
 				5DD67968245AF0AF0080FBDD /* UserNameWelcomeView.xib in Resources */,
 				5D679D60231FAA0D005AB2E5 /* LaunchScreen.storyboard in Resources */,
+				97B367A1287CBDDF0067FC21 /* LugarDetalleStoryboard.storyboard in Resources */,
 				5D679DAD2327C819005AB2E5 /* RightBarMenu.xib in Resources */,
 				5D80B15D237E923400718BAA /* CardView.xib in Resources */,
 				5D80B159237E8FAD00718BAA /* MostrarCartasView.xib in Resources */,
@@ -1499,6 +1525,7 @@
 				5D4FE50B239FBF8C00E529F7 /* LogrosHeaderView.xib in Resources */,
 				97B36797286602A00067FC21 /* Profesor_Habla.scn in Resources */,
 				97B3677F2866027F0067FC21 /* Inspector_Walking.scn in Resources */,
+				97B367A6287CBE9A0067FC21 /* LugarInfoView.xib in Resources */,
 				97B3676F2866026B0067FC21 /* Futbolista_Standing.scn in Resources */,
 				5DD67978245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
 				97B3678F286602950067FC21 /* Playero_Standing.scn in Resources */,
@@ -1753,6 +1780,7 @@
 				5D1C5E482369EF4B002EF6D4 /* LugaresCached.swift in Sources */,
 				5DF8DADF2370D82E009A14C0 /* ApiBase.swift in Sources */,
 				5DD6794F24594B210080FBDD /* WelcomeViewController.swift in Sources */,
+				97B367A4287CBE870067FC21 /* LugarInfoView.swift in Sources */,
 				5D679D7F23215BDC005AB2E5 /* MapaRouter.swift in Sources */,
 				5DA18A9A2513CE1900DE90AE /* LogroWorker.swift in Sources */,
 				5D99E9A92368381C00CABA2D /* AvisosRouter.swift in Sources */,

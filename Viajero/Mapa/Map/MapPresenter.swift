@@ -12,6 +12,7 @@ import CoreLocation
 
 protocol MapPresenterProtocol {
     func firstLocation(location: CLLocation)
+    func showLugares(lugares: [Lugar])
 }
 
 class MapPresenter {
@@ -22,6 +23,10 @@ class MapPresenter {
     
     func initLocationUpdates() {
         LocationManager.sharedInstance().startTrackingLocation(delegado: self)
+    }
+    
+    func getLugares() {
+        delegate?.showLugares(lugares: Lugares.shared.getLugares())
     }
     
 }

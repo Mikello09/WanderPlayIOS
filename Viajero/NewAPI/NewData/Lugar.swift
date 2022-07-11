@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
+struct FeaturedLugar {
+    var tipoLugar: String
+    var visitado: String
+    var nombre: String
+    var id: String
+    var foto: String
+    var puntos: String
+}
 
 enum TipoLugar: String {
        case bajo = "pin_verde"
