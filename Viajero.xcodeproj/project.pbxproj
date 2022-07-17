@@ -511,6 +511,8 @@
 		97B367A1287CBDDF0067FC21 /* LugarDetalleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B367A0287CBDDF0067FC21 /* LugarDetalleStoryboard.storyboard */; };
 		97B367A4287CBE870067FC21 /* LugarInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B367A3287CBE870067FC21 /* LugarInfoView.swift */; };
 		97B367A6287CBE9A0067FC21 /* LugarInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B367A5287CBE9A0067FC21 /* LugarInfoView.xib */; };
+		97B367A92884A9780067FC21 /* MapAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B367A82884A9780067FC21 /* MapAvatarView.swift */; };
+		97B367AB2884A98C0067FC21 /* MapAvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B367AA2884A98C0067FC21 /* MapAvatarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -744,6 +746,8 @@
 		97B367A0287CBDDF0067FC21 /* LugarDetalleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LugarDetalleStoryboard.storyboard; sourceTree = "<group>"; };
 		97B367A3287CBE870067FC21 /* LugarInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarInfoView.swift; sourceTree = "<group>"; };
 		97B367A5287CBE9A0067FC21 /* LugarInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LugarInfoView.xib; sourceTree = "<group>"; };
+		97B367A82884A9780067FC21 /* MapAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAvatarView.swift; sourceTree = "<group>"; };
+		97B367AA2884A98C0067FC21 /* MapAvatarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapAvatarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1348,6 +1352,7 @@
 		97B3679F287CBD7D0067FC21 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				97B367A72884A95F0067FC21 /* MapAvatarView */,
 				97B367A2287CBE750067FC21 /* LugarInfo */,
 			);
 			path = Views;
@@ -1360,6 +1365,15 @@
 				97B367A5287CBE9A0067FC21 /* LugarInfoView.xib */,
 			);
 			path = LugarInfo;
+			sourceTree = "<group>";
+		};
+		97B367A72884A95F0067FC21 /* MapAvatarView */ = {
+			isa = PBXGroup;
+			children = (
+				97B367A82884A9780067FC21 /* MapAvatarView.swift */,
+				97B367AA2884A98C0067FC21 /* MapAvatarView.xib */,
+			);
+			path = MapAvatarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1531,6 +1545,7 @@
 				97B3678F286602950067FC21 /* Playero_Standing.scn in Resources */,
 				5DE4B8EE2397076600309213 /* TopBarOnlyBack.xib in Resources */,
 				5DD5F1AE2383E57D00BE5A6B /* ResumenCartasCell.xib in Resources */,
+				97B367AB2884A98C0067FC21 /* MapAvatarView.xib in Resources */,
 				5D25E87E233C9E39002560A3 /* CustomScrollView.xib in Resources */,
 				5DD67970245B34110080FBDD /* PasswordWelcomeView.xib in Resources */,
 				97B36763286602590067FC21 /* Enfermero_Standing.scn in Resources */,
@@ -1760,6 +1775,7 @@
 				5D16DA802379846200690CC8 /* Reachability.swift in Sources */,
 				5D857D9A23E08D3900A34048 /* RankingRouter.swift in Sources */,
 				5D679DB22327CE7B005AB2E5 /* LugaresManager.swift in Sources */,
+				97B367A92884A9780067FC21 /* MapAvatarView.swift in Sources */,
 				5DD6796024596E920080FBDD /* WelcomePresenter.swift in Sources */,
 				5DE882AC2372B3EC002197E0 /* FiltrosManager.swift in Sources */,
 				5DE4B8EC2397074B00309213 /* TopBarOnlyBack.swift in Sources */,

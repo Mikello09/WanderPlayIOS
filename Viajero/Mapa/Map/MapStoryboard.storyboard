@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-8I-gKD">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-8I-gKD" customClass="MapAvatarView" customModule="WanderPlay">
                                 <rect key="frame" x="16" y="696" width="150" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -33,6 +33,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="y1w-8I-gKD" secondAttribute="bottom" constant="16" id="Xcz-kY-NTv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapAvatarView" destination="y1w-8I-gKD" id="VKq-IC-eoO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

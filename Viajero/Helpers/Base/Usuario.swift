@@ -161,39 +161,39 @@ class Usuario{
     func getAvatarActivoWalking() -> String{
         switch self.avatarActivo {
         case "Playero":
-            return "Playero_Walking"
+            return "Playero_Walking.scn"
         case "Militar":
-            return "LaMilitar_Walking"
+            return "LaMilitar_Walking.scn"
         case "Inspector":
-            return "Inspector_Walking"
+            return "Inspector_Walking.scn"
         default:
-            return "Playero_Walking"
+            return "Playero_Walking.scn"
         }
     }
     
     func getAvatarActivoStanding() -> String{
         switch self.avatarActivo {
         case "Playero":
-            return "Playero_Standing"
+            return "Playero_Standing.scn"
         case "Militar":
-            return "LaMilitar_Standing"
+            return "LaMilitar_Standing.scn"
         case "Inspector":
-            return "Inspector_Standing"
+            return "Inspector_Standing.scn"
         default:
-            return "Playero_Standing"
+            return "Playero_Standing.scn"
         }
     }
     
     func getAvatarActivoDancing() -> String{
         switch self.avatarActivo {
         case "Playero":
-            return "Playero_Standing"
+            return "Playero_Standing.scn"
         case "Militar":
-            return "LaMilitar_Dancing"
+            return "LaMilitar_Dancing.scn"
         case "Inspector":
-            return "Inspector_Dancing"
+            return "Inspector_Dancing.scn"
         default:
-            return "Playero_Standing"
+            return "Playero_Standing.scn"
         }
     }
     

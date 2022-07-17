@@ -18,10 +18,12 @@ class MapViewController: BaseViewController {
     
     var mapView: MapView?
     var lugarInfoView: LugarInfoView?
+    @IBOutlet weak var mapAvatarView: MapAvatarView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.initLocationUpdates()
+        self.mapAvatarView.configure(delegate: self)
     }
     
     func loadMap(location: CLLocation) {
@@ -46,7 +48,7 @@ class MapViewController: BaseViewController {
         puck2DConfiguration.scale = .constant(0.05)
         mapView?.location.options.puckType = .puck2D(puck2DConfiguration)
         
-        self.view.addSubview(mapView ?? UIView())
+        self.view.insertSubview(mapView ?? UIView(), at: 0)
     }
     
 }
@@ -225,6 +227,13 @@ extension MapViewController: MapPresenterProtocol {
 extension MapViewController: LugarInfoViewProtocol {
     func onGoToDetalles(idLugar: String) {
         LugarDetailRouter().goToLugarDetail(navigationController: self.navigationController, idLugar: idLugar)
+    }
+}
+
+// MARK: MAP AVATAR VIEW
+extension MapViewController: MapAvatarViewProtocol {
+    func onMapAvatarViewSelected() {
+        PersonalDataRouter().goToPersonalData(navigationController: self.navigationController)
     }
 }
         
