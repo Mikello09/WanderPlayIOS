@@ -40,6 +40,12 @@ class MapViewController: BaseViewController {
                 longitude: location.coordinate.longitude),
             zoom: 9.0))
         
+        // PUCK CONFIGURATION
+        var puck2DConfiguration = Puck2DConfiguration()
+        puck2DConfiguration.topImage = UIImage(named: "Inspector")
+        puck2DConfiguration.scale = .constant(0.05)
+        mapView?.location.options.puckType = .puck2D(puck2DConfiguration)
+        
         self.view.addSubview(mapView ?? UIView())
     }
     
@@ -60,7 +66,7 @@ extension MapViewController: MapPresenterProtocol {
                 Lugares.shared.removeGeoJSONFile()
             }
             Lugares.shared.createGeoJSONFile(lugares: lugares)
-            //Lugares.shared.readGeoJSONFile()
+            
             
             let documentsURL = try! FileManager().url(for: .documentDirectory,
                                                       in: .userDomainMask,
