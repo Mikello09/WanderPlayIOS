@@ -17,6 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-XX-cpj" customClass="RightBarMenu" customModule="ViajeroDev" customModuleProvider="target">
+                                <rect key="frame" x="16" y="44" width="382" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="B2q-Jf-pY7"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-8I-gKD" customClass="MapAvatarView" customModule="WanderPlay">
                                 <rect key="frame" x="16" y="696" width="150" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,17 +36,21 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JzX-XX-cpj" secondAttribute="trailing" constant="16" id="9A4-Hf-zfB"/>
                             <constraint firstItem="y1w-8I-gKD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="9Lg-qL-Cpu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="y1w-8I-gKD" secondAttribute="bottom" constant="16" id="Xcz-kY-NTv"/>
+                            <constraint firstItem="JzX-XX-cpj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="hcY-VH-BfX"/>
+                            <constraint firstItem="JzX-XX-cpj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="neL-G0-Wdb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapAvatarView" destination="y1w-8I-gKD" id="VKq-IC-eoO"/>
+                        <outlet property="rightBarMenu" destination="JzX-XX-cpj" id="qA1-Vl-RgO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="94"/>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
     </scenes>
     <resources>

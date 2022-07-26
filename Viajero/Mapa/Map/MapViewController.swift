@@ -18,12 +18,14 @@ class MapViewController: BaseViewController {
     
     var mapView: MapView?
     var lugarInfoView: LugarInfoView?
+    @IBOutlet weak var rightBarMenu: RightBarMenu!
     @IBOutlet weak var mapAvatarView: MapAvatarView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.initLocationUpdates()
         self.mapAvatarView.configure(delegate: self)
+        rightBarMenu.configure(delegate: self, from: self)
     }
     
     func loadMap(location: CLLocation) {
@@ -100,17 +102,14 @@ extension MapViewController: MapPresenterProtocol {
                 let iconoPinMedio = UIImage(named: "pin_azul_image")
                 try? self.mapView?.mapboxMap.style.addImage(iconoPinMedio!.withRenderingMode(.alwaysTemplate), id: "pin_medio")
                 // PIN ALTO
-                let iconoPinAlto = UIImage(named: "pin_naranja_image")
+                let iconoPinAlto = UIImage(named: "pin_amarillo_image")
                 try? self.mapView?.mapboxMap.style.addImage(iconoPinAlto!.withRenderingMode(.alwaysTemplate), id: "pin_alto")
                 // PIN MUY ALTO
-                let iconoPinMuyAlto = UIImage(named: "pin_rojo_image")
+                let iconoPinMuyAlto = UIImage(named: "pin_naranja_image")
                 try? self.mapView?.mapboxMap.style.addImage(iconoPinMuyAlto!.withRenderingMode(.alwaysTemplate), id: "pin_muy_alto")
                 // PIN PATRIMONIO
-                let iconoPatrimonio = UIImage(named: "pin_amarillo_image")
+                let iconoPatrimonio = UIImage(named: "pin_rojo_image")
                 try? self.mapView?.mapboxMap.style.addImage(iconoPatrimonio!.withRenderingMode(.alwaysTemplate), id: "pin_patrimonio")
-                // CLUSTER PIN
-                let clusterImage = UIImage(named: "pueblos")
-                try? self.mapView?.mapboxMap.style.addImage(clusterImage!.withRenderingMode(.alwaysTemplate), id: "pin_cluster")
                 
                 var pinLayer = SymbolLayer(id: "SYMBOL_ID")
                 pinLayer.source = "SOURCE_ID"
@@ -235,6 +234,18 @@ extension MapViewController: LugarInfoViewProtocol {
 extension MapViewController: MapAvatarViewProtocol {
     func onMapAvatarViewSelected() {
         PersonalDataRouter().goToPersonalData(navigationController: self.navigationController)
+    }
+}
+
+// MARK: RIGHT BAR MENU
+extension MapViewController: RightBarMenuProtocol {
+    func updateTipoLugares(tipoFiltros: [TipoLugar]) {
+        FiltrosManager.shared.setFiltros(categoriaFiltros: FiltrosManager.shared.categoriaFiltros, tipoLugaresFiltros: tipoFiltros)
+        //self.interactor?.getLugares()
+    }
+    
+    func filterClicked() {
+        
     }
 }
         
