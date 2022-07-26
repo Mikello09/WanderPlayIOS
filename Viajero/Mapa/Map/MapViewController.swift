@@ -82,6 +82,15 @@ extension MapViewController: MapPresenterProtocol {
             geoJSONSource.data = .url(fileData)
             geoJSONSource.cluster = true
             
+            
+            let expSum = Exp(operator: .sum, arguments: [.expression(Exp(.accumulated)), .expression(Exp(.get) {"sum"})])
+//            let expSum = Exp (operator: .sum, ) {
+//                Exp(.accumulated)
+//                Exp(.get) { "sum" }
+//            }
+            //geoJSONSource.clusterProperties = ["sum": expSum]
+//            geoJSONSource.clusterProperties = ["sum": Exp(.accumulated)] //["sum": Exp(.sum)]//["sum": ["+", ["get", "scalerank"]]]
+            
             try? self.mapView?.mapboxMap.style.addSource(geoJSONSource, id: "SOURCE_ID")
             self.mapView?.mapboxMap.onNext(.sourceDataLoaded, handler: { _ in
                 // PIN BAJO
@@ -105,16 +114,11 @@ extension MapViewController: MapPresenterProtocol {
                 
                 var pinLayer = SymbolLayer(id: "SYMBOL_ID")
                 pinLayer.source = "SOURCE_ID"
-                pinLayer.iconAllowOverlap = .constant(true)
-                pinLayer.filter = Expression(.not) {
-                    Expression(.has) { "point_count" }
-                }
-                let expression = Exp(.switchCase) {
-                    Exp(.eq) {
-                        Exp(.get) { "cluster" }
-                        "YES"
-                    }
-                    "pin_cluster"
+                pinLayer.iconAllowOverlap = .constant(false)
+//                pinLayer.filter = Expression(.not) {
+//                    Expression(.has) { "point_count" }
+//                }
+                let pinExpression = Exp(.switchCase) {
                     Exp(.eq) {
                         Exp(.get) { "tipoLugar" }
                         "BAJO"
@@ -140,22 +144,19 @@ extension MapViewController: MapPresenterProtocol {
                         "PATRIMONIO"
                     }
                     "pin_patrimonio"
-                    "pin_gris_image"
+                    ""
                 }
-                pinLayer.iconImage = .expression(expression)
+//                Expression(.has) { "point_count" }
+//                "pin_cluster"
+                let clusterExpression = Exp(.get) { "point_count" }
                 
-                var cluserLayer = CircleLayer(id: "CLUSTER_LAYER")
-                cluserLayer.source = "SOURCE_ID"
-                cluserLayer.filter = Expression(.eq) {
-                    Expression(.has) { "point_count"}
-                }
-                cluserLayer.circleColor = .constant(StyleColor(.systemBlue))
-                cluserLayer.circleRadius = .constant(24)
+                pinLayer.iconImage = .expression(pinExpression)
+                pinLayer.iconSize = .constant(0.5)
+                
+                pinLayer.textField = .expression(clusterExpression)
                 
                 do {
                     try self.mapView?.mapboxMap.style.addLayer(pinLayer)
-                    //try self.mapView?.mapboxMap.style.addLayer(cluserLayer)
-                    print("a")
                 
                     let tap = UITapGestureRecognizer(target: self, action: #selector(self.mapTap(sender:)))
                     self.mapView?.addGestureRecognizer(tap)

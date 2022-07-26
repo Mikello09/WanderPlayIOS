@@ -28,7 +28,7 @@ class PasaporteWorker: BaseWorker{
         }
         
         let session = getUrlSession()
-        let request = generateRequest(url: getAllLogrosURL, method: .post)
+        let request = generateRequest(url: getAllLogrosURL, method: .post, params: ["nombre":  Usuario.shared.nombre])
         let dataTask: URLSessionDataTask?
         
         dataTask = session.dataTask(with: request){ data, response, error in

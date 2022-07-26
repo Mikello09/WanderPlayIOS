@@ -229,36 +229,54 @@ class CamerinosViewController: BaseViewController{
 
 extension CamerinosViewController: GetAllAvataresProtocol{
     func success(avatares: [Avatar]) {
-        self.hideLoader()
-        self.avatares = avatares
-        for (i,avatar) in avatares.enumerated(){
-            if Usuario.shared.avatarActivo == avatar.nombre{
-                self.posicion = i
+        DispatchQueue.main.async {
+            self.hideLoader()
+            self.avatares = avatares
+            for (i,avatar) in avatares.enumerated(){
+                if Usuario.shared.avatarActivo == avatar.nombre{
+                    self.posicion = i
+                }
             }
+            self.changeAvatarInfo()
         }
-        changeAvatarInfo()
     }
     
     func fail() {
-        self.hideLoader()
-        self.navigationController?.popViewController(animated: false)
+        DispatchQueue.main.async {
+            self.hideLoader()
+            self.navigationController?.popViewController(animated: false)
+        }
     }
 }
 
 extension CamerinosViewController: CamerinosWorkerProtocol{
     func comprado() {
-        hideLoader()
-        AvisosRouter().goToAvisoStandard(navigationController: self.navigationController, titulo: "Enhorabuena", mensaje: "Has comprado a \(avatares[posicion].nombre ?? "")!!!", okAction: compradoEntendido)
+        DispatchQueue.main.async {
+            self.hideLoader()
+            AvisosRouter().goToAvisoStandard(navigationController: self.navigationController,
+                                             titulo: "Enhorabuena",
+                                             mensaje: "Has comprado a \(self.avatares[self.posicion].nombre ?? "")!!!",
+                                             okAction: self.compradoEntendido)
+        }
     }
     
     func activado() {
-        hideLoader()
-        AvisosRouter().goToAvisoStandard(navigationController: self.navigationController, titulo: "Enhorabuena", mensaje: "Has activado a \(avatares[posicion].nombre ?? "")!!! A jugar!!", okAction: activadoEntendido)
+        DispatchQueue.main.async {
+            self.hideLoader()
+            AvisosRouter().goToAvisoStandard(navigationController: self.navigationController,
+                                             titulo: "Enhorabuena", mensaje: "Has activado a \(self.avatares[self.posicion].nombre ?? "")!!! A jugar!!",
+                                             okAction: self.activadoEntendido)
+        }
     }
     
     func failCamerino(){
-        hideLoader()
-        AvisosRouter().goToAvisoStandard(navigationController: self.navigationController, titulo: "Lo sentimos", mensaje: "Ha ocurrido un error. Vuelva a intentarlo.", okAction: errorEntendido)
+        DispatchQueue.main.async {
+            self.hideLoader()
+            AvisosRouter().goToAvisoStandard(navigationController: self.navigationController,
+                                             titulo: "Lo sentimos",
+                                             mensaje: "Ha ocurrido un error. Vuelva a intentarlo.",
+                                             okAction: self.errorEntendido)
+        }
     }
     
 }

@@ -42,24 +42,28 @@ class RankingViewController: BaseViewController{
 
 extension RankingViewController: RankingPresenterProtocol{
     func paintRankings(usuarios: [UsuarioModel]) {
-        self.hideLoader()
-        emptyView.isHidden = true
-        tabla.isHidden = false
-        self.usuarios = usuarios
-        tabla.reloadData()
-        var scrollToPosition = 0
-        for (i,user) in usuarios.enumerated(){
-            if user.nombre == Usuario.shared.nombre{
-                scrollToPosition = i
+        DispatchQueue.main.async {
+            self.hideLoader()
+            self.emptyView.isHidden = true
+            self.tabla.isHidden = false
+            self.usuarios = usuarios
+            self.tabla.reloadData()
+            var scrollToPosition = 0
+            for (i,user) in usuarios.enumerated(){
+                if user.nombre == Usuario.shared.nombre{
+                    scrollToPosition = i
+                }
             }
+            self.tabla.scrollToRow(at: IndexPath(row: scrollToPosition, section: 0), at: .middle, animated: true)
         }
-        tabla.scrollToRow(at: IndexPath(row: scrollToPosition, section: 0), at: .middle, animated: true)
     }
     
     func paintEmpty() {
-        self.hideLoader()
-        emptyView.isHidden = false
-        tabla.isHidden = true
+        DispatchQueue.main.async {
+            self.hideLoader()
+            self.emptyView.isHidden = false
+            self.tabla.isHidden = true
+        }
     }
 }
 

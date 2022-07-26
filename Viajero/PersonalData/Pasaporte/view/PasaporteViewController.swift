@@ -43,16 +43,20 @@ class PasaporteViewController: BaseViewController{
 
 extension PasaporteViewController: PasaportePresenterProtocol{
     func paintLogros(logros: [GroupedLogros]) {
-        self.hideLoader()
-        self.logrosView.isHidden = false
-        self.allLogros = logros
-        grupoLogroView!.configure(logros: logros[0].Logros)
-        gruposCollectionView.reloadData()
+        DispatchQueue.main.async {
+            self.hideLoader()
+            self.logrosView.isHidden = false
+            self.allLogros = logros
+            self.grupoLogroView!.configure(logros: logros[0].Logros)
+            self.gruposCollectionView.reloadData()
+        }
     }
     
     func paintError() {
-        self.hideLoader()
-        self.navigationController?.popViewController(animated: false)
+        DispatchQueue.main.async {
+            self.hideLoader()
+            self.navigationController?.popViewController(animated: false)
+        }
     }
     
     func groupChanged(logros: [Logro]){
