@@ -18,6 +18,7 @@ protocol MapPresenterProtocol {
 class MapPresenter {
     
     var delegate: MapPresenterProtocol?
+    var interactor: LugaresInteractor?
     
     var actualLocation: CLLocation?
     
@@ -27,6 +28,10 @@ class MapPresenter {
     
     func getLugares() {
         delegate?.showLugares(lugares: Lugares.shared.getLugares())
+    }
+    
+    func updateLugares() {
+        interactor?.getLugares()
     }
     
 }
@@ -49,5 +54,16 @@ extension MapPresenter: LocationManagerProtocol {
             }
             self.actualLocation = location
         }
+    }
+}
+
+// MARK: INTERACTOR
+extension MapPresenter: LugaresInteractorProtocol {
+    
+    func lugaresReceived(lugares: [Lugar]) {
+        delegate?.showLugares(lugares: lugares)
+    }
+    func failGettingLugares() {
+        
     }
 }

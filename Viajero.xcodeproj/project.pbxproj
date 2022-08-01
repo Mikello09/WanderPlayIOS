@@ -513,6 +513,9 @@
 		97B367A6287CBE9A0067FC21 /* LugarInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B367A5287CBE9A0067FC21 /* LugarInfoView.xib */; };
 		97B367A92884A9780067FC21 /* MapAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B367A82884A9780067FC21 /* MapAvatarView.swift */; };
 		97B367AB2884A98C0067FC21 /* MapAvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B367AA2884A98C0067FC21 /* MapAvatarView.xib */; };
+		97C4F2252891CF7C0092FF56 /* MapBoxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C4F2242891CF7C0092FF56 /* MapBoxHelper.swift */; };
+		97C4F2272891D59D0092FF56 /* model.glb in Resources */ = {isa = PBXBuildFile; fileRef = 97C4F2262891D59D0092FF56 /* model.glb */; };
+		97C4F2292891D6820092FF56 /* sportcar.glb in Resources */ = {isa = PBXBuildFile; fileRef = 97C4F2282891D6820092FF56 /* sportcar.glb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -748,6 +751,9 @@
 		97B367A5287CBE9A0067FC21 /* LugarInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LugarInfoView.xib; sourceTree = "<group>"; };
 		97B367A82884A9780067FC21 /* MapAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAvatarView.swift; sourceTree = "<group>"; };
 		97B367AA2884A98C0067FC21 /* MapAvatarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapAvatarView.xib; sourceTree = "<group>"; };
+		97C4F2242891CF7C0092FF56 /* MapBoxHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxHelper.swift; sourceTree = "<group>"; };
+		97C4F2262891D59D0092FF56 /* model.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.glb; sourceTree = "<group>"; };
+		97C4F2282891D6820092FF56 /* sportcar.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = sportcar.glb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1306,6 +1312,7 @@
 		9708558D2865E85E001AFD4E /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				97C4F2232891CF6E0092FF56 /* Helper */,
 				97B3679F287CBD7D0067FC21 /* Views */,
 				970855922865E8E4001AFD4E /* MapViewController.swift */,
 				970855962865E91A001AFD4E /* MapStoryboard.storyboard */,
@@ -1318,6 +1325,8 @@
 		970855A12865F26A001AFD4E /* DAE */ = {
 			isa = PBXGroup;
 			children = (
+				97C4F2282891D6820092FF56 /* sportcar.glb */,
+				97C4F2262891D59D0092FF56 /* model.glb */,
 				97B3675A2865FF990067FC21 /* Enfermero_Dancing.scn */,
 				97B36762286602590067FC21 /* Enfermero_Standing.scn */,
 				97B36766286602600067FC21 /* Enfermero_Walking.scn */,
@@ -1374,6 +1383,14 @@
 				97B367AA2884A98C0067FC21 /* MapAvatarView.xib */,
 			);
 			path = MapAvatarView;
+			sourceTree = "<group>";
+		};
+		97C4F2232891CF6E0092FF56 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				97C4F2242891CF7C0092FF56 /* MapBoxHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1524,9 +1541,11 @@
 				5D857D9E23E08D6200A34048 /* Ranking.storyboard in Resources */,
 				5D80B14B237DB0C000718BAA /* Logros.storyboard in Resources */,
 				5D778A10234E32C1006422F2 /* MisDatosFieldView.xib in Resources */,
+				97C4F2292891D6820092FF56 /* sportcar.glb in Resources */,
 				5DE882B42372E9DD002197E0 /* Init.storyboard in Resources */,
 				97B36783286602860067FC21 /* LaMilitar_Dancing.scn in Resources */,
 				97B3675F2865FFAC0067FC21 /* Profesor_Saluda.scn in Resources */,
+				97C4F2272891D59D0092FF56 /* model.glb in Resources */,
 				5D040B6F24F8E84100A01263 /* LoginManual.storyboard in Resources */,
 				970855D32865F2EF001AFD4E /* Tshirt_obj.scn in Resources */,
 				970855972865E91A001AFD4E /* MapStoryboard.storyboard in Resources */,
@@ -1769,6 +1788,7 @@
 				5D2E2370250C82CC002EF48D /* CamerinosViewController.swift in Sources */,
 				5D2E2367250C7C26002EF48D /* PasaporteWorker.swift in Sources */,
 				5D040B8124F90D3900A01263 /* Usuario.swift in Sources */,
+				97C4F2252891CF7C0092FF56 /* MapBoxHelper.swift in Sources */,
 				84762237254E7835001B7373 /* LoginManualViewController.swift in Sources */,
 				5D2AC6F12399A2D800AEA66C /* GrupoLogroView.swift in Sources */,
 				5D8F819323C4B696004A3633 /* TomarFotoRouter.swift in Sources */,
