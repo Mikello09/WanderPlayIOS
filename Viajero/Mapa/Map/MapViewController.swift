@@ -72,8 +72,10 @@ extension MapViewController: MapPresenterProtocol {
         presenter?.checkForFirstTime()
     }
     
-    func showFirstTimeLogro() {
-        LogroWorker().askForLogros(lugar: "-1", delegate: self)
+    func showLogros(logros: [Logro], lugarID: String) {
+        DispatchQueue.main.async {
+            LogrosRouter().goToLogros(navigationController: self.navigationController, logros: logros, lugar: lugarID)
+        }
     }
     
     func showLugares(lugares: [Lugar]) {
@@ -106,20 +108,3 @@ extension MapViewController: RightBarMenuProtocol {
         
     }
 }
-
-// MARK: LOGROS
-extension MapViewController: LogroWorkerProtocol {
-    func logroSuccess(logros: [Logro], lugar: String) {
-        DispatchQueue.main.async {
-            LogrosRouter().goToLogros(navigationController: self.navigationController, logros: logros, lugar: lugar)
-        }
-    }
-    
-    func logroFail() {
-        return
-    }
-}
-        
-        
-    
-

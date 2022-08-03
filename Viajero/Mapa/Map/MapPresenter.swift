@@ -13,7 +13,7 @@ import CoreLocation
 protocol MapPresenterProtocol {
     func firstLocation(location: CLLocation)
     func showLugares(lugares: [Lugar])
-    func showFirstTimeLogro()
+    func showLogros(logros: [Logro], lugarID: String)
 }
 
 class MapPresenter {
@@ -28,11 +28,10 @@ class MapPresenter {
     }
     
     func checkForFirstTime() {
-//        if UserDefaults.standard.bool(forKey: "firstTime") {
-//            UserDefaults.standard.set(false, forKey: "firstTime")
-//            delegate?.showFirstTimeLogro()
-//        }
-        delegate?.showFirstTimeLogro()
+        if UserDefaults.standard.bool(forKey: "firstTime") {
+            UserDefaults.standard.set(false, forKey: "firstTime")
+            LogroWorker().askForLogros(lugar: "-1", delegate: self)
+        }
     }
     
     func getLugares() {
@@ -48,7 +47,9 @@ class MapPresenter {
 // MARK: LOCATION MANAGER
 extension MapPresenter: LocationManagerProtocol {
     func locatedInLugar(lugar: Lugar) {
-        print("Located in lugar")
+        if let lugarID = lugar._id {
+            LogroWorker().askForLogros(lugar: lugarID, delegate: self)
+        }
     }
     
     func noLocatedInLugar(location: CLLocation?) {
@@ -60,13 +61,26 @@ extension MapPresenter: LocationManagerProtocol {
         if let location = location {
             if actualLocation == nil {
                 delegate?.firstLocation(location: location)
+            } else {
+                LocationManager.sharedInstance().isLocatedInLugar(location: location, delegate: self)
             }
             self.actualLocation = location
         }
     }
 }
 
-// MARK: INTERACTOR
+// MARK: LOGROS
+extension MapPresenter: LogroWorkerProtocol {
+    func logroSuccess(logros: [Logro], lugar: String) {
+        delegate?.showLogros(logros: logros, lugarID: lugar)
+    }
+    
+    func logroFail() {
+        return
+    }
+}
+
+// MARK: LUGARES INTERACTOR
 extension MapPresenter: LugaresInteractorProtocol {
     
     func lugaresReceived(lugares: [Lugar]) {
