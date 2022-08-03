@@ -13,6 +13,7 @@ import CoreLocation
 protocol MapPresenterProtocol {
     func firstLocation(location: CLLocation)
     func showLugares(lugares: [Lugar])
+    func showFirstTimeLogro()
 }
 
 class MapPresenter {
@@ -24,6 +25,14 @@ class MapPresenter {
     
     func initLocationUpdates() {
         LocationManager.sharedInstance().startTrackingLocation(delegado: self)
+    }
+    
+    func checkForFirstTime() {
+//        if UserDefaults.standard.bool(forKey: "firstTime") {
+//            UserDefaults.standard.set(false, forKey: "firstTime")
+//            delegate?.showFirstTimeLogro()
+//        }
+        delegate?.showFirstTimeLogro()
     }
     
     func getLugares() {

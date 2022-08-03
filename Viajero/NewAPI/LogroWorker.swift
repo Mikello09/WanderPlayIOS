@@ -26,8 +26,12 @@ class LogroWorker: BaseWorker{
             return
         }
         
+        var params: [String: Any] = [:]
+        params["nombre"] = Usuario.shared.nombre
+        params["lugar"] = lugar
+        
         let session = getUrlSession()
-        let request = generateRequest(url: askForLogrosURL, method: .post)
+        let request = generateRequest(url: askForLogrosURL, method: .post, params: params)
         let dataTask: URLSessionDataTask?
         
         dataTask = session.dataTask(with: request){ data, response, error in

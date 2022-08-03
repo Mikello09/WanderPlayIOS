@@ -69,6 +69,11 @@ extension MapViewController: MapPresenterProtocol {
         mapView?.mapboxMap.onNext(.mapLoaded, handler: { loaded in
             self.presenter?.getLugares()
         })
+        presenter?.checkForFirstTime()
+    }
+    
+    func showFirstTimeLogro() {
+        LogroWorker().askForLogros(lugar: "-1", delegate: self)
     }
     
     func showLugares(lugares: [Lugar]) {
@@ -94,7 +99,6 @@ extension MapViewController: MapAvatarViewProtocol {
 extension MapViewController: RightBarMenuProtocol {
     func updateTipoLugares(tipoFiltros: [TipoLugar]) {
         FiltrosManager.shared.setFiltros(categoriaFiltros: FiltrosManager.shared.categoriaFiltros, tipoLugaresFiltros: tipoFiltros)
-        //self.interactor?.getLugares()
         presenter?.updateLugares()
     }
     
@@ -102,7 +106,19 @@ extension MapViewController: RightBarMenuProtocol {
         
     }
 }
-        
+
+// MARK: LOGROS
+extension MapViewController: LogroWorkerProtocol {
+    func logroSuccess(logros: [Logro], lugar: String) {
+        DispatchQueue.main.async {
+            LogrosRouter().goToLogros(navigationController: self.navigationController, logros: logros, lugar: lugar)
+        }
+    }
+    
+    func logroFail() {
+        return
+    }
+}
         
         
     
