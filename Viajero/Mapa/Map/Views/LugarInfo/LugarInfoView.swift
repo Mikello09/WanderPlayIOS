@@ -52,6 +52,8 @@ class LugarInfoView: UIView {
                    delegate: LugarInfoViewProtocol) {
         self.delegate = delegate
         self.idLugar = id
+        // Container
+        container.layer.cornerRadius = 8
         // PIN
         switch tipoLugar {
         case "BAJO":

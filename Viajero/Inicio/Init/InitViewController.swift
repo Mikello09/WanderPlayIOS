@@ -63,17 +63,19 @@ class InitViewController: BaseViewController{
     }
     
     func configureError(image: String, message: String, intentar: Bool){
-        self.cargandoView.isHidden = true
-        if intentar{
-            errorButton.isHidden = false
-            errorButton.setNormalStyle()
-        } else {
-            errorButton.isHidden = true
+        DispatchQueue.main.async {
+            self.cargandoView.isHidden = true
+            if intentar{
+                self.errorButton.isHidden = false
+                self.errorButton.setNormalStyle()
+            } else {
+                self.errorButton.isHidden = true
+            }
+            
+            self.errorImage.image = UIImage(named: image)
+            self.errorMessage.text = message
+            self.errorView.isHidden = false
         }
-        
-        errorImage.image = UIImage(named: image)
-        errorMessage.text = message
-        errorView.isHidden = false
     }
 }
 

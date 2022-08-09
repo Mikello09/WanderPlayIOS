@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -49,7 +51,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="122.5" height="29"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="QlA-wp-y2F" firstAttribute="leading" secondItem="Izy-CV-Hkc" secondAttribute="leading" id="9vv-08-Ten"/>
                                                 <constraint firstAttribute="bottom" secondItem="QlA-wp-y2F" secondAttribute="bottom" id="XgM-Eb-wbf"/>
@@ -57,7 +59,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="QlA-wp-y2F" secondAttribute="trailing" id="voK-qo-zgT"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-h7-Gbd">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-h7-Gbd">
                                             <rect key="frame" x="0.0" y="0.0" width="138.5" height="45"/>
                                             <connections>
                                                 <action selector="rojoPinClicked:" destination="-1" eventType="touchUpInside" id="G7v-IY-uA9"/>
@@ -86,7 +88,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="122.5" height="29"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="8u5-Tg-aLF" firstAttribute="leading" secondItem="fSD-LU-BfP" secondAttribute="leading" id="SeZ-q0-F7T"/>
                                                 <constraint firstItem="8u5-Tg-aLF" firstAttribute="top" secondItem="fSD-LU-BfP" secondAttribute="top" id="f1N-b0-k19"/>
@@ -94,7 +96,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="8u5-Tg-aLF" secondAttribute="trailing" id="yRb-bY-r6M"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-Ny-FvL">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-Ny-FvL">
                                             <rect key="frame" x="0.0" y="0.0" width="138.5" height="45"/>
                                             <connections>
                                                 <action selector="naranjaPinClicked:" destination="-1" eventType="touchUpInside" id="X9n-Mr-eFh"/>
@@ -123,7 +125,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="122" height="29"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="5s2-9l-U43" firstAttribute="leading" secondItem="iyD-X4-3mp" secondAttribute="leading" id="1Rf-LI-zq1"/>
                                                 <constraint firstItem="5s2-9l-U43" firstAttribute="top" secondItem="iyD-X4-3mp" secondAttribute="top" id="AOe-Qp-zkL"/>
@@ -131,7 +133,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="5s2-9l-U43" secondAttribute="trailing" id="xFN-Di-fs3"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-Z1-nBc">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-Z1-nBc">
                                             <rect key="frame" x="0.0" y="0.0" width="138" height="45"/>
                                             <connections>
                                                 <action selector="amarilloPinClicked:" destination="-1" eventType="touchUpInside" id="nf3-Jg-T0k"/>
@@ -160,7 +162,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="122.5" height="29"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="Osz-Es-5GP" firstAttribute="top" secondItem="8nh-Fq-1cH" secondAttribute="top" id="G4G-gh-paS"/>
                                                 <constraint firstAttribute="trailing" secondItem="Osz-Es-5GP" secondAttribute="trailing" id="IXe-5M-UJJ"/>
@@ -168,7 +170,7 @@
                                                 <constraint firstItem="Osz-Es-5GP" firstAttribute="leading" secondItem="8nh-Fq-1cH" secondAttribute="leading" id="w6h-Nl-EPV"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-em-hcY">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-em-hcY">
                                             <rect key="frame" x="0.0" y="0.0" width="138.5" height="45"/>
                                             <connections>
                                                 <action selector="azulPinClicked:" destination="-1" eventType="touchUpInside" id="6yM-OO-N2Y"/>
@@ -197,7 +199,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="122.5" height="29"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="eLC-dC-5GZ" firstAttribute="leading" secondItem="yyY-SQ-uAK" secondAttribute="leading" id="78X-rV-2K7"/>
                                                 <constraint firstAttribute="trailing" secondItem="eLC-dC-5GZ" secondAttribute="trailing" id="9fy-Mm-grC"/>
@@ -205,7 +207,7 @@
                                                 <constraint firstItem="eLC-dC-5GZ" firstAttribute="top" secondItem="yyY-SQ-uAK" secondAttribute="top" id="z5d-yt-TzK"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3S-BQ-WHQ">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3S-BQ-WHQ">
                                             <rect key="frame" x="0.0" y="0.0" width="138.5" height="45"/>
                                             <connections>
                                                 <action selector="verdePinClicked:" destination="-1" eventType="touchUpInside" id="ZxY-Ry-FX5"/>
@@ -230,7 +232,7 @@
                             </constraints>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-91-iPi" userLabel="FilterView">
-                            <rect key="frame" x="0.0" y="47" width="300" height="33"/>
+                            <rect key="frame" x="0.0" y="43" width="300" height="33"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxO-6j-f8X">
                                     <rect key="frame" x="8" y="2.5" width="120" height="28"/>
@@ -294,7 +296,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXl-eq-bb5">
-                            <rect key="frame" x="648" y="45.5" width="36" height="36"/>
+                            <rect key="frame" x="648" y="41.5" width="36" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="36" id="CtH-38-lsU"/>
                                 <constraint firstAttribute="height" constant="36" id="duZ-y9-tcz"/>
@@ -313,19 +315,19 @@
                         <constraint firstAttribute="height" constant="80" id="QO6-vG-apA"/>
                         <constraint firstAttribute="trailing" secondItem="y9m-RC-jhE" secondAttribute="trailing" id="RrL-TC-2bV"/>
                         <constraint firstItem="MXl-eq-bb5" firstAttribute="centerY" secondItem="Sfk-91-iPi" secondAttribute="centerY" id="Z4c-2B-GMh"/>
-                        <constraint firstAttribute="bottom" secondItem="Sfk-91-iPi" secondAttribute="bottom" id="boy-oe-FOI"/>
+                        <constraint firstAttribute="bottom" secondItem="Sfk-91-iPi" secondAttribute="bottom" constant="4" id="boy-oe-FOI"/>
                         <constraint firstItem="y9m-RC-jhE" firstAttribute="top" secondItem="kTb-I5-ZsI" secondAttribute="top" id="clr-Za-IXO"/>
                         <constraint firstAttribute="trailing" secondItem="MXl-eq-bb5" secondAttribute="trailing" constant="8" id="fTP-gQ-ROM"/>
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <constraints>
                 <constraint firstItem="kTb-I5-ZsI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SYf-aZ-3bK"/>
                 <constraint firstItem="kTb-I5-ZsI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="ZII-xC-dKp"/>
                 <constraint firstAttribute="trailing" secondItem="kTb-I5-ZsI" secondAttribute="trailing" constant="3" id="ln4-uw-WFB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="224.63768115942031" y="-137.27678571428569"/>
         </view>
     </objects>
@@ -337,5 +339,8 @@
         <image name="pin_naranja_image" width="96" height="96"/>
         <image name="pin_rojo_image" width="96" height="96"/>
         <image name="pin_verde_image" width="96" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
