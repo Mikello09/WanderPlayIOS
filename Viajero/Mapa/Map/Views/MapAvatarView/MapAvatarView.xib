@@ -5,14 +5,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapAvatarView" customModule="WanderPlay" customModuleProvider="target">
             <connections>
                 <outlet property="avatarView" destination="sze-Dz-a9h" id="0bd-dh-Gbw"/>
-                <outlet property="container" destination="4Sh-Zg-kn4" id="Nxh-5J-vYL"/>
+                <outlet property="circularContainer" destination="4Sh-Zg-kn4" id="kHI-qC-pnV"/>
+                <outlet property="levelLabel" destination="72G-RI-a5Q" id="WgL-nc-TgU"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1lL-Oi-C4c"/>
             </connections>
         </placeholder>
@@ -21,21 +21,30 @@
             <rect key="frame" x="0.0" y="0.0" width="413" height="455"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-Zg-kn4">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-Zg-kn4" customClass="CircularProgressView" customModule="WanderPlay" customModuleProvider="target">
                     <rect key="frame" x="8" y="8" width="397" height="439"/>
                     <subviews>
                         <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sze-Dz-a9h">
                             <rect key="frame" x="158.5" y="24" width="80" height="80"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="24A-sS-eVq"/>
                                 <constraint firstAttribute="height" constant="80" id="TzX-ec-qnx"/>
                             </constraints>
                         </sceneKitView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72G-RI-a5Q">
+                            <rect key="frame" x="177.5" y="112" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="72G-RI-a5Q" firstAttribute="top" secondItem="sze-Dz-a9h" secondAttribute="bottom" constant="8" id="Dye-S7-EIP"/>
                         <constraint firstItem="sze-Dz-a9h" firstAttribute="centerX" secondItem="4Sh-Zg-kn4" secondAttribute="centerX" id="WRS-D2-PCo"/>
                         <constraint firstItem="sze-Dz-a9h" firstAttribute="top" secondItem="4Sh-Zg-kn4" secondAttribute="top" constant="24" id="WfD-7Q-N60"/>
+                        <constraint firstItem="72G-RI-a5Q" firstAttribute="centerX" secondItem="4Sh-Zg-kn4" secondAttribute="centerX" id="sqJ-Je-Xd5"/>
                     </constraints>
                 </view>
             </subviews>
@@ -51,9 +60,4 @@
             <point key="canvasLocation" x="136.95652173913044" y="-55.245535714285715"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

@@ -24,8 +24,13 @@ class MapViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.initLocationUpdates()
-        self.mapAvatarView.configure(delegate: self)
+        mapAvatarView.configure(delegate: self)
         rightBarMenu.configure(delegate: self, from: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mapAvatarView.updateLevel()
     }
     
     func loadMap(location: CLLocation) {

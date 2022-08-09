@@ -17,8 +17,9 @@ protocol MapAvatarViewProtocol {
 class MapAvatarView: UIView {
     
     @IBOutlet var view: UIView!
-    @IBOutlet weak var container: UIView!
     @IBOutlet weak var avatarView: SCNView!
+    @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var circularContainer: CircularProgressView!
     
     var delegate: MapAvatarViewProtocol?
     
@@ -53,6 +54,14 @@ class MapAvatarView: UIView {
         let tap = UITapGestureRecognizer(target: self, action: #selector(avatarSelected))
         self.view.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(tap)
+        
+        view.layoutIfNeeded()
+        circularContainer.makeCircularPath()
+    }
+    
+    func updateLevel() {
+        circularContainer.setProgressWithAnimation(duration: 0.3, value: Usuario.shared.getNivelPorcentaje())
+        levelLabel.text = Usuario.shared.getNivel()
     }
     
     @objc

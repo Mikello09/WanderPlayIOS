@@ -1,4 +1,5 @@
 import UIKit
+
 class CircularProgressView: UIView {
    var progressLyr = CAShapeLayer()
    var trackLyr = CAShapeLayer()
