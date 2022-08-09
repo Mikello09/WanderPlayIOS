@@ -16,7 +16,7 @@ enum HttpMethod: String {
 
 class BaseWorker{
     
-    var baseUrl = "http://localhost:3000/"//"https://wanderplay.herokuapp.com/"
+    var baseUrl = "https://thewanderplay.herokuapp.com/"//"http://localhost:3000/"//
     var headers = ["authToken":"AAAAA"]
     let errorGeneral = "Ha ocurrido un error. Vuelva a intentarlo."
     

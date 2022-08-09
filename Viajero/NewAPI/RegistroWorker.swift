@@ -28,8 +28,13 @@ class RegistroWorker: BaseWorker{
             return
         }
         
+        var params: [String: Any] = [:]
+        params["nombre"] = nombre
+        params["avatar"] = pass
+        params["pass"] = avatar
+        
         let session = getUrlSession()
-        let request = generateRequest(url: registroURL, method: .post)
+        let request = generateRequest(url: registroURL, method: .post, params: params)
         let dataTask: URLSessionDataTask?
         
         dataTask = session.dataTask(with: request){ data, response, error in

@@ -105,7 +105,6 @@ extension InitViewController: LoginWorkerProtocol{
 
 extension InitViewController: LugarWorkerProtocol{
     func successLugares() {
-//        MapaRouter().goToMapa(navigationController: self.navigationController, inModoSinConexion: false)
         DispatchQueue.main.async {
             MapRouter().goToMap(navigationController: self.navigationController)
         }
