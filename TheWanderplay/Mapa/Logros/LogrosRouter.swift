@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class LogrosRouter: BaseRouter{
+class LogrosRouter {
     
     func goToLogros(navigationController: UINavigationController?, logros: [Logro], lugar: String){
         if let navigation = navigationController{

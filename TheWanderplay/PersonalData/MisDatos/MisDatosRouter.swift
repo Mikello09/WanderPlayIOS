@@ -13,7 +13,7 @@ class MisDatosRouter{
     
     func goToMisDatos(navigationController: UINavigationController?){
         if let navigation = navigationController{
-            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let storyboard = UIStoryboard.init(name: "MisDatos", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "misDatosStoryboard") as! MisDatosViewController
             let presenter = MisDatosPresenter()
             presenter.delegate = vc

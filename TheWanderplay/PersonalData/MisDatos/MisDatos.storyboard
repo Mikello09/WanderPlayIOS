@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mis Datos View Controller-->
+        <scene sceneID="eeq-iG-9po">
+            <objects>
+                <viewController storyboardIdentifier="misDatosStoryboard" id="ceU-rq-rcH" customClass="MisDatosViewController" customModule="WanderPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mla-hu-TU7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAc-cw-dLc">
+                                <rect key="frame" x="8" y="806" width="398" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="LsW-Bf-2ez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardarClicked:" destination="ceU-rq-rcH" eventType="touchUpInside" id="YdC-YP-Sgm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completa todos tus datos y consigue nuevas recompensas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouf-BS-G0d">
+                                <rect key="frame" x="36" y="56" width="342" height="62"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dQS-1I-qyG">
+                                <rect key="frame" x="56" y="142" width="302" height="4"/>
+                                <color key="progressTintColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="trackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQK-H5-bgr">
+                                <rect key="frame" x="12" y="170" width="390" height="624"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CCD-ee-RLm">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egP-qM-3RD">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="1"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="ilb-HJ-UES"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CCD-ee-RLm" firstAttribute="top" secondItem="DQK-H5-bgr" secondAttribute="top" id="45P-V2-Qm7"/>
+                                    <constraint firstAttribute="bottom" secondItem="CCD-ee-RLm" secondAttribute="bottom" id="6YR-sp-fzl"/>
+                                    <constraint firstItem="CCD-ee-RLm" firstAttribute="width" secondItem="DQK-H5-bgr" secondAttribute="width" id="VIV-1E-VfI"/>
+                                    <constraint firstAttribute="trailing" secondItem="CCD-ee-RLm" secondAttribute="trailing" id="duj-TE-b9c"/>
+                                    <constraint firstItem="CCD-ee-RLm" firstAttribute="leading" secondItem="DQK-H5-bgr" secondAttribute="leading" id="iy2-Cw-ijJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n4G-Za-jAa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NAc-cw-dLc" firstAttribute="leading" secondItem="n4G-Za-jAa" secondAttribute="leading" constant="8" id="0sr-28-qew"/>
+                            <constraint firstItem="dQS-1I-qyG" firstAttribute="top" secondItem="Ouf-BS-G0d" secondAttribute="bottom" constant="24" id="24s-tf-lLv"/>
+                            <constraint firstItem="n4G-Za-jAa" firstAttribute="trailing" secondItem="Ouf-BS-G0d" secondAttribute="trailing" constant="36" id="2zK-AC-Zac"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dQS-1I-qyG" secondAttribute="trailing" constant="36" id="38w-BV-Lif"/>
+                            <constraint firstItem="Ouf-BS-G0d" firstAttribute="centerX" secondItem="Mla-hu-TU7" secondAttribute="centerX" id="3cr-IW-8f7"/>
+                            <constraint firstItem="Ouf-BS-G0d" firstAttribute="leading" secondItem="n4G-Za-jAa" secondAttribute="leading" constant="36" id="4fy-65-4Lt"/>
+                            <constraint firstItem="n4G-Za-jAa" firstAttribute="bottom" secondItem="NAc-cw-dLc" secondAttribute="bottom" constant="8" id="9kz-wh-TXB"/>
+                            <constraint firstItem="dQS-1I-qyG" firstAttribute="leading" secondItem="Mla-hu-TU7" secondAttribute="leadingMargin" constant="36" id="9os-8f-gR6"/>
+                            <constraint firstItem="NAc-cw-dLc" firstAttribute="top" secondItem="DQK-H5-bgr" secondAttribute="bottom" constant="12" id="Kqj-zl-oxz"/>
+                            <constraint firstItem="DQK-H5-bgr" firstAttribute="leading" secondItem="n4G-Za-jAa" secondAttribute="leading" constant="12" id="PnB-S1-dBe"/>
+                            <constraint firstItem="Ouf-BS-G0d" firstAttribute="top" secondItem="n4G-Za-jAa" secondAttribute="top" constant="12" id="fnq-sZ-BcL"/>
+                            <constraint firstItem="n4G-Za-jAa" firstAttribute="trailing" secondItem="NAc-cw-dLc" secondAttribute="trailing" constant="8" id="hoL-Mk-lRL"/>
+                            <constraint firstItem="DQK-H5-bgr" firstAttribute="top" secondItem="dQS-1I-qyG" secondAttribute="bottom" constant="24" id="tLr-by-FtV"/>
+                            <constraint firstItem="n4G-Za-jAa" firstAttribute="trailing" secondItem="DQK-H5-bgr" secondAttribute="trailing" constant="12" id="tUS-Sr-f7d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="camposStack" destination="CCD-ee-RLm" id="1c4-zw-JlO"/>
+                        <outlet property="guardarButton" destination="NAc-cw-dLc" id="p82-M5-uXH"/>
+                        <outlet property="mainScrollView" destination="DQK-H5-bgr" id="pOc-u7-sJY"/>
+                        <outlet property="progressBar" destination="dQS-1I-qyG" id="aGp-An-1IW"/>
+                        <outlet property="topMessage" destination="Ouf-BS-G0d" id="Z6T-fW-ldt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQz-CW-HfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4710" y="-1152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

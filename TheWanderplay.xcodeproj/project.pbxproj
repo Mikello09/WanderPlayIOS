@@ -16,7 +16,6 @@
 		5D040B8924FC2BB000A01263 /* Lugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8824FC2BAF00A01263 /* Lugar.swift */; };
 		5D040B8D24FC2C0F00A01263 /* LugarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */; };
 		5D1186EC2330C21C000AD1DC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1186EB2330C21C000AD1DC /* Colors.swift */; };
-		5D11871423324C1B000AD1DC /* Avatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D11871323324C1B000AD1DC /* Avatar.storyboard */; };
 		5D11871C23327B5D000AD1DC /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D11871B23327B5D000AD1DC /* LoginRouter.swift */; };
 		5D16DA522378B4E700690CC8 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16DA512378B4E700690CC8 /* Categorias.swift */; };
 		5D16DA802379846200690CC8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16DA7F2379846200690CC8 /* Reachability.swift */; };
@@ -66,12 +65,9 @@
 		5D679D6F231FAFD0005AB2E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D6E231FAFD0005AB2E5 /* BaseViewController.swift */; };
 		5D679D75231FB506005AB2E5 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D74231FB506005AB2E5 /* ColumnFlowLayout.swift */; };
 		5D679D7823211B81005AB2E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7723211B81005AB2E5 /* LoginViewController.swift */; };
-		5D679D7D23215A53005AB2E5 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7C23215A53005AB2E5 /* MapaViewController.swift */; };
-		5D679D7F23215BDC005AB2E5 /* MapaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679D7E23215BDC005AB2E5 /* MapaRouter.swift */; };
 		5D679DAB2327C80C005AB2E5 /* RightBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DAA2327C80C005AB2E5 /* RightBarMenu.swift */; };
 		5D679DAD2327C819005AB2E5 /* RightBarMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D679DAC2327C819005AB2E5 /* RightBarMenu.xib */; };
 		5D679DB22327CE7B005AB2E5 /* LugaresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DB12327CE7B005AB2E5 /* LugaresManager.swift */; };
-		5D679DB42327CE98005AB2E5 /* MapaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D679DB32327CE98005AB2E5 /* MapaPresenter.swift */; };
 		5D6DCF6823E5ED3500102FCB /* RankingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DCF6723E5ED3500102FCB /* RankingPresenter.swift */; };
 		5D778A09234E2C6F006422F2 /* MisDatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A08234E2C6F006422F2 /* MisDatosViewController.swift */; };
 		5D778A0B234E2CD4006422F2 /* MisDatosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A0A234E2CD4006422F2 /* MisDatosRouter.swift */; };
@@ -81,7 +77,6 @@
 		5D80B14B237DB0C000718BAA /* Logros.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B14A237DB0C000718BAA /* Logros.storyboard */; };
 		5D80B14D237DB0D000718BAA /* LogrosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B14C237DB0D000718BAA /* LogrosRouter.swift */; };
 		5D80B14F237DB0E900718BAA /* LogrosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B14E237DB0E900718BAA /* LogrosPresenter.swift */; };
-		5D80B154237E8B2A00718BAA /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B153237E8B2A00718BAA /* BaseRouter.swift */; };
 		5D80B157237E8FA100718BAA /* MostrarCartasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B156237E8FA100718BAA /* MostrarCartasView.swift */; };
 		5D80B159237E8FAD00718BAA /* MostrarCartasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D80B158237E8FAD00718BAA /* MostrarCartasView.xib */; };
 		5D80B15B237E921200718BAA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D80B15A237E921200718BAA /* CardView.swift */; };
@@ -111,7 +106,6 @@
 		5DD5F1AA2383D06700BE5A6B /* ResumenCartasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD5F1A92383D06700BE5A6B /* ResumenCartasView.xib */; };
 		5DD5F1AC2383E57000BE5A6B /* ResumenCartasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AB2383E57000BE5A6B /* ResumenCartasCell.swift */; };
 		5DD5F1AE2383E57D00BE5A6B /* ResumenCartasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AD2383E57D00BE5A6B /* ResumenCartasCell.xib */; };
-		5DD5F1B0238550B500BE5A6B /* MapaDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5F1AF238550B500BE5A6B /* MapaDelegates.swift */; };
 		5DD6794B24594B170080FBDD /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6794A24594B170080FBDD /* Welcome.storyboard */; };
 		5DD6794F24594B210080FBDD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6794E24594B210080FBDD /* WelcomeViewController.swift */; };
 		5DD6795324594B930080FBDD /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6795224594B930080FBDD /* WelcomeRouter.swift */; };
@@ -124,7 +118,6 @@
 		5DD67970245B34110080FBDD /* PasswordWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD6796F245B34110080FBDD /* PasswordWelcomeView.xib */; };
 		5DD67974245B39FE0080FBDD /* ResumeWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD67973245B39FE0080FBDD /* ResumeWelcomeView.swift */; };
 		5DD67978245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DD67977245B3A0F0080FBDD /* ResumeWelcomeView.xib */; };
-		5DDE465523425F7800909A2B /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE465423425F7800909A2B /* OptionsViewController.swift */; };
 		5DE0CC64247065F400277FD2 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC63247065F400277FD2 /* CircularProgressView.swift */; };
 		5DE0CC682471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CC672471284B00277FD2 /* FiltrosTutorialViewController.swift */; };
 		5DE0CC6C2471287500277FD2 /* FiltrosTutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CC6B2471287500277FD2 /* FiltrosTutorial.storyboard */; };
@@ -144,7 +137,6 @@
 		5DEAB353245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */; };
 		5DEAB377245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */; };
 		5DF6D5102369874B007C3774 /* FiltrosCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */; };
-		5DF8DADF2370D82E009A14C0 /* ApiBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8DADE2370D82E009A14C0 /* ApiBase.swift */; };
 		5DFDE1F92363194500320C8F /* MisDatosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */; };
 		84762237254E7835001B7373 /* LoginManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84762236254E7835001B7373 /* LoginManualViewController.swift */; };
 		9708557928611546001AFD4E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9708557828611546001AFD4E /* Lottie */; };
@@ -155,6 +147,9 @@
 		9708559B2865E92E001AFD4E /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708559A2865E92E001AFD4E /* MapRouter.swift */; };
 		970855BB2865F2EF001AFD4E /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 970855A72865F2E8001AFD4E /* textures */; };
 		970855D32865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
+		9746C63E28B6CF84002CA7C2 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746C63D28B6CF84002CA7C2 /* BaseAPI.swift */; };
+		9746C64028B6D057002CA7C2 /* PersonalData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */; };
+		9746C64228B6D081002CA7C2 /* MisDatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C64128B6D081002CA7C2 /* MisDatos.storyboard */; };
 		97B3675B2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3675A2865FF990067FC21 /* Enfermero_Dancing.scn */; };
 		97B3675F2865FFAC0067FC21 /* Profesor_Saluda.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B3675E2865FFAC0067FC21 /* Profesor_Saluda.scn */; };
 		97B36763286602590067FC21 /* Enfermero_Standing.scn in Resources */ = {isa = PBXBuildFile; fileRef = 97B36762286602590067FC21 /* Enfermero_Standing.scn */; };
@@ -215,7 +210,6 @@
 		5D040B8824FC2BAF00A01263 /* Lugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lugar.swift; sourceTree = "<group>"; };
 		5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarWorker.swift; sourceTree = "<group>"; };
 		5D1186EB2330C21C000AD1DC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		5D11871323324C1B000AD1DC /* Avatar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Avatar.storyboard; sourceTree = "<group>"; };
 		5D11871B23327B5D000AD1DC /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		5D16DA512378B4E700690CC8 /* Categorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorias.swift; sourceTree = "<group>"; };
 		5D16DA7F2379846200690CC8 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -244,9 +238,6 @@
 		5D25E8A4233E2B5A002560A3 /* GeneralCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralCard.xib; sourceTree = "<group>"; };
 		5D2AC6F02399A2D800AEA66C /* GrupoLogroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrupoLogroView.swift; sourceTree = "<group>"; };
 		5D2AC6F22399A2F800AEA66C /* GrupoLogroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrupoLogroView.xib; sourceTree = "<group>"; };
-		5D2D147023DCD0A400AAA99B /* LugaresWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugaresWorkerDemo.swift; sourceTree = "<group>"; };
-		5D2D147223DCD0FB00AAA99B /* LoginWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerDemo.swift; sourceTree = "<group>"; };
-		5D2D147423DCD14900AAA99B /* UserProfileWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileWorkerDemo.swift; sourceTree = "<group>"; };
 		5D2E2366250C7C26002EF48D /* PasaporteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasaporteWorker.swift; sourceTree = "<group>"; };
 		5D2E236A250C7CF6002EF48D /* Logro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logro.swift; sourceTree = "<group>"; };
 		5D2E236F250C82CC002EF48D /* CamerinosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CamerinosViewController.swift; path = TheWanderplay/PersonalData/Camerinos/CamerinosViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -269,12 +260,9 @@
 		5D679D6E231FAFD0005AB2E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5D679D74231FB506005AB2E5 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
 		5D679D7723211B81005AB2E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5D679D7C23215A53005AB2E5 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
-		5D679D7E23215BDC005AB2E5 /* MapaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaRouter.swift; sourceTree = "<group>"; };
 		5D679DAA2327C80C005AB2E5 /* RightBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarMenu.swift; sourceTree = "<group>"; };
 		5D679DAC2327C819005AB2E5 /* RightBarMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightBarMenu.xib; sourceTree = "<group>"; };
 		5D679DB12327CE7B005AB2E5 /* LugaresManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugaresManager.swift; sourceTree = "<group>"; };
-		5D679DB32327CE98005AB2E5 /* MapaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaPresenter.swift; sourceTree = "<group>"; };
 		5D6DCF6723E5ED3500102FCB /* RankingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingPresenter.swift; sourceTree = "<group>"; };
 		5D778A08234E2C6F006422F2 /* MisDatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosViewController.swift; sourceTree = "<group>"; };
 		5D778A0A234E2CD4006422F2 /* MisDatosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosRouter.swift; sourceTree = "<group>"; };
@@ -284,13 +272,10 @@
 		5D80B14A237DB0C000718BAA /* Logros.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logros.storyboard; sourceTree = "<group>"; };
 		5D80B14C237DB0D000718BAA /* LogrosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosRouter.swift; sourceTree = "<group>"; };
 		5D80B14E237DB0E900718BAA /* LogrosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogrosPresenter.swift; sourceTree = "<group>"; };
-		5D80B153237E8B2A00718BAA /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		5D80B156237E8FA100718BAA /* MostrarCartasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostrarCartasView.swift; sourceTree = "<group>"; };
 		5D80B158237E8FAD00718BAA /* MostrarCartasView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostrarCartasView.xib; sourceTree = "<group>"; };
 		5D80B15A237E921200718BAA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5D80B15C237E923400718BAA /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		5D857D9023DF1D0500A34048 /* LogroWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogroWorkerDemo.swift; sourceTree = "<group>"; };
-		5D857D9223DF1DE100A34048 /* GetAllLogrosWorkerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllLogrosWorkerDemo.swift; sourceTree = "<group>"; };
 		5D857D9523E08D0E00A34048 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		5D857D9923E08D3900A34048 /* RankingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRouter.swift; sourceTree = "<group>"; };
 		5D857D9D23E08D6200A34048 /* Ranking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ranking.storyboard; sourceTree = "<group>"; };
@@ -317,7 +302,6 @@
 		5DD5F1A92383D06700BE5A6B /* ResumenCartasView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumenCartasView.xib; sourceTree = "<group>"; };
 		5DD5F1AB2383E57000BE5A6B /* ResumenCartasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenCartasCell.swift; sourceTree = "<group>"; };
 		5DD5F1AD2383E57D00BE5A6B /* ResumenCartasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumenCartasCell.xib; sourceTree = "<group>"; };
-		5DD5F1AF238550B500BE5A6B /* MapaDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaDelegates.swift; sourceTree = "<group>"; };
 		5DD6794A24594B170080FBDD /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		5DD6794E24594B210080FBDD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5DD6795224594B930080FBDD /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
@@ -330,7 +314,6 @@
 		5DD6796F245B34110080FBDD /* PasswordWelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordWelcomeView.xib; sourceTree = "<group>"; };
 		5DD67973245B39FE0080FBDD /* ResumeWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeWelcomeView.swift; sourceTree = "<group>"; };
 		5DD67977245B3A0F0080FBDD /* ResumeWelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumeWelcomeView.xib; sourceTree = "<group>"; };
-		5DDE465423425F7800909A2B /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5DE0CC63247065F400277FD2 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		5DE0CC672471284B00277FD2 /* FiltrosTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiltrosTutorialViewController.swift; path = "../New Group/FiltrosTutorialViewController.swift"; sourceTree = "<group>"; };
 		5DE0CC6B2471287500277FD2 /* FiltrosTutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FiltrosTutorial.storyboard; sourceTree = "<group>"; };
@@ -350,7 +333,6 @@
 		5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseAvatar.storyboard; sourceTree = "<group>"; };
 		5DEAB376245D2DBE008E7D95 /* AvatarChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarChooseCell.swift; sourceTree = "<group>"; };
 		5DF6D50F2369874B007C3774 /* FiltrosCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltrosCollectionCell.swift; sourceTree = "<group>"; };
-		5DF8DADE2370D82E009A14C0 /* ApiBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBase.swift; sourceTree = "<group>"; };
 		5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisDatosPresenter.swift; sourceTree = "<group>"; };
 		84762236254E7835001B7373 /* LoginManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManualViewController.swift; sourceTree = "<group>"; };
 		970855922865E8E4001AFD4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -358,6 +340,9 @@
 		9708559A2865E92E001AFD4E /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
 		970855A72865F2E8001AFD4E /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
 		970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Tshirt_obj.scn; sourceTree = "<group>"; };
+		9746C63D28B6CF84002CA7C2 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalData.storyboard; sourceTree = "<group>"; };
+		9746C64128B6D081002CA7C2 /* MisDatos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MisDatos.storyboard; sourceTree = "<group>"; };
 		97B3675A2865FF990067FC21 /* Enfermero_Dancing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Enfermero_Dancing.scn; sourceTree = "<group>"; };
 		97B3675E2865FFAC0067FC21 /* Profesor_Saluda.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Profesor_Saluda.scn; sourceTree = "<group>"; };
 		97B36762286602590067FC21 /* Enfermero_Standing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Enfermero_Standing.scn; sourceTree = "<group>"; };
@@ -410,10 +395,11 @@
 			path = LoginManual;
 			sourceTree = "<group>";
 		};
-		5D040B7624F8F5F700A01263 /* NewAPI */ = {
+		5D040B7624F8F5F700A01263 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				5D040B7F24F90D2700A01263 /* NewData */,
+				9746C63C28B6CF76002CA7C2 /* Base */,
+				5D040B7F24F90D2700A01263 /* Data */,
 				5D040B7724F8F61300A01263 /* LoginWorker.swift */,
 				5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */,
 				5D613BF6250818BC005732FC /* AvatarWorker.swift */,
@@ -423,10 +409,10 @@
 				5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */,
 				5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */,
 			);
-			path = NewAPI;
+			path = API;
 			sourceTree = "<group>";
 		};
-		5D040B7F24F90D2700A01263 /* NewData */ = {
+		5D040B7F24F90D2700A01263 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				5D040B8024F90D3900A01263 /* Usuario.swift */,
@@ -436,7 +422,7 @@
 				5D3AB9AD2516B49400D17E08 /* Ranking.swift */,
 				5D16DA512378B4E700690CC8 /* Categorias.swift */,
 			);
-			path = NewData;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		5D1E8CC723992B7600F23C8C /* view */ = {
@@ -515,18 +501,6 @@
 			path = Cartas;
 			sourceTree = "<group>";
 		};
-		5D2D146F23DCD08800AAA99B /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				5D2D147023DCD0A400AAA99B /* LugaresWorkerDemo.swift */,
-				5D2D147223DCD0FB00AAA99B /* LoginWorkerDemo.swift */,
-				5D2D147423DCD14900AAA99B /* UserProfileWorkerDemo.swift */,
-				5D857D9023DF1D0500A34048 /* LogroWorkerDemo.swift */,
-				5D857D9223DF1DE100A34048 /* GetAllLogrosWorkerDemo.swift */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
 		5D2E236E250C82BC002EF48D /* Camerinos */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,11 +532,10 @@
 			isa = PBXGroup;
 			children = (
 				970855A12865F26A001AFD4E /* DAE */,
-				5D040B7624F8F5F700A01263 /* NewAPI */,
+				5D040B7624F8F5F700A01263 /* API */,
 				5D876A2B2456D84C00ABE45F /* Inicio */,
 				5DA1AF50240ED9C500407276 /* PLIST */,
 				5D679D7B23215A46005AB2E5 /* Mapa */,
-				5DF6D50623689968007C3774 /* API */,
 				5DE21C02234CD73600C37015 /* PersonalData */,
 				5D679D6D231FAFC3005AB2E5 /* Helpers */,
 				5D679D67231FABD7005AB2E5 /* StoryBoards */,
@@ -577,7 +550,6 @@
 			isa = PBXGroup;
 			children = (
 				5D679D59231FAA0B005AB2E5 /* Main.storyboard */,
-				5D11871323324C1B000AD1DC /* Avatar.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -603,14 +575,10 @@
 			isa = PBXGroup;
 			children = (
 				9708558D2865E85E001AFD4E /* Map */,
+				5D87D70723701C20009DB3E9 /* Lugares */,
 				5D80B147237DB09D00718BAA /* Logros */,
 				5D25E875233B486F002560A3 /* LugarDetail */,
 				5D679DA52327C32C005AB2E5 /* Menus */,
-				5D679D7C23215A53005AB2E5 /* MapaViewController.swift */,
-				5D679D7E23215BDC005AB2E5 /* MapaRouter.swift */,
-				5D679DB32327CE98005AB2E5 /* MapaPresenter.swift */,
-				5DDE465423425F7800909A2B /* OptionsViewController.swift */,
-				5DD5F1AF238550B500BE5A6B /* MapaDelegates.swift */,
 			);
 			path = Mapa;
 			sourceTree = "<group>";
@@ -632,6 +600,7 @@
 				5D778A08234E2C6F006422F2 /* MisDatosViewController.swift */,
 				5D778A0A234E2CD4006422F2 /* MisDatosRouter.swift */,
 				5DFDE1F82363194500320C8F /* MisDatosPresenter.swift */,
+				9746C64128B6D081002CA7C2 /* MisDatos.storyboard */,
 			);
 			path = MisDatos;
 			sourceTree = "<group>";
@@ -661,8 +630,6 @@
 			isa = PBXGroup;
 			children = (
 				5D679D6E231FAFD0005AB2E5 /* BaseViewController.swift */,
-				5D80B153237E8B2A00718BAA /* BaseRouter.swift */,
-				5D040B7B24F8F63F00A01263 /* BaseWorker.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -836,6 +803,7 @@
 				5DE21C03234CD77900C37015 /* PersonalDataViewController.swift */,
 				5DE21C05234CDBE400C37015 /* PersonalDataRouter.swift */,
 				5DE21C07234CDD0B00C37015 /* PersonalDataPresenter.swift */,
+				9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */,
 			);
 			path = PersonalData;
 			sourceTree = "<group>";
@@ -885,16 +853,6 @@
 				5DEAB352245C8BAD008E7D95 /* ChooseAvatar.storyboard */,
 			);
 			path = Avatar;
-			sourceTree = "<group>";
-		};
-		5DF6D50623689968007C3774 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				5D2D146F23DCD08800AAA99B /* Demo */,
-				5D87D70723701C20009DB3E9 /* Lugares */,
-				5DF8DADE2370D82E009A14C0 /* ApiBase.swift */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		5DF6D5092369853C007C3774 /* Filtros */ = {
@@ -952,6 +910,15 @@
 				970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */,
 			);
 			path = DAE;
+			sourceTree = "<group>";
+		};
+		9746C63C28B6CF76002CA7C2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9746C63D28B6CF84002CA7C2 /* BaseAPI.swift */,
+				5D040B7B24F8F63F00A01263 /* BaseWorker.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		97B3679A2868A50F0067FC21 /* Cells */ = {
@@ -1070,6 +1037,7 @@
 			files = (
 				5D99E9B023683C5100CABA2D /* AvisoStandar.xib in Resources */,
 				5D25E88A233CC7DE002560A3 /* TrophyView.xib in Resources */,
+				9746C64028B6D057002CA7C2 /* PersonalData.storyboard in Resources */,
 				5D1E8CC923992B9400F23C8C /* Pasaporte.storyboard in Resources */,
 				97B3678B286602900067FC21 /* LaMilitar_Walking.scn in Resources */,
 				97B367932866029A0067FC21 /* Playero_Walking.scn in Resources */,
@@ -1083,6 +1051,7 @@
 				5D2AC6F32399A2F800AEA66C /* GrupoLogroView.xib in Resources */,
 				97B3676B286602650067FC21 /* Futbolista_Dancing.scn in Resources */,
 				97B3675B2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */,
+				9746C64228B6D081002CA7C2 /* MisDatos.storyboard in Resources */,
 				5DEAB353245C8BAD008E7D95 /* ChooseAvatar.storyboard in Resources */,
 				97B36777286602760067FC21 /* Inspector_Dancing.scn in Resources */,
 				5D1FD3AD2532DE060044FCE8 /* confeti.json in Resources */,
@@ -1107,7 +1076,6 @@
 				970855972865E91A001AFD4E /* MapStoryboard.storyboard in Resources */,
 				97B36773286602700067FC21 /* Futbolista_Walking.scn in Resources */,
 				5DCAD53E2471318A009600C7 /* FiltroTutorialView.xib in Resources */,
-				5D11871423324C1B000AD1DC /* Avatar.storyboard in Resources */,
 				5D679D5D231FAA0D005AB2E5 /* Assets.xcassets in Resources */,
 				5D25E892233D0136002560A3 /* NoTrophyView.xib in Resources */,
 				97B36767286602600067FC21 /* Enfermero_Walking.scn in Resources */,
@@ -1157,10 +1125,9 @@
 				5D25E8A3233E2B3D002560A3 /* GeneralCard.swift in Sources */,
 				5D040B7324F8EB2800A01263 /* LoginManualRouter.swift in Sources */,
 				5D040B7824F8F61300A01263 /* LoginWorker.swift in Sources */,
-				5DDE465523425F7800909A2B /* OptionsViewController.swift in Sources */,
 				5D613BF325081691005732FC /* Avatar.swift in Sources */,
 				5D778A09234E2C6F006422F2 /* MisDatosViewController.swift in Sources */,
-				5D679D7D23215A53005AB2E5 /* MapaViewController.swift in Sources */,
+				9746C63E28B6CF84002CA7C2 /* BaseAPI.swift in Sources */,
 				5D3AB9842516AFEA00D17E08 /* RankingWorker.swift in Sources */,
 				5D8F818F23C4B64C004A3633 /* TomarFotoViewController.swift in Sources */,
 				5D80B15B237E921200718BAA /* CardView.swift in Sources */,
@@ -1174,9 +1141,7 @@
 				5D99E9A52368376F00CABA2D /* AvisosViewController.swift in Sources */,
 				5DE0CC64247065F400277FD2 /* CircularProgressView.swift in Sources */,
 				5D778A0B234E2CD4006422F2 /* MisDatosRouter.swift in Sources */,
-				5DD5F1B0238550B500BE5A6B /* MapaDelegates.swift in Sources */,
 				5D25E872233A6581002560A3 /* Extensions.swift in Sources */,
-				5D80B154237E8B2A00718BAA /* BaseRouter.swift in Sources */,
 				5D040B8524F9172000A01263 /* LoginManualPresenter.swift in Sources */,
 				5DD67974245B39FE0080FBDD /* ResumeWelcomeView.swift in Sources */,
 				5D778A0E234E32B0006422F2 /* MisDatosFieldView.swift in Sources */,
@@ -1235,17 +1200,14 @@
 				5D857DA323E0911400A34048 /* RankingCell.swift in Sources */,
 				5D1E8CCF23992FBD00F23C8C /* PasaportePresenter.swift in Sources */,
 				97B3679C2871E67D0067FC21 /* MapPresenter.swift in Sources */,
-				5D679DB42327CE98005AB2E5 /* MapaPresenter.swift in Sources */,
 				5DEAB377245D2DBE008E7D95 /* AvatarChooseCell.swift in Sources */,
 				5DE21C08234CDD0B00C37015 /* PersonalDataPresenter.swift in Sources */,
 				5D80B157237E8FA100718BAA /* MostrarCartasView.swift in Sources */,
 				5D99E9AB23683AFC00CABA2D /* AvisosPresenter.swift in Sources */,
 				5D11871C23327B5D000AD1DC /* LoginRouter.swift in Sources */,
 				5D1C5E482369EF4B002EF6D4 /* LugaresCached.swift in Sources */,
-				5DF8DADF2370D82E009A14C0 /* ApiBase.swift in Sources */,
 				5DD6794F24594B210080FBDD /* WelcomeViewController.swift in Sources */,
 				97B367A4287CBE870067FC21 /* LugarInfoView.swift in Sources */,
-				5D679D7F23215BDC005AB2E5 /* MapaRouter.swift in Sources */,
 				5DA18A9A2513CE1900DE90AE /* LogroWorker.swift in Sources */,
 				5D99E9A92368381C00CABA2D /* AvisosRouter.swift in Sources */,
 			);

@@ -13,7 +13,7 @@ class PersonalDataRouter{
     
     func goToPersonalData(navigationController: UINavigationController?){
         if let navigation = navigationController{
-            let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+            let storyBoard = UIStoryboard.init(name: "PersonalData", bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "personalDataStoryBoard") as! PersonalDataViewController
             let presenter = PersonalDataPresenter()
             presenter.delegate = vc
