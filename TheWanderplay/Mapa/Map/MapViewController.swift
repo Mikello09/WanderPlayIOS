@@ -47,7 +47,7 @@ class MapViewController: BaseViewController {
             center: CLLocationCoordinate2D(
                 latitude: location.coordinate.latitude,
                 longitude: location.coordinate.longitude),
-            zoom: 9.0))
+            zoom: UserSettings.getZoomLevel()))
         
         // PUCK CONFIGURATION
         var puck2DConfiguration = Puck2DConfiguration()
@@ -74,7 +74,14 @@ extension MapViewController: MapPresenterProtocol {
         mapView?.mapboxMap.onNext(.mapLoaded, handler: { loaded in
             self.presenter?.getLugares()
         })
+        
         presenter?.checkForFirstTime()
+        
+        mapView?.mapboxMap.onEvery(.cameraChanged, handler: { _ in
+            let zoomLevel = self.mapView?.cameraState.zoom ?? 18
+            UserSettings.setZoomLevel(zoomLevel: zoomLevel)
+        })
+        
     }
     
     func showLogros(logros: [Logro], lugarID: String) {
