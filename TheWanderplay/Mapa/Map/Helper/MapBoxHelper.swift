@@ -39,6 +39,9 @@ extension MapViewController {
         
         try? self.mapView?.mapboxMap.style.addSource(geoJSONSource, id: "SOURCE_ID")
         self.mapView?.mapboxMap.onNext(.sourceDataLoaded, handler: { _ in
+            // VISITADO
+            let iconoVisitado = UIImage(named: "earth_icono")
+            try? self.mapView?.mapboxMap.style.addImage(iconoVisitado!.withRenderingMode(.alwaysTemplate), id: "pin_visitado")
             // PIN BAJO
             let iconoPinBajo = UIImage(named: "pin_verde_image")
             try? self.mapView?.mapboxMap.style.addImage(iconoPinBajo!.withRenderingMode(.alwaysTemplate), id: "pin_bajo")
@@ -61,7 +64,18 @@ extension MapViewController {
 //                pinLayer.filter = Expression(.not) {
 //                    Expression(.has) { "point_count" }
 //                }
+            
+    //            pinLayer.filter = Expression(.eq) {
+    //                Exp(.get) { "visitado" }
+    //                "no"
+    //            }
+            
             let pinExpression = Exp(.switchCase) {
+                Exp(.eq) {
+                    Exp(.get) { "visitado" }
+                    "si"
+                }
+                "pin_visitado"
                 Exp(.eq) {
                     Exp(.get) { "tipoLugar" }
                     "BAJO"

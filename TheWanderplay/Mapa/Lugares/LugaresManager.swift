@@ -70,11 +70,7 @@ class LugaresManager{
     }
     
     func isLugarVisited(lugarId: String) -> Bool{
-        
-        var encontrado = false
-        //Usuario.shared.lugares_visitados.forEach({if $0.id == lugarId {encontrado = true}})
-        return encontrado
-        
+        return Usuario.shared.lugares.filter({$0 == lugarId}).count > 0
     }
     
     func getLugarFromId(lugarId: String) -> Lugar?{
