@@ -65,6 +65,8 @@ class MapViewController: BaseViewController {
         // ATTRIBUTION
         mapView?.ornaments.attributionButton.isHidden = true
         mapView?.ornaments.logoView.isHidden = true
+        mapView?.ornaments.compassView.isHidden = true
+        mapView?.ornaments.scaleBarView.isHidden = true
         
         // PUCK CONFIGURATION
 //        var puck2DConfiguration = Puck2DConfiguration()

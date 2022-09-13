@@ -19,6 +19,8 @@ enum Categoria: String {
     case pueblos = "Pueblos"
     case parques = "Parques"
     case playas = "Playas"
+    case naturaleza = "Naturaleza"
+    case fuentes = "Fuentes"
     
     func getTitulo() -> String {
         switch self {
@@ -31,6 +33,8 @@ enum Categoria: String {
         case .pueblos: return "Pueblos"
         case .parques: return "Parques"
         case .playas: return "Playas"
+        case .naturaleza: return "Naturaleza"
+        case .fuentes: return "Fuentes"
         }
     }
     
@@ -45,6 +49,8 @@ enum Categoria: String {
         case .pueblos: return UIImage(named: "pueblos")
         case .parques: return UIImage(named: "parques")
         case .playas: return UIImage(named: "playas")
+        case .naturaleza: return UIImage(named: "naturaleza")
+        case .fuentes: return UIImage(named: "fuentes")
         }
     }
 }
@@ -61,7 +67,9 @@ class CategoriasManager {
                                     .edificios,
                                     .pueblos,
                                     .parques,
-                                    .playas]
+                                    .playas,
+                                    .naturaleza,
+                                    .fuentes]
     
     var activeCategorias: [Categoria] = [.castillos,
                                         .iglesias,
@@ -71,7 +79,9 @@ class CategoriasManager {
                                         .edificios,
                                         .pueblos,
                                         .parques,
-                                        .playas]
+                                        .playas,
+                                        .naturaleza,
+                                        .fuentes]
     
     func categoriaSelected(categoria: Categoria) {
         if let indexToRemove = activeCategorias.firstIndex(of: categoria) {
