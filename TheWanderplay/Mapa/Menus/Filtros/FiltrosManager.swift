@@ -13,24 +13,27 @@ class FiltrosManager{
     
     static var shared = FiltrosManager()
     
-    var categoriaFiltros: [FiltroCategoriaModel] = []
-    var tipoLugaresFiltros: [TipoLugar] = [.bajo, .medio, .alto, .muyAlto, .patrimonio]
+    var categoriaFiltros: [Categoria] = []
+    var interesFiltros: [Interes] = [.bajo, .medio, .alto, .muyAlto, .patrimonio]
     
-    func setFiltros(categoriaFiltros: [FiltroCategoriaModel], tipoLugaresFiltros: [TipoLugar]){
-        self.categoriaFiltros = categoriaFiltros
-        self.tipoLugaresFiltros = tipoLugaresFiltros
+    func setInteresFiltros(interesFiltros: [Interes]) {
+        self.interesFiltros = interesFiltros
     }
     
-    func getCategoriasFiltradas() -> [FiltroCategoriaModel]{
+    func setCategoriaFiltros(categoriaFiltros: [Categoria]) {
+        self.categoriaFiltros = categoriaFiltros
+    }
+    
+    func getCategoriasFiltradas() -> [Categoria]{
         return categoriaFiltros
     }
     
-    func getTipoLugaresFiltros() -> [TipoLugar]{
-        return tipoLugaresFiltros
+    func getInteresFiltros() -> [Interes]{
+        return interesFiltros
     }
     
     func isFiltrosToApply() -> Bool{
-        return getCategoriasFiltradas().count > 0 || (getTipoLugaresFiltros().count != 0 && getTipoLugaresFiltros().count < 5)
+        return getCategoriasFiltradas().count > 0 || (getInteresFiltros().count != 0 && getInteresFiltros().count < 5)
     }
     
 }

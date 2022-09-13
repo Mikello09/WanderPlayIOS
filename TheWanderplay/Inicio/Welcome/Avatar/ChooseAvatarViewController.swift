@@ -24,7 +24,7 @@ class ChooseAvatarViewController: BaseViewController{
     var presenter: ChooseAvatarPresenter?
     var avatares: [Avatar] = []
     var selectedAvatar: Avatar?
-    var interesesActuales: [TipoCategorias] = []
+    var interesesActuales: [Categoria] = []
     
     
     var nombre: String?

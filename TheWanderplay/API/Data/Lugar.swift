@@ -18,7 +18,7 @@ struct FeaturedLugar {
     var puntos: String
 }
 
-enum TipoLugar: String {
+enum Interes: String {
        case bajo = "pin_verde"
        case medio = "pin_azul"
        case alto = "pin_amarillo"
@@ -62,7 +62,7 @@ struct Lugar: Codable{
         var interes: String?
     
     
-    func getTipoLugar() -> TipoLugar{
+    func getInteres() -> Interes{
         switch self.interes {
             case "BAJO","bajo","Bajo":
                 return .bajo
@@ -79,7 +79,7 @@ struct Lugar: Codable{
         }
     }
     
-    func getTipoLugarString() -> String{
+    func getInteresString() -> String{
         switch self.interes {
             case "BAJO","bajo","Bajo":
                 return "BAJO"
@@ -118,7 +118,7 @@ class Lugares{
             var body = ""
             for (i,lugar) in lugares.enumerated(){
                 //if i > 280 && i < 284 {
-                body = body + "{\"type\":\"Feature\",\"properties\": { \"tipoLugar\": \"\(lugar.getTipoLugarString())\", \"nombre\":\"\(lugar.nombre?.replacingOccurrences(of: "\"", with: "") ?? "")\", \"puntos\": \"\(lugar.puntos ?? 0)\", \"foto\": \"\(lugar.foto1 ?? "")\", \"id\": \"\(lugar._id ?? "-1")\", \"visitado\":\"\(LugaresManager.shared.isLugarVisited(lugarId: lugar._id ?? "-1") ? "si" : "no")\"},\"geometry\":{\"type\":\"Point\",\"coordinates\": [ \(Double(lugar.longitud ?? "0.0") ?? 0.0),\(Double(lugar.latitud ?? "0.0") ?? 0.0)]}}"
+                body = body + "{\"type\":\"Feature\",\"properties\": { \"tipoLugar\": \"\(lugar.getInteresString())\", \"nombre\":\"\(lugar.nombre?.replacingOccurrences(of: "\"", with: "") ?? "")\", \"puntos\": \"\(lugar.puntos ?? 0)\", \"foto\": \"\(lugar.foto1 ?? "")\", \"id\": \"\(lugar._id ?? "-1")\", \"visitado\":\"\(LugaresManager.shared.isLugarVisited(lugarId: lugar._id ?? "-1") ? "si" : "no")\"},\"geometry\":{\"type\":\"Point\",\"coordinates\": [ \(Double(lugar.longitud ?? "0.0") ?? 0.0),\(Double(lugar.latitud ?? "0.0") ?? 0.0)]}}"
                     if i != lugares.count - 1{body = body + ","}
                     //if i != 284 - 1{body = body + ","}
                 //}

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,16 +12,42 @@
         <!--Map View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="mapStoryboard" id="Y6W-OH-hqX" customClass="MapViewController" customModule="ViajeroDev" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapStoryboard" id="Y6W-OH-hqX" customClass="MapViewController" customModule="WanderPlay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-XX-cpj" customClass="RightBarMenu" customModule="ViajeroDev" customModuleProvider="target">
-                                <rect key="frame" x="16" y="44" width="382" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-XX-cpj" userLabel="FiltrosInteresView" customClass="FiltrosInteresView" customModule="WanderPlay" customModuleProvider="target">
+                                <rect key="frame" x="16" y="48" width="322" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="B2q-Jf-pY7"/>
+                                    <constraint firstAttribute="height" constant="56" id="B2q-Jf-pY7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcW-Ce-HiW">
+                                <rect key="frame" x="354" y="56" width="40" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-ko-ewQ">
+                                        <rect key="frame" x="-8" y="-8" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="Lbx-iJ-6Z1"/>
+                                            <constraint firstAttribute="width" constant="56" id="oOJ-h3-DfD"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="slider.horizontal.3" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" weight="semibold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onActiveFilter:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cPm-F8-5e2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Gmb-er-Hb5"/>
+                                    <constraint firstItem="ZnR-ko-ewQ" firstAttribute="centerX" secondItem="RcW-Ce-HiW" secondAttribute="centerX" id="TbA-o2-yVz"/>
+                                    <constraint firstItem="ZnR-ko-ewQ" firstAttribute="centerY" secondItem="RcW-Ce-HiW" secondAttribute="centerY" id="lfU-7D-g5t"/>
+                                    <constraint firstAttribute="width" constant="40" id="yZr-iK-ufF"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-8I-gKD" customClass="MapAvatarView" customModule="WanderPlay">
@@ -32,30 +58,76 @@
                                     <constraint firstAttribute="height" constant="150" id="dZt-Sl-pVM"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLV-YX-uiO" customClass="FiltrosCategoriaView" customModule="WanderPlay" customModuleProvider="target">
+                                <rect key="frame" x="350" y="112" width="48" height="678"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="L5I-36-E0m"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1v1-DO-xOr" userLabel="HelpView">
+                                <rect key="frame" x="354" y="806" width="40" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snL-aY-bSl">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="lightbulb.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" weight="semibold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onHelp:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UM9-vT-UbM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="3n8-F2-Z2B"/>
+                                    <constraint firstItem="snL-aY-bSl" firstAttribute="leading" secondItem="1v1-DO-xOr" secondAttribute="leading" id="H6p-la-hqU"/>
+                                    <constraint firstItem="snL-aY-bSl" firstAttribute="top" secondItem="1v1-DO-xOr" secondAttribute="top" id="HcP-sI-Bnl"/>
+                                    <constraint firstAttribute="trailing" secondItem="snL-aY-bSl" secondAttribute="trailing" id="KW5-rp-biE"/>
+                                    <constraint firstAttribute="height" constant="40" id="PH3-eP-3Cx"/>
+                                    <constraint firstAttribute="bottom" secondItem="snL-aY-bSl" secondAttribute="bottom" id="YeT-CY-2tP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JzX-XX-cpj" secondAttribute="trailing" constant="16" id="9A4-Hf-zfB"/>
+                            <constraint firstItem="1v1-DO-xOr" firstAttribute="centerX" secondItem="yLV-YX-uiO" secondAttribute="centerX" id="8lG-D0-DKN"/>
                             <constraint firstItem="y1w-8I-gKD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="9Lg-qL-Cpu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yLV-YX-uiO" secondAttribute="trailing" constant="16" id="MD9-ue-lac"/>
+                            <constraint firstItem="1v1-DO-xOr" firstAttribute="top" secondItem="yLV-YX-uiO" secondAttribute="bottom" constant="16" id="SXf-gv-GR9"/>
+                            <constraint firstItem="yLV-YX-uiO" firstAttribute="top" secondItem="RcW-Ce-HiW" secondAttribute="bottom" constant="16" id="W5c-32-o6E"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="y1w-8I-gKD" secondAttribute="bottom" constant="16" id="Xcz-kY-NTv"/>
+                            <constraint firstItem="1v1-DO-xOr" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-16" id="eKP-MC-iYj"/>
                             <constraint firstItem="JzX-XX-cpj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="hcY-VH-BfX"/>
+                            <constraint firstItem="RcW-Ce-HiW" firstAttribute="leading" secondItem="JzX-XX-cpj" secondAttribute="trailing" constant="16" id="kdd-0y-IDW"/>
+                            <constraint firstItem="RcW-Ce-HiW" firstAttribute="centerX" secondItem="yLV-YX-uiO" secondAttribute="centerX" id="nE0-2e-PnR"/>
                             <constraint firstItem="JzX-XX-cpj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="neL-G0-Wdb"/>
+                            <constraint firstItem="RcW-Ce-HiW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="zUr-ZN-EqY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activeFilterView" destination="RcW-Ce-HiW" id="Ahm-Uk-usk"/>
+                        <outlet property="filtrosCategoriaView" destination="yLV-YX-uiO" id="EFX-Qp-EJ7"/>
+                        <outlet property="filtrosInteresView" destination="JzX-XX-cpj" id="aDW-f8-jZw"/>
+                        <outlet property="helpView" destination="1v1-DO-xOr" id="xrN-U9-ua5"/>
                         <outlet property="mapAvatarView" destination="y1w-8I-gKD" id="VKq-IC-eoO"/>
-                        <outlet property="rightBarMenu" destination="JzX-XX-cpj" id="qA1-Vl-RgO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+            <point key="canvasLocation" x="-301.44927536231887" y="12.723214285714285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="lightbulb.fill" catalog="system" width="92" height="128"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

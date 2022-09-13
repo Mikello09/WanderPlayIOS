@@ -18,19 +18,30 @@ class MapViewController: BaseViewController {
     
     var mapView: MapView?
     var lugarInfoView: LugarInfoView?
-    @IBOutlet weak var rightBarMenu: RightBarMenu!
+    
+    @IBOutlet weak var filtrosInteresView: FiltrosInteresView!
+    @IBOutlet weak var activeFilterView: UIView!
+    @IBOutlet weak var helpView: UIView!
+    @IBOutlet weak var filtrosCategoriaView: FiltrosCategoriaView!
     @IBOutlet weak var mapAvatarView: MapAvatarView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         presenter?.initLocationUpdates()
         mapAvatarView.configure(delegate: self)
-        rightBarMenu.configure(delegate: self, from: self)
+        filtrosInteresView.configure(delegate: self)
+        filtrosCategoriaView.configure(delegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         mapAvatarView.updateLevel()
+    }
+    
+    func setupUI() {
+        activeFilterView.layer.cornerRadius = 8
+        helpView.layer.cornerRadius = 8
     }
     
     func loadMap(location: CLLocation) {
@@ -43,28 +54,47 @@ class MapViewController: BaseViewController {
         mapView = MapView(frame: self.view.bounds, mapInitOptions: mapInitOptions)
         mapView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
+        // CAMERA
         mapView?.mapboxMap.setCamera(to: CameraOptions(
             center: CLLocationCoordinate2D(
                 latitude: location.coordinate.latitude,
                 longitude: location.coordinate.longitude),
-            zoom: UserSettings.getZoomLevel()))
+            zoom: UserSettings.getZoomLevel(),
+            pitch: 60))
+        
+        // ATTRIBUTION
+        mapView?.ornaments.attributionButton.isHidden = true
+        mapView?.ornaments.logoView.isHidden = true
         
         // PUCK CONFIGURATION
-        var puck2DConfiguration = Puck2DConfiguration()
-        puck2DConfiguration.topImage = UIImage(named: "Inspector")
-        puck2DConfiguration.scale = .constant(0.05)
-        //mapView?.location.options.puckType = .puck2D(puck2DConfiguration)
+//        var puck2DConfiguration = Puck2DConfiguration()
+//        puck2DConfiguration.topImage = UIImage(named: "Mikel")
+//        puck2DConfiguration.scale = .constant(0.05)
+//        mapView?.location.options.puckType = .puck2D(puck2DConfiguration)
         
-        if let modelURL = Bundle.main.url(forResource: "sportcar",
-                                          withExtension: "glb") {
-            let userModel = Model(uri: modelURL, orientation: [0, 0, 180])
-            let puck3Configuration = Puck3DConfiguration(model: userModel, modelScale: .constant([0.2, 0.2, 0.2]))
-            mapView?.location.options.puckType = .puck3D(puck3Configuration)
-        }
+//        if let modelURL = Bundle.main.url(forResource: "Mikel",
+//                                          withExtension: "glb") {
+//            let userModel = Model(uri: modelURL, orientation: [0, 0, 180])
+//            let puck3Configuration = Puck3DConfiguration(model: userModel, modelScale: .constant([0.8, 0.8, 0.8]))
+//            mapView?.location.options.puckType = .puck3D(puck3Configuration)
+//        }
         
         self.view.insertSubview(mapView ?? UIView(), at: 0)
     }
     
+    @IBAction func onHelp(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onActiveFilter(_ sender: Any) {
+        if filtrosInteresView.isHidden {
+            filtrosInteresView.isHidden = false
+            filtrosCategoriaView.isHidden = false
+        } else {
+            filtrosInteresView.isHidden = true
+            filtrosCategoriaView.isHidden = true
+        }
+    }
 }
 
 // MARK: PRESENTER
@@ -109,14 +139,15 @@ extension MapViewController: MapAvatarViewProtocol {
     }
 }
 
-// MARK: RIGHT BAR MENU
-extension MapViewController: RightBarMenuProtocol {
-    func updateTipoLugares(tipoFiltros: [TipoLugar]) {
-        FiltrosManager.shared.setFiltros(categoriaFiltros: FiltrosManager.shared.categoriaFiltros, tipoLugaresFiltros: tipoFiltros)
+// MARK: FILTROS
+extension MapViewController: FiltrosInteresViewProtocol, FiltrosCategoriaViewProtocol {
+    func updateInteresLugares(interesFiltros: [Interes]) {
+        FiltrosManager.shared.setInteresFiltros(interesFiltros: interesFiltros)
         presenter?.updateLugares()
     }
     
-    func filterClicked() {
-        
+    func categoriaSelected(categorias: [Categoria]) {
+        FiltrosManager.shared.setCategoriaFiltros(categoriaFiltros: categorias)
+        presenter?.updateLugares()
     }
 }

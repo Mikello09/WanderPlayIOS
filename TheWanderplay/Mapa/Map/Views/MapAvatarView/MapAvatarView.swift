@@ -46,10 +46,18 @@ class MapAvatarView: UIView {
             node.removeFromParentNode()
         }
         
-        let bigAvatar: SCNScene = SCNScene(named: Usuario.shared.getAvatarActivoStanding())!
-        avatarView.present(bigAvatar, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
-        avatarView.loops = true
-        avatarView.isPlaying = true
+        if let avatarURL = Bundle.main.url(forResource: "Mikel", withExtension: "usdz") {
+            do {
+                let bigAvatar: SCNScene = try SCNScene(url: avatarURL)
+                avatarView.present(bigAvatar, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
+                avatarView.loops = true
+                avatarView.isPlaying = true
+                avatarView.autoenablesDefaultLighting = true
+            } catch {
+                print(error)
+            }
+            
+        }
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(avatarSelected))
         self.view.isUserInteractionEnabled = true

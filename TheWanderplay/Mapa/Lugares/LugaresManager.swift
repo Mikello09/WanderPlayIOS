@@ -29,14 +29,14 @@ class LugaresManager{
     func getLugares(delegate: LugaresManagerProtocol){
         self.delegate = delegate
         if FiltrosManager.shared.isFiltrosToApply() && mustApplyFilters{
-            applyFilters(filtersCategoria: FiltrosManager.shared.categoriaFiltros, tipoLugares: FiltrosManager.shared.tipoLugaresFiltros)
+            applyFilters(filtersCategoria: FiltrosManager.shared.categoriaFiltros, tipoLugares: FiltrosManager.shared.interesFiltros)
         } else {
             mustApplyFilters = true
             self.delegate?.lugaresUpdated(lugares: Lugares.shared.getLugares())
         }
     }
     
-    func getFilteredLugares(delegate: LugaresManagerProtocol,filtersCategoria: [FiltroCategoriaModel], tipoLugaresFiltros: [TipoLugar]){
+    func getFilteredLugares(delegate: LugaresManagerProtocol,filtersCategoria: [Categoria], tipoLugaresFiltros: [Interes]){
         self.delegate = delegate
         applyFilters(filtersCategoria: filtersCategoria, tipoLugares: tipoLugaresFiltros)
     }
@@ -46,14 +46,14 @@ class LugaresManager{
         self.invalidate = true
     }
     
-    func applyFilters(filtersCategoria: [FiltroCategoriaModel], tipoLugares: [TipoLugar]){
+    func applyFilters(filtersCategoria: [Categoria], tipoLugares: [Interes]){
         var lugaresFiltrados: [Lugar] = []
         
         for lugar in Lugares.shared.getLugares(){
             if filtersCategoria.count > 0 {
-                for categoria in filtersCategoria where categoria.titulo == lugar.categoria{
+                for categoria in filtersCategoria where categoria.rawValue == lugar.categoria{
                     
-                    if tipoLugares.contains(lugar.getTipoLugar()){
+                    if tipoLugares.contains(lugar.getInteres()){
                         lugaresFiltrados.append(lugar)
                     }
                     
@@ -61,7 +61,7 @@ class LugaresManager{
                 }
             } else {
                 if tipoLugares.count > 0 && tipoLugares.count < 5 {
-                    if tipoLugares.contains(lugar.getTipoLugar()){ lugaresFiltrados.append(lugar)}
+                    if tipoLugares.contains(lugar.getInteres()){ lugaresFiltrados.append(lugar)}
                 }
             }
         }

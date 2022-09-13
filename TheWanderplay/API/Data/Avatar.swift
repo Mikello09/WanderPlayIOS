@@ -72,8 +72,8 @@ struct Avatar: Codable {
         }
     }
     
-    func getTipoCategorias() -> [TipoCategorias]{
-        var tipoCategorias: [TipoCategorias] = []
+    func getTipoCategorias() -> [Categoria]{
+        var tipoCategorias: [Categoria] = []
         guard let categorias = self.categorias else {
             return []
         }

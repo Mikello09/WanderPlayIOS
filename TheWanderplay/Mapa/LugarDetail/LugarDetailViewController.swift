@@ -33,7 +33,7 @@ class LugarDetailViewController: BaseViewController{
         containerView.layer.cornerRadius = 10
         containerView.layer.borderWidth = 3
         
-        switch lugar.getTipoLugar() {
+        switch lugar.getInteres() {
             case .bajo:
                 //self.view.backgroundColor = Colors.verdeTransparente
                 containerView.layer.borderColor = Colors.verde.cgColor
@@ -66,7 +66,7 @@ class LugarDetailViewController: BaseViewController{
         setupSlideScrollView()
         pageControl.numberOfPages = images.count
         pageControl.currentPage = 0
-        switch lugar.getTipoLugar() {
+        switch lugar.getInteres() {
             case .bajo:
                 pageControl.currentPageIndicatorTintColor = Colors.verde
             case .medio:

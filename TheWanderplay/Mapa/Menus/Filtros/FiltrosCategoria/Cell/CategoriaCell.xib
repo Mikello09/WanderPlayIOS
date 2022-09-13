@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="222" id="MoM-6U-eXZ" customClass="CategoriaCell" customModule="WanderPlay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="228" height="222"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MoM-6U-eXZ" id="YTo-hr-4j0">
+                <rect key="frame" x="0.0" y="0.0" width="228" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m90-AB-fuv">
+                        <rect key="frame" x="8" y="4" width="212" height="214"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cTP-1O-4bo">
+                                <rect key="frame" x="94" y="95" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="FaU-vn-Lai"/>
+                                    <constraint firstAttribute="height" constant="24" id="fTO-iT-wGf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cTP-1O-4bo" firstAttribute="centerX" secondItem="m90-AB-fuv" secondAttribute="centerX" id="5uN-hN-UQX"/>
+                            <constraint firstItem="cTP-1O-4bo" firstAttribute="centerY" secondItem="m90-AB-fuv" secondAttribute="centerY" id="gtr-y0-CvW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="m90-AB-fuv" secondAttribute="trailing" constant="8" id="K4B-Ip-hgm"/>
+                    <constraint firstItem="m90-AB-fuv" firstAttribute="leading" secondItem="YTo-hr-4j0" secondAttribute="leading" constant="8" id="Kk5-L4-hWt"/>
+                    <constraint firstAttribute="bottom" secondItem="m90-AB-fuv" secondAttribute="bottom" constant="4" id="cWH-uS-NB4"/>
+                    <constraint firstItem="m90-AB-fuv" firstAttribute="top" secondItem="YTo-hr-4j0" secondAttribute="top" constant="4" id="xWE-jw-tsK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="categoriaImage" destination="cTP-1O-4bo" id="RwQ-Yh-jxF"/>
+                <outlet property="container" destination="m90-AB-fuv" id="JZK-Rg-mf0"/>
+            </connections>
+            <point key="canvasLocation" x="-15.942028985507248" y="108.48214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

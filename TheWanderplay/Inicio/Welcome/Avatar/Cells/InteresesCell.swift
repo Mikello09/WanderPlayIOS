@@ -15,7 +15,7 @@ class InteresesCell: UICollectionViewCell{
     @IBOutlet weak var container: UIView!
     
     
-    func configure(tipoInteres: TipoCategorias){
+    func configure(tipoInteres: Categoria){
         container.backgroundColor = UIColor.white
         container.addShadowInContainerView(withRadius: 20)
         self.imagen.image = UIImage(named: tipoInteres.rawValue)
