@@ -53,7 +53,8 @@ class LugarInfoView: UIView {
         self.delegate = delegate
         self.idLugar = id
         // Container
-        container.layer.cornerRadius = 8
+        //container.layer.cornerRadius = 8
+        container.addShadowInContainerView(withRadius: 8)
         // PIN
         switch tipoLugar {
         case "BAJO":
@@ -78,9 +79,19 @@ class LugarInfoView: UIView {
         //IMAGE
         lugarImageContainer.layer.cornerRadius = 4
         lugarImageContainer.layer.borderWidth = 2
-        if let fotoURL = URL(string: foto) {
-            lugarImage.image = try? UIImage(data: Data(contentsOf: fotoURL))
+        lugarImage.layer.masksToBounds = true
+        lugarImage.clipsToBounds = true
+        lugarImage.layer.cornerRadius = 4
+        Task.init {
+            if let fotoURL = URL(string: foto),
+               let imageData = try? await URLSession.shared.data(from: fotoURL) {
+                   lugarImage.image = UIImage(data: imageData.0)
+            } else {
+                lugarImage.contentMode = .scaleAspectFit
+                lugarImage.image = UIImage(systemName: "photo")
+            }
         }
+        
         // Buttons
         verDetalleButton.setTitle("Ver más", for: .normal)
         

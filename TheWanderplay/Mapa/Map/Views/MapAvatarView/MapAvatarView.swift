@@ -17,9 +17,12 @@ protocol MapAvatarViewProtocol {
 class MapAvatarView: UIView {
     
     @IBOutlet var view: UIView!
-    @IBOutlet weak var avatarView: SCNView!
-    @IBOutlet weak var levelLabel: UILabel!
-    @IBOutlet weak var circularContainer: CircularProgressView!
+    @IBOutlet weak var container: UIView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var actualLevelView: UIView!
+    @IBOutlet weak var levelProgress: UIProgressView!
+    @IBOutlet weak var actualLevelLabel: UILabel!
     
     var delegate: MapAvatarViewProtocol?
     
@@ -41,35 +44,31 @@ class MapAvatarView: UIView {
     
     func configure(delegate: MapAvatarViewProtocol) {
         self.delegate = delegate
-        
-        for node in avatarView.scene?.rootNode.childNodes ?? []{
-            node.removeFromParentNode()
-        }
-        
-        if let avatarURL = Bundle.main.url(forResource: "Mikel", withExtension: "usdz") {
-            do {
-                let bigAvatar: SCNScene = try SCNScene(url: avatarURL)
-                avatarView.present(bigAvatar, with: .fade(withDuration: 0.05), incomingPointOfView: nil)
-                avatarView.loops = true
-                avatarView.isPlaying = true
-                avatarView.autoenablesDefaultLighting = true
-            } catch {
-                print(error)
-            }
-            
-        }
-        
+        // Container
+        container.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        container.layer.cornerRadius = 8
+        container.layer.borderWidth = 2
+        container.layer.borderColor = UIColor.systemBrown.cgColor
         let tap = UITapGestureRecognizer(target: self, action: #selector(avatarSelected))
         self.view.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(tap)
-        
-        view.layoutIfNeeded()
-        circularContainer.makeCircularPath()
+        // User name
+        userName.text = Usuario.shared.getNombreCredencial()
+        // Avatar Image
+        avatarImage.image = UIImage(named: "Mikel")
+        // ActualLevel
+        actualLevelView.layer.cornerRadius = 4
+        actualLevelLabel.text = Usuario.shared.getNivel()
+        // Level Progress
+        levelProgress.layer.cornerRadius = 4
+        levelProgress.layer.borderColor = UIColor.systemBrown.cgColor
+        levelProgress.layer.borderWidth = 1
+        levelProgress.setProgress(Usuario.shared.getNivelPorcentaje(), animated: true)
     }
     
     func updateLevel() {
-        circularContainer.setProgressWithAnimation(duration: 0.3, value: Usuario.shared.getNivelPorcentaje())
-        levelLabel.text = Usuario.shared.getNivel()
+        actualLevelLabel.text = Usuario.shared.getNivel()
+        levelProgress.setProgress(Usuario.shared.getNivelPorcentaje(), animated: true)
     }
     
     @objc
