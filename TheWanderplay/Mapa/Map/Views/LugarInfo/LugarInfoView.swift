@@ -23,6 +23,8 @@ class LugarInfoView: UIView {
     @IBOutlet weak var lugarImage: UIImageView!
     @IBOutlet weak var monedasButton: UIButton!
     @IBOutlet weak var verDetalleButton: UIButton!
+    @IBOutlet weak var lugarImageWidth: NSLayoutConstraint!
+    @IBOutlet weak var lugarImageHeight: NSLayoutConstraint!
     
     var delegate: LugarInfoViewProtocol?
     var idLugar: String?
@@ -85,8 +87,13 @@ class LugarInfoView: UIView {
         Task.init {
             if let fotoURL = URL(string: foto),
                let imageData = try? await URLSession.shared.data(from: fotoURL) {
-                   lugarImage.image = UIImage(data: imageData.0)
+                    lugarImageWidth.constant = lugarImageContainer.frame.width
+                    lugarImageHeight.constant = lugarImageContainer.frame.height
+                    lugarImage.contentMode = .scaleAspectFill
+                    lugarImage.image = UIImage(data: imageData.0)
             } else {
+                lugarImageWidth.constant = 48
+                lugarImageHeight.constant = 48
                 lugarImage.contentMode = .scaleAspectFit
                 lugarImage.image = UIImage(systemName: "photo")
             }

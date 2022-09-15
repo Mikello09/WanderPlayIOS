@@ -14,6 +14,8 @@ enum HttpMethod: String {
     case post = "POST"
 }
 
+typealias JSONDictionary = [String: Any]
+
 class BaseWorker{
     
     var baseUrl = "https://thewanderplay.herokuapp.com/"

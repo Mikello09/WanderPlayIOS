@@ -14,6 +14,8 @@
                 <outlet property="container" destination="VWs-el-WMz" id="8a4-Fa-dI7"/>
                 <outlet property="lugarImage" destination="fdY-HE-09G" id="d7B-IK-kOO"/>
                 <outlet property="lugarImageContainer" destination="1I9-Px-qUW" id="vLV-xe-6IS"/>
+                <outlet property="lugarImageHeight" destination="wOA-Hy-2I3" id="jMR-Qn-fZP"/>
+                <outlet property="lugarImageWidth" destination="3xz-LJ-ALn" id="eHs-yi-EGQ"/>
                 <outlet property="lugarPinImage" destination="aPa-Q8-xYr" id="yrv-UL-6E0"/>
                 <outlet property="lugarTitle" destination="dHj-F8-8vU" id="1dY-Wh-XCz"/>
                 <outlet property="monedasButton" destination="cdD-Lt-qRr" id="0GF-uo-ddD"/>
@@ -46,15 +48,17 @@
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-HE-09G">
                                     <rect key="frame" x="0.0" y="0.0" width="462" height="150"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="462" id="3xz-LJ-ALn"/>
+                                        <constraint firstAttribute="height" constant="150" id="wOA-Hy-2I3"/>
+                                    </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="150" id="6Xh-y9-kBv"/>
-                                <constraint firstAttribute="bottom" secondItem="fdY-HE-09G" secondAttribute="bottom" id="DQg-ue-z5Z"/>
-                                <constraint firstItem="fdY-HE-09G" firstAttribute="leading" secondItem="1I9-Px-qUW" secondAttribute="leading" id="JXo-qd-drw"/>
-                                <constraint firstItem="fdY-HE-09G" firstAttribute="top" secondItem="1I9-Px-qUW" secondAttribute="top" id="f4e-kp-Cmz"/>
-                                <constraint firstAttribute="trailing" secondItem="fdY-HE-09G" secondAttribute="trailing" id="yaJ-Ra-WcN"/>
+                                <constraint firstItem="fdY-HE-09G" firstAttribute="centerY" secondItem="1I9-Px-qUW" secondAttribute="centerY" id="jVQ-Lq-BcF"/>
+                                <constraint firstItem="fdY-HE-09G" firstAttribute="centerX" secondItem="1I9-Px-qUW" secondAttribute="centerX" id="pRv-TG-koq"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdD-Lt-qRr">
