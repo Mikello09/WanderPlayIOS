@@ -22,7 +22,8 @@ class LugarInfoView: UIView {
     @IBOutlet weak var lugarImageContainer: UIView!
     @IBOutlet weak var lugarImage: UIImageView!
     @IBOutlet weak var monedasButton: UIButton!
-    @IBOutlet weak var verDetalleButton: UIButton!
+    
+    @IBOutlet weak var verMasButton: TextButton!
     @IBOutlet weak var lugarImageWidth: NSLayoutConstraint!
     @IBOutlet weak var lugarImageHeight: NSLayoutConstraint!
     
@@ -57,6 +58,8 @@ class LugarInfoView: UIView {
         // Container
         //container.layer.cornerRadius = 8
         container.addShadowInContainerView(withRadius: 8)
+        // Button
+        verMasButton.setTitle("Ver más", for: .normal)
         // PIN
         switch tipoLugar {
         case "BAJO":
@@ -98,10 +101,6 @@ class LugarInfoView: UIView {
                 lugarImage.image = UIImage(systemName: "photo")
             }
         }
-        
-        // Buttons
-        verDetalleButton.setTitle("Ver más", for: .normal)
-        
     }
     
     @IBAction func onVerDetalles(_ sender: Any) {

@@ -19,7 +19,7 @@
                 <outlet property="lugarPinImage" destination="aPa-Q8-xYr" id="yrv-UL-6E0"/>
                 <outlet property="lugarTitle" destination="dHj-F8-8vU" id="1dY-Wh-XCz"/>
                 <outlet property="monedasButton" destination="cdD-Lt-qRr" id="0GF-uo-ddD"/>
-                <outlet property="verDetalleButton" destination="cYu-ll-2GT" id="l20-G8-Vvz"/>
+                <outlet property="verMasButton" destination="cYu-ll-2GT" id="zgF-ny-ke9"/>
                 <outlet property="view" destination="iN0-l3-epB" id="SAt-nr-aV0"/>
             </connections>
         </placeholder>
@@ -65,10 +65,13 @@
                             <rect key="frame" x="16" y="232" width="207" height="34"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYu-ll-2GT">
-                            <rect key="frame" x="255" y="232" width="207" height="34.5"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYu-ll-2GT" customClass="TextButton" customModule="WanderPlay" customModuleProvider="target">
+                            <rect key="frame" x="255" y="232" width="207" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="fxR-EJ-k96"/>
+                            </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
                             <connections>
                                 <action selector="onVerDetalles:" destination="-1" eventType="touchUpInside" id="mUm-ED-NzW"/>
                             </connections>

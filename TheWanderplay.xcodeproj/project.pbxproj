@@ -146,6 +146,7 @@
 		970855D32865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
 		970F103A28B81D080094900C /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F103928B81D080094900C /* UserSettings.swift */; };
 		9732DFAA28D07550003F1DB1 /* Init.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9732DFA928D07550003F1DB1 /* Init.storyboard */; };
+		9732DFAD28D3C12D003F1DB1 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9732DFAC28D3C12D003F1DB1 /* TextButton.swift */; };
 		9746C64028B6D057002CA7C2 /* PersonalData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */; };
 		9746C64228B6D081002CA7C2 /* MisDatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C64128B6D081002CA7C2 /* MisDatos.storyboard */; };
 		9746C64428B6D1AD002CA7C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746C64328B6D1AD002CA7C2 /* SceneDelegate.swift */; };
@@ -342,6 +343,7 @@
 		970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Tshirt_obj.scn; sourceTree = "<group>"; };
 		970F103928B81D080094900C /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		9732DFA928D07550003F1DB1 /* Init.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Init.storyboard; sourceTree = "<group>"; };
+		9732DFAC28D3C12D003F1DB1 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalData.storyboard; sourceTree = "<group>"; };
 		9746C64128B6D081002CA7C2 /* MisDatos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MisDatos.storyboard; sourceTree = "<group>"; };
 		9746C64328B6D1AD002CA7C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -555,6 +557,7 @@
 		5D679D6D231FAFC3005AB2E5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9732DFAB28D3C11C003F1DB1 /* Buttons */,
 				5DE4B8EF239712A700309213 /* Animations */,
 				5DE4B8EA2397072700309213 /* TopBar */,
 				5D80B152237E8B1400718BAA /* Base */,
@@ -917,6 +920,14 @@
 			path = USER;
 			sourceTree = "<group>";
 		};
+		9732DFAB28D3C11C003F1DB1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				9732DFAC28D3C12D003F1DB1 /* TextButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		9746C63C28B6CF76002CA7C2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -1201,6 +1212,7 @@
 				5D040B8D24FC2C0F00A01263 /* LugarWorker.swift in Sources */,
 				5D59AC2F2452CB5D00B9C461 /* GrupoView.swift in Sources */,
 				5D25E894233D049E002560A3 /* LocationManager.swift in Sources */,
+				9732DFAD28D3C12D003F1DB1 /* TextButton.swift in Sources */,
 				5DA577CA23CCB994002D99B8 /* FiltroFotoView.swift in Sources */,
 				5D613BFB250821D7005732FC /* RegistroWorker.swift in Sources */,
 				5D6DCF6823E5ED3500102FCB /* RankingPresenter.swift in Sources */,
