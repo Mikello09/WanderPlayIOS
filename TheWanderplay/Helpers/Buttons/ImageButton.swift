@@ -1,5 +1,5 @@
 //
-//  TextButton.swift
+//  ImageButton.swift
 //  TheWanderplay
 //
 //  Created by Mikel Lopez Salazar on 15/9/22.
@@ -9,16 +9,12 @@
 import Foundation
 import UIKit
 
-class TextButton: UIButton {
-    
+class ImageButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         layer.cornerRadius = 4
-        setTitleColor(.principal, for: .normal)
-        setTitleColor(.principal, for: .highlighted)
-        titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        layer.borderWidth = 2
+        layer.borderColor = UIColor.principal.cgColor
         backgroundColor = .secondary
-        self.addShadowInContainerView()
     }
-    
 }

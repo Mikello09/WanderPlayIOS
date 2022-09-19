@@ -147,6 +147,8 @@
 		970F103A28B81D080094900C /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F103928B81D080094900C /* UserSettings.swift */; };
 		9732DFAA28D07550003F1DB1 /* Init.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9732DFA928D07550003F1DB1 /* Init.storyboard */; };
 		9732DFAD28D3C12D003F1DB1 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9732DFAC28D3C12D003F1DB1 /* TextButton.swift */; };
+		9732DFAF28D3C3BA003F1DB1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9732DFAE28D3C3BA003F1DB1 /* Colors.xcassets */; };
+		9732DFB128D3C7CB003F1DB1 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9732DFB028D3C7CB003F1DB1 /* ImageButton.swift */; };
 		9746C64028B6D057002CA7C2 /* PersonalData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */; };
 		9746C64228B6D081002CA7C2 /* MisDatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C64128B6D081002CA7C2 /* MisDatos.storyboard */; };
 		9746C64428B6D1AD002CA7C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746C64328B6D1AD002CA7C2 /* SceneDelegate.swift */; };
@@ -344,6 +346,8 @@
 		970F103928B81D080094900C /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		9732DFA928D07550003F1DB1 /* Init.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Init.storyboard; sourceTree = "<group>"; };
 		9732DFAC28D3C12D003F1DB1 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		9732DFAE28D3C3BA003F1DB1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		9732DFB028D3C7CB003F1DB1 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalData.storyboard; sourceTree = "<group>"; };
 		9746C64128B6D081002CA7C2 /* MisDatos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MisDatos.storyboard; sourceTree = "<group>"; };
 		9746C64328B6D1AD002CA7C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -550,6 +554,7 @@
 				5D679D6D231FAFC3005AB2E5 /* Helpers */,
 				5D679D5C231FAA0D005AB2E5 /* Assets.xcassets */,
 				5D679D5E231FAA0D005AB2E5 /* LaunchScreen.storyboard */,
+				9732DFAE28D3C3BA003F1DB1 /* Colors.xcassets */,
 			);
 			path = TheWanderplay;
 			sourceTree = "<group>";
@@ -924,6 +929,7 @@
 			isa = PBXGroup;
 			children = (
 				9732DFAC28D3C12D003F1DB1 /* TextButton.swift */,
+				9732DFB028D3C7CB003F1DB1 /* ImageButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -1102,6 +1108,7 @@
 				5D99E9A72368379900CABA2D /* Avisos.storyboard in Resources */,
 				5D679D69231FABFB005AB2E5 /* Login.storyboard in Resources */,
 				5D2AC6F32399A2F800AEA66C /* GrupoLogroView.xib in Resources */,
+				9732DFAF28D3C3BA003F1DB1 /* Colors.xcassets in Resources */,
 				97B3676B286602650067FC21 /* Futbolista_Dancing.scn in Resources */,
 				97B3675B2865FF990067FC21 /* Enfermero_Dancing.scn in Resources */,
 				97B05A3E28C677110032B7F2 /* CategoriaCell.xib in Resources */,
@@ -1180,6 +1187,7 @@
 				5D040B7824F8F61300A01263 /* LoginWorker.swift in Sources */,
 				5D613BF325081691005732FC /* Avatar.swift in Sources */,
 				5D778A09234E2C6F006422F2 /* MisDatosViewController.swift in Sources */,
+				9732DFB128D3C7CB003F1DB1 /* ImageButton.swift in Sources */,
 				5D3AB9842516AFEA00D17E08 /* RankingWorker.swift in Sources */,
 				5D8F818F23C4B64C004A3633 /* TomarFotoViewController.swift in Sources */,
 				5D80B15B237E921200718BAA /* CardView.swift in Sources */,

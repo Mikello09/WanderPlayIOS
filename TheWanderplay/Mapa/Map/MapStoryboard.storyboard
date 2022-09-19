@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,22 +28,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcW-Ce-HiW">
                                 <rect key="frame" x="354" y="56" width="40" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-ko-ewQ">
-                                        <rect key="frame" x="-8" y="-8" width="56" height="56"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-ko-ewQ" customClass="ImageButton" customModule="WanderPlay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="Lbx-iJ-6Z1"/>
-                                            <constraint firstAttribute="width" constant="56" id="oOJ-h3-DfD"/>
+                                            <constraint firstAttribute="height" constant="40" id="Lbx-iJ-6Z1"/>
+                                            <constraint firstAttribute="width" constant="40" id="oOJ-h3-DfD"/>
                                         </constraints>
+                                        <color key="tintColor" name="Principal"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="slider.horizontal.3" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" weight="semibold"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" weight="semibold"/>
                                         </state>
                                         <connections>
                                             <action selector="onActiveFilter:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cPm-F8-5e2"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Gmb-er-Hb5"/>
                                     <constraint firstItem="ZnR-ko-ewQ" firstAttribute="centerX" secondItem="RcW-Ce-HiW" secondAttribute="centerX" id="TbA-o2-yVz"/>
@@ -68,18 +70,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1v1-DO-xOr" userLabel="HelpView">
                                 <rect key="frame" x="354" y="806" width="40" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snL-aY-bSl">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snL-aY-bSl" customClass="ImageButton" customModule="WanderPlay" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="tintColor" name="Principal"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="lightbulb.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" weight="semibold"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" weight="semibold"/>
                                         </state>
                                         <connections>
                                             <action selector="onHelp:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UM9-vT-UbM"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="3n8-F2-Z2B"/>
                                     <constraint firstItem="snL-aY-bSl" firstAttribute="leading" secondItem="1v1-DO-xOr" secondAttribute="leading" id="H6p-la-hqU"/>
@@ -123,11 +126,11 @@
     <resources>
         <image name="lightbulb.fill" catalog="system" width="92" height="128"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
+        <namedColor name="Principal">
+            <color red="0.51764705882352935" green="0.31764705882352939" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

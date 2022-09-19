@@ -74,12 +74,12 @@ class MapViewController: BaseViewController {
 //        puck2DConfiguration.scale = .constant(0.05)
 //        mapView?.location.options.puckType = .puck2D(puck2DConfiguration)
         
-        if let modelURL = Bundle.main.url(forResource: "Mikel",
-                                          withExtension: "glb") {
-            let userModel = Model(uri: modelURL, orientation: [0, 0, 180])
-            let puck3Configuration = Puck3DConfiguration(model: userModel, modelScale: .constant([0.8, 0.8, 0.8]))
-            mapView?.location.options.puckType = .puck3D(puck3Configuration)
-        }
+//        if let modelURL = Bundle.main.url(forResource: "Mikel",
+//                                          withExtension: "glb") {
+//            let userModel = Model(uri: modelURL, orientation: [0, 0, 180])
+//            let puck3Configuration = Puck3DConfiguration(model: userModel, modelScale: .constant([0.8, 0.8, 0.8]))
+//            mapView?.location.options.puckType = .puck3D(puck3Configuration)
+//        }
         
         self.view.insertSubview(mapView ?? UIView(), at: 0)
     }

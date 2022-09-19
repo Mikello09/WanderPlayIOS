@@ -57,20 +57,17 @@ extension MapViewController {
             // PIN PATRIMONIO
             let iconoPatrimonio = UIImage(named: "pin_rojo_image")
             try? self.mapView?.mapboxMap.style.addImage(iconoPatrimonio!.withRenderingMode(.alwaysTemplate), id: "pin_patrimonio")
+            // CLUSTER ICON
+            let clustericon = UIImage(named: "cluster_icon")
+            try? self.mapView?.mapboxMap.style.addImage(clustericon!.withRenderingMode(.alwaysTemplate), id: "cluster_icon")
             
             var pinLayer = SymbolLayer(id: "SYMBOL_ID")
             pinLayer.source = "SOURCE_ID"
             pinLayer.iconAllowOverlap = .constant(false)
-//                pinLayer.filter = Expression(.not) {
-//                    Expression(.has) { "point_count" }
-//                }
-            
-    //            pinLayer.filter = Expression(.eq) {
-    //                Exp(.get) { "visitado" }
-    //                "no"
-    //            }
             
             let pinExpression = Exp(.switchCase) {
+                Exp(.has) { "point_count" }
+                "cluster_icon"
                 Exp(.eq) {
                     Exp(.get) { "visitado" }
                     "si"
@@ -103,15 +100,15 @@ extension MapViewController {
                 "pin_patrimonio"
                 ""
             }
-//                Expression(.has) { "point_count" }
-//                "pin_cluster"
+            
             let clusterExpression = Exp(.get) { "point_count" }
             
             pinLayer.iconImage = .expression(pinExpression)
             pinLayer.iconSize = .constant(0.5)
             
             pinLayer.textField = .expression(clusterExpression)
-            
+            pinLayer.textColor = .constant(StyleColor(UIColor.principal))
+            pinLayer.textFont = .constant([])
             
             do {
                 try self.mapView?.mapboxMap.style.addLayer(pinLayer)
