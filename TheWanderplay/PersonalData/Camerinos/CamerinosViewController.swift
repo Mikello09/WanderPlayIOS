@@ -85,7 +85,7 @@ class CamerinosViewController: BaseViewController{
             crearEstado(estado: .comprar, avatar: avatares[posicion])
         }
         
-        if Int(Usuario.shared.getNivel()) ?? 0 < avatares[posicion].nivel ?? 0{
+        if Usuario.shared.nivel < avatares[posicion].nivel ?? 0{
             createBloqueado(nivel: avatares[posicion].nivel ?? 0)
         } else {
             bloqueadoView.isHidden = true
@@ -199,7 +199,7 @@ class CamerinosViewController: BaseViewController{
     }
     
     @IBAction func comprarClicked(_ sender: UIButton) {
-        if Int(Usuario.shared.getNivel()) ?? 0 < avatares[posicion].nivel ?? 0{
+        if Usuario.shared.nivel < avatares[posicion].nivel ?? 0{
             AvisosRouter().goToAvisoStandard(navigationController: self.navigationController, titulo: "Lo sentimos", mensaje: "Para poder jugar con \(avatares[posicion].nombre ?? "") necesitas tener al menos el nivel \(avatares[posicion].nivel ?? 0).", okAction: errorEntendido)
         } else if Usuario.shared.monedas ?? 0 < avatares[posicion].precio ?? 0{
             AvisosRouter().goToAvisoStandard(navigationController: self.navigationController, titulo: "Lo sentimos", mensaje: "Para poder jugar con \(avatares[posicion].nombre ?? "") necesitas tener \(avatares[posicion].precio ?? 0) monedas.", okAction: errorEntendido)

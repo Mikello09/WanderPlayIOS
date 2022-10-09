@@ -145,10 +145,11 @@
 		970855BB2865F2EF001AFD4E /* textures in Resources */ = {isa = PBXBuildFile; fileRef = 970855A72865F2E8001AFD4E /* textures */; };
 		970855D32865F2EF001AFD4E /* Tshirt_obj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */; };
 		970F103A28B81D080094900C /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970F103928B81D080094900C /* UserSettings.swift */; };
-		9732DFAA28D07550003F1DB1 /* Init.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9732DFA928D07550003F1DB1 /* Init.storyboard */; };
+		9732DFAA28D07550003F1DB1 /* InitStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9732DFA928D07550003F1DB1 /* InitStoryboard.storyboard */; };
 		9732DFAD28D3C12D003F1DB1 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9732DFAC28D3C12D003F1DB1 /* TextButton.swift */; };
 		9732DFAF28D3C3BA003F1DB1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9732DFAE28D3C3BA003F1DB1 /* Colors.xcassets */; };
 		9732DFB128D3C7CB003F1DB1 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9732DFB028D3C7CB003F1DB1 /* ImageButton.swift */; };
+		9732DFB328E0B021003F1DB1 /* InitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9732DFB228E0B021003F1DB1 /* InitPresenter.swift */; };
 		9746C64028B6D057002CA7C2 /* PersonalData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */; };
 		9746C64228B6D081002CA7C2 /* MisDatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C64128B6D081002CA7C2 /* MisDatos.storyboard */; };
 		9746C64428B6D1AD002CA7C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746C64328B6D1AD002CA7C2 /* SceneDelegate.swift */; };
@@ -344,10 +345,11 @@
 		970855A72865F2E8001AFD4E /* textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = textures; sourceTree = "<group>"; };
 		970855AF2865F2EC001AFD4E /* Tshirt_obj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Tshirt_obj.scn; sourceTree = "<group>"; };
 		970F103928B81D080094900C /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
-		9732DFA928D07550003F1DB1 /* Init.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Init.storyboard; sourceTree = "<group>"; };
+		9732DFA928D07550003F1DB1 /* InitStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InitStoryboard.storyboard; sourceTree = "<group>"; };
 		9732DFAC28D3C12D003F1DB1 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		9732DFAE28D3C3BA003F1DB1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9732DFB028D3C7CB003F1DB1 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		9732DFB228E0B021003F1DB1 /* InitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitPresenter.swift; sourceTree = "<group>"; };
 		9746C63F28B6D057002CA7C2 /* PersonalData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalData.storyboard; sourceTree = "<group>"; };
 		9746C64128B6D081002CA7C2 /* MisDatos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MisDatos.storyboard; sourceTree = "<group>"; };
 		9746C64328B6D1AD002CA7C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -410,16 +412,9 @@
 		5D040B7624F8F5F700A01263 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				9732DFB428E0F9E7003F1DB1 /* Workers */,
 				9746C63C28B6CF76002CA7C2 /* Base */,
 				5D040B7F24F90D2700A01263 /* Data */,
-				5D040B7724F8F61300A01263 /* LoginWorker.swift */,
-				5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */,
-				5D613BF6250818BC005732FC /* AvatarWorker.swift */,
-				5D613BFA250821D7005732FC /* RegistroWorker.swift */,
-				5D2E2366250C7C26002EF48D /* PasaporteWorker.swift */,
-				5DA18A992513CE1900DE90AE /* LogroWorker.swift */,
-				5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */,
-				5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -842,7 +837,8 @@
 			children = (
 				5DE882B62372E9FF002197E0 /* InitViewController.swift */,
 				5DE882B82372EA6C002197E0 /* InitRouter.swift */,
-				9732DFA928D07550003F1DB1 /* Init.storyboard */,
+				9732DFA928D07550003F1DB1 /* InitStoryboard.storyboard */,
+				9732DFB228E0B021003F1DB1 /* InitPresenter.swift */,
 			);
 			path = Init;
 			sourceTree = "<group>";
@@ -932,6 +928,21 @@
 				9732DFB028D3C7CB003F1DB1 /* ImageButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		9732DFB428E0F9E7003F1DB1 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				5D040B7724F8F61300A01263 /* LoginWorker.swift */,
+				5D040B8C24FC2C0F00A01263 /* LugarWorker.swift */,
+				5D613BF6250818BC005732FC /* AvatarWorker.swift */,
+				5D613BFA250821D7005732FC /* RegistroWorker.swift */,
+				5D2E2366250C7C26002EF48D /* PasaporteWorker.swift */,
+				5DA18A992513CE1900DE90AE /* LogroWorker.swift */,
+				5D3AB9832516AFEA00D17E08 /* RankingWorker.swift */,
+				5D1FD3B1253307A30044FCE8 /* CamerinosWorker.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 		9746C63C28B6CF76002CA7C2 /* Base */ = {
@@ -1144,7 +1155,7 @@
 				979879AC28C4F1CF0064456F /* Mikel.usdz in Resources */,
 				97B367A6287CBE9A0067FC21 /* LugarInfoView.xib in Resources */,
 				97B3676F2866026B0067FC21 /* Futbolista_Standing.scn in Resources */,
-				9732DFAA28D07550003F1DB1 /* Init.storyboard in Resources */,
+				9732DFAA28D07550003F1DB1 /* InitStoryboard.storyboard in Resources */,
 				5DD67978245B3A0F0080FBDD /* ResumeWelcomeView.xib in Resources */,
 				97B3678F286602950067FC21 /* Playero_Standing.scn in Resources */,
 				5DE4B8EE2397076600309213 /* TopBarOnlyBack.xib in Resources */,
@@ -1194,6 +1205,7 @@
 				5DE21C06234CDBE400C37015 /* PersonalDataRouter.swift in Sources */,
 				5D25E890233D0108002560A3 /* NoTrophyView.swift in Sources */,
 				5DD6795824596C200080FBDD /* GreetingWelcomView.swift in Sources */,
+				9732DFB328E0B021003F1DB1 /* InitPresenter.swift in Sources */,
 				5DE0CC682471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */,
 				5D1E8CCB23992BAF00F23C8C /* PasaporteViewController.swift in Sources */,
 				5D25E879233B48E2002560A3 /* LugarDetailRouter.swift in Sources */,
@@ -1414,7 +1426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = M63K3782TK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1443,7 +1455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = M63K3782TK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

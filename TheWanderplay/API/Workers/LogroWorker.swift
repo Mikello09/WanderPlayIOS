@@ -39,10 +39,10 @@ class LogroWorker: BaseWorker{
                 do {
                     switch response.statusCode ?? -1 {
                     case 200:
-                        let response = try self.newJSONDecoder().decode(RespuestaLogros.self, from: data)
+                        let response = try newJSONDecoder().decode(RespuestaLogros.self, from: data)
                         self.delegate?.logroSuccess(logros: response.logros ?? [], lugar: lugar)
                     case 400,401,410,500:
-                        let response = try self.newJSONDecoder().decode(Error.self, from: data)
+                        let response = try newJSONDecoder().decode(Error.self, from: data)
                         self.delegate?.logroFail()
                     default:
                         self.delegate?.logroFail()

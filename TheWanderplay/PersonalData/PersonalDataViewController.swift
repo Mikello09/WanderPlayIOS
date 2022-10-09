@@ -69,7 +69,7 @@ class PersonalDataViewController: BaseViewController{
     func setInitialValues() {
         
         nombreLabel.text = Usuario.shared.nombre
-        nivelLabel.text = "Nvl \(Usuario.shared.getNivel())"
+        nivelLabel.text = "Nvl \(Usuario.shared.nivel)"
         avatarImageContainer.addShadowInContainerView()
         avatarValueLabel.text = Usuario.shared.avatarActivo
         monedaImageContainer.addShadowInContainerView()

@@ -107,8 +107,7 @@ extension MapViewController {
             pinLayer.iconSize = .constant(0.5)
             
             pinLayer.textField = .expression(clusterExpression)
-            pinLayer.textColor = .constant(StyleColor(UIColor.principal))
-            pinLayer.textFont = .constant([])
+            pinLayer.textColor = .constant(StyleColor(UIColor.black))
             
             do {
                 try self.mapView?.mapboxMap.style.addLayer(pinLayer)

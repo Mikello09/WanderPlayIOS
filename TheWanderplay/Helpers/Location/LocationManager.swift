@@ -52,7 +52,7 @@ class LocationManager{
         locationEngine.startUpatingUserLocation()
     }
     
-    func isLocatedInLugar(location: CLLocation?, delegate: LocationManagerProtocol){
+    func isLocatedInLugar(location: CLLocation?, delegate: LocationManagerProtocol) {
         self.delegate = delegate
         if let location = location{
             self.actualLocation = location

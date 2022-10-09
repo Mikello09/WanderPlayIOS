@@ -79,7 +79,7 @@ extension RankingViewController: UITableViewDelegate, UITableViewDataSource{
                        imagen: "",
                        nombre: usuarios[indexPath.row].nombre ?? "",
                        lugares: usuarios[indexPath.row].lugares ?? [],
-                       nivel: usuarios[indexPath.row].getNivel(),
+                       nivel: "\(usuarios[indexPath.row].nivel ?? 1)",
                        avatar: usuarios[indexPath.row].avatarActivo ?? "")
         return cell
     }

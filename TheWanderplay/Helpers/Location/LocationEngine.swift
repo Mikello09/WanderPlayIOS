@@ -104,20 +104,26 @@ class LocationEngine: NSObject, CLLocationManagerDelegate{
         }
     
     public func isLocationServicesEnabledAndAuthorized() {
-        if CLLocationManager.locationServicesEnabled() {
-            switch(CLLocationManager.authorizationStatus()) {
-            case .restricted, .denied:
-                changeDelegate?.denied()
-            case .notDetermined:
-                changeDelegate?.notDetermined()
-            case .authorizedAlways, .authorizedWhenInUse:
-                changeDelegate?.accepted()
-            default:
-                changeDelegate?.denied()
-            }
-        } else {
-            changeDelegate?.denied()
-        }
+        checkPermissions()
+//        if CLLocationManager.locationServicesEnabled() {
+//            checkPermissions()
+//            switch(CLLocationManager.authorizationStatus()) {
+//            case .restricted, .denied:
+//                ()
+//                //changeDelegate?.denied()
+//            case .notDetermined:
+//                ()
+//                //changeDelegate?.notDetermined()
+//            case .authorizedAlways, .authorizedWhenInUse:
+//                ()
+//                //changeDelegate?.accepted()
+//            default:
+//                ()
+//                //changeDelegate?.denied()
+//            }
+//        } else {
+//            changeDelegate?.denied()
+//        }
     }
     
     public func askPermision(){

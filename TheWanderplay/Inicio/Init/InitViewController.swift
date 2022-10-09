@@ -11,29 +11,19 @@ import UIKit
 
 class InitViewController: BaseViewController{
     
-    var isCalling: Bool = false
-    
-    var locationEngine: LocationEngine!
+    var presenter: InitPresenter?
     
     @IBOutlet weak var cargandoView: UIView!
-    @IBOutlet weak var earth_imagen: UIImageView!
+    @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorImage: UIImageView!
     @IBOutlet weak var errorMessage: UILabel!
     @IBOutlet weak var errorButton: UIButton!
     
-    //let reachabilityManager = NetworkReachabilityManager()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
-        rotationAnimation.fromValue = 0.0
-        rotationAnimation.toValue = Float.pi * 2.0
-        rotationAnimation.duration = 1
-        rotationAnimation.repeatCount = Float.infinity
-        earth_imagen.layer.add(rotationAnimation, forKey: "rotationanimationkey")
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,25 +31,11 @@ class InitViewController: BaseViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        locationEngine = LocationEngine.sharedInstance()
-        locationEngine.startEngineForPermission(delegate: self)
+        presenter?.searchForLocation()
     }
     
-    func start(){
-        if !self.isCalling{
-            self.isCalling = true
-            LoginWorker().execute(nombre: Usuario.shared.getNombreCredencial() ?? "",
-                                  pass: Usuario.shared.getPassCredencial() ?? "",
-                                  delegate: self)
-        }
-    }
-    
-    
-    @IBAction func errorButtonClicked(_ sender: UIButton) {
-        self.errorView.isHidden = true
-        self.cargandoView.isHidden = false
-        self.isCalling = false
-        start()
+    func setupUI() {
+        ()
     }
     
     func configureError(image: String, message: String, intentar: Bool){
@@ -79,40 +55,29 @@ class InitViewController: BaseViewController{
     }
 }
 
-extension InitViewController: LocationEnginePermission{
-    func accepted() {
-        self.errorView.isHidden = true
-        self.cargandoView.isHidden = false
-        self.start()
-    }
-    func denied() {
-        self.configureError(image: "no_gps", message: "Tienes que activar el gps para poder empezar a jugar!!", intentar: false)
-    }
-    func notDetermined() {
-        self.locationEngine.askPermision()
-    }
-}
-
-extension InitViewController: LoginWorkerProtocol{
-    func success() {
-        LugarWorker().execute(delegate: self)
-    }
-    
-    func fail(error: String) {
-        self.configureError(image: "no_gps", message: error, intentar: true)
-    }
-}
-
-extension InitViewController: LugarWorkerProtocol{
-    func successLugares() {
+// MARK: PRESENTER
+extension InitViewController: InitPresenterProtocol {
+    func changeState(state: InitState) {
         DispatchQueue.main.async {
-            MapRouter().goToMap(navigationController: self.navigationController)
+            switch state {
+            case .location:
+                self.progressLabel.text = "Calculando posicionamiento..."
+                self.progressView.setProgress(0.25, animated: true)
+            case .user:
+                self.progressLabel.text = "Obteniendo datos de usuario..."
+                self.progressView.setProgress(0.5, animated: true)
+            case .lugares:
+                self.progressLabel.text = "Preparando lugares..."
+                self.progressView.setProgress(0.75, animated: true)
+            case .finished:
+                self.progressLabel.text = ""
+                self.progressView.setProgress(1, animated: true)
+            case .error:
+                ()
+            }
         }
     }
-    
-    func failLugares(error: String) {
-        DispatchQueue.main.async {
-            self.configureError(image: "no_gps", message: error, intentar: true)
-        }
+    func goToMap() {
+        MapRouter().goToMap(navigationController: self.navigationController)
     }
 }

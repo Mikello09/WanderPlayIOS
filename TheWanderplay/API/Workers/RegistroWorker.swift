@@ -42,11 +42,11 @@ class RegistroWorker: BaseWorker{
                 do {
                     switch response.statusCode ?? -1 {
                     case 200:
-                        let response = try self.newJSONDecoder().decode(UsuarioModelo.self, from: data)
-                        Usuario.shared.guardarCredenciales(nombre: response.usuario?.nombre ?? "", pass: response.usuario?.contrasena ?? "")
+                        let response = try newJSONDecoder().decode(LoginModel.self, from: data)
+                        Usuario.shared.guardarCredenciales(nombre: response.usuario.nombre ?? "", pass: response.usuario.contrasena ?? "")
                         self.delegate?.success()
                     case 400,401,500:
-                        let response = try self.newJSONDecoder().decode(Error.self, from: data)
+                        let response = try newJSONDecoder().decode(Error.self, from: data)
                         self.delegate?.fail(error: response.reason)
                     default:
                         self.delegate?.fail(error: self.errorGeneral)

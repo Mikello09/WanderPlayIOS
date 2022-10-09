@@ -12,12 +12,23 @@ import UIKit
 
 class InitRouter{
     
-    func goToInit(navigationController: UINavigationController?){
+    func goToInit(navigationController: UINavigationController?) {
         
-        if let nv = navigationController{
-            let storyboard = UIStoryboard(name: "Init", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "initViewController") as! InitViewController
+        let storyboard = UIStoryboard(name: "InitStoryboard", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "initStoryboard") as? InitViewController else { return }
+        
+        let presenter = InitPresenter()
+        presenter.delegate = vc
+        vc.presenter = presenter
+        
+        if let nv = navigationController {
             nv.pushViewController(vc, animated: false)
+        } else {
+            let newNavigation = UINavigationController(rootViewController: vc)
+            
+            guard let window = (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.window else { return }
+            window.rootViewController = newNavigation
+            window.makeKeyAndVisible()
         }
     }
     

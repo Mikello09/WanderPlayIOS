@@ -9,21 +9,27 @@
 import Foundation
 import UIKit
 
-struct UsuarioModelo: Codable{
-    var usuario: UsuarioModel?
+struct LoginModel: Codable {
+    var settings: Settings
+    var usuario: UsuarioModel
+}
+
+struct Settings: Codable {
+    var lugaresCreateDate: String
 }
 
 struct UsuarioModel: Codable{
-    var nombre: String?
+    var nombre: String
     var apellidos: String?
-    var email: String?
+    var email: String
     var direccion: String?
     var pais: String?
     var provincia: String?
     var ciudad: String?
     var edad: Int?
     var puntos: Int?
-    var contrasena: String?
+    var nivel: Int?
+    var contrasena: String
     var ultimoIngreso: String?
     var version: String?
     var monedas: Int?
@@ -31,27 +37,6 @@ struct UsuarioModel: Codable{
     var avatarActivo: String?
     var avatares: [String]?
     var lugares: [String]?
-    
-    func getNivel() -> String{
-        if let puntos = self.puntos{
-            if puntos >= 0 && puntos <= 999{
-                return "1"
-            }
-            if puntos > 999 && puntos <= 1999{
-                return "2"
-            }
-            if puntos > 1999 && puntos <= 4999{
-                return "3"
-            }
-            if puntos > 4999 && puntos <= 7499{
-                return "4"
-            }
-            if puntos > 7499 && puntos <= 12499{
-                return "5"
-            }
-        }
-        return "0"
-    }
 }
 
 
@@ -68,8 +53,9 @@ class Usuario{
     var ciudad: String = ""
     var edad: Int = 0
     var puntos: Int = 0
+    var nivel: Int = 1
     var contrasena: String = ""
-    var ultimoIngreso: String = ""
+    var ultimoIngreso: String?
     var version: String = ""
     var monedas: Int = 0
     var diamantes: Int = 0
@@ -89,8 +75,9 @@ class Usuario{
             Usuario.shared.ciudad = usuario.ciudad ?? ""
             Usuario.shared.edad = usuario.edad ?? 0
             Usuario.shared.puntos = usuario.puntos ?? 0
+            Usuario.shared.nivel = usuario.nivel ?? 1
             Usuario.shared.contrasena = usuario.contrasena ?? ""
-            Usuario.shared.ultimoIngreso = usuario.ultimoIngreso ?? ""
+            Usuario.shared.ultimoIngreso = usuario.ultimoIngreso
             Usuario.shared.version = usuario.version ?? ""
             Usuario.shared.monedas = usuario.monedas ?? 0
             Usuario.shared.diamantes = usuario.diamantes ?? 0
@@ -100,20 +87,20 @@ class Usuario{
         }
     }
     
-    func guardarCredenciales(nombre: String, pass: String){
+    func guardarCredenciales(nombre: String, pass: String) {
         UserDefaults.standard.set(nombre, forKey: "nombre")
         UserDefaults.standard.set(pass, forKey: "pass")
     }
     
-    func getNombreCredencial() -> String?{
+    func getNombreCredencial() -> String? {
         return UserDefaults.standard.string(forKey: "nombre")
     }
     
-    func getPassCredencial() -> String?{
+    func getPassCredencial() -> String? {
         return UserDefaults.standard.string(forKey: "pass")
     }
     
-    func eliminarCredenciales(){
+    func eliminarCredenciales() {
         let defaults = UserDefaults.standard
         let dictionary = defaults.dictionaryRepresentation()
         dictionary.keys.forEach { key in
@@ -121,44 +108,20 @@ class Usuario{
         }
     }
     
-    func getNivel() -> String{
-        let puntos = self.puntos
-        if puntos >= 0 && puntos <= 999{
-            return "1"
+    func getNivelPorcentaje() -> Float {
+        let baseLevel: CGFloat = 999
+        let factor: CGFloat = 0.2
+        
+        var beforeLevel: CGFloat = 0
+        if nivel > 1 {
+            beforeLevel = ((CGFloat(nivel - 1)*baseLevel) + (CGFloat(nivel)*factor*baseLevel))
         }
-        if puntos > 999 && puntos <= 1999{
-            return "2"
-        }
-        if puntos > 1999 && puntos <= 4999{
-            return "3"
-        }
-        if puntos > 4999 && puntos <= 7499{
-            return "4"
-        }
-        if puntos > 7499 && puntos <= 12499{
-            return "5"
-        }
-        return "0"
+        let nextLevel = (CGFloat(nivel)*baseLevel) + (CGFloat(nivel - 1)*factor*baseLevel)
+        
+        return Float((CGFloat(puntos) - beforeLevel)/(nextLevel - beforeLevel))
     }
     
-    func getNivelPorcentaje() -> Float{
-        switch self.getNivel() {
-        case "1":
-            return Float(1 - ((999 - 0) - (Float(self.puntos) - 0))/(999 - 0))
-        case "2":
-            return Float(1 - ((1999 - 999) - (Float(self.puntos) - 999))/(1999 - 999))
-        case "3":
-            return Float(1 - ((4999 - 1999) - (Float(self.puntos) - 1999))/(4999 - 1999))
-        case "4":
-            return Float(1 - ((7499 - 4999) - (Float(self.puntos) - 4999))/(7499 - 4999))
-        case "5":
-            return Float(1 - ((12499 - 7499) - (Float(self.puntos) - 7499))/(12499 - 7499))
-        default:
-            return 0
-        }
-    }
-    
-    func getAvatarActivoWalking() -> String{
+    func getAvatarActivoWalking() -> String {
         switch self.avatarActivo {
         case "Playero":
             return "Playero_Walking.scn"
@@ -171,7 +134,7 @@ class Usuario{
         }
     }
     
-    func getAvatarActivoStanding() -> String{
+    func getAvatarActivoStanding() -> String {
         switch self.avatarActivo {
         case "Playero":
             return "Playero_Standing.scn"
@@ -184,7 +147,7 @@ class Usuario{
         }
     }
     
-    func getAvatarActivoDancing() -> String{
+    func getAvatarActivoDancing() -> String {
         switch self.avatarActivo {
         case "Playero":
             return "Playero_Standing.scn"

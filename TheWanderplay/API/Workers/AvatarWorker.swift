@@ -37,10 +37,10 @@ class AvatarWorker: BaseWorker{
                 do {
                     switch response.statusCode ?? -1 {
                     case 200:
-                        let response = try self.newJSONDecoder().decode(AvatarModelo.self, from: data)
+                        let response = try newJSONDecoder().decode(AvatarModelo.self, from: data)
                         self.delegate?.success(avatares: response.avatares ?? [])
                     case 400,401,500:
-                        let response = try self.newJSONDecoder().decode(Error.self, from: data)
+                        let response = try newJSONDecoder().decode(Error.self, from: data)
                         self.delegate?.fail()
                     default:
                         self.delegate?.fail()

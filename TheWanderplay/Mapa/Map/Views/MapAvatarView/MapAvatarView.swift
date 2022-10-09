@@ -58,7 +58,7 @@ class MapAvatarView: UIView {
         avatarImage.image = UIImage(named: "Mikel")
         // ActualLevel
         actualLevelView.layer.cornerRadius = 4
-        actualLevelLabel.text = Usuario.shared.getNivel()
+        actualLevelLabel.text = "\(Usuario.shared.nivel)"
         // Level Progress
         levelProgress.layer.cornerRadius = 4
         levelProgress.layer.borderColor = UIColor.systemBrown.cgColor
@@ -67,7 +67,7 @@ class MapAvatarView: UIView {
     }
     
     func updateLevel() {
-        actualLevelLabel.text = Usuario.shared.getNivel()
+        actualLevelLabel.text = "\(Usuario.shared.nivel)"
         levelProgress.setProgress(Usuario.shared.getNivelPorcentaje(), animated: true)
     }
     

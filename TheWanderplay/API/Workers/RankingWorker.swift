@@ -38,10 +38,10 @@ class RankingWorker: BaseWorker{
                 do {
                     switch response.statusCode ?? -1 {
                     case 200:
-                        let response = try self.newJSONDecoder().decode(Ranking.self, from: data)
+                        let response = try newJSONDecoder().decode(Ranking.self, from: data)
                         self.delegate?.generalRanking(usuarios: response.usuarios)
                     case 400,401,410,500:
-                        let response = try self.newJSONDecoder().decode(Error.self, from: data)
+                        let response = try newJSONDecoder().decode(Error.self, from: data)
                         self.delegate?.failGeneralRanking()
                     default:
                         self.delegate?.failGeneralRanking()

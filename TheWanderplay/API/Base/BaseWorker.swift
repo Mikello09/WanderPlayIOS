@@ -16,21 +16,20 @@ enum HttpMethod: String {
 
 typealias JSONDictionary = [String: Any]
 
-class BaseWorker{
+func newJSONDecoder() -> JSONDecoder{
+    let decoder = JSONDecoder()
+    if #available(iOS 10, OSX 10.12, tvOS 10.0, watchOS 3.0, *){
+        decoder.dateDecodingStrategy = .iso8601
+    }
+    return decoder
+}
+
+class BaseWorker: NSObject {
     
     var baseUrl = "https://thewanderplay.herokuapp.com/"
     //var baseUrl = "http://localhost:3000/"
     var headers = ["authToken":"AAAAA"]
     let errorGeneral = "Ha ocurrido un error. Vuelva a intentarlo."
-    
-    
-    func newJSONDecoder() -> JSONDecoder{
-        let decoder = JSONDecoder()
-        if #available(iOS 10, OSX 10.12, tvOS 10.0, watchOS 3.0, *){
-            decoder.dateDecodingStrategy = .iso8601
-        }
-        return decoder
-    }
     
     enum Urls: String {
         case login = "usuarios/doLogin"

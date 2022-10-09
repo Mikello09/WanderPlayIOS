@@ -64,35 +64,35 @@ struct Lugar: Codable{
     
     func getInteres() -> Interes{
         switch self.interes {
-            case "BAJO","bajo","Bajo":
-                return .bajo
-            case "MEDIO","medio","Medio":
-                return .medio
-            case "ALTO","alto","Alto":
-                return .alto
-            case "MUYALTO", "MUY ALTO", "Muy alto", "muy alto", "Muyalto", "muyalto":
-                return .muyAlto
-            case "PATRIMONIO", "patrimonio", "Patrimonio":
-                return .patrimonio
-            default:
-                return .bajo
+        case "BAJO","bajo","Bajo":
+            return .bajo
+        case "MEDIO","medio","Medio":
+            return .medio
+        case "ALTO","alto","Alto":
+            return .alto
+        case "MUYALTO", "MUY ALTO", "Muy alto", "muy alto", "Muyalto", "muyalto":
+            return .muyAlto
+        case "PATRIMONIO", "patrimonio", "Patrimonio":
+            return .patrimonio
+        default:
+            return .bajo
         }
     }
     
     func getInteresString() -> String{
         switch self.interes {
-            case "BAJO","bajo","Bajo":
-                return "BAJO"
-            case "MEDIO","medio","Medio":
-                return "MEDIO"
-            case "ALTO","alto","Alto":
-                return "ALTO"
-            case "MUYALTO", "MUY ALTO", "Muy alto", "muy alto", "Muyalto", "muyalto":
-                return "MUYALTO"
-            case "PATRIMONIO", "patrimonio", "Patrimonio":
-                return "PATRIMONIO"
-            default:
-                return "BAJO"
+        case "BAJO","bajo","Bajo":
+            return "BAJO"
+        case "MEDIO","medio","Medio":
+            return "MEDIO"
+        case "ALTO","alto","Alto":
+            return "ALTO"
+        case "MUYALTO", "MUY ALTO", "Muy alto", "muy alto", "Muyalto", "muyalto":
+            return "MUYALTO"
+        case "PATRIMONIO", "patrimonio", "Patrimonio":
+            return "PATRIMONIO"
+        default:
+            return "BAJO"
         }
     }
 }
@@ -103,8 +103,34 @@ class Lugares{
     
     var lugares: [Lugar] = []
     
+    func existsLugaresFile() -> Bool {
+        guard let cacheDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else { return false }
+        return FileManager.default.fileExists(atPath: cacheDirectory.appendingPathComponent("lugares.json").path)
+    }
+    
     func guardarLugares(lugares: [Lugar]){
         self.lugares = lugares
+        
+        let lugarModelo = LugarModelo(lugares: lugares)
+        
+        if
+            let lugaresFile = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("lugares.json", isDirectory: false),
+            let jsonData = try? JSONEncoder().encode(lugarModelo),
+            let jsonString = String(data: jsonData, encoding: .utf8) {
+                try? jsonString.write(to: lugaresFile, atomically: false, encoding: .utf8)
+            }
+        
+    }
+    
+    func getLugaresFromFile() -> Bool {
+        guard let lugaresFile = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("lugares.json", isDirectory: false),
+              let data = try? Data(contentsOf: lugaresFile, options: .mappedIfSafe),
+              let jsonResult = try? newJSONDecoder().decode(LugarModelo.self, from: data),
+              let lugares = jsonResult.lugares else {
+            return false
+        }
+        self.lugares = lugares
+        return true
     }
     
     func getLugares() -> [Lugar]{
@@ -112,7 +138,6 @@ class Lugares{
     }
     
     func createGeoJSONFile(lugares: [Lugar]){
-        
         
             let head = "{\"type\": \"FeatureCollection\",\"features\": ["
             var body = ""

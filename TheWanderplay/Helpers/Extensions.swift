@@ -40,7 +40,7 @@ extension UIView{
         self.clipsToBounds = true
         self.layer.cornerRadius = withRadius
         if withBorder{
-            self.layer.borderColor = UIColor.lightGray.cgColor
+            self.layer.borderColor = UIColor.principal.cgColor
             self.layer.borderWidth = 0.1
         }
         self.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.2)
@@ -88,4 +88,11 @@ extension UIButton {
     }
 }
 
-
+extension String {
+    func toDate() -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        return dateFormatter.date(from: self)
+    }
+}
