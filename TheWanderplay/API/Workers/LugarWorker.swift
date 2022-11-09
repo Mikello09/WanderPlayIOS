@@ -11,8 +11,8 @@ import UIKit
 
 class LugarWorker: BaseWorker {
     
-    func getLugares(settings: Settings) async -> Bool {
-        let lugaresCreateDate = settings.lugaresCreateDate.toDate() ?? Date()
+    func getLugares() async -> Bool {
+        let lugaresCreateDate = Settings.shared.lugaresCreateDate?.toDate() ?? Date()
         if lugaresCreateDate > (Usuario.shared.ultimoIngreso?.toDate() ?? Date()) || !Lugares.shared.existsLugaresFile(){
             return await execute()
         } else {

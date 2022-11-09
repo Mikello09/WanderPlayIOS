@@ -29,6 +29,7 @@ class MapViewController: BaseViewController {
         super.viewDidLoad()
         setupUI()
         presenter?.initLocationUpdates()
+        presenter?.updateLoginInfo()
         mapAvatarView.configure(delegate: self)
         filtrosInteresView.configure(delegate: self)
         filtrosCategoriaView.configure(delegate: self)

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LugaresEntity" representedClassName="LugaresEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="lugarID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SettingsEntity" representedClassName="SettingsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="lugaresCreatedDate" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UsuarioEntity" representedClassName="UsuarioEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="apellidos" optional="YES" attributeType="String"/>
+        <attribute name="avatarActivo" optional="YES" attributeType="String"/>
+        <attribute name="ciudad" optional="YES" attributeType="String"/>
+        <attribute name="contrasena" optional="YES" attributeType="String"/>
+        <attribute name="diamantes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="direccion" optional="YES" attributeType="String"/>
+        <attribute name="edad" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="lugaresCreateDate" optional="YES" attributeType="String"/>
+        <attribute name="monedas" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nivel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="pais" optional="YES" attributeType="String"/>
+        <attribute name="provincia" optional="YES" attributeType="String"/>
+        <attribute name="puntos" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ultimoIngreso" optional="YES" attributeType="String"/>
+    </entity>
+</model>

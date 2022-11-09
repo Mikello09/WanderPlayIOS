@@ -42,6 +42,10 @@ class MapPresenter {
         interactor?.getLugares()
     }
     
+    func updateLoginInfo() {
+        LoginInteractor().getLoginData()
+    }
+    
 }
 
 // MARK: LOCATION MANAGER

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol LoginWorkerProtocol {
-    func success(settings: Settings)
+    func success()
     func fail(error: String)
 }
 
@@ -37,9 +37,11 @@ class LoginWorker: BaseWorker {
                     switch response.statusCode {
                     case 200:
                         let response = try newJSONDecoder().decode(LoginModel.self, from: data)
-                        Usuario.shared.guardarUsuario(usuario: response.usuario)
-                        Usuario.shared.guardarCredenciales(nombre: response.usuario.nombre, pass: response.usuario.contrasena)
-                        self.delegate?.success(settings: response.settings)
+                        DispatchQueue.main.async {
+                            Usuario.shared.guardarUsuario(usuario: response.usuario)
+                            Settings.shared.guardarLugaresCreateDate(createDate: response.settings.lugaresCreateDate)
+                            self.delegate?.success()
+                        }
                     case 400,401,500:
                         let response = try newJSONDecoder().decode(Error.self, from: data)
                         self.delegate?.fail(error: response.reason)

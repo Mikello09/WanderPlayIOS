@@ -154,6 +154,8 @@
 		9746C64228B6D081002CA7C2 /* MisDatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9746C64128B6D081002CA7C2 /* MisDatos.storyboard */; };
 		9746C64428B6D1AD002CA7C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746C64328B6D1AD002CA7C2 /* SceneDelegate.swift */; };
 		974BEBC628C238500037E5B6 /* Mikel.glb in Resources */ = {isa = PBXBuildFile; fileRef = 974BEBC528C238500037E5B6 /* Mikel.glb */; };
+		9797D920291C4FE300C11E09 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9797D91F291C4FE300C11E09 /* Settings.swift */; };
+		9797D922291C508800C11E09 /* SettingsBBDD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9797D921291C508800C11E09 /* SettingsBBDD.swift */; };
 		979879AC28C4F1CF0064456F /* Mikel.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 979879AB28C4F1CF0064456F /* Mikel.usdz */; };
 		97B05A3728C675EC0032B7F2 /* FiltrosCategoriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B05A3628C675EC0032B7F2 /* FiltrosCategoriaView.swift */; };
 		97B05A3928C676040032B7F2 /* FiltrosCategoriaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B05A3828C676040032B7F2 /* FiltrosCategoriaView.xib */; };
@@ -182,6 +184,9 @@
 		97B367A92884A9780067FC21 /* MapAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B367A82884A9780067FC21 /* MapAvatarView.swift */; };
 		97B367AB2884A98C0067FC21 /* MapAvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B367AA2884A98C0067FC21 /* MapAvatarView.xib */; };
 		97C4F2252891CF7C0092FF56 /* MapBoxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C4F2242891CF7C0092FF56 /* MapBoxHelper.swift */; };
+		97F58B022916B42200A3EE8E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F58B012916B42200A3EE8E /* LoginInteractor.swift */; };
+		97F58B082918023300A3EE8E /* Wanderplay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97F58B062918023300A3EE8E /* Wanderplay.xcdatamodeld */; };
+		97F58B0A2918054100A3EE8E /* UsuarioBBDD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F58B092918054100A3EE8E /* UsuarioBBDD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -354,6 +359,8 @@
 		9746C64128B6D081002CA7C2 /* MisDatos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MisDatos.storyboard; sourceTree = "<group>"; };
 		9746C64328B6D1AD002CA7C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		974BEBC528C238500037E5B6 /* Mikel.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mikel.glb; sourceTree = "<group>"; };
+		9797D91F291C4FE300C11E09 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		9797D921291C508800C11E09 /* SettingsBBDD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBBDD.swift; sourceTree = "<group>"; };
 		979879AB28C4F1CF0064456F /* Mikel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mikel.usdz; sourceTree = "<group>"; };
 		97B05A3628C675EC0032B7F2 /* FiltrosCategoriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltrosCategoriaView.swift; sourceTree = "<group>"; };
 		97B05A3828C676040032B7F2 /* FiltrosCategoriaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiltrosCategoriaView.xib; sourceTree = "<group>"; };
@@ -382,6 +389,9 @@
 		97B367A82884A9780067FC21 /* MapAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAvatarView.swift; sourceTree = "<group>"; };
 		97B367AA2884A98C0067FC21 /* MapAvatarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapAvatarView.xib; sourceTree = "<group>"; };
 		97C4F2242891CF7C0092FF56 /* MapBoxHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxHelper.swift; sourceTree = "<group>"; };
+		97F58B012916B42200A3EE8E /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		97F58B072918023300A3EE8E /* Wanderplay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wanderplay.xcdatamodel; sourceTree = "<group>"; };
+		97F58B092918054100A3EE8E /* UsuarioBBDD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioBBDD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +422,8 @@
 		5D040B7624F8F5F700A01263 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				97F58B052918021500A3EE8E /* BBDD */,
+				97F58B002916B40400A3EE8E /* Interactors */,
 				9732DFB428E0F9E7003F1DB1 /* Workers */,
 				9746C63C28B6CF76002CA7C2 /* Base */,
 				5D040B7F24F90D2700A01263 /* Data */,
@@ -428,6 +440,7 @@
 				5D2E236A250C7CF6002EF48D /* Logro.swift */,
 				5D3AB9AD2516B49400D17E08 /* Ranking.swift */,
 				5D16DA512378B4E700690CC8 /* Categorias.swift */,
+				9797D91F291C4FE300C11E09 /* Settings.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1034,6 +1047,24 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		97F58B002916B40400A3EE8E /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				97F58B012916B42200A3EE8E /* LoginInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		97F58B052918021500A3EE8E /* BBDD */ = {
+			isa = PBXGroup;
+			children = (
+				97F58B062918023300A3EE8E /* Wanderplay.xcdatamodeld */,
+				97F58B092918054100A3EE8E /* UsuarioBBDD.swift */,
+				9797D921291C508800C11E09 /* SettingsBBDD.swift */,
+			);
+			path = BBDD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1195,6 +1226,7 @@
 				5DB6DD6624574208009764F1 /* ProfesorView.swift in Sources */,
 				5D25E8A3233E2B3D002560A3 /* GeneralCard.swift in Sources */,
 				5D040B7324F8EB2800A01263 /* LoginManualRouter.swift in Sources */,
+				97F58B0A2918054100A3EE8E /* UsuarioBBDD.swift in Sources */,
 				5D040B7824F8F61300A01263 /* LoginWorker.swift in Sources */,
 				5D613BF325081691005732FC /* Avatar.swift in Sources */,
 				5D778A09234E2C6F006422F2 /* MisDatosViewController.swift in Sources */,
@@ -1204,6 +1236,7 @@
 				5D80B15B237E921200718BAA /* CardView.swift in Sources */,
 				5DE21C06234CDBE400C37015 /* PersonalDataRouter.swift in Sources */,
 				5D25E890233D0108002560A3 /* NoTrophyView.swift in Sources */,
+				9797D922291C508800C11E09 /* SettingsBBDD.swift in Sources */,
 				5DD6795824596C200080FBDD /* GreetingWelcomView.swift in Sources */,
 				9732DFB328E0B021003F1DB1 /* InitPresenter.swift in Sources */,
 				5DE0CC682471284B00277FD2 /* FiltrosTutorialViewController.swift in Sources */,
@@ -1223,13 +1256,16 @@
 				5D1186EC2330C21C000AD1DC /* Colors.swift in Sources */,
 				5D25E880233CA9B0002560A3 /* LugarDetailPresenter.swift in Sources */,
 				5DD6796C245B34050080FBDD /* PasswordWelcomeView.swift in Sources */,
+				97F58B022916B42200A3EE8E /* LoginInteractor.swift in Sources */,
 				5D25E877233B488A002560A3 /* LugarDetailViewController.swift in Sources */,
+				97F58B082918023300A3EE8E /* Wanderplay.xcdatamodeld in Sources */,
 				5D679D56231FAA0B005AB2E5 /* AppDelegate.swift in Sources */,
 				5DE0CC7124712A4900277FD2 /* FiltrosTutorialRouter.swift in Sources */,
 				5DD5F1A82383D05700BE5A6B /* ResumenCartasView.swift in Sources */,
 				5D99E9AE23683C3700CABA2D /* AvisoStandar.swift in Sources */,
 				5D1FD3BA2534C2C80044FCE8 /* LugaresInteractor.swift in Sources */,
 				5D040B8D24FC2C0F00A01263 /* LugarWorker.swift in Sources */,
+				9797D920291C4FE300C11E09 /* Settings.swift in Sources */,
 				5D59AC2F2452CB5D00B9C461 /* GrupoView.swift in Sources */,
 				5D25E894233D049E002560A3 /* LocationManager.swift in Sources */,
 				9732DFAD28D3C12D003F1DB1 /* TextButton.swift in Sources */,
@@ -1543,6 +1579,19 @@
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		97F58B062918023300A3EE8E /* Wanderplay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				97F58B072918023300A3EE8E /* Wanderplay.xcdatamodel */,
+			);
+			currentVersion = 97F58B072918023300A3EE8E /* Wanderplay.xcdatamodel */;
+			path = Wanderplay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5D679D4A231FAA0B005AB2E5 /* Project object */;
 }

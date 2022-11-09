@@ -53,7 +53,7 @@ class MapAvatarView: UIView {
         self.view.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(tap)
         // User name
-        userName.text = Usuario.shared.getNombreCredencial()
+        userName.text = Usuario.shared.nombre
         // Avatar Image
         avatarImage.image = UIImage(named: "Mikel")
         // ActualLevel

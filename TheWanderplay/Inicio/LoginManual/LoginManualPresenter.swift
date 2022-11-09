@@ -27,7 +27,7 @@ class LoginManualPresenter{
 }
 
 extension LoginManualPresenter: LoginWorkerProtocol {
-    func success(settings: Settings) {
+    func success() {
         delegate?.loginOK()
     }
     

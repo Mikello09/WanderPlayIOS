@@ -16,7 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
         
-        if let _ = Usuario.shared.getNombreCredencial() {
+        Usuario.shared.cargarUsuario()
+        Settings.shared.cargarSettings()
+        
+        if Usuario.shared.isUserLogged() {
             window = UIWindow(windowScene: windowScene)
             InitRouter().goToInit(navigationController: nil)
         } else {

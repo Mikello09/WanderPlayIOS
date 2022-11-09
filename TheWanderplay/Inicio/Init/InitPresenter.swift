@@ -33,10 +33,19 @@ class InitPresenter {
         locationEngine.startEngineForPermission(delegate: self)
     }
     
-    func doLogin() {
-        LoginWorker().execute(nombre: Usuario.shared.getNombreCredencial() ?? "",
-                              pass: Usuario.shared.getPassCredencial() ?? "",
-                              delegate: self)
+    func getLugares() {
+        delegate?.changeState(state: .lugares)
+        Task.init {
+            let result = await LugarWorker().getLugares()
+            await MainActor.run {
+                if result {
+                    delegate?.changeState(state: .finished)
+                    delegate?.goToMap()
+                } else {
+                    delegate?.changeState(state: .error)
+                }
+            }
+        }
     }
 }
 
@@ -48,32 +57,10 @@ extension InitPresenter: LocationEnginePermission {
     
     func accepted() {
         delegate?.changeState(state: .user)
-        doLogin()
+        getLugares()
     }
     
     func denied() {
-        delegate?.changeState(state: .error)
-    }
-}
-
-// MARK: LOGIN
-extension InitPresenter: LoginWorkerProtocol {
-    func success(settings: Settings) {
-        delegate?.changeState(state: .lugares)
-        Task.init {
-            let result = await LugarWorker().getLugares(settings: settings)
-            await MainActor.run {
-                if result {
-                    delegate?.changeState(state: .finished)
-                    delegate?.goToMap()
-                } else {
-                    delegate?.changeState(state: .error)
-                }
-            }
-        }
-    }
-    
-    func fail(error: String) {
         delegate?.changeState(state: .error)
     }
 }

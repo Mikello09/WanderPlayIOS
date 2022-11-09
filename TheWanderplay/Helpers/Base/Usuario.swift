@@ -10,15 +10,11 @@ import Foundation
 import UIKit
 
 struct LoginModel: Codable {
-    var settings: Settings
+    var settings: SettingsModel
     var usuario: UsuarioModel
 }
 
-struct Settings: Codable {
-    var lugaresCreateDate: String
-}
-
-struct UsuarioModel: Codable{
+struct UsuarioModel: Codable {
     var nombre: String
     var apellidos: String?
     var email: String
@@ -39,8 +35,7 @@ struct UsuarioModel: Codable{
     var lugares: [String]?
 }
 
-
-class Usuario{
+class Usuario {
     
     static var shared = Usuario()
     
@@ -64,11 +59,13 @@ class Usuario{
     var lugares: [String] = []
     
     
-    func guardarUsuario(usuario: UsuarioModel?){
-        if let usuario = usuario{
-            Usuario.shared.nombre = usuario.nombre ?? ""
+    func guardarUsuario(usuario: UsuarioModel?) {
+        if let usuario = usuario {
+            UsuarioBBDD.saveUsuario(usuario: usuario)
+            
+            Usuario.shared.nombre = usuario.nombre
             Usuario.shared.apellidos = usuario.apellidos ?? ""
-            Usuario.shared.email = usuario.email ?? ""
+            Usuario.shared.email = usuario.email
             Usuario.shared.direccion = usuario.direccion ?? ""
             Usuario.shared.pais = usuario.pais ?? ""
             Usuario.shared.provincia = usuario.provincia ?? ""
@@ -76,7 +73,7 @@ class Usuario{
             Usuario.shared.edad = usuario.edad ?? 0
             Usuario.shared.puntos = usuario.puntos ?? 0
             Usuario.shared.nivel = usuario.nivel ?? 1
-            Usuario.shared.contrasena = usuario.contrasena ?? ""
+            Usuario.shared.contrasena = usuario.contrasena
             Usuario.shared.ultimoIngreso = usuario.ultimoIngreso
             Usuario.shared.version = usuario.version ?? ""
             Usuario.shared.monedas = usuario.monedas ?? 0
@@ -87,25 +84,54 @@ class Usuario{
         }
     }
     
-    func guardarCredenciales(nombre: String, pass: String) {
-        UserDefaults.standard.set(nombre, forKey: "nombre")
-        UserDefaults.standard.set(pass, forKey: "pass")
+    func cargarUsuario() {
+        guard let usuarioGuardado = UsuarioBBDD.getUsuario() else { return }
+        
+        Usuario.shared.nombre = usuarioGuardado.nombre
+        Usuario.shared.apellidos = usuarioGuardado.apellidos ?? ""
+        Usuario.shared.email = usuarioGuardado.email
+        Usuario.shared.direccion = usuarioGuardado.direccion ?? ""
+        Usuario.shared.pais = usuarioGuardado.pais ?? ""
+        Usuario.shared.provincia = usuarioGuardado.provincia ?? ""
+        Usuario.shared.ciudad = usuarioGuardado.ciudad ?? ""
+        Usuario.shared.edad = usuarioGuardado.edad ?? 0
+        Usuario.shared.puntos = usuarioGuardado.puntos ?? 0
+        Usuario.shared.nivel = usuarioGuardado.nivel ?? 1
+        Usuario.shared.contrasena = usuarioGuardado.contrasena
+        Usuario.shared.ultimoIngreso = usuarioGuardado.ultimoIngreso
+        Usuario.shared.version = usuarioGuardado.version ?? ""
+        Usuario.shared.monedas = usuarioGuardado.monedas ?? 0
+        Usuario.shared.diamantes = usuarioGuardado.diamantes ?? 0
+        Usuario.shared.avatarActivo = usuarioGuardado.avatarActivo ?? ""
+        Usuario.shared.avatares = usuarioGuardado.avatares ?? []
+        Usuario.shared.lugares = usuarioGuardado.lugares ?? []
     }
     
-    func getNombreCredencial() -> String? {
-        return UserDefaults.standard.string(forKey: "nombre")
-    }
-    
-    func getPassCredencial() -> String? {
-        return UserDefaults.standard.string(forKey: "pass")
+    func isUserLogged() -> Bool {
+        return self.nombre != ""
     }
     
     func eliminarCredenciales() {
-        let defaults = UserDefaults.standard
-        let dictionary = defaults.dictionaryRepresentation()
-        dictionary.keys.forEach { key in
-            defaults.removeObject(forKey: key)
-        }
+        UsuarioBBDD.deleteUsuario()
+        
+        Usuario.shared.nombre = ""
+        Usuario.shared.apellidos = ""
+        Usuario.shared.email = ""
+        Usuario.shared.direccion = ""
+        Usuario.shared.pais = ""
+        Usuario.shared.provincia = ""
+        Usuario.shared.ciudad = ""
+        Usuario.shared.edad = 0
+        Usuario.shared.puntos = 0
+        Usuario.shared.nivel = 1
+        Usuario.shared.contrasena = ""
+        Usuario.shared.ultimoIngreso = ""
+        Usuario.shared.version = ""
+        Usuario.shared.monedas = 0
+        Usuario.shared.diamantes = 0
+        Usuario.shared.avatarActivo = ""
+        Usuario.shared.avatares = []
+        Usuario.shared.lugares = []
     }
     
     func getNivelPorcentaje() -> Float {
